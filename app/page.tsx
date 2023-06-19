@@ -1,5 +1,3 @@
-import { useRouter } from "next/router";
-
-export default function Page() {
+export default function RootPage() {
   return <h1>Hello, Next.js!</h1>;
 }

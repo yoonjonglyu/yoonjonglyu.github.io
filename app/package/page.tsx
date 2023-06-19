@@ -5,6 +5,6 @@ export const metadata: Metadata = {
   description: 'package',
 };
 
-export default function Page () {
-  return <h1>Hello, Next.js!</h1>;
+export default function PackagePage () {
+  return <h1>Hello, package</h1>;
 }
