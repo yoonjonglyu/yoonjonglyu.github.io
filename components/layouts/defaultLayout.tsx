@@ -3,7 +3,8 @@ import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 
 const GlobalCSS = createGlobalStyle`
-  :root {
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+ :root {
     --color-background-space: #12172f;
     --color-background-card: #1e202c;
     --color-point: #8a40b8;
@@ -13,6 +14,8 @@ const GlobalCSS = createGlobalStyle`
   }
   body {
     background: var(--color-background-space);
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
   }
 `;
 const Wrap = styled.div`
@@ -71,13 +74,13 @@ const DefaultLayout: React.FC<DefaultLayoutProps> = ({ children }) => {
       <header>
         <HeaderNav>
           <div>
-          <span>ISA Archive</span>
-          <ul>
-            <li>Toy</li>
-            <li>Code</li>
-            <li>Project</li>
-            <li>Package</li>
-          </ul>
+            <span>ISA Archive</span>
+            <ul>
+              <li>Toy</li>
+              <li>Code</li>
+              <li>Project</li>
+              <li>Package</li>
+            </ul>
           </div>
         </HeaderNav>
       </header>
