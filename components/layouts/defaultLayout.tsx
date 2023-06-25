@@ -40,7 +40,6 @@ const Wrap = styled.div`
 `;
 const Header = styled.header`
   display: flex;
-  align-items: center;
   position: fixed;
   width: 100%;
   height: 44px;
@@ -51,6 +50,7 @@ const Header = styled.header`
 const HeaderNav = styled.nav`
   display: flex;
   align-items: center;
+  width: 100%;
   max-width: 960px;
   padding: 0 8px;
   margin: 0 auto;
