@@ -1,10 +1,10 @@
 'use client';
 import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
+import Link from 'next/link';
 
 const GlobalCSS = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
- :root {
+   :root {
     --color-background-space: #12172f;
     --color-background-card: #1e202c;
     --color-point: #8a40b8;
@@ -16,6 +16,18 @@ const GlobalCSS = createGlobalStyle`
     background: var(--color-background-space);
     font-family: 'Noto Sans', sans-serif;
     font-family: 'Noto Sans KR', sans-serif;
+    &::-webkit-scrollbar {
+      width: 8px;
+      background: none;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: var(--color-point);
+      border-radius: 12px;
+    }
+    &::-webkit-scrollbar-track {
+      background: var(--color-background-card);
+      border-radius: 12px;
+    }
   }
 `;
 const Wrap = styled.div`
@@ -23,27 +35,29 @@ const Wrap = styled.div`
   flex-flow: column wrap;
   margin: 0;
   padding: 0;
+  min-height: 100vh;
+  box-sizing: border-box;
 `;
-const HeaderNav = styled.nav`
+const Header = styled.header`
   position: fixed;
   width: 100%;
   height: 44px;
   padding: 3px;
   background: var(--color-background-card);
+`;
+const HeaderNav = styled.nav`
+  display: flex;
+  align-items: center;
+  max-width: 960px;
+  padding: 0 8px;
+  margin: 0 auto;
+  gap: 18px;
   box-sizing: border-box;
-  & div {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    max-width: 960px;
-    padding: 0 8px;
-    margin: 0 auto;
-    gap: 16px;
-  }
-  & span {
+
+  & strong {
     color: var(--color-point);
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-size: 1.5rem;
+    font-weight: 300;
     line-height: 2rem;
   }
   & ul {
@@ -51,17 +65,34 @@ const HeaderNav = styled.nav`
     margin: 0;
     padding: 0;
     list-style: none;
-    gap: 8px;
+    gap: 6px;
   }
   & ul li {
     display: inline-block;
     color: var(--color-rare);
   }
+  & ul li a {
+    text-decoration: none;
+    color: inherit;
+  }
+  & ul li a:hover {
+    color: var(--color-point);
+  }
 `;
 const Contents = styled.main`
+  flex-grow: 1;
   margin-top: 44px;
 `;
-const Footer = styled.footer``;
+const Footer = styled.footer`
+  padding: 4px 0; 
+  background: var(--color-background-card);
+
+  & small {
+    display: block;
+    text-align: center;
+    color: var(--color-unique);
+  }
+`;
 
 interface DefaultLayoutProps {
   children: React.ReactNode;
@@ -71,21 +102,29 @@ const DefaultLayout: React.FC<DefaultLayoutProps> = ({ children }) => {
   return (
     <Wrap>
       <GlobalCSS />
-      <header>
+      <Header>
         <HeaderNav>
-          <div>
-            <span>ISA Archive</span>
-            <ul>
-              <li>Toy</li>
-              <li>Code</li>
-              <li>Project</li>
-              <li>Package</li>
-            </ul>
-          </div>
+          <strong>ISA Archive</strong>
+          <ul>
+            <li>
+              <Link href='/toy'>Toy</Link>
+            </li>
+            <li>
+              <Link href='/snippet'>Snippet</Link>
+            </li>
+            <li>
+              <Link href='/project'>Project</Link>
+            </li>
+            <li>
+              <Link href='/package'>Package</Link>
+            </li>
+          </ul>
         </HeaderNav>
-      </header>
+      </Header>
       <Contents>{children}</Contents>
-      <Footer></Footer>
+      <Footer>
+        <small>© 2023 ISA(yunjonglyu)</small>
+      </Footer>
     </Wrap>
   );
 };
