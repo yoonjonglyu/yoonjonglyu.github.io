@@ -39,11 +39,14 @@ const Wrap = styled.div`
   box-sizing: border-box;
 `;
 const Header = styled.header`
+  display: flex;
+  align-items: center;
   position: fixed;
   width: 100%;
   height: 44px;
   padding: 3px;
   background: var(--color-background-card);
+  border-bottom: 0.5px solid #66666691;
 `;
 const HeaderNav = styled.nav`
   display: flex;
