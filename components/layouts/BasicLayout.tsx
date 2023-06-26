@@ -97,11 +97,11 @@ const Footer = styled.footer`
   }
 `;
 
-interface DefaultLayoutProps {
+interface BasicLayoutProps {
   children: React.ReactNode;
 }
 
-const DefaultLayout: React.FC<DefaultLayoutProps> = ({ children }) => {
+const BasicLayout: React.FC<BasicLayoutProps> = ({ children }) => {
   return (
     <Wrap>
       <GlobalCSS />
@@ -132,4 +132,4 @@ const DefaultLayout: React.FC<DefaultLayoutProps> = ({ children }) => {
   );
 };
 
-export default DefaultLayout;
+export default BasicLayout;
