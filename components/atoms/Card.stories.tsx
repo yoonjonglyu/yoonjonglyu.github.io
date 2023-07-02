@@ -14,5 +14,6 @@ type Story = StoryObj<typeof Card>;
 
 export const Basic: Story = {
   args: {
+    css: 'height: 500px;'
   },
 };
