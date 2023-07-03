@@ -51,8 +51,8 @@ const HeaderNav = styled.nav`
   display: flex;
   align-items: center;
   width: 100%;
-  max-width: 960px;
-  padding: 0 8px;
+  max-width: 1200px;
+  padding: 0;
   margin: 0 auto;
   gap: 18px;
   box-sizing: border-box;
@@ -84,7 +84,9 @@ const HeaderNav = styled.nav`
 `;
 const Contents = styled.main`
   flex-grow: 1;
-  margin-top: 44px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 44px auto 0 auto;
 `;
 const Footer = styled.footer`
   padding: 4px 0; 
