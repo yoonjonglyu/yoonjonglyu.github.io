@@ -2,7 +2,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Container = styled.div<{css: string}>`
+const Container = styled.div<{css?: string}>`
   min-height: 200px;
   background: var(--color-background-card);
   border-radius: 12px;
@@ -10,7 +10,7 @@ const Container = styled.div<{css: string}>`
 `;
 
 export interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
-  css: string
+  css?: string
 }
 
 const Card: React.FC<CardProps> = (props) => {
