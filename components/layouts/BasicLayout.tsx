@@ -1,35 +1,10 @@
 'use client';
 import React from 'react';
-import styled, { createGlobalStyle } from 'styled-components';
+import styled from 'styled-components';
 import Link from 'next/link';
 
-const GlobalCSS = createGlobalStyle`
-   :root {
-    --color-background-space: #12172f;
-    --color-background-card: #1e202c;
-    --color-point: #8a40b8;
-    --color-rare: #c4c118;
-    --color-unique: #9e2e06;
-    --color-legend: #6e0303;
-  }
-  body {
-    background: var(--color-background-space);
-    font-family: 'Noto Sans', sans-serif;
-    font-family: 'Noto Sans KR', sans-serif;
-    &::-webkit-scrollbar {
-      width: 8px;
-      background: none;
-    }
-    &::-webkit-scrollbar-thumb {
-      background: var(--color-point);
-      border-radius: 12px;
-    }
-    &::-webkit-scrollbar-track {
-      background: var(--color-background-card);
-      border-radius: 12px;
-    }
-  }
-`;
+import GlobalCSS from '../../provider/style/GlobalCSS';
+
 const Wrap = styled.div`
   display: flex;
   flex-flow: column wrap;
@@ -89,7 +64,7 @@ const Contents = styled.main`
   margin: 44px auto 0 auto;
 `;
 const Footer = styled.footer`
-  padding: 4px 0; 
+  padding: 4px 0;
   background: var(--color-background-card);
 
   & small {
