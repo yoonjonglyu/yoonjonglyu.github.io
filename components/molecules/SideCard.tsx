@@ -11,16 +11,9 @@ const CardHeader = styled.div`
     font-size: 14px;
     font-weight: 500;
   }
-  a:hover {
-    text-decoration: underline;
-  }
 `;
 const CardContents = styled.div`
   font-size: 12px;
-  a:hover {
-    text-decoration: underline;
-    color: var(--color-point);
-  }
 `;
 
 export interface SideCardProps {
@@ -30,7 +23,13 @@ export interface SideCardProps {
 
 const SideCard: React.FC<SideCardProps> = ({ header, contents }) => {
   return (
-    <Card>
+    <Card
+      css={`
+        a:hover {
+          text-decoration: underline;
+          color: var(--color-point);
+        }
+      `}>
       <CardHeader>{header}</CardHeader>
       <CardContents>{contents}</CardContents>
     </Card>
