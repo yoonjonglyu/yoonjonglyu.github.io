@@ -1,3 +1,4 @@
+'useclient'
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalCSS = createGlobalStyle`
