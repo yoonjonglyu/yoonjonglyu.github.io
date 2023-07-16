@@ -1,7 +1,8 @@
 'use client';
 import styled from 'styled-components';
 
-import SideCard from '../components/molecules/SideCard';
+import HomeContents from '../features/home/HomeContents';
+import HomeSide from '../features/home/HomeSide';
 
 const Container = styled.div`
   display: flex;
@@ -12,22 +13,12 @@ const Container = styled.div`
     flex-direction: column-reverse;
   }
 `;
-const ContentsArea = styled.section`
-  flex: 3;
-  overflow: hidden;
-`;
-const SideArea = styled.aside`
-  flex: 1;
-  overflow: hidden;
-`;
 
 export default function RootPage() {
   return (
     <Container>
-      <ContentsArea>asd</ContentsArea>
-      <SideArea>
-        <SideCard header={<h3>사이드바</h3>} />
-      </SideArea>
+      <HomeContents />
+      <HomeSide />
     </Container>
   );
 }
