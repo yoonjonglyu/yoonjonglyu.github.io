@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import Card from '../atoms/Card';
 
 const CardHeader = styled.div`
-  height: 30px;
+  height: 32px;
   border-bottom: 1px dashed var(--color-background-space);
   h3 {
     font-size: 14px;
