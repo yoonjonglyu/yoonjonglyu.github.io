@@ -21,6 +21,7 @@ const Header = styled.header`
   padding: 3px;
   background: var(--color-background-card);
   border-bottom: 0.5px solid #66666691;
+  z-index: 999999;
 `;
 const HeaderNav = styled.nav`
   display: flex;
