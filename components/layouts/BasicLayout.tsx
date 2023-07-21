@@ -28,7 +28,7 @@ const HeaderNav = styled.nav`
   align-items: center;
   width: 100%;
   max-width: 1200px;
-  padding: 0;
+  padding: 3px;
   margin: 0 auto;
   gap: 18px;
   box-sizing: border-box;
