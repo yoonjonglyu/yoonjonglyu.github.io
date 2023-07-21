@@ -7,21 +7,27 @@ import Card from '../atoms/Card';
 const CardHeader = styled.div`
   height: 32px;
   border-bottom: 1px dashed var(--color-background-space);
-  h3 {
+  & h3 {
     font-size: 14px;
     font-weight: 500;
   }
 `;
 const CardContents = styled.div`
+  padding: 12px;
   font-size: 12px;
+  & ul,
+  ol {
+    margin: 6px;
+    padding: 0px;
+  }
 `;
-
 export interface SideCardProps {
-  header?: React.ReactNode;
+  header: React.ReactNode;
   contents?: React.ReactNode;
+  css?: string;
 }
 
-const SideCard: React.FC<SideCardProps> = ({ header, contents }) => {
+const SideCard: React.FC<SideCardProps> = ({ header, contents, css }) => {
   return (
     <Card
       css={`
@@ -29,6 +35,7 @@ const SideCard: React.FC<SideCardProps> = ({ header, contents }) => {
           text-decoration: underline;
           color: var(--color-point);
         }
+        ${css}
       `}>
       <CardHeader>{header}</CardHeader>
       <CardContents>{contents}</CardContents>
