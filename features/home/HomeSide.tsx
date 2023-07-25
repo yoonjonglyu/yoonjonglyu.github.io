@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Link from 'next/link';
 
 import SideCard from '../../components/molecules/SideCard';
 
@@ -20,12 +21,24 @@ const SideArea = styled.aside`
     border-radius: 12px;
   }
 
+  & a {
+    text-decoration: none;
+    color: inherit;
+  }
+  & a:hover {
+    color: var(--color-point);
+    text-decoration: underline;
+  }
+
   @media (max-width: 1024px) {
     flex-direction: row;
     & div {
       flex: 0 0 95%;
     }
   }
+`;
+const CardHead = styled.h3`
+  color: var(--color-unique);
 `;
 
 export interface HomeSideProps {}
@@ -34,54 +47,68 @@ const HomeSide: React.FC<HomeSideProps> = () => {
   return (
     <SideArea>
       <SideCard
-        header={<h3>사이드바</h3>}
+        header={<CardHead>Toy</CardHead>}
         contents={
           <ul>
-            <li>리스트업 목록</li>
-            <li>리스트업 목록</li>
-            <li>리스트업 목록</li>
-            <li>리스트업 목록</li>
-            <li>리스트업 목록</li>
+            <li>
+              <Link href='#'>리스트업 목록</Link>
+            </li>
+            <li>
+              <Link href='#'>리스트업 목록</Link>
+            </li>
+            <li>
+              <Link href='#'>리스트업 목록</Link>
+            </li>
+            <li>
+              <Link href='#'>리스트업 목록</Link>
+            </li>
+            <li>
+              <Link href='#'>리스트업 목록</Link>
+            </li>
           </ul>
         }
       />
       <SideCard
-        header={<h3>사이드바</h3>}
+        header={<CardHead>Project</CardHead>}
         contents={
           <ol>
             <li>
-              리스트업 목록
-              <ol>
-                <li>리스트업 목록2</li>
-                <li>리스트업 목록2</li>
-                <li>리스트업 목록2</li>
-                <li>리스트업 목록2</li>
-              </ol>
+              <Link href='#'>리스트업 목록</Link>
             </li>
-            <li>리스트업 목록</li>
-            <li>리스트업 목록</li>
-            <li>리스트업 목록</li>
-            <li>리스트업 목록</li>
+            <li>
+              <Link href='#'>리스트업 목록</Link>
+            </li>
+            <li>
+              <Link href='#'>리스트업 목록</Link>
+            </li>
+            <li>
+              <Link href='#'>리스트업 목록</Link>
+            </li>
+            <li>
+              <Link href='#'>리스트업 목록</Link>
+            </li>
           </ol>
         }
       />
       <SideCard
-        header={<h3>사이드바</h3>}
+        header={<CardHead>Package</CardHead>}
         contents={
           <ol>
             <li>
-              리스트업 목록
-              <ol>
-                <li>리스트업 목록2</li>
-                <li>리스트업 목록2</li>
-                <li>리스트업 목록2</li>
-                <li>리스트업 목록2</li>
-              </ol>
+              <Link href='#'>리스트업 목록</Link>
             </li>
-            <li>리스트업 목록</li>
-            <li>리스트업 목록</li>
-            <li>리스트업 목록</li>
-            <li>리스트업 목록</li>
+            <li>
+              <Link href='#'>리스트업 목록</Link>
+            </li>
+            <li>
+              <Link href='#'>리스트업 목록</Link>
+            </li>
+            <li>
+              <Link href='#'>리스트업 목록</Link>
+            </li>
+            <li>
+              <Link href='#'>리스트업 목록</Link>
+            </li>
           </ol>
         }
       />
