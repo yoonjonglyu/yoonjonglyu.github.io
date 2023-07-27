@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Card from '../../components/atoms/Card';
+import HomeBanner from './HomeBanner';
 
 const ContentsArea = styled.section`
   flex: 3;
@@ -16,12 +17,7 @@ export interface HomeContentsProps {}
 const HomeContents: React.FC<HomeContentsProps> = () => {
   return (
     <ContentsArea>
-      <Card
-        css={`
-          min-height: 400px;
-        `}>
-        메인 배너
-      </Card>
+      <HomeBanner />
       <Card
         css={`
           min-height: 400px;
