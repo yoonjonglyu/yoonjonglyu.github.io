@@ -14,13 +14,14 @@ const CarouselItemBox = styled.div<{ CarouselHeight?: string }>`
 `;
 const CarouselDot = styled.div`
   position: absolute;
-  bottom: 16px;
+  bottom: 8px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 999;
   & ul {
     display: flex;
     gap: 12px;
+    margin: 0;
     list-style: circle;
   }
   & ul li {
