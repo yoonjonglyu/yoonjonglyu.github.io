@@ -66,6 +66,9 @@ const HomeBanner: React.FC<HomeBannerProps> = () => {
           var(--color-point),
           var(--color-legend)
         );
+        @media (max-width: 1024px) {
+          min-height: 350px;
+        }
       `}>
       <TextBox>
         <GraffitiText>Welcome to My Archive</GraffitiText>

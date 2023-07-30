@@ -57,6 +57,10 @@ const HeaderNav = styled.nav`
   & ul li a:hover {
     color: var(--color-point);
   }
+
+  @media (max-width: 1024px) {
+    gap: 8px;
+  }
 `;
 const Contents = styled.main`
   flex-grow: 1;

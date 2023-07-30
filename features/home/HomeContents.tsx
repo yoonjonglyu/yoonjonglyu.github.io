@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Card from '../../components/atoms/Card';
 import HomeBanner from './HomeBanner';
+import HomeShelf from './HomeShelf';
 
 const ContentsArea = styled.section`
   flex: 3;
@@ -18,12 +18,7 @@ const HomeContents: React.FC<HomeContentsProps> = () => {
   return (
     <ContentsArea>
       <HomeBanner />
-      <Card
-        css={`
-          min-height: 400px;
-        `}>
-        아카이브
-      </Card>
+      <HomeShelf />
     </ContentsArea>
   );
 };
