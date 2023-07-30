@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+'use client';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import Swipe from 'react-custom-swipe';
+import { getQuery } from 'isa-util';
 
 const CarouselContainer = styled.div`
   position: relative;
@@ -39,10 +41,14 @@ export interface WCarouselProps {
 
 const WCarousel: React.FC<WCarouselProps> = ({ items, carouselHeight }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-
   const handleCurrentIndex = (value: number) => {
     setCurrentIndex(value);
   };
+
+  useEffect(() => {
+    const index = getQuery().get('index');
+    handleCurrentIndex(index !== null ? parseInt(index) : 0);
+  }, []);
 
   return (
     <CarouselContainer>
