@@ -47,7 +47,7 @@ const WCarousel: React.FC<WCarouselProps> = ({ items, carouselHeight }) => {
 
   useEffect(() => {
     const index = getQuery().get('index');
-    handleCurrentIndex(index !== null ? parseInt(index) : 0);
+    if (index !== null) handleCurrentIndex(parseInt(index));
   }, []);
 
   return (
