@@ -1,5 +1,5 @@
 'use client';
-import React, { useState, useEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
 import styled from 'styled-components';
 import Swipe from 'react-custom-swipe';
 import { getQuery } from 'isa-util';
@@ -40,14 +40,20 @@ export interface WCarouselProps {
 }
 
 const WCarousel: React.FC<WCarouselProps> = ({ items, carouselHeight }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const handleCurrentIndex = (value: number) => {
-    setCurrentIndex(value);
-  };
+  const DotsRef = useRef(null);
 
+  const handleDot = (index: number) => {
+    if (DotsRef.current !== null) {
+      DotsRef.current.childNodes.forEach(
+        (node: { style: { listStyle: any } }, idx: number) => {
+          node.style.listStyle = index === idx ? 'disc' : 'circle';
+        },
+      );
+    }
+  };
   useEffect(() => {
     const index = getQuery().get('index');
-    if (index !== null) handleCurrentIndex(parseInt(index));
+    handleDot(parseInt(index));
   }, []);
 
   return (
@@ -60,15 +66,13 @@ const WCarousel: React.FC<WCarouselProps> = ({ items, carouselHeight }) => {
         ))}
         config={{
           isHistory: false,
-          historyCallback: (state) => handleCurrentIndex(state.currentStep),
+          historyCallback: (state) => handleDot(state.currentStep),
         }}
       />
       <CarouselDot>
-        <ul>
+        <ul ref={DotsRef}>
           {items.map((_, index) => (
-            <li
-              key={index}
-              style={{ listStyle: currentIndex === index ? 'disc' : 'circle' }}>
+            <li key={index}>
               <span>{index}</span>
             </li>
           ))}
