@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import Link from 'next/link';
 
 import SideCard from '../../components/molecules/SideCard';
@@ -40,7 +40,7 @@ const PackageSide: React.FC<PackageSideProps> = () => {
   return (
     <SideArea>
       <SideCard
-        cssText={css`
+        css={`
           height: 300px;
         `}
         header={<CardHead>Package List</CardHead>}
