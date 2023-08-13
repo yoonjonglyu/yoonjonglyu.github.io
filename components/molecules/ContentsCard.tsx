@@ -5,10 +5,23 @@ import Card from '../atoms/Card';
 
 const ContentsHeader = styled.div`
   margin: 3px;
-  padding: 12px 3px;
+  padding: 8px 3px;
   border-bottom: 1px solid red;
+  color: var(--color-legend);
 `;
-const ContentsBody = styled.div``;
+const ContentsBody = styled.div`
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--color-rare);
+  }
+  hr {
+    border-color: var(--color-unique);
+  }
+`;
 
 export interface ContentsCardProps {
   header: React.ReactNode;
