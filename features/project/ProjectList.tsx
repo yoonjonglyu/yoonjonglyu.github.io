@@ -9,6 +9,10 @@ const ListArea = styled.section`
   flex-wrap: wrap;
   gap: 18px;
   overflow: hidden;
+
+  @media (max-width: 1024px) {
+    justify-content: center;
+  }
 `;
 
 export interface ProjectListProps {}
@@ -16,7 +20,7 @@ export interface ProjectListProps {}
 const ProjectList: React.FC<ProjectListProps> = () => {
   return (
     <ListArea>
-      {new Array(18).fill(true).map((item, key) => (
+      {new Array(20).fill(true).map((item, key) => (
         <PostCard
           key={key}
           thumnail={{ alt: 'test' }}

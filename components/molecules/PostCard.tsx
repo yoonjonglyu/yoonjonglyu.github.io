@@ -52,7 +52,7 @@ const PostCard: React.FC<PostCardProps> = (props) => {
     <Card
       css={`
         width: 100%;
-        max-width: 300px;
+        max-width: 280px;
         padding: 0; 
         border-radius: 4px;
         overflow: hidden;
