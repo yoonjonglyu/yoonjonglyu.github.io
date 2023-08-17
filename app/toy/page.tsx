@@ -2,6 +2,7 @@
 import { Metadata } from 'next';
 import styled from 'styled-components';
 
+import ToyList from '../../features/toy/ToyList';
 
 const Container = styled.div`
   display: flex;
@@ -17,6 +18,7 @@ export const metadata: Metadata = {
 export default function ToyPage() {
   return (
     <Container>
+      <ToyList />
     </Container>
   );
 }
