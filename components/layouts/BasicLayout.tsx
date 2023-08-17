@@ -50,7 +50,7 @@ const HeaderNav = styled.nav`
     display: inline-block;
     color: var(--color-rare);
   }
-  & ul li a {
+  & a {
     text-decoration: none;
     color: inherit;
   }
@@ -89,7 +89,7 @@ const BasicLayout: React.FC<BasicLayoutProps> = ({ children }) => {
       <GlobalCSS />
       <Header>
         <HeaderNav>
-          <strong>ISA Archive</strong>
+        <Link href='/'><strong>ISA Archive</strong></Link>
           <ul>
             <li>
               <Link href='/toy'>Toy</Link>
