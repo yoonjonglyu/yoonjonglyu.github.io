@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import 'normalize.css/normalize.css';
 
 import BasicLayout from '../components/layouts/BasicLayout';
+import ConfigureStore from '../store';
 
 export const metadata: Metadata = {
   title: 'ISA Archive',
@@ -28,7 +29,9 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <BasicLayout>{children}</BasicLayout>
+        <ConfigureStore>
+          <BasicLayout>{children}</BasicLayout>
+        </ConfigureStore>
       </body>
     </html>
   );
