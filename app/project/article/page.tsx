@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export default function ProjectArticlePage() {
   return (
     <Container>
-      <ProjectArticle title='Project Article' contents={'asdadsads'} />
+      <ProjectArticle />
     </Container>
   );
 }

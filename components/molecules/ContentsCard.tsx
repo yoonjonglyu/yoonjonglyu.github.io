@@ -39,6 +39,7 @@ const ContentsCard: React.FC<ContentsCardProps> = ({
   return (
     <Card
       css={`
+        flex: 1;
         min-height: 600px;
         overflow: hidden;
       `}>

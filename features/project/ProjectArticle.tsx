@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { styled } from 'styled-components';
+import { getQuery } from 'isa-util';
 
 import ContentsCard from '../../components/molecules/ContentsCard';
 
-const ListArea = styled.section`
+const ArticleArea = styled.section`
   flex: 1;
   display: flex;
   flex-wrap: wrap;
@@ -15,14 +16,20 @@ const ListArea = styled.section`
   }
 `;
 
-export interface ProjectArticleProps {
-  title: string,
-  contents: string
-}
+export interface ProjectArticleProps {}
 
-const ProjectArticle: React.FC<ProjectArticleProps> = ({title, contents}) => {
+const ProjectArticle: React.FC<ProjectArticleProps> = () => {
+  const [isQuery, setIsQuery] = useState(true);
+  
+  useEffect(() => {
+    const Query = getQuery();
+    if (typeof Query.get('post') !== 'string') setIsQuery(false);
+  }, []);
+
   return (
-    <ContentsCard header={<h4>Project</h4>} contents={``} />
+    <ArticleArea>
+      <ContentsCard header={'project article'} contents={'asdsda'} />
+    </ArticleArea>
   );
 };
 
