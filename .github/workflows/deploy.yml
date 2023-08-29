@@ -33,8 +33,8 @@ jobs:
       - name: Install and Build
         uses: actions/setup-node@v3.8.1
       - run: npm install
-      - run: npm build
-      - run: npm export
+      - run: npm run build
+      - run: npm run export
         env:
           CI: true
           DEPLORY_TARGET: gh-pages
