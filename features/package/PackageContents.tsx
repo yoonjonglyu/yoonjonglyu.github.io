@@ -1,8 +1,19 @@
+'use client';
 import React from 'react';
 import styled from 'styled-components';
 
 import ContentsCard from '../../components/molecules/ContentsCard';
+import PackageSide from './PackageSide';
 
+const Container = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  margin: 24px 3px;
+  @media (max-width: 1024px) {
+    flex-direction: column-reverse;
+  }
+`;
 const ContentsArea = styled.section`
   flex: 3;
   display: flex;
@@ -15,10 +26,11 @@ export interface PackageContentsProps {}
 
 const PackageContents: React.FC = () => {
   return (
-    <ContentsArea>
-      <ContentsCard
-        header={<h2>PackageProject</h2>}
-        contents={`<h1>yoonjonglyu.github.io</h1><hr />
+    <Container>
+      <ContentsArea>
+        <ContentsCard
+          header={<h2>PackageProject</h2>}
+          contents={`<h1>yoonjonglyu.github.io</h1><hr />
 
 <h2> 기획</h2><hr />
 
@@ -36,8 +48,10 @@ const PackageContents: React.FC = () => {
 </p>
 <h2> LICNESE</h2><hr />
 <p>MIT</p>`}
-      />
-    </ContentsArea>
+        />
+      </ContentsArea>
+      <PackageSide />
+    </Container>
   );
 };
 
