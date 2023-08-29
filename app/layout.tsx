@@ -27,6 +27,10 @@ export default function RootLayout({
           href='https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap'
           rel='stylesheet'
         />
+        <script
+          async
+          src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2309708500958644'
+          crossOrigin='anonymous'></script>
       </head>
       <body>
         <ConfigureStore>
