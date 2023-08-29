@@ -1,7 +1,14 @@
+'use client'
 import React from 'react';
 import { styled } from 'styled-components';
 
 import PostCard from '../../components/molecules/PostCard';
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: row;
+  margin: 24px 3px;
+`;
 
 const ListArea = styled.section`
   flex: 1;
@@ -19,17 +26,19 @@ export interface ToyListProps {}
 
 const ToyList: React.FC<ToyListProps> = () => {
   return (
-    <ListArea>
-      {new Array(20).fill(true).map((item, key) => (
-        <PostCard
-          key={key}
-          thumnail={{ alt: 'test' }}
-          href='/'
-          title='item'
-          description='item description'
-        />
-      ))}
-    </ListArea>
+    <Container>
+      <ListArea>
+        {new Array(20).fill(true).map((item, key) => (
+          <PostCard
+            key={key}
+            thumnail={{ alt: 'test' }}
+            href='/'
+            title='item'
+            description='item description'
+          />
+        ))}
+      </ListArea>
+    </Container>
   );
 };
 
