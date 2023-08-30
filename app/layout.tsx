@@ -1,6 +1,9 @@
 import { Metadata } from 'next';
 import 'normalize.css/normalize.css';
 
+import StyledComponentsRegistry, {
+  GlobalCSS,
+} from '../provider/style/GlobalCSS';
 import BasicLayout from '../components/layouts/BasicLayout';
 import ConfigureStore from '../store';
 
@@ -33,9 +36,12 @@ export default function RootLayout({
           crossOrigin='anonymous'></script>
       </head>
       <body>
-        <ConfigureStore>
-          <BasicLayout>{children}</BasicLayout>
-        </ConfigureStore>
+        <StyledComponentsRegistry>
+          <ConfigureStore>
+            <GlobalCSS />
+            <BasicLayout>{children}</BasicLayout>
+          </ConfigureStore>
+        </StyledComponentsRegistry>
       </body>
     </html>
   );
