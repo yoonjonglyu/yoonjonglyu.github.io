@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import ProjectArticlePage from './page';
 
 const meta: Meta<typeof ProjectArticlePage> = {
-  title: 'Archive/Page/Project/article',
+  title: 'Archive/Page/Project/Article',
   component: ProjectArticlePage,
   tags: ['autodocs'],
   argTypes: {},
