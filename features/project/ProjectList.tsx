@@ -1,8 +1,10 @@
 'use client';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { styled } from 'styled-components';
 
 import PostCard from '../../components/molecules/PostCard';
+
+import useProjectList from '../../hooks/project/useProjectList';
 
 const Container = styled.div`
   display: flex;
@@ -24,16 +26,22 @@ const ListArea = styled.section`
 export interface ProjectListProps {}
 
 const ProjectList: React.FC<ProjectListProps> = () => {
+  const { projectList, updateProjectList } = useProjectList();
+
+  useEffect(() => {
+    updateProjectList();
+  }, []);
+
   return (
     <Container>
       <ListArea>
-        {new Array(20).fill(true).map((item, key) => (
+        {projectList.map((item) => (
           <PostCard
-            key={key}
-            thumnail={{ alt: 'test' }}
-            href='/'
-            title='item'
-            description='item description'
+            key={item.idx}
+            thumnail={{ src: item.img, alt: item.title }}
+            href={`/project/article?post=${item.idx}`}
+            title={item.title}
+            description={item.description}
           />
         ))}
       </ListArea>

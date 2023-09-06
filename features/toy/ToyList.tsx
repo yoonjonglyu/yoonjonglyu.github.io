@@ -1,8 +1,10 @@
-'use client'
-import React from 'react';
+'use client';
+import React, { useEffect } from 'react';
 import { styled } from 'styled-components';
 
 import PostCard from '../../components/molecules/PostCard';
+
+import useToyList from '../../hooks/toy/useToyList';
 
 const Container = styled.div`
   display: flex;
@@ -25,16 +27,22 @@ const ListArea = styled.section`
 export interface ToyListProps {}
 
 const ToyList: React.FC<ToyListProps> = () => {
+  const { toyList, updateToyList } = useToyList();
+
+  useEffect(() => {
+    updateToyList();
+  }, []);
+
   return (
     <Container>
       <ListArea>
-        {new Array(20).fill(true).map((item, key) => (
+        {toyList.map((item, key) => (
           <PostCard
-            key={key}
-            thumnail={{ alt: 'test' }}
-            href='/'
-            title='item'
-            description='item description'
+            key={item.idx}
+            thumnail={{ src: item.img, alt: item.title }}
+            href={`/toy/article?post=${item.idx}`}
+            title={item.title}
+            description={item.description}
           />
         ))}
       </ListArea>

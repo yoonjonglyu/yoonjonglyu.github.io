@@ -2,6 +2,7 @@ import React from 'react';
 import type { Preview } from '@storybook/react';
 
 import { GlobalCSS } from '../provider/style/GlobalCSS';
+import ConfigureStore from '../store';
 
 const preview: Preview = {
   parameters: {
@@ -15,10 +16,10 @@ const preview: Preview = {
   },
   decorators: [
     (Story) => (
-      <>
+      <ConfigureStore>
         <GlobalCSS />
         <Story />
-      </>
+      </ConfigureStore>
     ),
   ],
 };
