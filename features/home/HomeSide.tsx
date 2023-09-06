@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import Link from 'next/link';
 
 import SideCard from '../../components/molecules/SideCard';
+
+import useToyList from '../../hooks/toy/useToyList';
+import useProjectList from '../../hooks/project/useProjectList';
+import usePackageList from '../../hooks/package/usePackageList';
 
 const SideArea = styled.aside`
   flex: 1;
@@ -44,72 +48,52 @@ const CardHead = styled.h3`
 export interface HomeSideProps {}
 
 const HomeSide: React.FC<HomeSideProps> = () => {
+  const { ToyNavList, updateToyList } = useToyList();
+  const { projectNavList, updateProjectList } = useProjectList();
+  const { packageList, updatePackageList } = usePackageList();
+
+  useEffect(() => {
+    updateToyList();
+    updateProjectList();
+    updatePackageList();
+  }, []);
+
   return (
     <SideArea>
       <SideCard
         header={<CardHead>Toy</CardHead>}
         contents={
           <ul>
-            <li>
-              <Link href='#'>리스트업 목록</Link>
-            </li>
-            <li>
-              <Link href='#'>리스트업 목록</Link>
-            </li>
-            <li>
-              <Link href='#'>리스트업 목록</Link>
-            </li>
-            <li>
-              <Link href='#'>리스트업 목록</Link>
-            </li>
-            <li>
-              <Link href='#'>리스트업 목록</Link>
-            </li>
+            {ToyNavList.map((item) => (
+              <li>
+                <Link href={`/toy/article?post=${item.idx}`}>{item.title}</Link>
+              </li>
+            ))}
           </ul>
         }
       />
       <SideCard
         header={<CardHead>Project</CardHead>}
         contents={
-          <ol>
-            <li>
-              <Link href='#'>리스트업 목록</Link>
-            </li>
-            <li>
-              <Link href='#'>리스트업 목록</Link>
-            </li>
-            <li>
-              <Link href='#'>리스트업 목록</Link>
-            </li>
-            <li>
-              <Link href='#'>리스트업 목록</Link>
-            </li>
-            <li>
-              <Link href='#'>리스트업 목록</Link>
-            </li>
-          </ol>
+          <ul>
+            {projectNavList.map((item) => (
+              <li>
+                <Link href={`/project/article?post=${item.idx}`}>{item.title}</Link>
+              </li>
+            ))}
+          </ul>
         }
       />
       <SideCard
         header={<CardHead>Package</CardHead>}
         contents={
-          <ol>
-            <li>
-              <Link href='#'>리스트업 목록</Link>
-            </li>
-            <li>
-              <Link href='#'>리스트업 목록</Link>
-            </li>
-            <li>
-              <Link href='#'>리스트업 목록</Link>
-            </li>
-            <li>
-              <Link href='#'>리스트업 목록</Link>
-            </li>
-            <li>
-              <Link href='#'>리스트업 목록</Link>
-            </li>
-          </ol>
+          <ul>
+            {packageList.map((item) => (
+              <li>
+                <Link href={`/package?post=${item.idx}`}>{item.title}</Link>
+              </li>
+            ))}
+          </ul>
         }
       />
     </SideArea>
