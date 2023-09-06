@@ -8,10 +8,10 @@ const CarouselContainer = styled.div`
   position: relative;
   border: 0.8px dashed var(--color-point);
 `;
-const CarouselItemBox = styled.div<{ carouselheight?: string }>`
+const CarouselItemBox = styled.div<{ $carouselheight?: string }>`
   width: 100%;
-  min-height: ${({ carouselheight }) =>
-    carouselheight !== undefined ? carouselheight : '300px'};
+  min-height: ${({ $carouselheight }) =>
+    $carouselheight !== undefined ? $carouselheight : '300px'};
   height: 100%;
 `;
 const CarouselDot = styled.div`
@@ -60,7 +60,7 @@ const WCarousel: React.FC<WCarouselProps> = ({ items, carouselHeight }) => {
     <CarouselContainer>
       <Swipe
         item={items.map((item, index) => (
-          <CarouselItemBox key={index} carouselheight={carouselHeight}>
+          <CarouselItemBox key={index} $carouselheight={carouselHeight}>
             {item}
           </CarouselItemBox>
         ))}
