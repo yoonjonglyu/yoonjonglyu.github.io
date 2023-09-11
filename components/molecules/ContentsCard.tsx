@@ -21,6 +21,11 @@ const ContentsBody = styled.div`
   hr {
     border-color: var(--color-unique);
   }
+  iframe {
+    width: 100%;
+    min-height: 500px;
+    background: #fff;
+  }
 `;
 
 export interface ContentsCardProps {

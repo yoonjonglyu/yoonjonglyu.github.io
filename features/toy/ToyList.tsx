@@ -36,7 +36,7 @@ const ToyList: React.FC<ToyListProps> = () => {
   return (
     <Container>
       <ListArea>
-        {toyList.map((item, key) => (
+        {toyList.map((item) => (
           <PostCard
             key={item.idx}
             thumnail={{ src: item.img, alt: item.title }}

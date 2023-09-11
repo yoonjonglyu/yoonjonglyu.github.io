@@ -30,7 +30,9 @@ const PackageContents: React.FC = () => {
       <ContentsArea>
         <ContentsCard
           header={<h2>PackageProject</h2>}
-          contents={`<h1>yoonjonglyu.github.io</h1><hr />
+          contents={`
+          <iframe src="https://yoonjonglyu.github.io/memo/">iframe을 지원하지 않는 브라우저입니다.</iframe>
+          <h1>yoonjonglyu.github.io</h1><hr />
 
 <h2> 기획</h2><hr />
 
