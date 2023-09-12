@@ -6,6 +6,7 @@ import StyledComponentsRegistry, {
 } from '../provider/style/GlobalCSS';
 import BasicLayout from '../components/layouts/BasicLayout';
 import ConfigureStore from '../store';
+import ReactQueryProvider from '../provider/query/QueryProvider';
 
 export const metadata: Metadata = {
   title: 'ISA Archive',
@@ -38,8 +39,10 @@ export default function RootLayout({
       <body>
         <StyledComponentsRegistry>
           <ConfigureStore>
-            <GlobalCSS />
-            <BasicLayout>{children}</BasicLayout>
+            <ReactQueryProvider>
+              <GlobalCSS />
+              <BasicLayout>{children}</BasicLayout>
+            </ReactQueryProvider>
           </ConfigureStore>
         </StyledComponentsRegistry>
       </body>
