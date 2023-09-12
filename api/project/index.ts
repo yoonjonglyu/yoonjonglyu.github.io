@@ -8,3 +8,11 @@ export const GetProjectList = async () =>
     },
     (err) => console.error(err),
   );
+export const GetProjectContents = async (index: string) =>
+  errHandler(
+    async () => {
+      const { data } = await baseApi(`project/${index}.html`);
+      return data;
+    },
+    (err) => console.error(err),
+  );
