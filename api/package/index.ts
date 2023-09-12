@@ -8,3 +8,12 @@ export const GetPackageList = async () =>
     },
     (err) => console.error(err),
   );
+
+export const GetPackageContents = async (index: string) =>
+  errHandler(
+    async () => {
+      const { data } = await baseApi(`package/${index}.html`);
+      return data;
+    },
+    (err) => console.error(err),
+  );
