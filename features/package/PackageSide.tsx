@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 import SideCard from '../../components/molecules/SideCard';
 
-import useProjectList from '../../hooks/project/useProjectList';
+import usePackageList from '../../hooks/package/usePackageList';
 
 const SideArea = styled.aside`
   flex: 1;
@@ -39,10 +39,10 @@ const CardHead = styled.h3`
 export interface PackageSideProps {}
 
 const PackageSide: React.FC<PackageSideProps> = () => {
-  const { projectList, updateProjectList } = useProjectList();
+  const { packageList, updatePackageList } = usePackageList();
 
   useEffect(() => {
-    updateProjectList();
+    updatePackageList();
   }, []);
 
   return (
@@ -54,7 +54,7 @@ const PackageSide: React.FC<PackageSideProps> = () => {
         header={<CardHead>Package List</CardHead>}
         contents={
           <ul>
-            {projectList.map((item) => {
+            {packageList.map((item) => {
               return (
                 <li key={item.idx}>
                   <Link href={`/project?post=${item.idx}`}>{item.title}</Link>
