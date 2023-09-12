@@ -1,10 +1,10 @@
-import { baseApi } from '..';
+import { baseApi, errHandler } from '..';
 
-export const GetToyList = async () => {
-  try {
-    const { data } = await baseApi(`toy/list.json`);
-    return data;
-  } catch (err) {
-    console.error(err);
-  }
-};
+export const GetToyList = async () =>
+  errHandler(
+    async () => {
+      const { data } = await baseApi(`toy/list.json`);
+      return data;
+    },
+    (err) => console.error(err),
+  );
