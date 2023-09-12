@@ -8,3 +8,11 @@ export const GetToyList = async () =>
     },
     (err) => console.error(err),
   );
+export const GetToyContents = async (index: string) =>
+  errHandler(
+    async () => {
+      const { data } = await baseApi(`toy/${index}.html`);
+      return data;
+    },
+    (err) => console.error(err),
+  );
