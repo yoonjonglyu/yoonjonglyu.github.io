@@ -1,9 +1,11 @@
 'use client';
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { styled } from 'styled-components';
 import { getQuery } from 'isa-util';
 
 import ContentsCard from '../../components/molecules/ContentsCard';
+
+import useProjectContents from '../../hooks/project/useProjectContents';
 
 const Container = styled.div`
   display: flex;
@@ -25,17 +27,13 @@ const ArticleArea = styled.section`
 export interface ProjectArticleProps {}
 
 const ProjectArticle: React.FC<ProjectArticleProps> = () => {
-  const [isQuery, setIsQuery] = useState(true);
-
-  useEffect(() => {
-    const Query = getQuery();
-    if (typeof Query.get('post') !== 'string') setIsQuery(false);
-  }, []);
+  const index = window === undefined ? 0 : parseInt(getQuery().get('post'));
+  const { data } = useProjectContents(index);
 
   return (
     <Container>
       <ArticleArea>
-        <ContentsCard header={'project article'} contents={'asdsda'} />
+        <ContentsCard header={'project article'} contents={data} />
       </ArticleArea>
     </Container>
   );
