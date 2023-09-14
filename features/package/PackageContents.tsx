@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { getQuery } from 'isa-util';
 
@@ -28,8 +28,13 @@ const ContentsArea = styled.section`
 export interface PackageContentsProps {}
 
 const PackageContents: React.FC = () => {
-  const index = window === undefined ? 0 : parseInt(getQuery().get('post'));
+  const [index, setIndex] = useState(0);
   const { data } = usePackageContents(index);
+
+  useEffect(() => {
+    const post = parseInt(getQuery().get('post'));
+    if (!isNaN(post)) setIndex(post);
+  }, []);
 
   return (
     <Container>

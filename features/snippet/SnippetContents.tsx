@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { getQuery } from 'isa-util';
 
@@ -28,16 +28,18 @@ const ContentsArea = styled.section`
 export interface SnippetContentsProps {}
 
 const SnippetContents: React.FC = () => {
-  const index = window === undefined ? 0 : parseInt(getQuery().get('post'));
+  const [index, setIndex] = useState(0);
   const { data } = useSnippetContents(index);
 
+  useEffect(() => {
+    const post = parseInt(getQuery().get('post'));
+    if (!isNaN(post)) setIndex(post);
+  }, []);
+  
   return (
     <Container>
       <ContentsArea>
-        <ContentsCard
-          header={<h2>Snippet</h2>}
-          contents={data}
-        />
+        <ContentsCard header={<h2>Snippet</h2>} contents={data} />
       </ContentsArea>
       <SnippetSide />
     </Container>
