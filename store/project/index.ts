@@ -15,7 +15,7 @@ export interface ProjectNavListState {
   idx: number;
   title: string;
 }
-export const ToyNavListState = selector<ProjectNavListState[]>({
+export const ProjectNavListState = selector<ProjectNavListState[]>({
   key: 'ProjectNavList',
   get: ({ get }) => {
     const State = get(ProjectListState);

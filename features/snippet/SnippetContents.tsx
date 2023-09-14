@@ -1,9 +1,12 @@
-'use client'
+'use client';
 import React from 'react';
 import styled from 'styled-components';
+import { getQuery } from 'isa-util';
 
 import ContentsCard from '../../components/molecules/ContentsCard';
 import SnippetSide from './SnippetSide';
+
+import useSnippetContents from '../../hooks/snippet/useSnippetContents';
 
 const Container = styled.div`
   display: flex;
@@ -25,12 +28,15 @@ const ContentsArea = styled.section`
 export interface SnippetContentsProps {}
 
 const SnippetContents: React.FC = () => {
+  const index = window === undefined ? 0 : parseInt(getQuery().get('post'));
+  const { data } = useSnippetContents(index);
+
   return (
     <Container>
       <ContentsArea>
         <ContentsCard
           header={<h2>Snippet</h2>}
-          contents={`여기 내용물을 api 콜하는 방식으로 할지 프레임으로 할지 아직 미정`}
+          contents={data}
         />
       </ContentsArea>
       <SnippetSide />

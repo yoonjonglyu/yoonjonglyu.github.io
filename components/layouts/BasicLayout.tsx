@@ -3,8 +3,6 @@ import React from 'react';
 import styled from 'styled-components';
 import Link from 'next/link';
 
-import GlobalCSS from '../../provider/style/GlobalCSS';
-
 const Wrap = styled.div`
   display: flex;
   flex-flow: column wrap;
@@ -86,7 +84,6 @@ interface BasicLayoutProps {
 const BasicLayout: React.FC<BasicLayoutProps> = ({ children }) => {
   return (
     <Wrap>
-      <GlobalCSS />
       <Header>
         <HeaderNav>
         <Link href='/'><strong>ISA Archive</strong></Link>

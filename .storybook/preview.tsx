@@ -1,7 +1,9 @@
 import React from 'react';
 import type { Preview } from '@storybook/react';
 
-import GlobalCSS from '../provider/style/GlobalCSS';
+import { GlobalCSS } from '../provider/style/GlobalCSS';
+import ConfigureStore from '../store';
+import ReactQueryProvider from '../provider/query/QueryProvider';
 
 const preview: Preview = {
   parameters: {
@@ -15,10 +17,12 @@ const preview: Preview = {
   },
   decorators: [
     (Story) => (
-      <>
-        <GlobalCSS />
-        <Story />
-      </>
+      <ConfigureStore>
+        <ReactQueryProvider>
+          <GlobalCSS />
+          <Story />
+        </ReactQueryProvider>
+      </ConfigureStore>
     ),
   ],
 };

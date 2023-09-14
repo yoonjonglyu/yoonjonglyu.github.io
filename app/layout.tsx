@@ -1,8 +1,12 @@
 import { Metadata } from 'next';
 import 'normalize.css/normalize.css';
 
+import StyledComponentsRegistry, {
+  GlobalCSS,
+} from '../provider/style/GlobalCSS';
 import BasicLayout from '../components/layouts/BasicLayout';
 import ConfigureStore from '../store';
+import ReactQueryProvider from '../provider/query/QueryProvider';
 
 export const metadata: Metadata = {
   title: 'ISA Archive',
@@ -33,9 +37,14 @@ export default function RootLayout({
           crossOrigin='anonymous'></script>
       </head>
       <body>
-        <ConfigureStore>
-          <BasicLayout>{children}</BasicLayout>
-        </ConfigureStore>
+        <StyledComponentsRegistry>
+          <ConfigureStore>
+            <ReactQueryProvider>
+              <GlobalCSS />
+              <BasicLayout>{children}</BasicLayout>
+            </ReactQueryProvider>
+          </ConfigureStore>
+        </StyledComponentsRegistry>
       </body>
     </html>
   );

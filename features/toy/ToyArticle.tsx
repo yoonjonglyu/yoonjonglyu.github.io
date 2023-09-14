@@ -5,7 +5,7 @@ import { getQuery } from 'isa-util';
 
 import ContentsCard from '../../components/molecules/ContentsCard';
 
-import useProjectContents from '../../hooks/project/useProjectContents';
+import useToyContents from '../../hooks/toy/useToyContents';
 
 const Container = styled.div`
   display: flex;
@@ -24,11 +24,11 @@ const ArticleArea = styled.section`
   }
 `;
 
-export interface ProjectArticleProps {}
+export interface ToyArticleProps {}
 
-const ProjectArticle: React.FC<ProjectArticleProps> = () => {
+const ToyArticle: React.FC<ToyArticleProps> = () => {
   const index = window === undefined ? 0 : parseInt(getQuery().get('post'));
-  const { data } = useProjectContents(index);
+  const { data } = useToyContents(index);
 
   return (
     <Container>
@@ -39,4 +39,4 @@ const ProjectArticle: React.FC<ProjectArticleProps> = () => {
   );
 };
 
-export default ProjectArticle;
+export default ToyArticle;

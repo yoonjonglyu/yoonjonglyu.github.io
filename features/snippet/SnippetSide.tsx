@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import Link from 'next/link';
 
 import SideCard from '../../components/molecules/SideCard';
+
+import useSnippetList from '../../hooks/snippet/useSnippetList';
 
 const SideArea = styled.aside`
   flex: 1;
@@ -37,6 +39,12 @@ const CardHead = styled.h3`
 export interface SnippetSideProps {}
 
 const SnippetSide: React.FC<SnippetSideProps> = () => {
+  const { snippetList, updateSnippetList } = useSnippetList();
+
+  useEffect(() => {
+    updateSnippetList();
+  }, []);
+
   return (
     <SideArea>
       <SideCard
@@ -46,10 +54,10 @@ const SnippetSide: React.FC<SnippetSideProps> = () => {
         header={<CardHead>Snippet List</CardHead>}
         contents={
           <ul>
-            {new Array(20).fill(true).map((_, key) => {
+            {snippetList.map((item) => {
               return (
-                <li key={key}>
-                  <Link href='#'>스니펫</Link>
+                <li key={item.idx}>
+                  <Link href={`/snippet?post=${item.idx}`}>{item.title}</Link>
                 </li>
               );
             })}
