@@ -3,6 +3,7 @@ import type { Preview } from '@storybook/react';
 
 import { GlobalCSS } from '../provider/style/GlobalCSS';
 import ConfigureStore from '../store';
+import ReactQueryProvider from '../provider/query/QueryProvider';
 
 const preview: Preview = {
   parameters: {
@@ -17,8 +18,10 @@ const preview: Preview = {
   decorators: [
     (Story) => (
       <ConfigureStore>
-        <GlobalCSS />
-        <Story />
+        <ReactQueryProvider>
+          <GlobalCSS />
+          <Story />
+        </ReactQueryProvider>
       </ConfigureStore>
     ),
   ],
