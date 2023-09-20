@@ -23,8 +23,35 @@ const ContentsBody = styled.div`
   }
   iframe {
     width: 100%;
-    min-height: 500px;
+    min-height: 600px;
     background: #fff;
+  }
+  pre {
+    color: #000;
+    margin-top: 0;
+    margin-bottom: 24px;
+    padding: 12px;
+    font-size: 1em;
+    background: #f7f7f7;
+    border-radius: 2;
+    overflow-x: auto;
+  }
+  .pl-k {
+    color: #d73a49;
+  }
+  .pl-v {
+    color: #e36209;
+  }
+  .pl-en {
+    color: #6f42c1;
+  }
+  .pl-ent {
+    color: #22863a;
+  }
+  .pl-c1,
+  .pl-s,
+  .pl-v {
+    color: #005cc5;
   }
 `;
 
