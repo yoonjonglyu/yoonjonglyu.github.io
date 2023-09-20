@@ -34,7 +34,7 @@ const SnippetContents: React.FC = () => {
   useEffect(() => {
     const post = parseInt(getQuery().get('post'));
     if (!isNaN(post)) setIndex(post);
-  }, []);
+  });
   
   return (
     <Container>

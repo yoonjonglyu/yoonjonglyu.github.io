@@ -57,7 +57,7 @@ const PackageSide: React.FC<PackageSideProps> = () => {
             {packageList.map((item) => {
               return (
                 <li key={item.idx}>
-                  <Link href={`/project?post=${item.idx}`}>{item.title}</Link>
+                  <Link href={`/package?post=${item.idx}`}>{item.title}</Link>
                 </li>
               );
             })}
