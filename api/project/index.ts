@@ -13,6 +13,6 @@ export const GetProjectContents = async (index: string) =>
     async () => {
       const { data } = await baseApi(`project/${index}.html`);
       return data;
-    },
+    },      
     (err) => console.error(err),
   );
