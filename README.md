@@ -16,7 +16,7 @@
 ## 링크
 
 - [홈페이지](https://yoonjonglyu.github.io/)
-
+- [스토리북](https://64ee73e8852cf4ea07ac0a39-bibuwbzxbx.chromatic.com/)
 
 ## LICNESE
 
