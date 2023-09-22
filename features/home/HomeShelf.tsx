@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import Card from '../../components/atoms/Card';
 import WCarousel from '../../components/organisms/WCarousel';
+
+import useSelectList from '../../hooks/select/useSelectList';
 
 import NoImage from '../../assets/images/noimg.png';
 
@@ -22,6 +25,13 @@ const Item = styled.ul`
     display: flex;
     flex-direction: column;
     background: #282828;
+  }
+  & li a {
+    text-decoration: none;
+    color: inherit;
+  }
+  & li a:hover {
+    color: var(--color-point);
   }
   & li img {
     width: 100%;
@@ -55,6 +65,12 @@ const Item = styled.ul`
 export interface HomeShelfProps {}
 
 const HomeShelf: React.FC<HomeShelfProps> = () => {
+  const { selectList, updateSelectList } = useSelectList();
+
+  useEffect(() => {
+    updateSelectList();
+  }, []);
+
   return (
     <Card
       css={`
@@ -64,60 +80,27 @@ const HomeShelf: React.FC<HomeShelfProps> = () => {
         }
       `}>
       <WCarousel
-        items={[0, 1].map((item) => {
-          return (
-            <Item key={item}>
-              <li>
-                <Image src={NoImage} alt='article' />
-                <h2>제목</h2>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, but
-                  also the leap into electronic typesetting, remaining
-                  essentially unchanged. It was popularised in the 1960s with
-                  the release of Letraset sheets containing Lorem Ipsum
-                  passages, and more recently with desktop publishing software
-                  like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
-              </li>
-              <li>
-                <Image src={NoImage} alt='article' />
-                <h2>제목</h2>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, but
-                  also the leap into electronic typesetting, remaining
-                  essentially unchanged. It was popularised in the 1960s with
-                  the release of Letraset sheets containing Lorem Ipsum
-                  passages, and more recently with desktop publishing software
-                  like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
-              </li>
-              <li>
-                <Image src={NoImage} alt='article' />
-                <h2>제목</h2>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, but
-                  also the leap into electronic typesetting, remaining
-                  essentially unchanged. It was popularised in the 1960s with
-                  the release of Letraset sheets containing Lorem Ipsum
-                  passages, and more recently with desktop publishing software
-                  like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
-              </li>
-            </Item>
-          );
-        })}
+        items={[selectList.slice(0, 3), selectList.slice(3, 6)].map(
+          (items: typeof selectList, key) => {
+            return (
+              <Item key={key}>
+                {items.map((item) => {
+                  return (
+                    <li key={item.idx}>
+                      <Link href={item.href || ''}>
+                        <Image src={item.img || NoImage} alt='article' />
+                      </Link>
+                      <Link href={item.href || ''}>
+                        <h2>{item.title}</h2>
+                        <p>{item.description}</p>
+                      </Link>
+                    </li>
+                  );
+                })}
+              </Item>
+            );
+          },
+        )}
         carouselHeight='300px'
       />
     </Card>

@@ -4,7 +4,7 @@ export interface ProjectListState {
   idx: number;
   title: string;
   description: string;
-  img: string;
+  img?: string;
 }
 export const ProjectListState = atom<ProjectListState[]>({
   key: 'ProjectList',

@@ -51,7 +51,7 @@ const PostCard: React.FC<PostCardProps> = (props) => {
   return (
     <Card
       css={`
-        width: 100%;
+        width: 98%;
         max-width: 280px;
         padding: 0; 
         border-radius: 4px;
@@ -63,6 +63,10 @@ const PostCard: React.FC<PostCardProps> = (props) => {
         }
         & a:hover {
           color: var(--color-point);
+        }
+        @media (max-width: 590px) {
+          max-width: unset;
+          margin: 0 auto;
         }
       `}>
       <CardThumnail>

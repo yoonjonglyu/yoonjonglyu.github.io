@@ -7,7 +7,7 @@ import { GetSnippetList } from '../../api/snippet';
 const useSnippetList = () => {
   const [snippetList, setSnippetList] = useRecoilState(SnippetListState);
 
-  const updateSnippetList = async () => {
+  const updateSnippetList = async () =>  {
     const res = await GetSnippetList();
     setSnippetList(res || []);
   };
