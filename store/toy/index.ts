@@ -4,7 +4,7 @@ export interface ToyListState {
   idx: number;
   title: string;
   description: string;
-  img: string;
+  img?: string;
 }
 export const ToyListState = atom<ToyListState[]>({
   key: 'toyList',
