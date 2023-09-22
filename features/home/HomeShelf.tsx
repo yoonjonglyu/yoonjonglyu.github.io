@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import Card from '../../components/atoms/Card';
 import WCarousel from '../../components/organisms/WCarousel';
@@ -24,6 +25,13 @@ const Item = styled.ul`
     display: flex;
     flex-direction: column;
     background: #282828;
+  }
+  & li a {
+    text-decoration: none;
+    color: inherit;
+  }
+  & li a:hover {
+    color: var(--color-point);
   }
   & li img {
     width: 100%;
@@ -79,9 +87,13 @@ const HomeShelf: React.FC<HomeShelfProps> = () => {
                 {items.map((item) => {
                   return (
                     <li key={item.idx}>
-                      <Image src={item.img || NoImage} alt='article' />
-                      <h2>{item.title}</h2>
-                      <p>{item.description}</p>
+                      <Link href={item.href || ''}>
+                        <Image src={item.img || NoImage} alt='article' />
+                      </Link>
+                      <Link href={item.href || ''}>
+                        <h2>{item.title}</h2>
+                        <p>{item.description}</p>
+                      </Link>
                     </li>
                   );
                 })}
