@@ -11,6 +11,9 @@ import ReactQueryProvider from '../provider/query/QueryProvider';
 export const metadata: Metadata = {
   title: 'ISA Archive',
   description: 'dev ISA archive',
+  authors: [{ name: 'yoonjonglyu' }],
+  keywords: ['devlop', 'ISA', 'frontend', 'archive', '개발', '프론트엔드', 'react'],
+  robots: { index: true, follow: true },
 };
 
 export default function RootLayout({
@@ -35,6 +38,14 @@ export default function RootLayout({
           async
           src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2309708500958644'
           crossOrigin='anonymous'></script>
+        <meta
+          name='google-site-verification'
+          content='qdEnPRuxwkkMBg_va4KDeC4Hb2g5XeMuQETPiTQWZ9U'
+        />
+        <meta
+          name='naver-site-verification'
+          content='fb761146a5d49fa296db396340c978aac6259845'
+        />
       </head>
       <body>
         <StyledComponentsRegistry>
