@@ -45,3 +45,7 @@ jobs:
             folder: out
             branch: gh-pages
             clean: true
+      - name: generate-sitemap
+  # You may pin to the exact commit or the version.
+  # uses: cicirello/generate-sitemap@e63c84b065d5530faaa5d8b95d3d53b1e974952f
+        uses: cicirello/generate-sitemap@v1.9.1
