@@ -65,7 +65,7 @@ const HomeSide: React.FC<HomeSideProps> = () => {
         contents={
           <ul>
             {ToyNavList.map((item) => (
-              <li>
+              <li key={item.idx}>
                 <Link href={`/toy/article?post=${item.idx}`}>{item.title}</Link>
               </li>
             ))}
@@ -77,7 +77,7 @@ const HomeSide: React.FC<HomeSideProps> = () => {
         contents={
           <ul>
             {projectNavList.map((item) => (
-              <li>
+              <li key={item.idx}>
                 <Link href={`/project/article?post=${item.idx}`}>{item.title}</Link>
               </li>
             ))}
@@ -89,7 +89,7 @@ const HomeSide: React.FC<HomeSideProps> = () => {
         contents={
           <ul>
             {packageList.map((item) => (
-              <li>
+              <li key={item.idx}>
                 <Link href={`/package?post=${item.idx}`}>{item.title}</Link>
               </li>
             ))}

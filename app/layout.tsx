@@ -14,6 +14,12 @@ export const metadata: Metadata = {
   authors: [{ name: 'yoonjonglyu' }],
   keywords: ['devlop', 'ISA', 'frontend', 'archive', '개발', '프론트엔드', 'react'],
   robots: { index: true, follow: true },
+  openGraph: {
+    title: '개발자ISA 아카이브',
+    type: 'website',
+    url: 'https://yoonjonglyu.github.io/',
+    description: '개인적으로 개발한 잡다한 것들을 정리해서 아카이브 하기 위한 사이트입니다.'
+  }
 };
 
 export default function RootLayout({
