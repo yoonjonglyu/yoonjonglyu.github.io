@@ -41,6 +41,8 @@ jobs:
           CI: true
           DEPLORY_TARGET: gh-pages
       - run: touch out/.nojekyll
+      - run: touch out/robot.txt
+      - run: echo -e "User-agent: *\nAllow:/" > out/robot.txt
       - name: generate-sitemap
   # You may pin to the exact commit or the version.
   # uses: cicirello/generate-sitemap@e63c84b065d5530faaa5d8b95d3d53b1e974952f
