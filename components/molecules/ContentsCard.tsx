@@ -58,15 +58,13 @@ const ContentsBody = styled.div`
 export interface ContentsCardProps {
   header: React.ReactNode;
   contents: string;
-  headerProps?: typeof ContentsHeader;
-  bodyProps?: typeof ContentsBody;
+  CSS?: string;
 }
 
 const ContentsCard: React.FC<ContentsCardProps> = ({
   header,
   contents,
-  headerProps,
-  bodyProps,
+  CSS,
 }) => {
   return (
     <Card
@@ -74,13 +72,13 @@ const ContentsCard: React.FC<ContentsCardProps> = ({
         flex: 1;
         min-height: 600px;
         overflow: hidden;
+        ${CSS}
       `}>
-      <ContentsHeader {...headerProps}>{header}</ContentsHeader>
+      <ContentsHeader>{header}</ContentsHeader>
       <ContentsBody
         dangerouslySetInnerHTML={{
           __html: contents,
         }}
-        {...bodyProps}
       />
     </Card>
   );
