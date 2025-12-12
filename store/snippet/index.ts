@@ -1,10 +1,7 @@
-import { atom } from 'recoil';
+import { atom } from 'jotai';
 
 export interface SnippetListState {
   idx: number;
   title: string;
 }
-export const SnippetListState = atom<SnippetListState[]>({
-  key: 'snippetList',
-  default: [],
-});
+export const SnippetListState = atom<SnippetListState[]>([]);

@@ -1,4 +1,4 @@
-import { atom, selector } from 'recoil';
+import { atom } from 'jotai';
 
 export interface ToyListState {
   idx: number;
@@ -6,19 +6,13 @@ export interface ToyListState {
   description: string;
   img?: string;
 }
-export const ToyListState = atom<ToyListState[]>({
-  key: 'toyList',
-  default: [],
-});
+export const ToyListState = atom<ToyListState[]>([]);
 
 export interface ToyNavListState {
   idx: number;
   title: string;
 }
-export const ToyNavListState = selector<ToyNavListState[]>({
-  key: 'toyNavList',
-  get: ({ get }) => {
-    const toyState = get(ToyListState);
-    return toyState.map((item) => ({ idx: item.idx, title: item.title }));
-  },
+export const ToyNavListState = atom<ToyNavListState[]>((get) => {
+  const toyState = get(ToyListState);
+  return toyState.map((item) => ({ idx: item.idx, title: item.title }));
 });

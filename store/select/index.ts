@@ -1,4 +1,4 @@
-import { atom } from 'recoil';
+import { atom } from 'jotai';
 
 export interface SelectListState {
   idx: number;
@@ -7,7 +7,4 @@ export interface SelectListState {
   img?: string;
   href: string;
 }
-export const SelectListState = atom<SelectListState[]>({
-  key: 'selectList',
-  default: [],
-});
+export const SelectListState = atom<SelectListState[]>([]);

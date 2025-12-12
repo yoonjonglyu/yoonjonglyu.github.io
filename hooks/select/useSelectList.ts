@@ -1,11 +1,11 @@
-import { useRecoilState } from 'recoil';
+import { useAtom } from 'jotai';
 
 import { SelectListState } from '../../store/select';
 
 import { GetSelectList } from '../../api/select';
 
 const useSelectList = () => {
-  const [selectList, setSelectList] = useRecoilState(SelectListState);
+  const [selectList, setSelectList] = useAtom(SelectListState);
 
   const updateSelectList = async () => {
     const res = await GetSelectList();

@@ -1,10 +1,7 @@
-import { atom } from 'recoil';
+import { atom } from 'jotai';
 
 export interface PackageListState {
   idx: number;
   title: string;
 }
-export const PackageListState = atom<PackageListState[]>({
-  key: 'packageList',
-  default: [],
-});
+export const PackageListState = atom<PackageListState[]>([]);

@@ -1,12 +1,12 @@
-import { useRecoilState, useRecoilValue } from 'recoil';
+import { useAtom,useAtomValue} from 'jotai';
 
 import { ToyListState, ToyNavListState } from '../../store/toy';
 
 import { GetToyList } from '../../api/toy';
 
 const useToyList = () => {
-  const [toyList, setToyList] = useRecoilState(ToyListState);
-  const ToyNavList = useRecoilValue(ToyNavListState);
+  const [toyList, setToyList] = useAtom(ToyListState);
+  const ToyNavList = useAtomValue(ToyNavListState);
 
   const updateToyList = async () => {
     const res = await GetToyList();

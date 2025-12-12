@@ -45,7 +45,7 @@ const WCarousel: React.FC<WCarouselProps> = ({ items, carouselHeight }) => {
   const handleDot = (index: number) => {
     if (DotsRef.current !== null) {
       DotsRef.current.childNodes.forEach(
-        (node: { style: { listStyle: any } }, idx: number) => {
+        (node: { style: { listStyle: unknown } }, idx: number) => {
           node.style.listStyle = index === idx ? 'disc' : 'circle';
         },
       );
