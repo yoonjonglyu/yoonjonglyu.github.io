@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     'react',
     'project',
   ],
+  openGraph: {
+    images: [`/api/og?title=Project`]
+  },
 };
 
 export default function ProjectPage() {

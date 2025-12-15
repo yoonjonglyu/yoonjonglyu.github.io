@@ -37,6 +37,6 @@ export const Archive = defineDocumentType(() => ({
 }));
 
 export default makeSource({
-  contentDirPath: 'src/content',
+  contentDirPath: 'content',
   documentTypes: [Project, Archive],
 });

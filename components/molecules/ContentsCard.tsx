@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Mdx } from '@components/mdx';
 
 import Card from '../atoms/Card';
 
@@ -75,11 +76,9 @@ const ContentsCard: React.FC<ContentsCardProps> = ({
         ${CSS}
       `}>
       <ContentsHeader>{header}</ContentsHeader>
-      <ContentsBody
-        dangerouslySetInnerHTML={{
-          __html: contents,
-        }}
-      />
+      <ContentsBody>
+        <Mdx code={contents} />
+      </ContentsBody>
     </Card>
   );
 };

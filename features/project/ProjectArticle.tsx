@@ -1,11 +1,10 @@
 'use client';
-import React, { useState, useEffect } from 'react';
+import { type FC } from 'react';
 import { styled } from 'styled-components';
-import { getQuery } from 'isa-util';
+import { notFound } from 'next/navigation';
+import { allProjects } from '@contentlayer/generated';
 
 import ContentsCard from '../../components/molecules/ContentsCard';
-
-import useProjectContents from '../../hooks/project/useProjectContents';
 
 const Container = styled.div`
   display: flex;
@@ -23,22 +22,21 @@ const ArticleArea = styled.section`
     justify-content: center;
   }
 `;
+export interface ProjectArticleProps {
+  params: {
+    slug: string;
+  };
+}
 
-export interface ProjectArticleProps {}
+const ProjectArticle: FC<ProjectArticleProps> = ({ params }) => {
+  const project = allProjects.find((p) => p.slug === params.slug);
 
-const ProjectArticle: React.FC<ProjectArticleProps> = () => {
-  const [index, setIndex] = useState(0);
-  const { data } = useProjectContents(index);
-
-  useEffect(() => {
-    const post = parseInt(getQuery().get('post'));
-    if (!isNaN(post)) setIndex(post);
-  }, []);
+  if (!project) return notFound();
 
   return (
     <Container>
       <ArticleArea>
-        <ContentsCard header={'project article'} contents={data} />
+        <ContentsCard header={'project article'} contents={project.body.code} />
       </ArticleArea>
     </Container>
   );
