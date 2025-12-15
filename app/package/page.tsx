@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     'react',
     'Package',
   ],
+    openGraph: {
+    images: [`/api/og?title=Package`]
+  },
 };
 
 export default function PackagePage() {
