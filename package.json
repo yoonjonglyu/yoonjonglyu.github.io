@@ -23,9 +23,12 @@
   "license": "MIT",
   "dependencies": {
     "axios": "^1.5.0",
+    "contentlayer": "^0.3.4",
+    "date-fns": "^4.1.0",
     "isa-util": "^1.0.9",
     "jotai": "^2.16.0",
     "next": "16.0.10",
+    "next-contentlayer": "^0.3.4",
     "normalize.css": "^8.0.1",
     "react": "19.2.3",
     "react-custom-swipe": "^1.2.7",
