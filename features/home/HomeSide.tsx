@@ -1,10 +1,9 @@
-import React, { useEffect } from 'react';
+import { type FC, useEffect } from 'react';
 import styled from 'styled-components';
 import Link from 'next/link';
 
 import SideCard from '../../components/molecules/SideCard';
 
-import useToyList from '../../hooks/toy/useToyList';
 import useProjectList from '../../hooks/project/useProjectList';
 import usePackageList from '../../hooks/package/usePackageList';
 
@@ -45,40 +44,26 @@ const CardHead = styled.h3`
   color: var(--color-unique);
 `;
 
-export interface HomeSideProps {}
-
-const HomeSide: React.FC<HomeSideProps> = () => {
-  const { ToyNavList, updateToyList } = useToyList();
+const HomeSide: FC = () => {
   const { projectNavList, updateProjectList } = useProjectList();
   const { packageList, updatePackageList } = usePackageList();
 
   useEffect(() => {
-    updateToyList();
     updateProjectList();
     updatePackageList();
-  }, []);
+  }, [updateProjectList, updatePackageList]);
 
   return (
     <SideArea>
-      <SideCard
-        header={<CardHead>Toy</CardHead>}
-        contents={
-          <ul>
-            {ToyNavList.map((item) => (
-              <li key={item.idx}>
-                <Link href={`/toy/article?post=${item.idx}`}>{item.title}</Link>
-              </li>
-            ))}
-          </ul>
-        }
-      />
       <SideCard
         header={<CardHead>Project</CardHead>}
         contents={
           <ul>
             {projectNavList.map((item) => (
               <li key={item.idx}>
-                <Link href={`/project/article?post=${item.idx}`}>{item.title}</Link>
+                <Link href={`/project/${item.idx}`}>
+                  {item.title}
+                </Link>
               </li>
             ))}
           </ul>
@@ -90,7 +75,7 @@ const HomeSide: React.FC<HomeSideProps> = () => {
           <ul>
             {packageList.map((item) => (
               <li key={item.idx}>
-                <Link href={`/package?post=${item.idx}`}>{item.title}</Link>
+                <Link href={`/package/${item.idx}`}>{item.title}</Link>
               </li>
             ))}
           </ul>

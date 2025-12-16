@@ -86,26 +86,25 @@ const BasicLayout: React.FC<BasicLayoutProps> = ({ children }) => {
     <Wrap>
       <Header>
         <HeaderNav>
-        <Link href='/'><strong>ISA Archive</strong></Link>
+          <Link href='/'>
+            <strong>ISA Archive</strong>
+          </Link>
           <ul>
             <li>
-              <Link href='/toy'>Toy</Link>
+              <Link href='/resume'>Resume</Link>
             </li>
             <li>
-              <Link href='/snippet'>Snippet</Link>
+              <Link href='/work'>Work</Link>
             </li>
             <li>
-              <Link href='/project'>Project</Link>
-            </li>
-            <li>
-              <Link href='/package'>Package</Link>
+              <Link href='/archive'>Archive</Link>
             </li>
           </ul>
         </HeaderNav>
       </Header>
       <Contents>{children}</Contents>
       <Footer>
-        <small>© 2023 ISA(yunjonglyu)</small>
+        <small>© 2025 ISA(yunjonglyu)</small>
       </Footer>
     </Wrap>
   );
