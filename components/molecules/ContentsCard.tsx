@@ -67,6 +67,7 @@ const ContentsCard: React.FC<ContentsCardProps> = ({
   contents,
   CSS,
 }) => {
+  const MdxComponents = Mdx({ code: contents });
   return (
     <Card
       css={`
@@ -77,7 +78,7 @@ const ContentsCard: React.FC<ContentsCardProps> = ({
       `}>
       <ContentsHeader>{header}</ContentsHeader>
       <ContentsBody>
-        <Mdx code={contents} />
+        <MdxComponents code={contents} />
       </ContentsBody>
     </Card>
   );

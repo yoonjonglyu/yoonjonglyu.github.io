@@ -36,7 +36,7 @@ const ProjectArticle: FC<ProjectArticleProps> = ({ params }) => {
   return (
     <Container>
       <ArticleArea>
-        <ContentsCard header={'project article'} contents={project.body.code} />
+        <ContentsCard header={project.title} contents={project.body.code} />
       </ArticleArea>
     </Container>
   );

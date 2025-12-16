@@ -2,7 +2,6 @@ import { Metadata } from 'next';
 import { allProjects } from '@contentlayer/generated';
 
 import ProjectArticle from '../../../features/project/ProjectArticle';
-import { Params } from 'next/dist/server/request/params';
 
 export const metadata: Metadata = {
   title: 'ISA Archive - Project Article',

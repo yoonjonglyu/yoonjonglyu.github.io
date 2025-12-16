@@ -1,3 +1,4 @@
+
 import { useMDXComponent } from 'next-contentlayer/hooks';
 
 const mdxComponents = {
@@ -8,11 +9,5 @@ const mdxComponents = {
   code: (props) => <code {...props} />,
 };
 
-export function Mdx({ code }: { code: string }) {
-  const Component = useMDXComponent(code);
-  return (
-    <div className='markdown-body'>
-      <Component components={mdxComponents} />
-    </div>
-  );
-}
+export const Mdx = ({ code }: { code: string })  =>
+ useMDXComponent(code, mdxComponents);
