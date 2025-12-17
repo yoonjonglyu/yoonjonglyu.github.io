@@ -10,8 +10,8 @@ export const Project = defineDocumentType(() => ({
     period: { type: 'string', required: true },
     stack: { type: 'list', of: { type: 'string' } },
     role: { type: 'string' },
-    github: { type: 'string' },
-    demo: { type: 'string' },
+    repository: { type: 'string' },
+    homepage: { type: 'string' },
     tags: { type: 'list', of: { type: 'string' } },
   },
   computedFields: {
@@ -22,13 +22,38 @@ export const Project = defineDocumentType(() => ({
   },
 }));
 
-export const Archive = defineDocumentType(() => ({
-  name: 'Archive',
-  filePathPattern: `archive/*.mdx`,
+export const Package = defineDocumentType(() => ({
+  name: 'Package',
+  filePathPattern: `packages/*.mdx`,
   contentType: 'mdx',
   fields: {
     title: { type: 'string', required: true },
     description: { type: 'string', required: true },
+    period: { type: 'string', required: true },
+    version: { type: 'string', required: true },
+    stack: { type: 'list', of: { type: 'string' } },
+    repository: { type: 'string' },
+    homepage: { type: 'string' },
+    tags: { type: 'list', of: { type: 'string' } },
+  },
+  computedFields: {
+    slug: {
+      type: 'string',
+      resolve: (doc) => doc._raw.sourceFileName.replace(/\.mdx$/, ''),
+    },
+  },
+}));
+
+export const Work = defineDocumentType(() => ({
+  name: 'Work',
+  filePathPattern: `work/*.mdx`,
+  contentType: 'mdx',
+  fields: {
+    title: { type: 'string', required: true },
+    description: { type: 'string', required: true },
+    stack: { type: 'list', of: { type: 'string' } },
+    repository: { type: 'string' },
+    homepage: { type: 'string' },
     tags: { type: 'list', of: { type: 'string' } },
   },
   computedFields: {
@@ -38,5 +63,5 @@ export const Archive = defineDocumentType(() => ({
 
 export default makeSource({
   contentDirPath: 'content',
-  documentTypes: [Project, Archive],
+  documentTypes: [Project, Work, Package],
 });
