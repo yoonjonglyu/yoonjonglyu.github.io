@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 
-import ProjectList from '../../features/project/ProjectList';
+import ProjectList from '../../../features/project/ProjectList';
 
 export const metadata: Metadata = {
   title: 'ISA Archive - Project',

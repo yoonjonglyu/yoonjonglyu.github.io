@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 
-import PackageContents from '../../features/package/PackageContents';
+import PackageContents from '../../../features/package/PackageContents';
 
 export const metadata: Metadata = {
   title: 'ISA Archive - Package',
