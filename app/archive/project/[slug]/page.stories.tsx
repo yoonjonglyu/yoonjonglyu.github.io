@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/nextjs-vite';
 
 import ProjectArticlePage from './page';
 
@@ -13,7 +13,9 @@ export default meta;
 type Story = StoryObj<typeof ProjectArticlePage>;
 
 export const Basic: Story = {
-  args: {},
+  args: {
+    params: { slug: 'memo' },
+  },
   decorators: [
     (Story) => {
       return <Story />;
