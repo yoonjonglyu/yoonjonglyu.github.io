@@ -1,16 +1,16 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import PackageSide from './PackageSide';
+import PackageList from './PackageList';
 
-const meta: Meta<typeof PackageSide> = {
-  title: 'Archive/Features/Package/PackageSide',
-  component: PackageSide,
+const meta: Meta<typeof PackageList> = {
+  title: 'Archive/Features/Package/PackageList',
+  component: PackageList,
   tags: ['autodocs'],
   argTypes: {},
 };
 export default meta;
 
-type Story = StoryObj<typeof PackageSide>;
+type Story = StoryObj<typeof PackageList>;
 
 export const Basic: Story = {
   args: {},

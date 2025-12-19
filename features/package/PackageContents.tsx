@@ -1,12 +1,10 @@
 'use client';
-import React, { useState, useEffect } from 'react';
+import  { type FC } from 'react';
 import styled from 'styled-components';
-import { getQuery } from 'isa-util';
+import { notFound } from 'next/navigation';
+import { allPackages } from '@contentlayer/generated';
 
 import ContentsCard from '../../components/molecules/ContentsCard';
-import PackageSide from './PackageSide';
-
-import usePackageContents from '../../hooks/package/usePackageContents';
 
 const Container = styled.div`
   display: flex;
@@ -25,23 +23,21 @@ const ContentsArea = styled.section`
   overflow: hidden;
 `;
 
-export interface PackageContentsProps {}
+export interface PackageContentsProps {
+  params: {
+    slug: string;
+  };
+}
+const PackageContents: FC<PackageContentsProps> = ({ params }) => {
+  const packageInfo = allPackages.find((p) => p.slug === params.slug);
 
-const PackageContents: React.FC = () => {
-  const [index, setIndex] = useState(0);
-  const { data } = usePackageContents(index);
-
-  useEffect(() => {
-    const post = parseInt(getQuery().get('post'));
-    if (!isNaN(post)) setIndex(post);
-  });
+  if (!packageInfo) return notFound();
 
   return (
     <Container>
       <ContentsArea>
-        <ContentsCard header={<h2>PackageProject</h2>} contents={data} />
+        <ContentsCard header={<h2>PackageProject</h2>} contents={packageInfo.body.code} />
       </ContentsArea>
-      <PackageSide />
     </Container>
   );
 };

@@ -1,7 +1,7 @@
 'use client';
 import { type FC } from 'react';
 import styled from 'styled-components';
-import { allProjects } from '@contentlayer/generated';
+import { allPackages } from '@contentlayer/generated';
 
 import PostCard from '@components/molecules/PostCard';
 
@@ -22,15 +22,15 @@ const ListArea = styled.section`
   }
 `;
 
-const ProjectList: FC = () => {
+const PackageList: FC = () => {
   return (
     <Container>
       <ListArea>
-        {allProjects.map((item) => (
+        {allPackages.map((item) => (
           <PostCard
             key={item.slug}
             thumnail={{ src: '', alt: item.title }}
-            href={`/archive/project/${item.slug}`}
+            href={`/archive/package/${item.slug}`}
             title={item.title}
             description={item.description}
           />
@@ -40,4 +40,4 @@ const ProjectList: FC = () => {
   );
 };
 
-export default ProjectList;
+export default PackageList;
