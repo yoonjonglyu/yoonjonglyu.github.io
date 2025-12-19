@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { notFound } from 'next/navigation';
 import { allProjects } from '@contentlayer/generated';
 
 import ProjectArticle from '@features/project/ProjectArticle';
@@ -22,11 +23,14 @@ export async function generateStaticParams() {
     slug: project.slug,
   }));
 }
-export default async function ProjectArticlePage({
+export default async function PackageArticlePage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>; // 1. Promise 타입으로 정의
 }) {
-  const param = await params;
-  return <ProjectArticle params={param} />;
+  const resolvedParams = await params; // 2. await로 값 추출
+  const packageInfo = allProjects.find((p) => p.slug === resolvedParams.slug);
+
+  if (!packageInfo) return notFound();
+  return <ProjectArticle title={packageInfo.title} content={packageInfo.body.code} />;
 }

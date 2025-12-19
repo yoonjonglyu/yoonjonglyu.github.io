@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import styled from 'styled-components';
-import { Mdx } from '@components/mdx';
 
 import Card from '../atoms/Card';
 
@@ -56,6 +55,12 @@ const ContentsBody = styled.div`
   }
 `;
 
+
+// Storybook 환경인지 확인
+const isStorybook =
+  process.env.STORYBOOK === 'true' ||
+  (typeof window !== 'undefined' && window.location.href.includes('6006'));
+
 export interface ContentsCardProps {
   header: React.ReactNode;
   contents: string;
@@ -67,7 +72,22 @@ const ContentsCard: React.FC<ContentsCardProps> = ({
   contents,
   CSS,
 }) => {
-  const MdxComponents = Mdx({ code: contents });
+  const MdxComponent = useMemo(() => {
+    if (isStorybook) {
+      // 스토리북용 가짜 컴포넌트 즉시 반환
+      return ({ code }: { code: string }) => (
+        <div style={{ padding: '10px', border: '1px dashed #ccc' }}>
+          [Storybook Mdx Mock]: {code}
+        </div>
+      );
+    } else {
+      // 실제 환경에서만 에러 유발 모듈을 require로 불러옴
+      // 이 로직은 스토리북 브라우저에서는 실행되지 않음
+      const { Mdx } = require('@components/mdx');
+      return Mdx({ code: contents });
+    }
+  }, [contents]);
+  
   return (
     <Card
       css={`
@@ -78,7 +98,7 @@ const ContentsCard: React.FC<ContentsCardProps> = ({
       `}>
       <ContentsHeader>{header}</ContentsHeader>
       <ContentsBody>
-        <MdxComponents code={contents} />
+        <MdxComponent code={contents} />
       </ContentsBody>
     </Card>
   );

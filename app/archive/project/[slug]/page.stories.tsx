@@ -1,20 +1,21 @@
 import type { Meta, StoryObj } from '@storybook/nextjs-vite';
 
-import ProjectArticlePage from './page';
+import ProjectArticle from '@features/project/ProjectArticle';
 
-const meta: Meta<typeof ProjectArticlePage> = {
+const meta: Meta<typeof ProjectArticle> = {
   title: 'Archive/Page/Project/Article',
-  component: ProjectArticlePage,
+  component: ProjectArticle,
   tags: ['autodocs'],
   argTypes: {},
 };
 export default meta;
 
-type Story = StoryObj<typeof ProjectArticlePage>;
+type Story = StoryObj<typeof ProjectArticle>;
 
 export const Basic: Story = {
   args: {
-    params: { slug: 'memo' },
+    title: 'Sample Project Title',
+    content: 'This is a sample content for the project.',
   },
   decorators: [
     (Story) => {

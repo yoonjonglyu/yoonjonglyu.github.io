@@ -1,8 +1,6 @@
 'use client';
-import  { type FC } from 'react';
+import { type FC } from 'react';
 import styled from 'styled-components';
-import { notFound } from 'next/navigation';
-import { allPackages } from '@contentlayer/generated';
 
 import ContentsCard from '../../components/molecules/ContentsCard';
 
@@ -24,19 +22,18 @@ const ContentsArea = styled.section`
 `;
 
 export interface PackageContentsProps {
-  params: {
-    slug: string;
-  };
+  content?: string;
 }
-const PackageContents: FC<PackageContentsProps> = ({ params }) => {
-  const packageInfo = allPackages.find((p) => p.slug === params.slug);
+const PackageContents: FC<PackageContentsProps> = ({ content }) => {
 
-  if (!packageInfo) return notFound();
 
   return (
     <Container>
       <ContentsArea>
-        <ContentsCard header={<h2>PackageProject</h2>} contents={packageInfo.body.code} />
+        <ContentsCard
+          header={<h2>PackageProject</h2>}
+          contents={content}
+        />
       </ContentsArea>
     </Container>
   );

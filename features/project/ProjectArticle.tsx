@@ -1,8 +1,6 @@
 'use client';
 import { type FC } from 'react';
 import { styled } from 'styled-components';
-import { notFound } from 'next/navigation';
-import { allProjects } from '@contentlayer/generated';
 
 import ContentsCard from '../../components/molecules/ContentsCard';
 
@@ -23,20 +21,16 @@ const ArticleArea = styled.section`
   }
 `;
 export interface ProjectArticleProps {
-  params: {
-    slug: string;
-  };
+  title?: string;
+  content?: string;
 }
 
-const ProjectArticle: FC<ProjectArticleProps> = ({ params }) => {
-  const project = allProjects.find((p) => p.slug === params.slug);
-
-  if (!project) return notFound();
+const ProjectArticle: FC<ProjectArticleProps> = ({ title, content }) => {
 
   return (
     <Container>
       <ArticleArea>
-        <ContentsCard header={project.title} contents={project.body.code} />
+        <ContentsCard header={title} contents={content} />
       </ArticleArea>
     </Container>
   );
