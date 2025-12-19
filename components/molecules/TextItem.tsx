@@ -1,6 +1,8 @@
 import { type FC } from 'react';
 import styled from 'styled-components';
 
+import Link from 'next/link';
+
 const Item = styled.div`
   display: grid;
   grid-template-columns: 32px 1fr;
@@ -24,10 +26,16 @@ const Index = styled.div`
   line-height: 1.6;
 `;
 
-const Content = styled.div`
+const Content = styled(Link)`
   display: flex;
   flex-direction: column;
   gap: 6px;
+  text-decoration: none;
+  &:active {
+    opacity: 0.8;
+  }
+  
+
 `;
 
 const Title = styled.h3`
@@ -66,6 +74,7 @@ export interface TextItemProps {
   title: string;
   description: string;
   stacks: string[];
+  href?: string;
 }
 
 const TextItem: FC<TextItemProps> = ({
@@ -73,12 +82,13 @@ const TextItem: FC<TextItemProps> = ({
   title,
   description,
   stacks,
+  href
 }) => {
   return (
     <Item>
       <Index>{String(index).padStart(2, '0')}</Index>
 
-      <Content>
+      <Content href={href || '#'}>
         <Title>{title}</Title>
         <Description>{description}</Description>
 

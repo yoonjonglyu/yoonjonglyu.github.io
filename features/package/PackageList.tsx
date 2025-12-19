@@ -3,7 +3,7 @@ import { type FC } from 'react';
 import styled from 'styled-components';
 import { allPackages } from '@contentlayer/generated';
 
-import PostCard from '@components/molecules/PostCard';
+import TextItem from '@components/molecules/TextItem';
 
 const Container = styled.div`
   display: flex;
@@ -26,12 +26,13 @@ const PackageList: FC = () => {
   return (
     <Container>
       <ListArea>
-        {allPackages.map((item) => (
-          <PostCard
+        {allPackages.map((item, index) => (
+          <TextItem
             key={item.slug}
-            thumnail={{ src: '', alt: item.title }}
             href={`/archive/package/${item.slug}`}
             title={item.title}
+            index={index + 1}
+            stacks={item.stack}
             description={item.description}
           />
         ))}
