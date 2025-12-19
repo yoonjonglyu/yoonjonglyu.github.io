@@ -17,13 +17,26 @@ const Item = styled.div`
   &:not(:last-child) {
     border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   }
-  
 `;
 
 const Index = styled.div`
   font-size: 13px;
   color: rgba(255, 255, 255, 0.35);
   line-height: 1.6;
+`;
+const IndexCircle = styled.span`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 20px;
+  height: 20px;
+
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.35);
+
+  border: 1px solid #acacac;
+  border-radius: 50%;
 `;
 
 const Content = styled(Link)`
@@ -34,8 +47,6 @@ const Content = styled(Link)`
   &:active {
     opacity: 0.8;
   }
-  
-
 `;
 
 const Title = styled.h3`
@@ -75,6 +86,7 @@ export interface TextItemProps {
   description: string;
   stacks: string[];
   href?: string;
+  indexCircle?: boolean;
 }
 
 const TextItem: FC<TextItemProps> = ({
@@ -82,11 +94,16 @@ const TextItem: FC<TextItemProps> = ({
   title,
   description,
   stacks,
-  href
+  href,
+  indexCircle = false,
 }) => {
   return (
     <Item>
-      <Index>{String(index).padStart(2, '0')}</Index>
+      {indexCircle ? (
+        <IndexCircle>{String(index).padStart(2, '0')}</IndexCircle>
+      ) : (
+        <Index>{String(index).padStart(2, '0')}</Index>
+      )}
 
       <Content href={href || '#'}>
         <Title>{title}</Title>
