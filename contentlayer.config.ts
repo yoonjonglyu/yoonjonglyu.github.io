@@ -46,7 +46,7 @@ export const Package = defineDocumentType(() => ({
 
 export const Work = defineDocumentType(() => ({
   name: 'Work',
-  filePathPattern: `work/*.mdx`,
+  filePathPattern: `works/*.mdx`,
   contentType: 'mdx',
   fields: {
     title: { type: 'string', required: true },
