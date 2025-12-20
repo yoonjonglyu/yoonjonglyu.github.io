@@ -2,10 +2,13 @@
 import { type FC } from 'react';
 import styled from 'styled-components';
 
-import Header from './ResumeHeader';
-import Footer from './ResumeFooter';
 import Section from '@components/molecules/Section';
+
+import Header from './ResumeHeader';
+import ResumeFocus from './ResumeFocus';
+import ResumeWork from './ResumeWork';
 import ResumeSkill from './ResumeSkill';
+import Footer from './ResumeFooter';
 
 const Container = styled.main`
   width: 794px;
@@ -17,6 +20,7 @@ const Container = styled.main`
   font-size: 14px;
   line-height: 1.6;
 `;
+
 const PageBreak = styled.div`
   page-break-before: always;
 `;
@@ -25,9 +29,12 @@ const Resume: FC = () => {
   return (
     <Container>
       <Header />
-      <Section title='Focus' />
-      <Section title='Selected Projects' />
-      <Section title='Packages & Open Source' />
+      <Section title='Focus'>
+        <ResumeFocus />
+      </Section>
+      <Section title='Work'>
+        <ResumeWork />
+      </Section>
       <PageBreak />
       <Section title='Skills'>
         <ResumeSkill />
