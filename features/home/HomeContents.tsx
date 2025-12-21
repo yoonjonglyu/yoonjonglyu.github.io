@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import { type FC } from 'react';
 import styled from 'styled-components';
 
 import HomeBanner from './HomeBanner';
@@ -20,13 +20,11 @@ const ContentsArea = styled.section`
   flex: 3;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 32px;
   overflow: hidden;
 `;
 
-export interface HomeContentsProps {}
-
-const HomeContents: React.FC<HomeContentsProps> = () => {
+const HomeContents: FC = () => {
   return (
     <Container>
       <ContentsArea>
