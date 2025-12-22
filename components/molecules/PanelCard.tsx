@@ -1,5 +1,5 @@
-import { FC } from 'react';
-import styled from 'styled-components';
+import { FC, useState } from 'react';
+import styled, { css } from 'styled-components';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -12,37 +12,30 @@ export interface PanelCardProps {
   stacks?: string[];
   thumbnail?: {
     src?: string;
-    alt: string;
+    alt?: string;
   };
   featured?: boolean;
 }
 
 const Panel = styled.article<{ featured?: boolean }>`
   width: 100%;
-  max-width: 960px;
-  margin: 0 auto 140px;
-  ${(props) =>
-    props.featured &&
-    `
-  max-width: 1080px;
-`}
-  @media (max-width: 1024px) {
-    margin: 0 auto 68px;
-  }
+  max-width: ${({ featured }) => (featured ? '1080px' : '960px')};
+  margin: 0 auto;
+  transition: transform 0.4s ease;
+
+  ${({ featured }) =>
+    featured &&
+    css`
+      transform-origin: left center;
+    `}
 `;
 
-const PanelLink = styled(Link)`
-  display: block;
-  text-decoration: none;
-  color: inherit;
-`;
-
-const Thumbnail = styled.div`
+const Thumbnail = styled.div<{ featured?: boolean }>`
   position: relative;
   width: 100%;
   aspect-ratio: 16 / 9;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 10px;
   background: #0b1020;
 
   img {
@@ -50,8 +43,8 @@ const Thumbnail = styled.div`
     transition: transform 0.6s ease, opacity 0.4s ease;
   }
 
-  ${PanelLink}:hover & img {
-    transform: scale(1.04);
+  ${Panel}:hover & img {
+    transform: scale(${({ featured }) => (featured ? 1.06 : 1.04)});
     opacity: 0.9;
   }
 `;
@@ -59,20 +52,43 @@ const Thumbnail = styled.div`
 const Caption = styled.div`
   margin-top: 28px;
   padding-left: 4px;
+  max-width: 720px;
 `;
 
-const Title = styled.h3`
-  font-size: 1.45rem;
+const Title = styled.h3<{ featured?: boolean }>`
+  font-size: ${({ featured }) => (featured ? '1.8rem' : '1.45rem')};
   font-weight: 600;
   margin: 0 0 8px;
+  line-height: 1.3;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:focus-visible {
+      outline: 2px solid var(--color-point);
+      outline-offset: 4px;
+      border-radius: 4px;
+    }
+  }
 `;
 
 const Summary = styled.p`
   font-size: 0.95rem;
   line-height: 1.6;
-  opacity: 0.75;
-  max-width: 680px;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
   margin: 0;
+
+  ${Panel}:hover & {
+    opacity: 0.75;
+    transform: translateY(0);
+  }
+  @media screen and (max-width: 768px) {
+    opacity: 0.75;
+    transform: translateY(0);
+  }
 `;
 
 const StackList = styled.ul`
@@ -90,6 +106,14 @@ const StackItem = styled.li`
   letter-spacing: 0.02em;
 `;
 
+const FeaturedBadge = styled.span`
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  color: var(--color-point);
+`;
+
 const PanelCard: FC<PanelCardProps> = ({
   href,
   title,
@@ -98,31 +122,40 @@ const PanelCard: FC<PanelCardProps> = ({
   thumbnail,
   featured = false,
 }) => {
+  const [imgsrc, setImgsrc] = useState(thumbnail?.src || NoImage);
+
   return (
     <Panel featured={featured}>
-      <PanelLink href={href}>
-        <Thumbnail>
+      <Thumbnail featured={featured}>
+        <Link href={href} tabIndex={-1}>
           <Image
-            src={thumbnail?.src || NoImage}
+            src={imgsrc}
             alt={thumbnail?.alt || title}
             fill
-            priority={false}
+            priority={featured}
+            onError={() => setImgsrc(NoImage)}
           />
-        </Thumbnail>
+        </Link>
+      </Thumbnail>
 
-        <Caption>
-          <Title>{title}</Title>
-          <Summary>{summary}</Summary>
+      <Caption>
+        {featured && <FeaturedBadge>FEATURED WORK</FeaturedBadge>}
 
-          {stacks && stacks.length > 0 && (
-            <StackList>
-              {stacks.slice(0, 3).map((stack) => (
-                <StackItem key={stack}>{stack}</StackItem>
-              ))}
-            </StackList>
-          )}
-        </Caption>
-      </PanelLink>
+        <Title featured={featured}>
+          <Link href={href}>{title}</Link>
+        </Title>
+
+        <Summary>{summary}</Summary>
+
+        {stacks && stacks.length > 0 && (
+          <StackList>
+            {stacks.slice(0, 3).map((stack) => (
+              <StackItem key={stack}>{stack}</StackItem>
+            ))}
+            {stacks.length > 3 && <StackItem>+{stacks.length - 3}</StackItem>}
+          </StackList>
+        )}
+      </Caption>
     </Panel>
   );
 };

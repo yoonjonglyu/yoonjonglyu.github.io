@@ -1,14 +1,15 @@
 'use client';
+
 import { type FC } from 'react';
 import styled from 'styled-components';
 
 import PanelCard from '@components/molecules/PanelCard';
+import { allWorks } from '@contentlayer/generated';
 
 const Container = styled.section`
   max-width: 1200px;
   width: 100%;
-  margin: 0 auto;
-  margin-top: 38px;
+  margin: 38px auto 0;
 `;
 
 const Intro = styled.header`
@@ -40,26 +41,11 @@ const List = styled.section`
   }
 `;
 
-const dumyWorks = [
-  {
-    href: '/work/memo',
-    title: 'Memo — PWA Memo Application',
-    summary:
-      'Offline-first memo application focused on speed, minimal UI, and ephemeral planning.',
-    stacks: ['TypeScript', 'React', 'PWA'],
-    thumbnail: { src: '', alt: 'Memo App Screenshot' },
-  },
-  {
-    href: '/work/portfolio',
-    title: 'Portfolio Website',
-    summary:
-      'A personal portfolio website showcasing projects and skills using modern web technologies.',
-    stacks: ['Next.js', 'Styled-Components', 'Vercel'],
-    thumbnail: { src: '', alt: 'Portfolio Screenshot' },
-  },
-];
-
 const WorkList: FC = () => {
+  const works = allWorks
+    .slice()
+    .sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
+
   return (
     <Container>
       <Intro>
@@ -70,15 +56,18 @@ const WorkList: FC = () => {
       </Intro>
 
       <List>
-        {dumyWorks.map((work, index) => (
+        {works.map((work) => (
           <PanelCard
-            key={work.title}
-            href={work.href}
+            key={work.slug}
+            href={`/work/${work.slug}`}
             title={work.title}
             summary={work.summary}
-            stacks={work.stacks}
-            thumbnail={work.thumbnail}
-            featured={index === 0}
+            stacks={work.tags ?? []}
+            thumbnail={{
+              src: work.thumbnail ?? '',
+              alt: `${work.title} thumbnail`,
+            }}
+            featured={work.featured}
           />
         ))}
       </List>

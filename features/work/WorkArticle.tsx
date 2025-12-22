@@ -1,24 +1,21 @@
 'use client';
-import { type FC } from 'react';
-import { styled } from 'styled-components';
+import { FC } from 'react';
+import styled from 'styled-components';
 
 import ContentsCard from '@components/molecules/ContentsCard';
 
-const Container = styled.div`
+const Container = styled.article`
   display: flex;
-  flex-direction: row;
-  margin: 24px 3px;
+  justify-content: center;
+  margin: 24px 3px 80px;
 `;
-const ArticleArea = styled.section`
-  flex: 1;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 18px;
-  overflow: hidden;
 
-  @media (max-width: 1024px) {
-    justify-content: center;
-  }
+const ArticleArea = styled.section`
+  width: 100%;
+  max-width: 820px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
 `;
 
 export interface WorkArticleProps {
@@ -27,13 +24,28 @@ export interface WorkArticleProps {
 }
 
 const WorkArticle: FC<WorkArticleProps> = ({ title, content }) => {
+  const sections = splitMdxSections(content);
+
   return (
     <Container>
       <ArticleArea>
-        <ContentsCard header={title} contents={content} />
+        {sections.map((section, index) => (
+          <ContentsCard
+            key={index}
+            header={index === 0 ? title : null}
+            contents={section}
+          />
+        ))}
       </ArticleArea>
     </Container>
   );
 };
 
 export default WorkArticle;
+
+function splitMdxSections(code: string) {
+  return code
+    .split('\n---\n')
+    .map((section) => section.trim())
+    .filter(Boolean);
+}
