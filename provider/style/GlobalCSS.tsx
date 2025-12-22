@@ -34,8 +34,9 @@ export default function StyledComponentsRegistry({
 
 export const GlobalCSS = createGlobalStyle`
         :root {
-          --color-background-space: #12172f;
+          --color-background-space: #0b0e14; 
           --color-background-card: #1e202c;
+          --color-secondary-space: #12172f;
           --color-point: #8a40b8;
           --color-rare: #c4c118;
           --color-unique: #9e2e06;

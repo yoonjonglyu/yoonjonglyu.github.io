@@ -7,9 +7,6 @@ const Wrap = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  /* 배경색을 깊이감 있는 다크 톤으로 고정 */
-  background-color: #0b0e14; 
-  color: #ffffff;
 `;
 
 const Header = styled.header`
@@ -86,7 +83,9 @@ const HeaderNav = styled.nav`
 
   @media (max-width: 1024px) {
     padding: 0 16px;
-    & ul { gap: 16px; }
+    & ul {
+      gap: 16px;
+    }
   }
 `;
 
@@ -97,9 +96,11 @@ const Contents = styled.main`
   margin: 80px auto 40px auto; /* 헤더 높이만큼 마진 */
   padding: 0 20px;
   box-sizing: border-box;
+  overflow: auto;
 `;
 
 const Footer = styled.footer`
+  width: 100%;
   padding: 40px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
   background: rgba(255, 255, 255, 0.02);
@@ -127,17 +128,25 @@ const BasicLayout: React.FC<BasicLayoutProps> = ({ children }) => {
             <strong>ISA Archive</strong>
           </Link>
           <ul>
-            <li><Link href='/resume'>Resume</Link></li>
-            <li><Link href='/work'>Work</Link></li>
-            <li><Link href='/archive'>Archive</Link></li>
+            <li>
+              <Link href='/resume'>Resume</Link>
+            </li>
+            <li>
+              <Link href='/work'>Work</Link>
+            </li>
+            <li>
+              <Link href='/archive'>Archive</Link>
+            </li>
           </ul>
         </HeaderNav>
       </Header>
-      
+
       <Contents>{children}</Contents>
-      
+
       <Footer>
-        <small>© 2025 ISA Archive • Designed by YOONJONGRYU(github:yunjonglyu)</small>
+        <small>
+          © 2025 ISA Archive • Designed by YOONJONGRYU(github:yunjonglyu)
+        </small>
       </Footer>
     </Wrap>
   );
