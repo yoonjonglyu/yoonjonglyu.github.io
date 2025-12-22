@@ -59,4 +59,8 @@ export const GlobalCSS = createGlobalStyle`
             border-radius: 12px;
           }
         }
+        /* Storybook Docs 배경색 조정 */
+        .docs-story {
+          background: var(--color-background-space) !important;
+        }
       `;
