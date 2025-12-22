@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
-import {allWorks} from '@contentlayer/generated';
+import { allWorks } from '@contentlayer/generated';
 import { notFound } from 'next/navigation';
 
-import PackageContents from '@features/package/PackageContents';
+import WorkArticle from '@features/work/WorkArticle';
 
 export const metadata: Metadata = {
   title: 'ISA Archive - Work',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     'package',
   ],
   openGraph: {
-    images: [`/api/og?title=Work`]
+    images: [`/api/og?title=Work`],
   },
 };
 export async function generateStaticParams() {
@@ -39,5 +39,5 @@ export default async function PackageArticlePage({
 
   if (!workInfo) return notFound();
 
-  return <PackageContents content={workInfo.body.code} />;
+  return <WorkArticle title={workInfo.title} content={workInfo.body.code} />;
 }

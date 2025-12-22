@@ -1,22 +1,19 @@
 import type { Meta, StoryObj } from '@storybook/nextjs-vite';
 
-import WorkArticle from '@features/work/WorkArticle';
+import WorkArticle from './WorkArticle';
 
 const meta: Meta<typeof WorkArticle> = {
-  title: 'Archive/Page/Work/Article',
+  title: 'Archive/Features/Work/WorkArticle',
   component: WorkArticle,
   tags: ['autodocs'],
-  argTypes: {},
 };
+
 export default meta;
 
 type Story = StoryObj<typeof WorkArticle>;
 
 export const Basic: Story = {
-  args: {
-    title: 'Sample Work Title',
-    content: 'This is a sample content for the work article.',
-  },
+  args: {},
   decorators: [
     (Story) => {
       return <Story />;
