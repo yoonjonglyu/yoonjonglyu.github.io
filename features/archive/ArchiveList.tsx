@@ -39,15 +39,17 @@ const ListArea = styled.div`
 `;
 
 const ArchiveList: FC = () => {
+  const projects = allProjects.sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
+  const packages = allPackages.sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
+
   return (
     <Container>
-      {/* PROJECT */}
       <Column>
         <SectionTitle style={{ borderColor: '#ecebebc1' }}>
           PROJECT
         </SectionTitle>
         <ListArea style={{ paddingTop: '12px' }}>
-          {allProjects.map((item, index) => (
+          {projects.map((item, index) => (
             <TextItem
               key={item.slug}
               href={`/archive/project/${item.slug}`}
@@ -60,12 +62,10 @@ const ArchiveList: FC = () => {
           ))}
         </ListArea>
       </Column>
-
-      {/* PACKAGE */}
       <Column style={{ marginTop: '4px' }}>
         <SectionTitle style={{ width: '88%' }}>PACKAGE</SectionTitle>
         <ListArea>
-          {allPackages.map((item, index) => (
+          {packages.map((item, index) => (
             <TextItem
               key={item.slug}
               href={`/archive/package/${item.slug}`}

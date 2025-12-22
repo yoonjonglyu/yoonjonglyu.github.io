@@ -1,6 +1,6 @@
 'use client';
 import { type FC } from 'react';
-import { styled } from 'styled-components';
+import styled from 'styled-components';
 import Link from 'next/link';
 
 import ContentsCard from '@components/molecules/ContentsCard';
@@ -32,14 +32,13 @@ const ArticleLinkConainer = styled.div`
   gap: 12px;
 `;
 
-export interface ProjectArticleProps {
+export interface PackageArticleProps {
   title: string;
   content: string;
   repository: string;
   homepage: string;
 }
-
-const ProjectArticle: FC<ProjectArticleProps> = ({
+const PackageArticle: FC<PackageArticleProps> = ({
   title,
   content,
   repository,
@@ -48,7 +47,7 @@ const ProjectArticle: FC<ProjectArticleProps> = ({
   return (
     <Container>
       <ArticleArea>
-        <ContentsCard header={title} contents={content} />
+        <ContentsCard header={title || 'pacakge'} contents={content} />
         <ArticleLinkConainer>
           <Link href='/archive' style={{ textDecoration: 'none' }}>
             ← Back to Archive
@@ -65,4 +64,4 @@ const ProjectArticle: FC<ProjectArticleProps> = ({
   );
 };
 
-export default ProjectArticle;
+export default PackageArticle;

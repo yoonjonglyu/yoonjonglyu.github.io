@@ -17,20 +17,23 @@ export interface PanelCardProps {
   featured?: boolean;
 }
 
-const Panel = styled.article<{ featured?: boolean }>`
+const Panel = styled.article<{ $featured?: boolean }>`
   width: 100%;
-  max-width: ${({ featured }) => (featured ? '1080px' : '960px')};
-  margin: 0 auto;
-  transition: transform 0.4s ease;
+  max-width: 960px;
+  margin: 0 auto 140px;
 
-  ${({ featured }) =>
-    featured &&
-    css`
-      transform-origin: left center;
+  ${({ $featured }) =>
+    $featured &&
+    `
+      max-width: 1080px;
     `}
+
+  @media (max-width: 1024px) {
+    margin: 0 auto 68px;
+  }
 `;
 
-const Thumbnail = styled.div<{ featured?: boolean }>`
+const Thumbnail = styled.div<{ $featured?: boolean }>`
   position: relative;
   width: 100%;
   aspect-ratio: 16 / 9;
@@ -44,7 +47,7 @@ const Thumbnail = styled.div<{ featured?: boolean }>`
   }
 
   ${Panel}:hover & img {
-    transform: scale(${({ featured }) => (featured ? 1.06 : 1.04)});
+    transform: scale(${({ $featured }) => ($featured ? 1.06 : 1.04)});
     opacity: 0.9;
   }
 `;
@@ -55,8 +58,8 @@ const Caption = styled.div`
   max-width: 720px;
 `;
 
-const Title = styled.h3<{ featured?: boolean }>`
-  font-size: ${({ featured }) => (featured ? '1.8rem' : '1.45rem')};
+const Title = styled.h3<{ $featured: boolean }>`
+  font-size: ${({ $featured }) => ($featured ? '1.8rem' : '1.45rem')};
   font-weight: 600;
   margin: 0 0 8px;
   line-height: 1.3;
@@ -125,8 +128,8 @@ const PanelCard: FC<PanelCardProps> = ({
   const [imgsrc, setImgsrc] = useState(thumbnail?.src || NoImage);
 
   return (
-    <Panel featured={featured}>
-      <Thumbnail featured={featured}>
+    <Panel $featured={featured}>
+      <Thumbnail $featured={featured}>
         <Link href={href} tabIndex={-1}>
           <Image
             src={imgsrc}
@@ -141,7 +144,7 @@ const PanelCard: FC<PanelCardProps> = ({
       <Caption>
         {featured && <FeaturedBadge>FEATURED WORK</FeaturedBadge>}
 
-        <Title featured={featured}>
+        <Title $featured={featured}>
           <Link href={href}>{title}</Link>
         </Title>
 

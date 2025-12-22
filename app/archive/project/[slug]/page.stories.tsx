@@ -16,6 +16,8 @@ export const Basic: Story = {
   args: {
     title: 'Sample Project Title',
     content: 'This is a sample content for the project.',
+    repository: 'https://github.com/example/repo',
+    homepage: 'https://example.com/example',
   },
   decorators: [
     (Story) => {

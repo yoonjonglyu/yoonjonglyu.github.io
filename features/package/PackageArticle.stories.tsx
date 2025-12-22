@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/nextjs-vite';
 
-import PackageArticle from '@features/package/PackageArticle';
+import PackageArticle from './PackageArticle';
 
 const meta: Meta<typeof PackageArticle> = {
-  title: 'Archive/Page/Package/Article',
+  title: 'Archive/Features/Package/PackageArticle',
   component: PackageArticle,
   tags: ['autodocs'],
   argTypes: {},
@@ -16,8 +16,8 @@ export const Basic: Story = {
   args: {
     title: 'Sample Package Article',
     content: 'This is a sample content for the package.',
-    repository: 'https://github.com/example/repo',
-    homepage: 'https://www.npmjs.com/package/example-package',
+    repository: 'https://github.com/example/sample-package',
+    homepage: 'https://example.com/sample-package',
   },
   decorators: [
     (Story) => {

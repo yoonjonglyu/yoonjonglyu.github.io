@@ -13,6 +13,7 @@ export const Project = defineDocumentType(() => ({
     repository: { type: 'string' },
     homepage: { type: 'string' },
     tags: { type: 'list', of: { type: 'string' } },
+    order: { type: 'number' },
   },
   computedFields: {
     slug: {
@@ -35,6 +36,7 @@ export const Package = defineDocumentType(() => ({
     repository: { type: 'string' },
     homepage: { type: 'string' },
     tags: { type: 'list', of: { type: 'string' } },
+    order: { type: 'number' },
   },
   computedFields: {
     slug: {

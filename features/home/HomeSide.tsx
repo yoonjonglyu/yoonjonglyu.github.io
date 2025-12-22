@@ -118,6 +118,13 @@ const StyledSideCard = styled(SideCard)`
 `;
 
 const HomeSide: FC = () => {
+  const projects = allProjects
+    .slice()
+    .sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
+  const packages = allPackages
+    .slice()
+    .sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
+    
   return (
     <SideArea>
       <StyledSideCard
@@ -128,7 +135,7 @@ const HomeSide: FC = () => {
         }
         contents={
           <ul>
-            {allProjects.map((item) => (
+            {projects.map((item) => (
               <li key={item.slug}>
                 <Link href={`/archive/project/${item.slug}`}>{item.title}</Link>
               </li>
@@ -144,7 +151,7 @@ const HomeSide: FC = () => {
         }
         contents={
           <ul>
-            {allPackages.map((item) => (
+            {packages.map((item) => (
               <li key={item.slug}>
                 <Link href={`/archive/package/${item.slug}`}>{item.title}</Link>
               </li>

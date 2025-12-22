@@ -23,10 +23,12 @@ const ListArea = styled.section`
 `;
 
 const PackageList: FC = () => {
+  const packages = allPackages.sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
+
   return (
     <Container>
       <ListArea>
-        {allPackages.map((item, index) => (
+        {packages.map((item, index) => (
           <TextItem
             key={item.slug}
             href={`/archive/package/${item.slug}`}

@@ -23,10 +23,14 @@ const ListArea = styled.section`
 `;
 
 const ProjectList: FC = () => {
+  const projects = allProjects
+    .slice()
+    .sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
+
   return (
     <Container>
       <ListArea>
-        {allProjects.map((item, index) => (
+        {projects.map((item, index) => (
           <TextItem
             key={item.slug}
             href={`/archive/project/${item.slug}`}

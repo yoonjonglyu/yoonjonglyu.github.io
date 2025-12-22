@@ -32,5 +32,12 @@ export default async function PackageArticlePage({
   const packageInfo = allProjects.find((p) => p.slug === resolvedParams.slug);
 
   if (!packageInfo) return notFound();
-  return <ProjectArticle title={packageInfo.title} content={packageInfo.body.code} />;
+  return (
+    <ProjectArticle
+      title={packageInfo.title}
+      content={packageInfo.body.code}
+      repository={packageInfo.repository}
+      homepage={packageInfo.homepage}
+    />
+  );
 }

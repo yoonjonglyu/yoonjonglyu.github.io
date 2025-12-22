@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { allPackages } from '@contentlayer/generated';
 
-import PackageContents from '@features/package/PackageContents';
+import PackageArticle from '@features/package/PackageArticle';
 
 export const metadata: Metadata = {
   title: 'ISA Archive - Project Article',
@@ -34,5 +34,12 @@ export default async function PackageArticlePage({
 
   if (!packageInfo) return notFound();
 
-  return <PackageContents content={packageInfo.body.code} />;
+  return (
+    <PackageArticle
+      title={packageInfo.title}
+      content={packageInfo.body.code}
+      repository={packageInfo.repository}
+      homepage={packageInfo.homepage}
+    />
+  );
 }
