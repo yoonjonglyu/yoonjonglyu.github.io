@@ -112,11 +112,6 @@ const ContentsCard: React.FC<ContentsCardProps> = ({
   contents,
   CSS,
 }) => {
-  const isStorybook =
-    typeof window !== 'undefined' &&
-    (window as any).__STORYBOOK_PREVIEW__ !== undefined;
-  
-
   return (
     <Card
       css={`
@@ -132,11 +127,7 @@ const ContentsCard: React.FC<ContentsCardProps> = ({
       `}>
       <ContentsHeader>{header}</ContentsHeader>
       <ContentsBody>
-        {isStorybook ? (
-          <PreviewMode code={contents} />
-        ) : (
-          <Mdx code={contents} />
-        )}
+        <Mdx code={contents} />
       </ContentsBody>
     </Card>
   );
