@@ -1,64 +1,71 @@
-# Simple workflow for deploying static content to GitHub Pages
 name: Deploy static content to Pages
 
 on:
-  # Runs on pushes targeting the default branch
   push:
     branches: ["main"]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: write
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
 jobs:
   install-and-build:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4 # v3에서 v4로 업데이트 권장
         with:
           fetch-depth: 0 
-      - name: Install and Build
-        uses: actions/setup-node@v3.8.1
-      - run: npm install
-      - run: npm run build
-      - run: npm run export
+
+      - name: Setup Node
+        uses: actions/setup-node@v4 # v3에서 v4로 업데이트 권장
+        with:
+          node-version: '20' # 명시적으로 버전을 지정하는 것이 안정적입니다
+          cache: 'npm' # npm 캐시를 활성화하여 빌드 속도 향상
+
+      - name: Install dependencies
+        # overrides가 있어도 혹시 모를 충돌을 방지하기 위해 legacy-peer-deps를 추가하는 것이 안전합니다
+        run: npm install --legacy-peer-deps
+
+      - name: Build
+        # Next.js 16은 next build 시 output: 'export' 설정이 되어있으면 자동으로 out 폴더를 생성합니다
+        # 만약 package.json에 export 스크립트가 따로 없다면 npm run build만 해도 됩니다
+        run: npm run build
         env:
           CI: true
           DEPLORY_TARGET: gh-pages
-      - run: touch out/.nojekyll
-      - run: touch out/robot.txt
-      - run: | 
-              echo -e "User-agent: *\nAllow:/" > out/robot.txt
-      - name: generate-sitemap
-  # You may pin to the exact commit or the version.
-  # uses: cicirello/generate-sitemap@e63c84b065d5530faaa5d8b95d3d53b1e974952f
+
+      # Next.js 14+ 에서는 'next export' 명령어가 필요 없으므로 'npm run export' 단계는 생략 가능합니다.
+      # 만약 프로젝트 설정에 따라 꼭 필요하다면 아래 줄의 주석을 해제하세요.
+      # - run: npm run export
+
+      - name: Prepare static files
+        run: |
+          touch out/.nojekyll
+          echo -e "User-agent: *\nAllow:/" > out/robots.txt # robot.txt -> robots.txt (파일명 교정)
+
+      - name: Generate Sitemap
         uses: cicirello/generate-sitemap@v1.9.1
+        id: sitemap # id를 지정해야 아래 stats에서 참조 가능합니다
         with:
           base-url-path: https://yoonjonglyu.github.io/
           path-to-root: out
+
       - name: Output stats
         run: |
           echo "sitemap-path = ${{ steps.sitemap.outputs.sitemap-path }}"
           echo "url-count = ${{ steps.sitemap.outputs.url-count }}"
           echo "excluded-count = ${{ steps.sitemap.outputs.excluded-count }}"
+
       - name: Deploy GitHub Pages site
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-            folder: out
-            branch: gh-pages
-            clean: true
+          folder: out
+          branch: gh-pages
+          clean: true
