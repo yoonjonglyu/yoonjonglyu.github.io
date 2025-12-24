@@ -1,0 +1,645 @@
+1:"$Sreact.fragment"
+2:I[74832,["/_next/static/chunks/fae1b863422210d1.js","/_next/static/chunks/b0f8bde3a055b8de.js","/_next/static/chunks/6e28e59f9fa83153.js","/_next/static/chunks/e0a660edf8719343.js"],"default"]
+6:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/247eb132b7f7b574.js"],"OutletBoundary"]
+7:"$Sreact.suspense"
+3:T98b3,var Component=(()=>{var g=Object.create;var i=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var u=Object.getOwnPropertyNames;var m=Object.getPrototypeOf,b=Object.prototype.hasOwnProperty;var y=(r,e)=>()=>(e||r((e={exports:{}}).exports,e),e.exports),f=(r,e)=>{for(var l in e)i(r,l,{get:e[l],enumerable:!0})},c=(r,e,l,a)=>{if(e&&typeof e=="object"||typeof e=="function")for(let s of u(e))!b.call(r,s)&&s!==l&&i(r,s,{get:()=>e[s],enumerable:!(a=p(e,s))||a.enumerable});return r};var w=(r,e,l)=>(l=r!=null?g(m(r)):{},c(e||!r||!r.__esModule?i(l,"default",{value:r,enumerable:!0}):l,r)),D=r=>c(i({},"__esModule",{value:!0}),r);var t=y((E,d)=>{d.exports=_jsx_runtime});var v={};f(v,{default:()=>h,frontmatter:()=>N});var n=w(t()),N={title:"isa-util",description:"TypeScript \uAE30\uBC18\uC758 \uACF5\uD1B5 \uC720\uD2F8\uB9AC\uD2F0 \uD5EC\uD37C \uB77C\uC774\uBE0C\uB7EC\uB9AC",period:"2023.01 - \uD604\uC7AC",version:"1.0.27",stack:["TypeScript","Jest","Babel"],role:"Frontend Developer",repository:"https://github.com/yoonjonglyu/util-helper",homepage:"https://www.npmjs.com/package/isa-util",tags:["library","utility","typescript"],order:1};function o(r){let e={a:"a",blockquote:"blockquote",br:"br",code:"code",h1:"h1",h2:"h2",h3:"h3",h4:"h4",hr:"hr",li:"li",ol:"ol",p:"p",pre:"pre",strong:"strong",ul:"ul",...r.components};return(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(e.h2,{children:"\uBC30\uACBD"}),`
+`,(0,n.jsxs)(e.p,{children:["\uD504\uB860\uD2B8\uC5D4\uB4DC \uD504\uB85C\uC81D\uD2B8\uB97C \uC9C4\uD589\uD558\uBA70 \uC790\uC8FC \uBC18\uBCF5\uB418\uB294 \uB370\uC774\uD130 \uAC00\uACF5 \uB85C\uC9C1(\uB0A0\uC9DC \uD3EC\uB9F7\uD305, \uC720\uD6A8\uC131 \uAC80\uC0AC, \uAE08\uC561 \uD45C\uAE30 \uB4F1)\uC744 \uB9E4\uBC88 \uC0C8\uB85C \uAD6C\uD604\uD558\uB294 \uBC88\uAC70\uB85C\uC6C0 \uBC0F \uC758\uC874\uC131 \uAD00\uB9AC\uB97C \uD574\uACB0\uD558\uACE0\uC790 \uD588\uC2B5\uB2C8\uB2E4.",(0,n.jsx)(e.br,{}),`
+`,`\uD504\uB85C\uC81D\uD2B8 \uAC04\uC758 \uC77C\uAD00\uC131\uC744 \uC720\uC9C0\uD558\uACE0, \uAC80\uC99D\uB41C \uB85C\uC9C1\uC744 \uC7AC\uC0AC\uC6A9\uD568\uC73C\uB85C\uC368 \uC804\uCCB4\uC801\uC778 \uAC1C\uBC1C \uC0DD\uC0B0\uC131\uC744 \uB192\uC774\uAE30 \uC704\uD574 \uB77C\uC774\uBE0C\uB7EC\uB9AC\uD654\uB97C \uC9C4\uD589\uD588\uC2B5\uB2C8\uB2E4.
+\uAFB8\uC900\uD788 \uC9C0\uC18D\uC801\uC73C\uB85C \uC720\uC9C0 \uBCF4\uC218 \uC911\uC785\uB2C8\uB2E4.`]}),`
+`,(0,n.jsx)(e.h2,{children:"\uD574\uACB0\uD55C \uBB38\uC81C"}),`
+`,(0,n.jsxs)(e.ul,{children:[`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"\uD0C0\uC785 \uC548\uC815\uC131 \uD655\uBCF4"}),": \uAE30\uC874 JavaScript \uAE30\uBC18 \uC720\uD2F8\uB9AC\uD2F0\uC758 \uBD88\uD655\uC2E4\uD55C \uD30C\uB77C\uBBF8\uD130\uC640 \uB9AC\uD134 \uD0C0\uC785\uC744 TypeScript\uB85C \uC5C4\uACA9\uD558\uAC8C \uC815\uC758\uD558\uC5EC, \uB7F0\uD0C0\uC784 \uC5D0\uB7EC\uB97C \uBC29\uC9C0\uD558\uACE0 \uAC1C\uBC1C\uC790\uC5D0\uAC8C \uC815\uD655\uD55C \uD0C0\uC785 \uD78C\uD2B8\uB97C \uC81C\uACF5\uD569\uB2C8\uB2E4."]}),`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"\uBAA8\uB4C8\uD654 \uBC0F \uD655\uC7A5\uC131"}),": \uAC01 \uAE30\uB2A5\uC744 \uB3C4\uBA54\uC778\uBCC4(date, number, validation \uB4F1)\uB85C \uBD84\uB9AC\uD558\uC5EC \uAD00\uB9AC\uD568\uC73C\uB85C\uC368 \uD544\uC694\uD55C \uAE30\uB2A5\uB9CC \uC120\uD0DD\uC801\uC73C\uB85C \uAC00\uC838\uC640 \uC0AC\uC6A9\uD560 \uC218 \uC788\uB3C4\uB85D \uAD6C\uC870\uD654\uD588\uC2B5\uB2C8\uB2E4."]}),`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"\uAC80\uC99D\uB41C \uB85C\uC9C1 \uC81C\uACF5"}),": \uC720\uD2F8\uB9AC\uD2F0 \uD568\uC218\uB9C8\uB2E4 \uBC1C\uC0DD\uD560 \uC218 \uC788\uB294 \uC5E3\uC9C0 \uCF00\uC774\uC2A4\uB97C \uACE0\uB824\uD558\uC5EC ",(0,n.jsx)(e.code,{children:"Jest"})," \uAE30\uBC18\uC758 \uB2E8\uC704 \uD14C\uC2A4\uD2B8\uB97C \uC791\uC131\uD558\uC600\uACE0, \uC774\uB97C \uD1B5\uD574 \uB85C\uC9C1\uC758 \uC2E0\uB8B0\uB3C4\uB97C \uB192\uC600\uC2B5\uB2C8\uB2E4."]}),`
+`]}),`
+`,(0,n.jsx)(e.h2,{children:"\uAE30\uC220\uC801 \uC120\uD0DD \uADFC\uAC70"}),`
+`,(0,n.jsxs)(e.ul,{children:[`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"TypeScript"}),": \uB370\uC774\uD130\uC758 \uD750\uB984\uC744 \uBA85\uD655\uD788 \uD30C\uC545\uD558\uACE0, \uCEF4\uD30C\uC77C \uB2E8\uACC4\uC5D0\uC11C \uC624\uB958\uB97C \uC7A1\uC544\uB0B4\uC5B4 \uB77C\uC774\uBE0C\uB7EC\uB9AC\uC758 \uC548\uC815\uC131\uC744 \uADF9\uB300\uD654\uD558\uAE30 \uC704\uD574 \uCC44\uD0DD\uD588\uC2B5\uB2C8\uB2E4."]}),`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"Babel"}),": \uCD5C\uC2E0 ECMAScript \uBB38\uBC95\uC744 \uB2E4\uC591\uD55C \uBE0C\uB77C\uC6B0\uC800 \uBC0F Node.js \uD658\uACBD\uC5D0\uC11C \uB3D9\uC791\uD560 \uC218 \uC788\uB3C4\uB85D \uD558\uC704 \uD638\uD658\uC131\uC744 \uBCF4\uC7A5\uD558\uAE30 \uC704\uD574 \uC124\uC815\uD588\uC2B5\uB2C8\uB2E4."]}),`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"Jest"}),": \uBCF5\uC7A1\uD55C \uC124\uC815 \uC5C6\uC774\uB3C4 \uBE60\uB974\uAC8C \uD14C\uC2A4\uD2B8 \uD658\uACBD\uC744 \uAD6C\uCD95\uD560 \uC218 \uC788\uC73C\uBA70, \uCF54\uB4DC \uCEE4\uBC84\uB9AC\uC9C0\uB97C \uD655\uC778\uD558\uBA70 \uB204\uB77D \uC5C6\uB294 \uD14C\uC2A4\uD2B8\uB97C \uC218\uD589\uD558\uAE30\uC5D0 \uCD5C\uC801\uC774\uB77C \uD310\uB2E8\uD588\uC2B5\uB2C8\uB2E4."]}),`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"npm \uBC30\uD3EC"}),": ",(0,n.jsx)(e.code,{children:"package.json"})," \uC124\uC815\uC744 \uD1B5\uD574 \uBAA8\uB4C8\uC758 \uC9C4\uC785\uC810\uC744 \uAD00\uB9AC\uD558\uACE0, npm \uC0DD\uD0DC\uACC4\uB97C \uD1B5\uD574 \uB2E4\uB978 \uD504\uB85C\uC81D\uD2B8\uC5D0\uC11C \uC27D\uAC8C \uC124\uCE58\uD558\uC5EC \uC0AC\uC6A9\uD560 \uC218 \uC788\uB3C4\uB85D \uAD6C\uC131\uD588\uC2B5\uB2C8\uB2E4."]}),`
+`]}),`
+`,(0,n.jsx)(e.h2,{children:"README"}),`
+`,(0,n.jsx)(e.h1,{children:"isa-util"}),`
+`,(0,n.jsx)(e.p,{children:"A set of JavaScript utilities for use in the browser."}),`
+`,(0,n.jsx)(e.h2,{children:"Installation"}),`
+`,(0,n.jsx)(e.h3,{children:"Using npm"}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-bash",children:`npm install isa-util
+`})}),`
+`,(0,n.jsx)(e.h3,{children:"Using Yarn"}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-bash",children:`yarn add isa-util
+`})}),`
+`,(0,n.jsx)(e.h2,{children:"\u{1F4CC} Quick Usage Examples"}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-javascript",children:`import {
+  isArray,
+  getQuery,
+  encryptData,
+  decryptData,
+  generateSalt,
+  generatePassword,
+  generatePasswordWithSaltAndEncrypt,
+  decryptPasswordWithSalt
+} from 'isa-util';
+
+async function demoEncryption() {
+  const message = 'Secret message';
+  const { password, salt, encryptedData } = await generatePasswordWithSaltAndEncrypt(16, message);
+  const decrypted = await decryptPasswordWithSalt(
+    encryptedData.encryptedData,
+    encryptedData.iv,
+    password,
+    salt
+  );
+  console.log(decrypted); // 'Secret message'
+}
+
+demoEncryption();
+
+---
+
+`})}),`
+`,(0,n.jsx)(e.h3,{children:"\u2705 Type Checking"}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`isArray([1, 2, 3]); // true
+isString('hello'); // true
+isObject({ a: 1 }); // true
+`})}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h3,{children:"\u{1F50D} Query String Utilities"}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`const query = getQuery();
+console.log(query.get('page')); // e.g. '1'
+
+query.set('page', '2');
+setQuery(query); // URL \uC5C5\uB370\uC774\uD2B8
+`})}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h3,{children:"\u{1F4B1} Formatting"}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`addComma(1234567); // '1,234,567'
+camelCase('@#@assd-wsd_asd fkfk'); // assdWsdAsdFkfk
+formatClass(
+  'a',
+  { b: true, c: false },
+  ['d', { e: true, f: 0 }, ['g', ['', null]]],
+  0,
+  undefined,
+); //a b d e g 0
+`})}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h3,{children:"\u{1F4E6} CDN Script Import"}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`loadCDN('jquery', 'https://code.jquery.com/jquery-3.6.0.min.js');
+`})}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h3,{children:"\u{1F4C1} File Download"}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`const blob = new Blob(['Hello world'], { type: 'text/plain' });
+download(blob, 'hello.txt', 'text/plain');
+`})}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h3,{children:"\u23F3 Debounce & Throttle"}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`const debounced = debounce(() => console.log('called'), 300);
+debounced();
+debounced(); // \uB9C8\uC9C0\uB9C9 \uD638\uCD9C\uB9CC \uC2E4\uD589\uB428
+
+const throttled = throttle(() => console.log('tick'), 1000);
+throttled();
+throttled(); // 1\uCD08\uC5D0 \uD55C \uBC88\uB9CC \uC2E4\uD589\uB428
+`})}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h3,{children:"\u{1F4F1} Platform Detection"}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`getPlatform(); // { os: 'iOS', browser: 'Safari', mobile: true }
+isMobile(); // true/false
+isDarkMode(); // true/false
+`})}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h3,{children:"\u{1F510} Encryption"}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`const salt = generateSalt();
+const password = generatePassword(16);
+const encrypted = await encryptData('secret', password, salt);
+const decrypted = await decryptData(
+  encrypted.encryptedData,
+  encrypted.iv,
+  password,
+  salt,
+);
+`})}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h3,{children:"\u{1F4C5} Date & Time"}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`formatDate(new Date(), 'YYYY-MM-DD'); // '2025-05-13'
+timeAgo(new Date(Date.now() - 60000)); // '1 minute ago'
+isToday(new Date()); // true
+`})}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h3,{children:"\u{1F9E0} Storage"}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`setLocalStorage('key', { name: 'isa' });
+getLocalStorage('key'); // { name: 'isa' }
+removeLocalStorage('key');
+const db = await idb.open('my-db', {
+  version: 1,
+  schema: {
+    users: { keyPath: 'id', autoIncrement: true },
+  },
+});
+console.log(db.objectStoreNames); // ["users"]
+`})}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h3,{children:"\u{1F9E9} DOM Utilities"}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`addClass(document.body, 'dark');
+hasClass(document.body, 'dark'); // true
+toggleClass(document.body, 'dark'); // toggle
+`})}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h3,{children:"\u{1F680} Async Utilities"}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`// FlushQueue
+const fq = new FlushQueue();
+fq.add('job1', async () => console.log('job 1'));
+fq.add('job2', async () => console.log('job 2'));
+await fq.flush(); // \uBCD1\uB82C \uC2E4\uD589
+
+// JobQueue
+const jq = new JobQueue<string>(async (job) => {
+  console.log('processing', job);
+  await new Promise((r) => setTimeout(r, 300));
+});
+jq.enqueue('task A');
+jq.enqueue('task B'); // \uC21C\uCC28 \uC2E4\uD589
+`})}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h2,{children:"API Documentation"}),`
+`,(0,n.jsx)(e.h3,{children:"Type Checking"}),`
+`,(0,n.jsxs)(e.ol,{children:[`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"isArray(arg: any): boolean"})}),`
+Checks if the argument is an array.`]}),`
+`,(0,n.jsx)(e.p,{children:(0,n.jsx)(e.strong,{children:"Usage Example:"})}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`isArray([1, 2, 3]); // true
+isArray('hello'); // false
+`})}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"isFunction(arg: any): boolean"})}),(0,n.jsx)(e.br,{}),`
+`,"Checks if the argument is a function."]}),`
+`,(0,n.jsx)(e.p,{children:(0,n.jsx)(e.strong,{children:"Usage Example:"})}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`isFunction(() => {}); // true
+isFunction(123); // false
+`})}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"isObject(arg: any): boolean"})}),(0,n.jsx)(e.br,{}),`
+`,"Checks if the argument is an object."]}),`
+`,(0,n.jsx)(e.p,{children:(0,n.jsx)(e.strong,{children:"Usage Example:"})}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`isObject({ key: 'value' }); // true
+isObject([1, 2, 3]); // false
+`})}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"isString(arg: any): boolean"})}),(0,n.jsx)(e.br,{}),`
+`,"Checks if the argument is a string."]}),`
+`,(0,n.jsx)(e.p,{children:(0,n.jsx)(e.strong,{children:"Usage Example:"})}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`isString('Hello, world!'); // true
+isString(123); // false
+`})}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"isNumber(arg: any): boolean"})}),(0,n.jsx)(e.br,{}),`
+`,"Checks if the argument is a number."]}),`
+`,(0,n.jsx)(e.p,{children:(0,n.jsx)(e.strong,{children:"Usage Example:"})}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`isNumber(42); // true
+isNumber('Hello'); // false
+`})}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"isSymbol(arg: any): boolean"})}),(0,n.jsx)(e.br,{}),`
+`,"Checks if the argument is a symbol."]}),`
+`,(0,n.jsx)(e.p,{children:(0,n.jsx)(e.strong,{children:"Usage Example:"})}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`isSymbol(Symbol('test')); // true
+isSymbol('not a symbol'); // false
+`})}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"isBlob(arg: any): boolean"})}),(0,n.jsx)(e.br,{}),`
+`,"Checks if the argument is a Blob."]}),`
+`,(0,n.jsx)(e.p,{children:(0,n.jsx)(e.strong,{children:"Usage Example:"})}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`isBlob(new Blob()); // true
+isBlob('not a blob'); // false
+`})}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"isUndefined(arg: any): boolean"})}),(0,n.jsx)(e.br,{}),`
+`,"Checks if the argument is undefined."]}),`
+`,(0,n.jsx)(e.p,{children:(0,n.jsx)(e.strong,{children:"Usage Example:"})}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`isUndefined(undefined); // true
+isUndefined(null); // false
+`})}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"isFalsy(arg: any): boolean"})}),(0,n.jsx)(e.br,{}),`
+`,'Checks if the argument is falsy (false, 0, "", null, undefined, NaN).']}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`isUndefined(undefined); // true
+isUndefined(null); // false
+`})}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"isFalsy(arg: any): boolean"})}),(0,n.jsx)(e.br,{}),`
+`,'Checks if the argument is falsy (false, 0, "", null, undefined, NaN).']}),`
+`,(0,n.jsx)(e.p,{children:(0,n.jsx)(e.strong,{children:"Usage Example:"})}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`isFalsy(null); // true
+isFalsy(0); // true
+isFalsy('hello'); // false
+`})}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"isTruthy(arg: any): boolean"})}),(0,n.jsx)(e.br,{}),`
+`,"Checks if the argument is truthy (not falsy)."]}),`
+`,(0,n.jsx)(e.p,{children:(0,n.jsx)(e.strong,{children:"Usage Example:"})}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`isTruthy(1); // true
+isTruthy(''); // false
+`})}),`
+`]}),`
+`]}),`
+`,(0,n.jsx)(e.h3,{children:"Query String Utilities"}),`
+`,(0,n.jsxs)(e.ol,{children:[`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"getQuery(): URLSearchParams"})}),`
+Retrieves the current URL query parameters as a `,(0,n.jsx)(e.code,{children:"URLSearchParams"})," object."]}),`
+`,(0,n.jsx)(e.p,{children:(0,n.jsx)(e.strong,{children:"Usage Example:"})}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`const queryParams = getQuery();
+console.log(queryParams.get('user')); // prints the value of 'user' query parameter
+`})}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"setQuery(arg: URLSearchParams): void"})}),(0,n.jsx)(e.br,{}),`
+`,"Sets the URL query parameters using a ",(0,n.jsx)(e.code,{children:"URLSearchParams"})," object."]}),`
+`,(0,n.jsx)(e.p,{children:(0,n.jsx)(e.strong,{children:"Usage Example:"})}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`const params = new URLSearchParams();
+params.append('page', '1');
+setQuery(params); // Updates the URL's query params to ?page=1
+`})}),`
+`]}),`
+`]}),`
+`,(0,n.jsx)(e.h3,{children:"Formatting Utilities"}),`
+`,(0,n.jsxs)(e.ol,{children:[`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"addComma(arg: number): string"})}),`
+Formats a number by adding commas as thousand separators.`]}),`
+`,(0,n.jsx)(e.p,{children:(0,n.jsx)(e.strong,{children:"Usage Example:"})}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`addComma(1000000); // "1,000,000"
+`})}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"camelCase(input: string): string"})}),`
+Formats a string by camelCase.`]}),`
+`,(0,n.jsx)(e.p,{children:(0,n.jsx)(e.strong,{children:"Usage Example:"})}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`camelCase('@#@assd-wsd_asd fkfk'); // assdWsdAsdFkfk
+`})}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"pascalCase(input: string): string"})}),`
+Formats a string by pascalCase.`]}),`
+`,(0,n.jsx)(e.p,{children:(0,n.jsx)(e.strong,{children:"Usage Example:"})}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`pascalCase('@#@assd-wsd_asd fkfk'); // AssdWsdAsdFkfk
+`})}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"snakeCase(input: string): string"})}),`
+Formats a string by snakeCase.`]}),`
+`,(0,n.jsx)(e.p,{children:(0,n.jsx)(e.strong,{children:"Usage Example:"})}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`snakeCase('@#@assd-wsd_asd fkfk'); // assd_wsd_asd_fkfk
+`})}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"formatClass(...args: any): string"})})," | ",(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"cx(...args): string"})}),`
+Formats args by className.`]}),`
+`,(0,n.jsx)(e.p,{children:(0,n.jsx)(e.strong,{children:"Usage Example:"})}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`formatClass('a', 0, 1); // 'a 0 1'
+`})}),`
+`]}),`
+`]}),`
+`,(0,n.jsx)(e.h3,{children:"Script Importing"}),`
+`,(0,n.jsxs)(e.ol,{children:[`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"loadCDN(id: string, src: string, options?: ScriptAttribute): Promise<void>"})}),`
+Dynamically loads a script from a CDN with optional attributes.`]}),`
+`,(0,n.jsx)(e.p,{children:(0,n.jsx)(e.strong,{children:"Usage Example:"})}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`loadCDN(
+  'lodash',
+  'https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js',
+);
+`})}),`
+`]}),`
+`]}),`
+`,(0,n.jsx)(e.h3,{children:"File Exporting"}),`
+`,(0,n.jsxs)(e.ol,{children:[`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"download(data: Blob, name: string, type: string): void"})}),`
+Triggers a download for a given Blob with the specified filename and MIME type.`]}),`
+`,(0,n.jsx)(e.p,{children:(0,n.jsx)(e.strong,{children:"Usage Example:"})}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`const blob = new Blob(['Hello, world!'], { type: 'text/plain' });
+download(blob, 'hello.txt', 'text/plain');
+`})}),`
+`]}),`
+`]}),`
+`,(0,n.jsx)(e.h3,{children:"Utility Functions"}),`
+`,(0,n.jsxs)(e.ol,{children:[`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"debounce(func: Function, wait: number): Function & { cancel: () => void; pending: () => boolean; }"})}),`
+Creates a debounced function that delays invoking `,(0,n.jsx)(e.code,{children:"func"})," until after ",(0,n.jsx)(e.code,{children:"wait"})," milliseconds have passed. Returns a function with ",(0,n.jsx)(e.code,{children:"cancel"})," and ",(0,n.jsx)(e.code,{children:"pending"})," methods."]}),`
+`,(0,n.jsx)(e.p,{children:(0,n.jsx)(e.strong,{children:"Usage Example:"})}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`const handler = debounce(() => console.log('called!'), 300);
+handler();
+handler(); // Only the last call within 300ms will be executed
+`})}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"throttle<T extends any[], R>(func: FuncType<T, R>, wait: number): (...args: T) => R | void"})}),`
+Creates a throttled function that only invokes `,(0,n.jsx)(e.code,{children:"func"})," at most once per ",(0,n.jsx)(e.code,{children:"wait"})," milliseconds."]}),`
+`,(0,n.jsx)(e.p,{children:(0,n.jsx)(e.strong,{children:"Usage Example:"})}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`const throttledLog = throttle(() => console.log('Logged!'), 1000);
+throttledLog();
+throttledLog(); // Will log only once per 1000ms
+`})}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"getPlatform(): { os: string, browser: string, mobile: boolean } | null"})}),(0,n.jsx)(e.br,{}),`
+`,"Returns an object containing the user's platform information, including the operating system, browser, and whether the user is on a mobile device."]}),`
+`,(0,n.jsx)(e.p,{children:(0,n.jsx)(e.strong,{children:"Usage Example:"})}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`const platform = getPlatform();
+console.log(platform.os, platform.browser); // logs current platform info
+`})}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"JobQueue<T>(processJob: (job: T) => Promise<void>): enqueue(job: T)"})}),(0,n.jsx)(e.br,{}),`
+`,"A class that manages a queue of asynchronous jobs and processes them one at a time. Jobs are added to the queue using enqueue, and the class ensures they are processed sequentially."]}),`
+`,(0,n.jsx)(e.p,{children:(0,n.jsx)(e.strong,{children:"Usage Example:"})}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`const queue = new JobQueue<string>(async (job) => {
+  console.log(\`Processing job: \${job}\`);
+  await new Promise((resolve) => setTimeout(resolve, 1000)); // 1\uCD08 \uB300\uAE30
+});
+
+queue.enqueue('Job 1');
+queue.enqueue('Job 2');
+queue.enqueue('Job 3');
+`})}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"FlushQueue(options: FlushQueueOptions): add(id: string, job: AsyncJob)"})}),(0,n.jsx)(e.br,{}),`
+`,"A class that manages a queue of asynchronous jobs with optional debounce and custom start/finish handlers. Jobs can be added, canceled, and flushed either in parallel or sequentially."]}),`
+`,(0,n.jsx)(e.p,{children:(0,n.jsx)(e.strong,{children:"Usage Example:"})}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`const queue = new FlushQueue({
+  debounceMs: 300, // Debounce for 300ms before flushing
+  onStart: (id) => console.log(\`Starting job \${id}\`),
+  onFinish: (id, error) => {
+    if (error) {
+      console.error(\`Job \${id} failed\`, error);
+    } else {
+      console.log(\`Job \${id} finished\`);
+    }
+  },
+});
+
+const job1: AsyncJob = async () => {
+  console.log('Processing Job 1');
+  await new Promise((resolve) => setTimeout(resolve, 1000));
+};
+const job2: AsyncJob = async () => {
+  console.log('Processing Job 2');
+  await new Promise((resolve) => setTimeout(resolve, 1000));
+};
+
+queue.add('job1', job1);
+queue.add('job2', job2);
+
+// Force flush all jobs sequentially
+queue.flush(false);
+`})}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"sleep(ms: number): Promise<void>"})}),`
+A utility function that pauses the execution for the specified number of milliseconds by returning a `,(0,n.jsx)(e.strong,{children:"Promise"})," that resolves after the given delay."]}),`
+`,(0,n.jsx)(e.p,{children:(0,n.jsx)(e.strong,{children:"Usage Example:"})}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`async function example() {
+  console.log('Start');
+  await sleep(1000); // Sleep for 1 second
+  console.log('End after 1 second');
+}
+
+example();
+`})}),`
+`]}),`
+`]}),`
+`,(0,n.jsx)(e.h3,{children:"Crypto Utilities"}),`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:"Note"}),": Encryption uses AES-GCM with 256-bit keys derived via PBKDF2 (SHA-256, 100,000 iterations)."]}),`
+`,(0,n.jsxs)(e.ol,{children:[`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"encryptData(data: string, password: string, salt: string): Promise<{ iv: number[], encryptedData: number[] }>"})}),`
+Encrypts a string using AES-GCM with a password-derived key and returns the IV and encrypted data.`]}),`
+`]}),`
+`,(0,n.jsx)(e.p,{children:(0,n.jsx)(e.strong,{children:"Usage Example:"})}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`const { iv, encryptedData } = await encryptData('Hello', 'password', 'salt');
+console.log(encryptedData);
+`})}),`
+`,(0,n.jsxs)(e.ol,{start:"2",children:[`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"decryptData(encryptedData: number[], iv: number[], password: string, salt: string): Promise<string>"})}),(0,n.jsx)(e.br,{}),`
+`,"Decrypts AES-GCM encrypted data using the provided IV, password, and salt."]}),`
+`,(0,n.jsx)(e.p,{children:(0,n.jsx)(e.strong,{children:"Usage Example:"})}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`const decrypted = await decryptData(encryptedData, iv, 'password', 'salt');
+console.log(decrypted); // 'Hello'
+`})}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"generateSalt(): string"})}),`
+Generates a 16-byte random salt string.`]}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"generatePassword(length: number): string"})}),`
+Generates a random password of the specified length.`]}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"generatePasswordWithSalt(length: number): { password: string, salt: string }"})}),`
+Generates a random password and salt.`]}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"generatePasswordWithSaltAndEncrypt(length: number, data: string): Promise<{ password: string, salt: string, encryptedData: { iv: number[], encryptedData: number[] } }>"})}),`
+Generates a password and salt, encrypts the provided data, and returns all components.`]}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"decryptPasswordWithSalt(encryptedData: number[], iv: number[], password: string, salt: string): Promise<string>"})}),`
+Decrypts data using the given encryptedData, IV, password, and salt.`]}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"decryptPasswordWithSaltAndEncrypt(encryptedData: number[], iv: number[], password: string, salt: string, data: string): Promise<string>"})}),`
+Decrypts and verifies that the decrypted data matches the original input.`]}),`
+`]}),`
+`]}),`
+`,(0,n.jsx)(e.h3,{children:"Date & Time Utilities"}),`
+`,(0,n.jsxs)(e.ol,{children:[`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"formatDate(date: Date, format: string): string"})}),(0,n.jsx)(e.br,{}),`
+`,"Formats a JavaScript ",(0,n.jsx)(e.code,{children:"Date"})," object into a custom string format like ",(0,n.jsx)(e.code,{children:"'YYYY-MM-DD HH:mm:ss'"}),"."]}),`
+`,(0,n.jsx)(e.p,{children:(0,n.jsx)(e.strong,{children:"Usage Example:"})}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`formatDate(new Date(), 'YYYY-MM-DD HH:mm:ss'); // "2025-05-13 12:34:56"
+`})}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"timeAgo(date: Date | string): string"})}),(0,n.jsx)(e.br,{}),`
+`,'Returns a human-readable time difference string like "5 minutes ago" or "2 days ago".']}),`
+`,(0,n.jsx)(e.p,{children:(0,n.jsx)(e.strong,{children:"Usage Example:"})}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`timeAgo(new Date('2025-05-12')); // "1 day ago"
+`})}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"isToday(date: Date): boolean"})}),`
+Returns `,(0,n.jsx)(e.code,{children:"true"})," if the given date is today."]}),`
+`,(0,n.jsx)(e.p,{children:(0,n.jsx)(e.strong,{children:"Usage Example:"})}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`isToday(new Date('2005-05-12')); // "false"
+`})}),`
+`]}),`
+`]}),`
+`,(0,n.jsx)(e.h3,{children:"Environment Detection"}),`
+`,(0,n.jsxs)(e.ol,{children:[`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"isMobile(): boolean"})}),`
+Detects whether the current device is a mobile device.`]}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"isDarkMode(): boolean"})}),`
+Detects whether the user's system prefers dark mode.`]}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"isTouchDevice(): boolean"})}),`
+Checks if the current device supports touch interactions.`]}),`
+`]}),`
+`]}),`
+`,(0,n.jsx)(e.h3,{children:"Storage Utilities"}),`
+`,(0,n.jsxs)(e.ol,{children:[`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"setLocalStorage(key: string, value: any): void"})}),(0,n.jsx)(e.br,{}),`
+`,"Sets a value in ",(0,n.jsx)(e.code,{children:"localStorage"}),"."]}),`
+`,(0,n.jsx)(e.p,{children:(0,n.jsx)(e.strong,{children:"Usage Example:"})}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`setLocalStorage('user', { name: 'Alice' });
+`})}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"getLocalStorage(key: string): any"})}),(0,n.jsx)(e.br,{}),`
+`,"Retrieves a value from ",(0,n.jsx)(e.code,{children:"localStorage"}),"."]}),`
+`,(0,n.jsx)(e.p,{children:(0,n.jsx)(e.strong,{children:"Usage Example:"})}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`const user = getLocalStorage('user');
+console.log(user.name); // "Alice"
+`})}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"removeLocalStorage(key: string): void"})}),`
+Removes a value from `,(0,n.jsx)(e.code,{children:"localStorage"}),"."]}),`
+`,(0,n.jsx)(e.h4,{children:"IndexDB - idb"}),`
+`,(0,n.jsx)(e.blockquote,{children:`
+`}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`interface IDBOpenOptions: {
+   version?: number;
+   schema?: Record<string, IDBObjectStoreParameters>;
+   }
+interface CursorOptions<T = any> {
+   range?: IDBKeyRange | null;
+   offset?: number;
+   limit?: number;
+   filter?: (value: T, key: IDBValidKey) => boolean;
+   sort?: (a: T, b: T) => number;
+}
+`})}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"idb.open(name: string, options?: IDBOpenOptions): Promise<IDBDatabase>"})}),`
+Opens an IndexedDB database, creating object stores if they don\u2019t exist.
+`,(0,n.jsx)(e.strong,{children:"Usage Example:"})]}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`const db = await idb.open('my-db', {
+  version: 1,
+  schema: {
+    users: { keyPath: 'id', autoIncrement: true },
+  },
+});
+console.log(db.objectStoreNames); // ["users"]
+`})}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"idb.get<T>(dbName: string, store: string, key: IDBValidKey): Promise<T | undefined>"})}),`
+Retrieves a single item from the specified object store by key.
+`,(0,n.jsx)(e.strong,{children:"Usage Example:"})]}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`const user = await idb.get('my-db', 'users', 1);
+console.log(user?.name); // "Alice"
+`})}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"idb.put<T>(dbName: string, store: string, value: T): Promise<IDBValidKey>"})}),`
+Inserts or updates an item in the object store.
+`,(0,n.jsx)(e.strong,{children:"Usage Example:"})]}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`const key = await idb.put('my-db', 'users', { name: 'Alice' });
+console.log(key); // 1
+`})}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"idb.clear(dbName: string, store: string): Promise<void>"})}),`
+Removes all items from the specified object store.
+`,(0,n.jsx)(e.strong,{children:"Usage Example:"})]}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`await idb.clear('my-db', 'users');
+`})}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"idb.deleteDB(name: string): Promise<void>"})}),`
+Deletes the entire database.
+`,(0,n.jsx)(e.strong,{children:"Usage Example:"})]}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`await idb.deleteDB('my-db');
+`})}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"idb.cursor.each<T>(dbName: string, store: string, callback: (value: T, key: IDBValidKey, cursor: IDBCursorWithValue) => void): Promise<void>"})}),`
+Iterates over all items in the store and executes the callback for each.
+`,(0,n.jsx)(e.strong,{children:"Usage Example:"})]}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`await idb.cursor.each('my-db', 'users', (value, key) => {
+  console.log(key, value.name);
+});
+`})}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"idb.cursor.query<T>(dbName: string, store: string, options?: CursorOptions<T>): Promise<T[]>"})}),`
+Advanced cursor query with optional `,(0,n.jsx)(e.code,{children:"filter"}),", ",(0,n.jsx)(e.code,{children:"sort"}),", ",(0,n.jsx)(e.code,{children:"offset"}),", and ",(0,n.jsx)(e.code,{children:"limit"}),`.
+`,(0,n.jsx)(e.strong,{children:"Usage Example:"})]}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`const users = await idb.cursor.query('my-db', 'users', {
+  filter: (user) => user.age >= 18,
+  sort: (a, b) => a.age - b.age,
+  offset: 1,
+  limit: 2,
+});
+console.log(users);
+`})}),`
+`]}),`
+`]}),`
+`,(0,n.jsx)(e.h3,{children:"DOM Utilities"}),`
+`,(0,n.jsxs)(e.ol,{children:[`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"hasClass(el: Element, className: string): boolean"})}),(0,n.jsx)(e.br,{}),`
+`,"Checks if an element contains a class."]}),`
+`,(0,n.jsx)(e.p,{children:(0,n.jsx)(e.strong,{children:"Usage Example:"})}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`hasClass(document.body, 'dark-mode'); // true/false
+`})}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"addClass(el: Element, className: string): void"})}),(0,n.jsx)(e.br,{}),`
+`,"Adds a class to an element."]}),`
+`,(0,n.jsx)(e.p,{children:(0,n.jsx)(e.strong,{children:"Usage Example:"})}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`addClass(document.body, 'dark-mode');
+`})}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"removeClass(el: Element, className: string): void"})}),(0,n.jsx)(e.br,{}),`
+`,"Removes a class from an element."]}),`
+`,(0,n.jsx)(e.p,{children:(0,n.jsx)(e.strong,{children:"Usage Example:"})}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-ts",children:`removeClass(document.body, 'dark-mode');
+`})}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.code,{children:"toggleClass(el: Element, className: string): void"})}),`
+Toggles a class on an element.`]}),`
+`]}),`
+`]}),`
+`,(0,n.jsx)(e.h2,{children:"License"}),`
+`,(0,n.jsxs)(e.p,{children:["This project is licensed under the MIT License. For more details, see the ",(0,n.jsx)(e.a,{href:"./LICENSE",children:"LICENSE"}),"."]})]})}function h(r={}){let{wrapper:e}=r.components||{};return e?(0,n.jsx)(e,{...r,children:(0,n.jsx)(o,{...r})}):o(r)}return D(v);})();
+;return Component;0:{"buildId":"jukzEBMnyAZIiJFCqwqHd","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"isa-util","content":"$3","repository":"https://github.com/yoonjonglyu/util-helper","homepage":"https://www.npmjs.com/package/isa-util"}],["$L4"],"$L5"]}],"loading":null,"isPartial":false}
+4:["$","script","script-0",{"src":"/_next/static/chunks/e0a660edf8719343.js","async":true}]
+5:["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]
+8:null
