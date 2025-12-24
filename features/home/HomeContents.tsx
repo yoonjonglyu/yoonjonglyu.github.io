@@ -82,7 +82,7 @@ const HomeContents: FC = () => {
 
   return (
     <>
-      {isMobile() ? null : <MouseGlow ref={glowRef} />}
+      {typeof navigator !== 'undefined' && isMobile() ? null : <MouseGlow ref={glowRef} />}
       <NoiseOverlay />
       <Container>
         <ContentsArea>
