@@ -34,8 +34,9 @@ export default function StyledComponentsRegistry({
 
 export const GlobalCSS = createGlobalStyle`
         :root {
-          --color-background-space: #12172f;
+          --color-background-space: #0b0e14; 
           --color-background-card: #1e202c;
+          --color-secondary-space: #12172f;
           --color-point: #8a40b8;
           --color-rare: #c4c118;
           --color-unique: #9e2e06;
@@ -58,5 +59,9 @@ export const GlobalCSS = createGlobalStyle`
             background: var(--color-background-card);
             border-radius: 12px;
           }
+        }
+        /* Storybook Docs 배경색 조정 */
+        .docs-story {
+          background: var(--color-background-space) !important;
         }
       `;

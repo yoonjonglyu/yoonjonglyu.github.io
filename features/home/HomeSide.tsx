@@ -1,96 +1,159 @@
-import React, { useEffect } from 'react';
+'use client';
+import { type FC } from 'react';
 import styled from 'styled-components';
 import Link from 'next/link';
 
-import SideCard from '../../components/molecules/SideCard';
-
-import useToyList from '../../hooks/toy/useToyList';
-import useProjectList from '../../hooks/project/useProjectList';
-import usePackageList from '../../hooks/package/usePackageList';
+import { allProjects, allPackages } from '@contentlayer/generated';
+import SideCard from '@components/molecules/SideCard';
 
 const SideArea = styled.aside`
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 16px; /* 간격 확장 */
   overflow: hidden;
-  overflow-x: auto;
 
-  &::-webkit-scrollbar {
-    height: 3px;
-    background: none;
+  /* 리스트 스타일 커스텀 */
+  & ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
-  &::-webkit-scrollbar-thumb {
-    background: var(--color-point);
-    border-radius: 12px;
+
+  & li {
+    position: relative;
+    padding-left: 14px;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    transition: all 0.2s ease;
+
+    /* 리스트 불렛(Bullet)을 사이버틱한 점으로 변경 */
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 4px;
+      height: 4px;
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      transition: all 0.2s ease;
+    }
+
+    &:hover {
+      color: var(--color-point);
+      transform: translateX(4px);
+
+      &::before {
+        background: var(--color-point);
+        box-shadow: 0 0 8px var(--color-point);
+      }
+    }
   }
 
   & a {
     text-decoration: none;
     color: inherit;
-  }
-  & a:hover {
-    color: var(--color-point);
-    text-decoration: underline;
+    display: block;
+    width: 100%;
   }
 
   @media (max-width: 1024px) {
     flex-direction: row;
-    & div {
-      flex: 0 0 95%;
+    overflow-x: auto;
+    padding-bottom: 10px;
+
+    & > div {
+      flex: 0 0 280px; /* 모바일에서 가로 스크롤 카드 너비 고정 */
+    }
+
+    &::-webkit-scrollbar {
+      height: 3px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: var(--color-point);
+      border-radius: 10px;
     }
   }
 `;
-const CardHead = styled.h3`
-  color: var(--color-unique);
+
+const CardHead = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  & h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-unique);
+    letter-spacing: 0.5px;
+  }
+
+  /* 아이콘 느낌의 장식 요소 추가 */
+  &::after {
+    content: '◈';
+    font-size: 0.8rem;
+    opacity: 0.5;
+    color: var(--color-unique);
+  }
 `;
 
-export interface HomeSideProps {}
+const StyledSideCard = styled(SideCard)`
+  background: rgba(255, 255, 255, 0.03) !important;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 16px !important;
+  padding: 24px !important;
+  transition: border-color 0.3s ease;
 
-const HomeSide: React.FC<HomeSideProps> = () => {
-  const { ToyNavList, updateToyList } = useToyList();
-  const { projectNavList, updateProjectList } = useProjectList();
-  const { packageList, updatePackageList } = usePackageList();
+  &:hover {
+    border-color: rgba(var(--color-unique-rgb), 0.4) !important;
+  }
+`;
 
-  useEffect(() => {
-    updateToyList();
-    updateProjectList();
-    updatePackageList();
-  }, []);
-
+const HomeSide: FC = () => {
+  const projects = allProjects
+    .slice()
+    .sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
+  const packages = allPackages
+    .slice()
+    .sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
+    
   return (
     <SideArea>
-      <SideCard
-        header={<CardHead>Toy</CardHead>}
+      <StyledSideCard
+        header={
+          <CardHead>
+            <h3>Project</h3>
+          </CardHead>
+        }
         contents={
           <ul>
-            {ToyNavList.map((item) => (
-              <li key={item.idx}>
-                <Link href={`/toy/article?post=${item.idx}`}>{item.title}</Link>
+            {projects.map((item) => (
+              <li key={item.slug}>
+                <Link href={`/archive/project/${item.slug}`}>{item.title}</Link>
               </li>
             ))}
           </ul>
         }
       />
-      <SideCard
-        header={<CardHead>Project</CardHead>}
-        contents={
-          <ul>
-            {projectNavList.map((item) => (
-              <li key={item.idx}>
-                <Link href={`/project/article?post=${item.idx}`}>{item.title}</Link>
-              </li>
-            ))}
-          </ul>
+      <StyledSideCard
+        header={
+          <CardHead>
+            <h3>Package</h3>
+          </CardHead>
         }
-      />
-      <SideCard
-        header={<CardHead>Package</CardHead>}
         contents={
           <ul>
-            {packageList.map((item) => (
-              <li key={item.idx}>
-                <Link href={`/package?post=${item.idx}`}>{item.title}</Link>
+            {packages.map((item) => (
+              <li key={item.slug}>
+                <Link href={`/archive/package/${item.slug}`}>{item.title}</Link>
               </li>
             ))}
           </ul>

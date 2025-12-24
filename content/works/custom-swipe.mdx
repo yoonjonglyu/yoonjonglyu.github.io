@@ -1,0 +1,108 @@
+---
+title: 'Custom Swipe'
+summary: '프레임워크 독립적인 Headless Swipe 라이브러리'
+featured: false
+category: 'system'
+thumbnail: 'https://github.com/yoonjonglyu/custom-swipe/raw/main/swipe.png'
+order: 2
+tags: ['TypeScript', 'Headless', 'Swipe', 'Library', 'Multi-Framework']
+---
+
+## 개요
+
+**Custom Swipe**는 UI 스타일을 강제하지 않고, 스와이프의 핵심 로직만 제공하는  
+프레임워크 독립형 Headless Swipe 라이브러리이다.
+
+React, Vue, Svelte 등 특정 프레임워크에 종속되지 않도록 설계되었으며,  
+저사양 환경에서도 안정적으로 동작하는 **경량성**과 **예측 가능한 동작**을 목표로 개발되었다.
+
+---
+
+## 문제 정의
+
+기존의 주요 스와이프 라이브러리들은 다음과 같은 구조적 한계를 가지고 있었다.
+
+- 기능 과다로 인한 **번들 사이즈 증가**
+- 라이브러리 고유 스타일로 인한 **디자인 시스템 충돌**
+- 프레임워크 상태 시스템에 과도하게 의존하는 구조
+- 커스터마이징 시 내부 구현을 이해해야 하는 높은 진입 장벽
+
+특히 “스와이프 동작만 필요하지만 UI는 직접 제어하고 싶은” 경우에 적합한 선택지가 부족했다.
+
+---
+
+## 해결 전략
+
+### 1. Headless 아키텍처
+
+UI 렌더링을 완전히 배제하고,  
+스와이프에 필요한 **좌표 계산 · 이벤트 처리 · 상태 전이 로직만 제공**하도록 설계했다.
+
+이를 통해 마크업 구조나 스타일 제약 없이  
+프로젝트별 디자인 시스템에 자연스럽게 통합할 수 있다.
+
+---
+
+### 2. DOM 중심의 비제어 방식
+
+React 등의 상태 관리 흐름에 종속되지 않도록  
+핵심 로직은 **Vanilla DOM API 기반**으로 구현했다.
+
+- 불필요한 리렌더링 제거
+- 애니메이션·제스처 처리 시 예측 가능한 타이밍 확보
+- 프레임워크 간 동일한 동작 보장
+
+---
+
+### 3. Core + Wrapper 구조 (Monorepo)
+
+하나의 Core 패키지를 기준으로  
+각 프레임워크 전용 Wrapper를 분리한 구조를 채택했다.
+
+- `custom-swipe` (Core)
+- `react-custom-swipe`
+- `vue-custom-swipe`
+- `svelte-custom-swipe`
+
+이를 통해 로직 중복 없이 멀티 프레임워크 지원이 가능하도록 했다.
+
+---
+
+## 주요 기능
+
+- Swipe
+- Infinite Swipe (Scroll)
+- Carousel
+- Headless Hook 기반 제어
+
+---
+
+## 기술 스택 및 선택 이유
+
+- **TypeScript**  
+  → 복잡한 제스처 이벤트와 옵션 구조를 명확하게 표현하기 위해 사용
+
+- **Vanilla DOM API**  
+  → 성능 최적화 및 프레임워크 독립성 확보
+
+- **Monorepo 구조**  
+  → Core 로직의 일관성과 유지보수 효율성 확보
+
+---
+
+## 결과 및 의의
+
+- 번들 사이즈 최소화
+- 프레임워크에 관계없이 동일한 스와이프 경험 제공
+- 디자인 시스템 친화적인 Headless 구조 확립
+
+Custom Swipe는  
+“라이브러리를 쓰되, 라이브러리에 지배당하지 않는 구조”를 목표로 한 작업이다.
+
+---
+
+## 링크
+
+- GitHub: [https://github.com/yoonjonglyu/custom-swipe](https://github.com/yoonjonglyu/custom-swipe)  
+- NPM: [https://www.npmjs.com/package/custom-swipe](https://www.npmjs.com/package/custom-swipe)  
+- Demo: [https://yoonjonglyu.github.io/custom-swipe/](https://yoonjonglyu.github.io/custom-swipe/)

@@ -1,12 +1,12 @@
-import { useRecoilState, useRecoilValue } from 'recoil';
+import { useAtom, useAtomValue } from 'jotai';
 
 import { ProjectListState, ProjectNavListState } from '../../store/project';
 
 import { GetProjectList } from '../../api/project';
 
 const useProjectList = () => {
-  const [projectList, setProjectList] = useRecoilState(ProjectListState);
-  const projectNavList = useRecoilValue(ProjectNavListState);
+  const [projectList, setProjectList] = useAtom(ProjectListState);
+  const projectNavList = useAtomValue(ProjectNavListState);
 
   const updateProjectList = async () => {
     const res = await GetProjectList();

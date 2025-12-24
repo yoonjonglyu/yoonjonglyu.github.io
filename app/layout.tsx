@@ -1,5 +1,6 @@
-import { Metadata } from 'next';
 import 'normalize.css/normalize.css';
+
+import generateMeta from '@lib/seo/generateMeta';
 
 import StyledComponentsRegistry, {
   GlobalCSS,
@@ -8,19 +9,25 @@ import BasicLayout from '../components/layouts/BasicLayout';
 import ConfigureStore from '../store';
 import ReactQueryProvider from '../provider/query/QueryProvider';
 
-export const metadata: Metadata = {
-  title: 'ISA Archive',
-  description: 'dev ISA archive',
-  authors: [{ name: 'yoonjonglyu' }],
-  keywords: ['devlop', 'ISA', 'frontend', 'archive', '개발', '프론트엔드', 'react'],
-  robots: { index: true, follow: true },
-  openGraph: {
-    title: '개발자ISA 아카이브',
-    type: 'website',
-    url: 'https://yoonjonglyu.github.io/',
-    description: '개인적으로 개발한 잡다한 것들을 정리해서 아카이브 하기 위한 사이트입니다.'
-  }
-};
+export const metadata = generateMeta({
+  title: 'Frontend Engineer',
+  description:
+    'ISA의 개인 아카이브입니다. UI 아키텍처, 컴포넌트 시스템, 유틸 라이브러리, PWA 등 실제 제품 중심의 작업을 기록합니다.',
+  url: 'https://yoonjonglyu.github.io/',
+  keywords: [
+    'Frontend Engineer',
+    'UI Architecture',
+    'Component System',
+    'TypeScript',
+    'React',
+    'Portfolio',
+    'Web Application',
+    '개발',
+    '프론트엔드',
+  ],
+  type: 'website',
+  robots: true,
+});
 
 export default function RootLayout({
   children,
@@ -28,7 +35,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='kr'>
+    <html lang='en'>
       <head>
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link

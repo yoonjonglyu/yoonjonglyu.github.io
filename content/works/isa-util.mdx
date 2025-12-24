@@ -1,0 +1,109 @@
+---
+title: "ISA Util"
+summary: "TypeScript 기반의 공통 유틸리티 헬퍼 라이브러리"
+featured: false
+category: "system"
+thumbnail: "/works/isa-util/thumbnail.png"
+order: 3
+tags: ["TypeScript", "Utility", "Library", "Jest"]
+---
+
+## 개요
+
+**ISA Util**은 프론트엔드 프로젝트 전반에서 반복적으로 사용되는  
+데이터 가공·검증·비동기 제어 로직을 하나의 일관된 인터페이스로 제공하는  
+TypeScript 기반 유틸리티 라이브러리이다.
+
+프로젝트마다 흩어져 있던 유틸 함수들을 정리하고,  
+타입 안정성과 테스트 가능성을 확보하는 것을 목표로 개발되었다.
+
+---
+
+## 문제 정의
+
+프론트엔드 개발 과정에서 다음과 같은 문제가 반복적으로 발생했다.
+
+- 프로젝트마다 유사한 유틸 함수가 **중복 구현**
+- JavaScript 기반 유틸의 **불명확한 타입**으로 인한 런타임 오류
+- 검증되지 않은 헬퍼 함수의 무분별한 사용
+- 공통 로직 변경 시 여러 프로젝트를 동시에 수정해야 하는 구조
+
+단순한 함수 모음이 아니라,  
+**신뢰 가능한 공통 레이어**가 필요하다고 판단했다.
+
+---
+
+## 해결 전략
+
+### 1. TypeScript 중심 설계
+
+모든 유틸 함수는 입력과 출력 타입을 명확히 정의했다.
+
+- 잘못된 사용을 컴파일 단계에서 차단
+- IDE 자동 완성과 타입 힌트를 통한 DX 개선
+- 유틸 사용 자체가 문서 역할을 하도록 설계
+
+---
+
+### 2. 도메인 단위 모듈화
+
+기능을 목적별로 분리하여 관리했다.
+
+- type checking
+- formatting
+- async control (debounce, throttle, queue)
+- storage (localStorage, IndexedDB)
+- crypto
+- environment / platform detection
+- DOM helpers
+
+이를 통해 필요한 기능만 선택적으로 가져와 사용할 수 있도록 구성했다.
+
+---
+
+### 3. 테스트 기반 신뢰성 확보
+
+각 유틸 함수는 가능한 엣지 케이스를 고려하여  
+`Jest` 기반의 단위 테스트를 작성했다.
+
+- 날짜·숫자 포맷
+- 비동기 큐 처리
+- 암호화 / 복호화 로직
+- 환경 판별 함수
+
+유틸리티 레이어를 “의심하지 않고 사용할 수 있는 영역”으로 만드는 것이 목표였다.
+
+---
+
+## 기술적 선택 근거
+
+- **TypeScript**  
+  → 유틸 함수 특성상 재사용성과 안정성이 가장 중요했기 때문
+
+- **Jest**  
+  → 빠른 테스트 작성과 커버리지 확인에 적합
+
+- **Babel**  
+  → 다양한 실행 환경(Node / Browser)에서의 호환성 확보
+
+- **npm 배포**  
+  → 여러 프로젝트에서 동일한 버전을 일관되게 사용하기 위함
+
+---
+
+## 결과 및 의의
+
+- 프로젝트 간 유틸 코드 중복 제거
+- 타입 기반으로 신뢰 가능한 공통 로직 레이어 구축
+- 비동기 작업 관리(JobQueue, FlushQueue) 등 실무 중심 유틸 축적
+- 지속적인 유지보수를 전제로 한 라이브러리 운영 경험 확보
+
+ISA Util은  
+“작지만 무너지지 않는 기반 코드”를 만드는 것을 목표로 한 작업이다.
+
+---
+
+## 링크
+
+- GitHub: [https://github.com/yoonjonglyu/util-helper](https://github.com/yoonjonglyu/util-helper)  
+- NPM: [https://www.npmjs.com/package/isa-util](https://www.npmjs.com/package/isa-util)

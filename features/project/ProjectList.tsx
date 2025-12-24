@@ -1,10 +1,9 @@
 'use client';
-import React, { useEffect } from 'react';
-import { styled } from 'styled-components';
+import { type FC } from 'react';
+import styled from 'styled-components';
+import { allProjects } from '@contentlayer/generated';
 
-import PostCard from '../../components/molecules/PostCard';
-
-import useProjectList from '../../hooks/project/useProjectList';
+import TextItem from '@components/molecules/TextItem';
 
 const Container = styled.div`
   display: flex;
@@ -23,24 +22,21 @@ const ListArea = styled.section`
   }
 `;
 
-export interface ProjectListProps {}
-
-const ProjectList: React.FC<ProjectListProps> = () => {
-  const { projectList, updateProjectList } = useProjectList();
-
-  useEffect(() => {
-    updateProjectList();
-  }, []);
+const ProjectList: FC = () => {
+  const projects = allProjects
+    .slice()
+    .sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
 
   return (
     <Container>
       <ListArea>
-        {projectList.map((item) => (
-          <PostCard
-            key={item.idx}
-            thumnail={{ src: item.img, alt: item.title }}
-            href={`/project/article?post=${item.idx}`}
+        {projects.map((item, index) => (
+          <TextItem
+            key={item.slug}
+            href={`/archive/project/${item.slug}`}
             title={item.title}
+            index={index + 1}
+            stacks={item.stack}
             description={item.description}
           />
         ))}

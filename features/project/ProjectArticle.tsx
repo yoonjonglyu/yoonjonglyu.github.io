@@ -1,44 +1,65 @@
 'use client';
-import React, { useState, useEffect } from 'react';
+import { type FC } from 'react';
 import { styled } from 'styled-components';
-import { getQuery } from 'isa-util';
+import Link from 'next/link';
 
-import ContentsCard from '../../components/molecules/ContentsCard';
-
-import useProjectContents from '../../hooks/project/useProjectContents';
+import ContentsCard from '@components/molecules/ContentsCard';
 
 const Container = styled.div`
   display: flex;
   flex-direction: row;
-  margin: 24px 3px;
-`;
-const ArticleArea = styled.section`
-  flex: 1;
-  display: flex;
-  flex-wrap: wrap;
   gap: 18px;
-  overflow: hidden;
-
+  margin: 24px 3px;
   @media (max-width: 1024px) {
-    justify-content: center;
+    flex-direction: column-reverse;
   }
 `;
+const ArticleArea = styled.section`
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 3px;
+  overflow: hidden;
+  & a {
+    color: var(--color-rare);
+  }
+`;
+const ArticleLinkConainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  gap: 12px;
+`;
 
-export interface ProjectArticleProps {}
+export interface ProjectArticleProps {
+  title: string;
+  content: string;
+  repository: string;
+  homepage: string;
+}
 
-const ProjectArticle: React.FC<ProjectArticleProps> = () => {
-  const [index, setIndex] = useState(0);
-  const { data } = useProjectContents(index);
-
-  useEffect(() => {
-    const post = parseInt(getQuery().get('post'));
-    if (!isNaN(post)) setIndex(post);
-  }, []);
-
+const ProjectArticle: FC<ProjectArticleProps> = ({
+  title,
+  content,
+  repository,
+  homepage,
+}) => {
   return (
     <Container>
       <ArticleArea>
-        <ContentsCard header={'project article'} contents={data} />
+        <ContentsCard header={title} contents={content} />
+        <ArticleLinkConainer>
+          <Link href='/archive' style={{ textDecoration: 'none' }}>
+            ← Back to Archive
+          </Link>
+          <Link href={repository} style={{ textDecoration: 'none' }} target='_blank' rel='noopener noreferrer'>
+            Github
+          </Link>
+          <Link href={homepage} style={{ textDecoration: 'none' }} target='_blank' rel='noopener noreferrer'>
+            NPM
+          </Link>
+        </ArticleLinkConainer>
       </ArticleArea>
     </Container>
   );

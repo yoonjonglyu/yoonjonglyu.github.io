@@ -1,13 +1,13 @@
 'use client';
 import React from 'react';
-import { RecoilRoot } from 'recoil';
+import { Provider } from 'jotai';
 
 export interface ConfigureStore {
   children: React.ReactNode;
 }
 
 const ConfigureStore: React.FC<ConfigureStore> = ({ children }) => {
-  return <RecoilRoot>{children}</RecoilRoot>;
+  return <Provider>{children}</Provider>;
 };
 
 export default ConfigureStore;

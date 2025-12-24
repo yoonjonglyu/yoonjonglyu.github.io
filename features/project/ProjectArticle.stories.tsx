@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/nextjs-vite';
 
 import ProjectArticle from './ProjectArticle';
 
@@ -13,7 +13,12 @@ export default meta;
 type Story = StoryObj<typeof ProjectArticle>;
 
 export const Basic: Story = {
-  args: {},
+  args: {
+    title: 'Sample Project Article',
+    content: 'This is a sample content for the project.',
+    repository: 'https://github.com/example/repo',
+    homepage: 'https://www.npmjs.com/package/example-package',
+  },
   decorators: [
     (Story) => {
       return <Story />;

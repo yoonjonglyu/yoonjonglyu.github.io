@@ -1,10 +1,15 @@
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const { withContentlayer } = require('next-contentlayer');
+
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: false,
+  reactStrictMode: true,
   output: 'export',
   images: { unoptimized: true },
   compiler: {
     styledComponents: true,
   },
+  turbopack: {},
 };
 
-module.exports = nextConfig;
+module.exports = withContentlayer(nextConfig);

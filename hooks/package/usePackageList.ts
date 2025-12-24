@@ -1,11 +1,11 @@
-import { useRecoilState } from 'recoil';
+import { useAtom } from 'jotai';
 
 import { PackageListState } from '../../store/package';
 
 import { GetPackageList } from '../../api/package';
 
 const usePackageList = () => {
-  const [packageList, setPackageList] = useRecoilState(PackageListState);
+  const [packageList, setPackageList] = useAtom(PackageListState);
 
   // 이 프로젝트처럼 json-server 형식으로 사용할게 아니라면 react-query를 쓸듯
   const updatePackageList = async () => {
