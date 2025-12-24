@@ -1,11 +1,13 @@
-import { type FC, useEffect, useMemo } from 'react';
+import { type FC, useMemo } from 'react';
 import styled from 'styled-components';
-import Image from 'next/image';
 import Link from 'next/link';
 
 import Card from '@components/atoms/Card';
+import Img from '@components/atoms/Img';
 import WCarousel from '@components/organisms/WCarousel';
-import useSelectList from '@hooks/select/useSelectList';
+
+import { allWorks } from '@contentlayer/generated';
+
 import NoImage from '../../assets/images/noimg.png';
 
 const Item = styled.ul`
@@ -104,41 +106,41 @@ const Item = styled.ul`
 `;
 
 const HomeShelf: FC = () => {
-  const { selectList, updateSelectList } = useSelectList();
-
-  useEffect(() => {
-    updateSelectList();
-  }, []);
-
+  const works = allWorks
+    .slice()
+    .sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
   // 끊김 방지를 위한 메모이제이션
   const carouselItems = useMemo(() => {
-    if (!selectList.length) return [];
+    if (!works.length) return [];
 
-    const chunks = [selectList.slice(0, 3), selectList.slice(3, 6)];
+    const chunks = [works.slice(0, 3), works.slice(3, 6)].filter(
+      (item) => item.length > 0,
+    );
 
     return chunks.map((items, key) => (
       <Item key={key}>
         {items.map((item) => (
-          <li key={item.idx}>
-            <Link href={item.href || ''} draggable='false'>
+          <li key={item.slug}>
+            <Link href={`/work/${item.slug}`} draggable='false'>
               <div className='img-wrapper'>
-                <Image
-                  src={item.img || NoImage}
-                  alt={item.title || 'article'}
-                  layout='fill'
+                <Img
+                  src={item.thumbnail || NoImage}
+                  alt={`${item.title} thumbnail`}
                   draggable={false}
+                  fill
+                  noImage={NoImage.src}
                 />
               </div>
             </Link>
-            <Link href={item.href || ''} draggable='false'>
+            <Link href={`/work/${item.slug}`} draggable='false'>
               <h2>{item.title}</h2>
-              <p>{item.description}</p>
+              <p>{item.summary}</p>
             </Link>
           </li>
         ))}
       </Item>
     ));
-  }, [selectList]);
+  }, [works]);
 
   return (
     <Card

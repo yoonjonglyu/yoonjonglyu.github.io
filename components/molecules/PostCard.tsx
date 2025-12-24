@@ -1,9 +1,9 @@
 import React from 'react';
 import { styled } from 'styled-components';
-import Image from 'next/image';
 import Link from 'next/link';
 
-import Card from '../atoms/Card';
+import Img from '@components/atoms/Img';
+import Card from '@components/atoms/Card';
 
 import NoImage from '../../assets/images/noimg.png';
 
@@ -53,7 +53,7 @@ const PostCard: React.FC<PostCardProps> = (props) => {
       css={`
         width: 98%;
         max-width: 280px;
-        padding: 0; 
+        padding: 0;
         border-radius: 4px;
         overflow: hidden;
 
@@ -71,7 +71,7 @@ const PostCard: React.FC<PostCardProps> = (props) => {
       `}>
       <CardThumnail>
         <Link href={href}>
-          <Image src={thumnail.src || NoImage} alt={thumnail.alt} />
+          <Img src={thumnail.src || NoImage} alt={thumnail.alt} noImage={NoImage.src} />
         </Link>
       </CardThumnail>
       <CardBody>

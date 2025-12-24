@@ -1,7 +1,8 @@
-import { FC, useState } from 'react';
-import styled, { css } from 'styled-components';
-import Image from 'next/image';
+import { FC } from 'react';
+import styled from 'styled-components';
 import Link from 'next/link';
+
+import Img from '@components/atoms/Img';
 
 import NoImage from '../../assets/images/noimg.png';
 
@@ -125,18 +126,16 @@ const PanelCard: FC<PanelCardProps> = ({
   thumbnail,
   featured = false,
 }) => {
-  const [imgsrc, setImgsrc] = useState(thumbnail?.src || NoImage);
-
   return (
     <Panel $featured={featured}>
       <Thumbnail $featured={featured}>
         <Link href={href} tabIndex={-1}>
-          <Image
-            src={imgsrc}
+          <Img
+            src={thumbnail?.src}
             alt={thumbnail?.alt || title}
             fill
-            priority={featured}
-            onError={() => setImgsrc(NoImage)}
+            preload={featured}
+            noImage={NoImage.src}
           />
         </Link>
       </Thumbnail>
