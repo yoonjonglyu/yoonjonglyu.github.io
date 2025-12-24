@@ -27,11 +27,10 @@ jobs:
         uses: actions/setup-node@v4 # v3에서 v4로 업데이트 권장
         with:
           node-version: '20' # 명시적으로 버전을 지정하는 것이 안정적입니다
-          cache: 'npm' # npm 캐시를 활성화하여 빌드 속도 향상
 
       - name: Install dependencies
         # overrides가 있어도 혹시 모를 충돌을 방지하기 위해 legacy-peer-deps를 추가하는 것이 안전합니다
-        run: npm install --legacy-peer-deps
+        run: yarn install
 
       - name: Build
         # Next.js 16은 next build 시 output: 'export' 설정이 되어있으면 자동으로 out 폴더를 생성합니다
