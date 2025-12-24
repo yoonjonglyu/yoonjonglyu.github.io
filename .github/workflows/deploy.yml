@@ -33,7 +33,7 @@ jobs:
         run: yarn install
       # 1. Contentlayer 데이터 생성 단계 추가
       - name: Build Contentlayer
-        run: npx contentlayer build
+        run: yarn contentlayer
 
       - name: Build
         # Next.js 16은 next build 시 output: 'export' 설정이 되어있으면 자동으로 out 폴더를 생성합니다
