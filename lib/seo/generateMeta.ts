@@ -29,6 +29,7 @@ const generateMeta: generateMetaProps = (source) => {
     : { index: false, follow: false };
 
   return {
+    metadataBase: new URL('https://yoonjonglyu.github.io'),
     title,
     description,
     keywords: source.keywords,

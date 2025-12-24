@@ -5,7 +5,11 @@ import generateMeta from '@lib/seo/generateMeta';
 
 import PackageArticle from '@features/package/PackageArticle';
 
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
+  // 1. 데이터가 있는지 확인 (방어 코드)
+  if (!allPackages) return [];
   return allPackages.map((project) => ({
     slug: project.slug,
   }));

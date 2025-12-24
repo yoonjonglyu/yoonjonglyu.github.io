@@ -2,6 +2,7 @@ yarn*
 node_modules
 .next
 storybook-static
+out
 
 # Contentlayer
 .contentlayer

@@ -2,6 +2,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Card from '@components/atoms/Card';
+import { Mdx } from '@components/mdx';
 
 // 헤더 디자인 개선: 그라데이션 포인트 라인
 const ContentsHeader = styled.div`
@@ -111,13 +112,10 @@ const ContentsCard: React.FC<ContentsCardProps> = ({
   contents,
   CSS,
 }) => {
-  const TargetMdx =
+  const isStorybook =
     typeof window !== 'undefined' &&
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    (window as any).__STORYBOOK_PREVIEW__ !== undefined
-      ? ({ code }: { code: string }) => <PreviewMode code={code} />
-      : // eslint-disable-next-line @typescript-eslint/no-require-imports
-        require('@components/mdx').Mdx({ code: contents });
+    (window as any).__STORYBOOK_PREVIEW__ !== undefined;
+  
 
   return (
     <Card
@@ -134,7 +132,11 @@ const ContentsCard: React.FC<ContentsCardProps> = ({
       `}>
       <ContentsHeader>{header}</ContentsHeader>
       <ContentsBody>
-        <TargetMdx code={contents} />
+        {isStorybook ? (
+          <PreviewMode code={contents} />
+        ) : (
+          <Mdx code={contents} />
+        )}
       </ContentsBody>
     </Card>
   );
