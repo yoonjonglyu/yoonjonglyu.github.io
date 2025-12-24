@@ -32,14 +32,16 @@ const Resume: FC = () => {
       <Section title='Focus'>
         <ResumeFocus />
       </Section>
+      <PageBreak />
       <Section title='Work'>
         <ResumeWork />
       </Section>
-      <PageBreak />
       <Section title='Skills'>
         <ResumeSkill />
       </Section>
-      <Footer />
+      <Section title='contact'>
+        <Footer />
+      </Section>
     </Container>
   );
 };

@@ -1,24 +1,21 @@
-import { Metadata } from 'next';
+import generateMeta from '@lib/seo/generateMeta';
 
 import PackageList from '@features/package/PackageList';
 
-export const metadata: Metadata = {
-  title: 'ISA Archive - Package',
-  description: 'about Package',
+export const metadata = generateMeta({
+  title: 'Packages',
+  description:
+    'ISA가 설계·개발·유지 중인 TypeScript 기반 유틸리티 및 라이브러리 패키지 모음입니다. 재사용성과 구조 설계를 중심으로 한 코드 자산을 기록합니다.',
+  url: '/archive/package',
   keywords: [
-    'devlop',
-    'ISA',
-    'frontend',
-    'archive',
-    '개발',
-    '프론트엔드',
-    'react',
-    'Package',
+    'typescript package',
+    'javascript library',
+    'utility library',
+    'npm package',
   ],
-    openGraph: {
-    images: [`/api/og?title=Package`]
-  },
-};
+  type: 'website',
+  robots: true,
+});
 
 export default function PackagePage() {
   return <PackageList />;

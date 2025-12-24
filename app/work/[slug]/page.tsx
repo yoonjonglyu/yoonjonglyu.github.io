@@ -1,43 +1,48 @@
-import { Metadata } from 'next';
-import { allWorks } from '@contentlayer/generated';
 import { notFound } from 'next/navigation';
+
+import { allWorks } from '@contentlayer/generated';
+import generateMeta from '@lib/seo/generateMeta';
 
 import WorkArticle from '@features/work/WorkArticle';
 
-export const metadata: Metadata = {
-  title: 'ISA Archive - Work',
-  description: 'about Work',
-  keywords: [
-    'devlop',
-    'ISA',
-    'frontend',
-    'archive',
-    '개발',
-    '프론트엔드',
-    'react',
-    'work',
-    'project',
-    'package',
-  ],
-  openGraph: {
-    images: [`/api/og?title=Work`],
-  },
+type PageProps = {
+  params: Promise<{ slug: string }>;
 };
+
+/** ✅ SSG */
 export async function generateStaticParams() {
-  return allWorks.map((project) => ({
-    slug: project.slug,
+  return allWorks.map((work) => ({
+    slug: work.slug,
   }));
 }
+/** ✅ 메타데이터는 여기서 생성 */
+export async function generateMetadata({ params }: PageProps) {
+  const { slug } = await params;
+  const work = allWorks.find((p) => p.slug === slug);
 
-export default async function PackageArticlePage({
-  params,
-}: {
-  params: Promise<{ slug: string }>; // 1. Promise 타입으로 정의
-}) {
-  const resolvedParams = await params; // 2. await로 값 추출
-  const workInfo = allWorks.find((p) => p.slug === resolvedParams.slug);
+  if (!work) return {};
 
-  if (!workInfo) return notFound();
+  return generateMeta({
+    title: work.title,
+    description: work.summary,
+    url: `/work/${work.slug}`,
+    image:
+      work.thumbnail ??
+      `/api/og?title=${encodeURIComponent(
+        work.title,
+      )}&desc=${encodeURIComponent(work.summary)}`,
+    keywords: work.tags,
+    type: 'article',
+    robots: true,
+  });
+}
 
-  return <WorkArticle title={workInfo.title} content={workInfo.body.code} />;
+/** ✅ 페이지 본문 */
+export default async function WorkArticlePage({ params }: PageProps) {
+  const { slug } = await params;
+  const work = allWorks.find((p) => p.slug === slug);
+
+  if (!work) return notFound();
+
+  return <WorkArticle title={work.title} content={work.body.code} />;
 }

@@ -96,7 +96,6 @@ const Contents = styled.main`
   margin: 80px auto 40px auto; /* 헤더 높이만큼 마진 */
   padding: 0 20px;
   box-sizing: border-box;
-  overflow: auto;
 `;
 
 const Footer = styled.footer`
@@ -112,6 +111,9 @@ const Footer = styled.footer`
     font-size: 0.8rem;
     letter-spacing: 1px;
     text-transform: uppercase;
+  }
+  @media screen and (max-width: 1024px) {
+    display: none;
   }
 `;
 

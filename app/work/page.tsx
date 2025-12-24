@@ -1,26 +1,24 @@
-import { Metadata } from 'next';
+import generateMeta from '@lib/seo/generateMeta';
 
 import WorkList from '@features/work/WorkList';
 
-export const metadata: Metadata = {
-  title: 'ISA Archive - Work',
-  description: 'about Work',
+export const metadata = generateMeta({
+  title: 'Work',
+  description:
+    'UI 아키텍처, 컴포넌트 시스템, 유틸 라이브러리, PWA 등 실제 제품 단위로 정리한 작업 목록입니다.',
+  url: '/work',
+ image: `/api/og?title=ISA Work`,
   keywords: [
-    'devlop',
-    'ISA',
-    'frontend',
-    'archive',
-    '개발',
-    '프론트엔드',
-    'react',
-    'work',
-    'project',
-    'package',
+    'Frontend Portfolio',
+    'UI Architecture',
+    'Component System',
+    'Utility Library',
+    'Web Product',
   ],
-  openGraph: {
-    images: [`/api/og?title=Work`]
-  },
-};
+  type: 'website',
+  robots: true,
+});
+
 export default function WorkPage() {
   return <WorkList />;
 }

@@ -1,36 +1,39 @@
-import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+
 import { allPackages } from '@contentlayer/generated';
+import generateMeta from '@lib/seo/generateMeta';
 
 import PackageArticle from '@features/package/PackageArticle';
 
-export const metadata: Metadata = {
-  title: 'ISA Archive - Project Article',
-  description: 'about project Article',
-  keywords: [
-    'devlop',
-    'ISA',
-    'frontend',
-    'archive',
-    '개발',
-    '프론트엔드',
-    'react',
-    'project',
-  ],
-};
 export async function generateStaticParams() {
   return allPackages.map((project) => ({
     slug: project.slug,
   }));
 }
 
-export default async function PackageArticlePage({
-  params,
-}: {
-  params: Promise<{ slug: string }>; // 1. Promise 타입으로 정의
-}) {
-  const resolvedParams = await params; // 2. await로 값 추출
-  const packageInfo = allPackages.find((p) => p.slug === resolvedParams.slug);
+type PageProps = {
+  params: Promise<{ slug: string }>;
+};
+export async function generateMetadata({ params }: PageProps) {
+  const { slug } = await params;
+  const pkg = allPackages.find((p) => p.slug === slug);
+  if (!pkg) return {};
+
+  return generateMeta({
+    title: pkg.title,
+    description: pkg.description,
+    url: `/archive/package/${pkg.slug}`,
+    image: `/api/og?title=${encodeURIComponent(
+      pkg.title,
+    )}&desc=${encodeURIComponent(pkg.description)}`,
+    keywords: pkg.tags,
+    type: 'article',
+    robots: true,
+  });
+}
+export default async function PackageArticlePage({ params }: PageProps) {
+  const { slug } = await params;
+  const packageInfo = allPackages.find((p) => p.slug === slug);
 
   if (!packageInfo) return notFound();
 

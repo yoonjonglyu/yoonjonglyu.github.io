@@ -1,35 +1,38 @@
-import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+
 import { allProjects } from '@contentlayer/generated';
+import generateMeta from '@lib/seo/generateMeta';
 
 import ProjectArticle from '@features/project/ProjectArticle';
 
-export const metadata: Metadata = {
-  title: 'ISA Archive - Project Article',
-  description: 'about project Article',
-  keywords: [
-    'devlop',
-    'ISA',
-    'frontend',
-    'archive',
-    '개발',
-    '프론트엔드',
-    'react',
-    'project',
-  ],
+type PageProps = {
+  params: Promise<{ slug: string }>;
 };
+export async function generateMetadata({ params }: PageProps) {
+  const { slug } = await params;
+  const project = allProjects.find((p) => p.slug === slug);
+  if (!project) return {};
+
+  return generateMeta({
+    title: project.title,
+    description: project.description,
+    url: `/archive/project/${project.slug}`,
+    image: `/api/og?title=${encodeURIComponent(project.title)}&desc=${encodeURIComponent(project.description)}`,
+    keywords: project.tags,
+    type: 'article',
+    robots: true,
+  });
+}
+
 export async function generateStaticParams() {
   return allProjects.map((project) => ({
     slug: project.slug,
   }));
 }
-export default async function PackageArticlePage({
-  params,
-}: {
-  params: Promise<{ slug: string }>; // 1. Promise 타입으로 정의
-}) {
-  const resolvedParams = await params; // 2. await로 값 추출
-  const packageInfo = allProjects.find((p) => p.slug === resolvedParams.slug);
+
+export default async function PackageArticlePage({ params }: PageProps) {
+  const { slug } = await params;
+  const packageInfo = allProjects.find((p) => p.slug === slug);
 
   if (!packageInfo) return notFound();
   return (
