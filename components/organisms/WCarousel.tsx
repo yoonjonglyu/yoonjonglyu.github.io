@@ -49,6 +49,9 @@ const CarouselDot = styled.ul`
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 0 0 rgba(var(--color-point-rgb), 0);
   }
+  @media screen and (max-width: 1024px) {
+    bottom: 0;
+  }
 `;
 
 export interface WCarouselProps {
