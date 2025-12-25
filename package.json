@@ -74,7 +74,6 @@
   "overrides": {
     "next-contentlayer": {
       "next": "$next"
-    },
-    "styled-components": "^6.1.1"
+    }
   }
 }
