@@ -27,7 +27,8 @@
       "@hooks/*": ["./hooks/*"],
       "@lib/*": ["./lib/*"],
       "@contentlayer/generated": ["./.contentlayer/generated"],
-      "@contentlayer/generated/*": ["./.contentlayer/generated/*"]
+      "@contentlayer/generated/*": ["./.contentlayer/generated/*"],
+      "@provider/*": ["./provider/*"]
     }
   },
   "include": [

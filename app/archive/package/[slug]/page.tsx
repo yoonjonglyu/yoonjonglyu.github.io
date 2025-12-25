@@ -27,9 +27,7 @@ export async function generateMetadata({ params }: PageProps) {
     title: pkg.title,
     description: pkg.description,
     url: `/archive/package/${pkg.slug}`,
-    image: `/api/og?title=${encodeURIComponent(
-      pkg.title,
-    )}&desc=${encodeURIComponent(pkg.description)}`,
+    image: `/archive/package/${pkg.slug}/opengraph-image`,
     keywords: pkg.tags,
     type: 'article',
     robots: true,

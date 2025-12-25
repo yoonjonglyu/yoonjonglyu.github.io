@@ -34,9 +34,7 @@ export async function generateMetadata({ params }: PageProps) {
     url: `/work/${work.slug}`,
     image:
       work.thumbnail ??
-      `/api/og?title=${encodeURIComponent(
-        work.title,
-      )}&desc=${encodeURIComponent(work.summary)}`,
+      `/work/${work.slug}/opengraph-image`,
     keywords: work.tags,
     type: 'article',
     robots: true,
