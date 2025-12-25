@@ -57,7 +57,7 @@ const ProjectArticle: FC<ProjectArticleProps> = ({
             Github
           </Link>
           <Link href={homepage} style={{ textDecoration: 'none' }} target='_blank' rel='noopener noreferrer'>
-            NPM
+            Web
           </Link>
         </ArticleLinkConainer>
       </ArticleArea>

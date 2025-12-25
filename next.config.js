@@ -5,6 +5,7 @@ const { withContentlayer } = require('next-contentlayer2');
 const nextConfig = {
   reactStrictMode: false,
   output: 'export',
+  trailingSlash: true,
   images: { unoptimized: true },
   compiler: {
     styledComponents: true,

@@ -1,0 +1,92 @@
+---
+title: 'ISA Archive – Personal Resume Archive'
+summary: 'A component-driven portfolio platform focused on UI architecture and scalable content rendering.'
+
+resume:
+  title: 'Component-Driven Resume & Work Archive Platform'
+  period: 'Dec 2024 - Present'
+  role: 'Solo Frontend Engineer'
+  description: >
+    Designed and implemented a UI-architecture–centric portfolio platform that treats resumes and work logs
+    as programmatic structured data rather than static pages. The system emphasizes component isolation, 
+    predictable styling, and reusable layout primitives to support long-term scalability.
+  skills:
+    - Next.js
+    - Storybook
+    - Contentlayer
+    - TypeScript
+    - Styled Components
+    - Design System
+
+highlights:
+  - Structured all UI around a Component-Driven Development workflow, ensuring every layout and UI primitive is independently testable and reusable.
+  - Architected a design system with strict style encapsulation using CSS-in-JS to prevent global leakage and layout coupling.
+  - Separated content structure from presentation by introducing a typed content schema layer, enabling UI components to remain data-agnostic.
+  - Optimized UI scalability by standardizing layout contracts (section, block, highlight), eliminating the need for page-specific styling.
+
+featured: true
+category: 'product'
+order: 1
+thumbnail: '/content/archive.png'
+tags:
+  - Frontend
+  - UI Architecture
+  - Design System
+  - CDD
+---
+
+## Background
+
+Traditional portfolio sites often degrade over time due to tightly coupled layouts, ad-hoc styling rules, and content-specific components.
+This project was conceived as an experiment in treating a personal archive as a **UI system**, not just a collection of pages.
+
+The goal was to validate whether a resume and work history could be modeled as structured data rendered through
+stable, reusable UI primitives.
+
+---
+
+## Architectural Focus
+
+### Component-Driven UI Structure
+
+Instead of building pages directly, the entire UI is composed from isolated components defined and verified in Storybook.
+Each component represents a stable contract—where layout, spacing, typography, and interaction rules are fixed at the component level.
+
+This approach ensures:
+- Predictable UI behavior regardless of content changes.
+- Safe iteration on layout without page-level regressions.
+- Clear separation between data structure and visual styling.
+
+---
+
+### Styling Isolation & Predictability
+
+Styled Components were adopted to enforce strict style encapsulation.
+No global CSS rules or implicit inheritance are relied upon, ensuring high maintainability.
+
+Key outcomes:
+- Zero class name collisions.
+- Theme-level control over color, spacing, and typography.
+- Consistent rendering across layout variants.
+
+---
+
+### Data-Driven Rendering Layer
+
+Contentlayer is used to model resumes, work entries, and archives as typed data.
+UI components consume normalized data shapes rather than page-specific props.
+
+This allows:
+- Reusing the same UI components for various views (resume, work, archive).
+- Rendering different content densities without duplicating layout logic.
+- Long-term extensibility without refactoring the UI layer.
+
+---
+
+## Result
+
+The project functions as both a personal archive and a validation of a UI-architecture approach
+where **components, not pages, are the primary unit of design**.
+
+This structure enables the archive to grow without increasing UI complexity,
+making it suitable as a long-term professional record rather than a static showcase.

@@ -1,4 +1,8 @@
-import { defineDocumentType, makeSource } from 'contentlayer2/source-files';
+import {
+  defineDocumentType,
+  makeSource,
+  defineNestedType,
+} from 'contentlayer2/source-files';
 
 export const Project = defineDocumentType(() => ({
   name: 'Project',
@@ -46,34 +50,39 @@ export const Package = defineDocumentType(() => ({
   },
 }));
 
+const Resume = defineNestedType(() => ({
+  name: 'Resume',
+  fields: {
+    title: { type: 'string' },
+    period: { type: 'string' },
+    role: { type: 'string' },
+    description: { type: 'string' },
+    skills: { type: 'list', of: { type: 'string' } },
+  },
+}));
+
+// 2. Work 타입에서 위에서 정의한 Resume 타입을 사용합니다.
 export const Work = defineDocumentType(() => ({
   name: 'Work',
   filePathPattern: `works/*.mdx`,
   contentType: 'mdx',
   fields: {
-    /** 전시용 타이틀 */
     title: { type: 'string', required: true },
-    /** Work 리스트 / 카드에 쓰는 한 줄 요약 */
     summary: { type: 'string', required: true },
-    /** 대표 작업 여부 (Work 메인에서 강조용) */
+
+    // nested schema 대신 of: Resume 사용
+    resume: { type: 'nested', of: Resume },
+
+    highlights: { type: 'list', of: { type: 'string' } },
     featured: { type: 'boolean', default: false },
-    /** Work 분류 (optional, 확장 대비) */
     category: {
       type: 'enum',
       options: ['product', 'system', 'experiment'],
       default: 'product',
     },
-    /** 썸네일 (전시용) */
-    thumbnail: {
-      type: 'string',
-    },
-    /** 정렬용 */
+    thumbnail: { type: 'string' },
     order: { type: 'number' },
-    /** 기술 태그 (가볍게만, 필터용) */
-    tags: {
-      type: 'list',
-      of: { type: 'string' },
-    },
+    tags: { type: 'list', of: { type: 'string' } },
   },
   computedFields: {
     slug: {
