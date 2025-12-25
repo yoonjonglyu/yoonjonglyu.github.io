@@ -1,27 +1,34 @@
 ---
-title: "memo"
-description: "TypeScript와 Storybook을 활용한 컴포넌트 주도 개발 기반의 PWA 메모 앱"
-period: "2023.01"
-stack: ["TypeScript", "Storybook", "PWA", "HTML5", "CSS3"]
-role: "Frontend Developer"
-repository: "https://github.com/yoonjonglyu/memo"
-homepage: "https://yoonjonglyu.github.io/memo/"
-tags: ["CDD", "PWA", "LocalStorage", "Vanilla-Style"]
-order: 1
+title: 'memo'
+description: 'TypeScript와 Storybook을 활용한 컴포넌트 주도 개발 기반의 PWA 메모 앱'
+period: '2023.01'
+stack: ['TypeScript', 'Storybook', 'PWA', 'HTML5', 'CSS3']
+role: 'Frontend Developer'
+repository: 'https://github.com/yoonjonglyu/memo'
+homepage: 'https://yoonjonglyu.github.io/memo/'
+tags:
+  - CDD
+  - PWA
+  - LocalStorage
+  - Vanilla-Style
+order: 2
 ---
 
 ## 배경
+
 별도의 로그인이나 복잡한 데이터베이스 연결 없이, 브라우저만 있으면 어디서든 가볍게 메모를 남기고 확인할 수 있는 도구입니다.  
 단순한 메모 기능을 넘어 확장 가능하고 유지보수가 용이한 UI 컴포넌트 구조를 설계하는 데 목적을 두었습니다. 특히 **컴포넌트 주도 개발(CDD)** 방법론을 명확히 하고 이를 실제 프로젝트에 적용하여 UI 구성 요소의 재사용성을 극대화하고자 했습니다.  
-디자인은 심플하지만, 프론트엔드 설계의 핵심적인 요소들을 모두 포함하고 있습니다.  
+디자인은 심플하지만, 프론트엔드 설계의 핵심적인 요소들을 모두 포함하고 있습니다.
 
 ## 해결한 문제
+
 - **컴포넌트 독립성 확보**: `Storybook`을 도입하여 비즈니스 로직과 UI를 분리하고, 각 컴포넌트(메모 아이템, 입력창, 버튼 등)를 독립적인 환경에서 개발 및 테스트하여 의존성을 최소화했습니다.
 - **정적 타입을 통한 안정성**: `TypeScript`를 적용하여 메모 데이터 객체의 인터페이스를 정의하고, Props 전달 과정에서 발생할 수 있는 휴먼 에러를 컴파일 단계에서 차단했습니다.
 - **UI 일관성 유지**: 스토리북상에서 다양한 상태(Empty, Filled, Long Text 등)를 미리 시뮬레이션함으로써 엣지 케이스에서도 깨지지 않는 견고한 레이아웃을 구현했습니다.
 - **오프라인 환경 지원**: `PWA` 기술을 적용하여 네트워크 연결이 불안정한 환경에서도 메모를 확인하고 작성할 수 있는 사용자 경험을 제공했습니다.
 
 ## 기술적 선택 근거
+
 - **TypeScript**: 복잡해질 수 있는 상태 관리와 데이터 모델을 명확하게 정의하고, 코드 가독성과 협업 효율을 높이기 위해 채택했습니다.
 - **Storybook**: UI 컴포넌트를 문서화하고 시각적으로 검증하기 위한 최적의 도구로 판단했습니다. 별도의 페이지 구현 없이도 컴포넌트 단위의 빠른 피드백 루프를 생성하기 위해 활용했습니다.
 - **PWA (Progressive Web App)**: 웹 서비스임에도 네이티브 앱과 같은 사용자 경험을 제공하고자 했습니다. 서비스 워커(Service Worker)를 통한 캐싱 전략으로 로딩 속도를 개선하고, 홈 화면 추가 기능을 통해 접근성을 높였습니다.
