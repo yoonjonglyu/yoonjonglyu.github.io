@@ -2,93 +2,94 @@
 2:I[65942,["/_next/static/chunks/fae1b863422210d1.js","/_next/static/chunks/b0f8bde3a055b8de.js","/_next/static/chunks/6e28e59f9fa83153.js","/_next/static/chunks/0a3a85198fdb92f3.js"],"default"]
 6:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/247eb132b7f7b574.js"],"OutletBoundary"]
 7:"$Sreact.suspense"
-3:T231d,var Component=(()=>{var a=Object.create;var h=Object.defineProperty;var u=Object.getOwnPropertyDescriptor;var g=Object.getOwnPropertyNames;var m=Object.getPrototypeOf,b=Object.prototype.hasOwnProperty;var y=(e,n)=>()=>(n||e((n={exports:{}}).exports,n),n.exports),f=(e,n)=>{for(var l in n)h(e,l,{get:n[l],enumerable:!0})},t=(e,n,l,c)=>{if(n&&typeof n=="object"||typeof n=="function")for(let i of g(n))!b.call(e,i)&&i!==l&&h(e,i,{get:()=>n[i],enumerable:!(c=u(n,i))||c.enumerable});return e};var x=(e,n,l)=>(l=e!=null?a(m(e)):{},t(n||!e||!e.__esModule?h(l,"default",{value:e,enumerable:!0}):l,e)),S=e=>t(h({},"__esModule",{value:!0}),e);var o=y((D,d)=>{d.exports=_jsx_runtime});var w={};f(w,{default:()=>p,frontmatter:()=>j});var r=x(o()),j={title:"ISA Util",summary:"TypeScript \uAE30\uBC18\uC758 \uACF5\uD1B5 \uC720\uD2F8\uB9AC\uD2F0 \uD5EC\uD37C \uB77C\uC774\uBE0C\uB7EC\uB9AC",featured:!1,category:"system",thumbnail:"/works/isa-util/thumbnail.png",order:3,tags:["TypeScript","Utility","Library","Jest"]};function s(e){let n={a:"a",br:"br",code:"code",h2:"h2",h3:"h3",hr:"hr",li:"li",p:"p",strong:"strong",ul:"ul",...e.components};return(0,r.jsxs)(r.Fragment,{children:[(0,r.jsx)(n.h2,{children:"\uAC1C\uC694"}),`
-`,(0,r.jsxs)(n.p,{children:[(0,r.jsx)(n.strong,{children:"ISA Util"}),"\uC740 \uD504\uB860\uD2B8\uC5D4\uB4DC \uD504\uB85C\uC81D\uD2B8 \uC804\uBC18\uC5D0\uC11C \uBC18\uBCF5\uC801\uC73C\uB85C \uC0AC\uC6A9\uB418\uB294",(0,r.jsx)(n.br,{}),`
-`,"\uB370\uC774\uD130 \uAC00\uACF5\xB7\uAC80\uC99D\xB7\uBE44\uB3D9\uAE30 \uC81C\uC5B4 \uB85C\uC9C1\uC744 \uD558\uB098\uC758 \uC77C\uAD00\uB41C \uC778\uD130\uD398\uC774\uC2A4\uB85C \uC81C\uACF5\uD558\uB294",(0,r.jsx)(n.br,{}),`
+3:T25da,var Component=(()=>{var p=Object.create;var t=Object.defineProperty;var u=Object.getOwnPropertyDescriptor;var g=Object.getOwnPropertyNames;var y=Object.getPrototypeOf,m=Object.prototype.hasOwnProperty;var b=(i,n)=>()=>(n||i((n={exports:{}}).exports,n),n.exports),f=(i,n)=>{for(var r in n)t(i,r,{get:n[r],enumerable:!0})},h=(i,n,r,c)=>{if(n&&typeof n=="object"||typeof n=="function")for(let l of g(n))!m.call(i,l)&&l!==r&&t(i,l,{get:()=>n[l],enumerable:!(c=u(n,l))||c.enumerable});return i};var S=(i,n,r)=>(r=i!=null?p(y(i)):{},h(n||!i||!i.__esModule?t(r,"default",{value:i,enumerable:!0}):r,i)),j=i=>h(t({},"__esModule",{value:!0}),i);var s=b((J,d)=>{d.exports=_jsx_runtime});var T={};f(T,{default:()=>a,frontmatter:()=>x});var e=S(s()),x={title:"ISA Util",summary:"Type-safe TypeScript utility library",resume:{title:"Type-Safe Utility Helper Library",role:"Author",period:"2023.01 - Present",description:`A frontend utility library designed for maximum reusability and type stability. It standardizes core business logic into a single, type-safe layer to reduce duplication and prevent runtime errors across multiple projects.
+`,skills:["TypeScript","Utility","Library","Jest"]},highlights:["Standardized core business logic such as date formatting and numeric parsing, leading to a significant reduction in code duplication across projects.","Eliminated potential human errors during function calls by implementing strict TypeScript definitions and generics.","Established a unit testing suite using Jest to prevent side effects during logic updates and ensure high code reliability."],featured:!1,category:"system",thumbnail:"/content/isautil.png",order:4,tags:["TypeScript","Utility","Library","Jest"]};function o(i){let n={a:"a",br:"br",code:"code",h2:"h2",h3:"h3",hr:"hr",li:"li",p:"p",strong:"strong",ul:"ul",...i.components};return(0,e.jsxs)(e.Fragment,{children:[(0,e.jsx)(n.h2,{children:"\uAC1C\uC694"}),`
+`,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.strong,{children:"ISA Util"}),"\uC740 \uD504\uB860\uD2B8\uC5D4\uB4DC \uD504\uB85C\uC81D\uD2B8 \uC804\uBC18\uC5D0\uC11C \uBC18\uBCF5\uC801\uC73C\uB85C \uC0AC\uC6A9\uB418\uB294",(0,e.jsx)(n.br,{}),`
+`,"\uB370\uC774\uD130 \uAC00\uACF5\xB7\uAC80\uC99D\xB7\uBE44\uB3D9\uAE30 \uC81C\uC5B4 \uB85C\uC9C1\uC744 \uD558\uB098\uC758 \uC77C\uAD00\uB41C \uC778\uD130\uD398\uC774\uC2A4\uB85C \uC81C\uACF5\uD558\uB294",(0,e.jsx)(n.br,{}),`
 `,"TypeScript \uAE30\uBC18 \uC720\uD2F8\uB9AC\uD2F0 \uB77C\uC774\uBE0C\uB7EC\uB9AC\uC774\uB2E4."]}),`
-`,(0,r.jsxs)(n.p,{children:["\uD504\uB85C\uC81D\uD2B8\uB9C8\uB2E4 \uD769\uC5B4\uC838 \uC788\uB358 \uC720\uD2F8 \uD568\uC218\uB4E4\uC744 \uC815\uB9AC\uD558\uACE0,",(0,r.jsx)(n.br,{}),`
+`,(0,e.jsxs)(n.p,{children:["\uD504\uB85C\uC81D\uD2B8\uB9C8\uB2E4 \uD769\uC5B4\uC838 \uC788\uB358 \uC720\uD2F8 \uD568\uC218\uB4E4\uC744 \uC815\uB9AC\uD558\uACE0,",(0,e.jsx)(n.br,{}),`
 `,"\uD0C0\uC785 \uC548\uC815\uC131\uACFC \uD14C\uC2A4\uD2B8 \uAC00\uB2A5\uC131\uC744 \uD655\uBCF4\uD558\uB294 \uAC83\uC744 \uBAA9\uD45C\uB85C \uAC1C\uBC1C\uB418\uC5C8\uB2E4."]}),`
-`,(0,r.jsx)(n.hr,{}),`
-`,(0,r.jsx)(n.h2,{children:"\uBB38\uC81C \uC815\uC758"}),`
-`,(0,r.jsx)(n.p,{children:"\uD504\uB860\uD2B8\uC5D4\uB4DC \uAC1C\uBC1C \uACFC\uC815\uC5D0\uC11C \uB2E4\uC74C\uACFC \uAC19\uC740 \uBB38\uC81C\uAC00 \uBC18\uBCF5\uC801\uC73C\uB85C \uBC1C\uC0DD\uD588\uB2E4."}),`
-`,(0,r.jsxs)(n.ul,{children:[`
-`,(0,r.jsxs)(n.li,{children:["\uD504\uB85C\uC81D\uD2B8\uB9C8\uB2E4 \uC720\uC0AC\uD55C \uC720\uD2F8 \uD568\uC218\uAC00 ",(0,r.jsx)(n.strong,{children:"\uC911\uBCF5 \uAD6C\uD604"})]}),`
-`,(0,r.jsxs)(n.li,{children:["JavaScript \uAE30\uBC18 \uC720\uD2F8\uC758 ",(0,r.jsx)(n.strong,{children:"\uBD88\uBA85\uD655\uD55C \uD0C0\uC785"}),"\uC73C\uB85C \uC778\uD55C \uB7F0\uD0C0\uC784 \uC624\uB958"]}),`
-`,(0,r.jsx)(n.li,{children:"\uAC80\uC99D\uB418\uC9C0 \uC54A\uC740 \uD5EC\uD37C \uD568\uC218\uC758 \uBB34\uBD84\uBCC4\uD55C \uC0AC\uC6A9"}),`
-`,(0,r.jsx)(n.li,{children:"\uACF5\uD1B5 \uB85C\uC9C1 \uBCC0\uACBD \uC2DC \uC5EC\uB7EC \uD504\uB85C\uC81D\uD2B8\uB97C \uB3D9\uC2DC\uC5D0 \uC218\uC815\uD574\uC57C \uD558\uB294 \uAD6C\uC870"}),`
+`,(0,e.jsx)(n.hr,{}),`
+`,(0,e.jsx)(n.h2,{children:"\uBB38\uC81C \uC815\uC758"}),`
+`,(0,e.jsx)(n.p,{children:"\uD504\uB860\uD2B8\uC5D4\uB4DC \uAC1C\uBC1C \uACFC\uC815\uC5D0\uC11C \uB2E4\uC74C\uACFC \uAC19\uC740 \uBB38\uC81C\uAC00 \uBC18\uBCF5\uC801\uC73C\uB85C \uBC1C\uC0DD\uD588\uB2E4."}),`
+`,(0,e.jsxs)(n.ul,{children:[`
+`,(0,e.jsxs)(n.li,{children:["\uD504\uB85C\uC81D\uD2B8\uB9C8\uB2E4 \uC720\uC0AC\uD55C \uC720\uD2F8 \uD568\uC218\uAC00 ",(0,e.jsx)(n.strong,{children:"\uC911\uBCF5 \uAD6C\uD604"})]}),`
+`,(0,e.jsxs)(n.li,{children:["JavaScript \uAE30\uBC18 \uC720\uD2F8\uC758 ",(0,e.jsx)(n.strong,{children:"\uBD88\uBA85\uD655\uD55C \uD0C0\uC785"}),"\uC73C\uB85C \uC778\uD55C \uB7F0\uD0C0\uC784 \uC624\uB958"]}),`
+`,(0,e.jsx)(n.li,{children:"\uAC80\uC99D\uB418\uC9C0 \uC54A\uC740 \uD5EC\uD37C \uD568\uC218\uC758 \uBB34\uBD84\uBCC4\uD55C \uC0AC\uC6A9"}),`
+`,(0,e.jsx)(n.li,{children:"\uACF5\uD1B5 \uB85C\uC9C1 \uBCC0\uACBD \uC2DC \uC5EC\uB7EC \uD504\uB85C\uC81D\uD2B8\uB97C \uB3D9\uC2DC\uC5D0 \uC218\uC815\uD574\uC57C \uD558\uB294 \uAD6C\uC870"}),`
 `]}),`
-`,(0,r.jsxs)(n.p,{children:["\uB2E8\uC21C\uD55C \uD568\uC218 \uBAA8\uC74C\uC774 \uC544\uB2C8\uB77C,",(0,r.jsx)(n.br,{}),`
-`,(0,r.jsx)(n.strong,{children:"\uC2E0\uB8B0 \uAC00\uB2A5\uD55C \uACF5\uD1B5 \uB808\uC774\uC5B4"}),"\uAC00 \uD544\uC694\uD558\uB2E4\uACE0 \uD310\uB2E8\uD588\uB2E4."]}),`
-`,(0,r.jsx)(n.hr,{}),`
-`,(0,r.jsx)(n.h2,{children:"\uD574\uACB0 \uC804\uB7B5"}),`
-`,(0,r.jsx)(n.h3,{children:"1. TypeScript \uC911\uC2EC \uC124\uACC4"}),`
-`,(0,r.jsx)(n.p,{children:"\uBAA8\uB4E0 \uC720\uD2F8 \uD568\uC218\uB294 \uC785\uB825\uACFC \uCD9C\uB825 \uD0C0\uC785\uC744 \uBA85\uD655\uD788 \uC815\uC758\uD588\uB2E4."}),`
-`,(0,r.jsxs)(n.ul,{children:[`
-`,(0,r.jsx)(n.li,{children:"\uC798\uBABB\uB41C \uC0AC\uC6A9\uC744 \uCEF4\uD30C\uC77C \uB2E8\uACC4\uC5D0\uC11C \uCC28\uB2E8"}),`
-`,(0,r.jsx)(n.li,{children:"IDE \uC790\uB3D9 \uC644\uC131\uACFC \uD0C0\uC785 \uD78C\uD2B8\uB97C \uD1B5\uD55C DX \uAC1C\uC120"}),`
-`,(0,r.jsx)(n.li,{children:"\uC720\uD2F8 \uC0AC\uC6A9 \uC790\uCCB4\uAC00 \uBB38\uC11C \uC5ED\uD560\uC744 \uD558\uB3C4\uB85D \uC124\uACC4"}),`
+`,(0,e.jsxs)(n.p,{children:["\uB2E8\uC21C\uD55C \uD568\uC218 \uBAA8\uC74C\uC774 \uC544\uB2C8\uB77C,",(0,e.jsx)(n.br,{}),`
+`,(0,e.jsx)(n.strong,{children:"\uC2E0\uB8B0 \uAC00\uB2A5\uD55C \uACF5\uD1B5 \uB808\uC774\uC5B4"}),"\uAC00 \uD544\uC694\uD558\uB2E4\uACE0 \uD310\uB2E8\uD588\uB2E4."]}),`
+`,(0,e.jsx)(n.hr,{}),`
+`,(0,e.jsx)(n.h2,{children:"\uD574\uACB0 \uC804\uB7B5"}),`
+`,(0,e.jsx)(n.h3,{children:"1. TypeScript \uC911\uC2EC \uC124\uACC4"}),`
+`,(0,e.jsx)(n.p,{children:"\uBAA8\uB4E0 \uC720\uD2F8 \uD568\uC218\uB294 \uC785\uB825\uACFC \uCD9C\uB825 \uD0C0\uC785\uC744 \uBA85\uD655\uD788 \uC815\uC758\uD588\uB2E4."}),`
+`,(0,e.jsxs)(n.ul,{children:[`
+`,(0,e.jsx)(n.li,{children:"\uC798\uBABB\uB41C \uC0AC\uC6A9\uC744 \uCEF4\uD30C\uC77C \uB2E8\uACC4\uC5D0\uC11C \uCC28\uB2E8"}),`
+`,(0,e.jsx)(n.li,{children:"IDE \uC790\uB3D9 \uC644\uC131\uACFC \uD0C0\uC785 \uD78C\uD2B8\uB97C \uD1B5\uD55C DX \uAC1C\uC120"}),`
+`,(0,e.jsx)(n.li,{children:"\uC720\uD2F8 \uC0AC\uC6A9 \uC790\uCCB4\uAC00 \uBB38\uC11C \uC5ED\uD560\uC744 \uD558\uB3C4\uB85D \uC124\uACC4"}),`
 `]}),`
-`,(0,r.jsx)(n.hr,{}),`
-`,(0,r.jsx)(n.h3,{children:"2. \uB3C4\uBA54\uC778 \uB2E8\uC704 \uBAA8\uB4C8\uD654"}),`
-`,(0,r.jsx)(n.p,{children:"\uAE30\uB2A5\uC744 \uBAA9\uC801\uBCC4\uB85C \uBD84\uB9AC\uD558\uC5EC \uAD00\uB9AC\uD588\uB2E4."}),`
-`,(0,r.jsxs)(n.ul,{children:[`
-`,(0,r.jsx)(n.li,{children:"type checking"}),`
-`,(0,r.jsx)(n.li,{children:"formatting"}),`
-`,(0,r.jsx)(n.li,{children:"async control (debounce, throttle, queue)"}),`
-`,(0,r.jsx)(n.li,{children:"storage (localStorage, IndexedDB)"}),`
-`,(0,r.jsx)(n.li,{children:"crypto"}),`
-`,(0,r.jsx)(n.li,{children:"environment / platform detection"}),`
-`,(0,r.jsx)(n.li,{children:"DOM helpers"}),`
+`,(0,e.jsx)(n.hr,{}),`
+`,(0,e.jsx)(n.h3,{children:"2. \uB3C4\uBA54\uC778 \uB2E8\uC704 \uBAA8\uB4C8\uD654"}),`
+`,(0,e.jsx)(n.p,{children:"\uAE30\uB2A5\uC744 \uBAA9\uC801\uBCC4\uB85C \uBD84\uB9AC\uD558\uC5EC \uAD00\uB9AC\uD588\uB2E4."}),`
+`,(0,e.jsxs)(n.ul,{children:[`
+`,(0,e.jsx)(n.li,{children:"type checking"}),`
+`,(0,e.jsx)(n.li,{children:"formatting"}),`
+`,(0,e.jsx)(n.li,{children:"async control (debounce, throttle, queue)"}),`
+`,(0,e.jsx)(n.li,{children:"storage (localStorage, IndexedDB)"}),`
+`,(0,e.jsx)(n.li,{children:"crypto"}),`
+`,(0,e.jsx)(n.li,{children:"environment / platform detection"}),`
+`,(0,e.jsx)(n.li,{children:"DOM helpers"}),`
 `]}),`
-`,(0,r.jsx)(n.p,{children:"\uC774\uB97C \uD1B5\uD574 \uD544\uC694\uD55C \uAE30\uB2A5\uB9CC \uC120\uD0DD\uC801\uC73C\uB85C \uAC00\uC838\uC640 \uC0AC\uC6A9\uD560 \uC218 \uC788\uB3C4\uB85D \uAD6C\uC131\uD588\uB2E4."}),`
-`,(0,r.jsx)(n.hr,{}),`
-`,(0,r.jsx)(n.h3,{children:"3. \uD14C\uC2A4\uD2B8 \uAE30\uBC18 \uC2E0\uB8B0\uC131 \uD655\uBCF4"}),`
-`,(0,r.jsxs)(n.p,{children:["\uAC01 \uC720\uD2F8 \uD568\uC218\uB294 \uAC00\uB2A5\uD55C \uC5E3\uC9C0 \uCF00\uC774\uC2A4\uB97C \uACE0\uB824\uD558\uC5EC",(0,r.jsx)(n.br,{}),`
-`,(0,r.jsx)(n.code,{children:"Jest"})," \uAE30\uBC18\uC758 \uB2E8\uC704 \uD14C\uC2A4\uD2B8\uB97C \uC791\uC131\uD588\uB2E4."]}),`
-`,(0,r.jsxs)(n.ul,{children:[`
-`,(0,r.jsx)(n.li,{children:"\uB0A0\uC9DC\xB7\uC22B\uC790 \uD3EC\uB9F7"}),`
-`,(0,r.jsx)(n.li,{children:"\uBE44\uB3D9\uAE30 \uD050 \uCC98\uB9AC"}),`
-`,(0,r.jsx)(n.li,{children:"\uC554\uD638\uD654 / \uBCF5\uD638\uD654 \uB85C\uC9C1"}),`
-`,(0,r.jsx)(n.li,{children:"\uD658\uACBD \uD310\uBCC4 \uD568\uC218"}),`
+`,(0,e.jsx)(n.p,{children:"\uC774\uB97C \uD1B5\uD574 \uD544\uC694\uD55C \uAE30\uB2A5\uB9CC \uC120\uD0DD\uC801\uC73C\uB85C \uAC00\uC838\uC640 \uC0AC\uC6A9\uD560 \uC218 \uC788\uB3C4\uB85D \uAD6C\uC131\uD588\uB2E4."}),`
+`,(0,e.jsx)(n.hr,{}),`
+`,(0,e.jsx)(n.h3,{children:"3. \uD14C\uC2A4\uD2B8 \uAE30\uBC18 \uC2E0\uB8B0\uC131 \uD655\uBCF4"}),`
+`,(0,e.jsxs)(n.p,{children:["\uAC01 \uC720\uD2F8 \uD568\uC218\uB294 \uAC00\uB2A5\uD55C \uC5E3\uC9C0 \uCF00\uC774\uC2A4\uB97C \uACE0\uB824\uD558\uC5EC",(0,e.jsx)(n.br,{}),`
+`,(0,e.jsx)(n.code,{children:"Jest"})," \uAE30\uBC18\uC758 \uB2E8\uC704 \uD14C\uC2A4\uD2B8\uB97C \uC791\uC131\uD588\uB2E4."]}),`
+`,(0,e.jsxs)(n.ul,{children:[`
+`,(0,e.jsx)(n.li,{children:"\uB0A0\uC9DC\xB7\uC22B\uC790 \uD3EC\uB9F7"}),`
+`,(0,e.jsx)(n.li,{children:"\uBE44\uB3D9\uAE30 \uD050 \uCC98\uB9AC"}),`
+`,(0,e.jsx)(n.li,{children:"\uC554\uD638\uD654 / \uBCF5\uD638\uD654 \uB85C\uC9C1"}),`
+`,(0,e.jsx)(n.li,{children:"\uD658\uACBD \uD310\uBCC4 \uD568\uC218"}),`
 `]}),`
-`,(0,r.jsx)(n.p,{children:"\uC720\uD2F8\uB9AC\uD2F0 \uB808\uC774\uC5B4\uB97C \u201C\uC758\uC2EC\uD558\uC9C0 \uC54A\uACE0 \uC0AC\uC6A9\uD560 \uC218 \uC788\uB294 \uC601\uC5ED\u201D\uC73C\uB85C \uB9CC\uB4DC\uB294 \uAC83\uC774 \uBAA9\uD45C\uC600\uB2E4."}),`
-`,(0,r.jsx)(n.hr,{}),`
-`,(0,r.jsx)(n.h2,{children:"\uAE30\uC220\uC801 \uC120\uD0DD \uADFC\uAC70"}),`
-`,(0,r.jsxs)(n.ul,{children:[`
-`,(0,r.jsxs)(n.li,{children:[`
-`,(0,r.jsxs)(n.p,{children:[(0,r.jsx)(n.strong,{children:"TypeScript"}),(0,r.jsx)(n.br,{}),`
+`,(0,e.jsx)(n.p,{children:"\uC720\uD2F8\uB9AC\uD2F0 \uB808\uC774\uC5B4\uB97C \u201C\uC758\uC2EC\uD558\uC9C0 \uC54A\uACE0 \uC0AC\uC6A9\uD560 \uC218 \uC788\uB294 \uC601\uC5ED\u201D\uC73C\uB85C \uB9CC\uB4DC\uB294 \uAC83\uC774 \uBAA9\uD45C\uC600\uB2E4."}),`
+`,(0,e.jsx)(n.hr,{}),`
+`,(0,e.jsx)(n.h2,{children:"\uAE30\uC220\uC801 \uC120\uD0DD \uADFC\uAC70"}),`
+`,(0,e.jsxs)(n.ul,{children:[`
+`,(0,e.jsxs)(n.li,{children:[`
+`,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.strong,{children:"TypeScript"}),(0,e.jsx)(n.br,{}),`
 `,"\u2192 \uC720\uD2F8 \uD568\uC218 \uD2B9\uC131\uC0C1 \uC7AC\uC0AC\uC6A9\uC131\uACFC \uC548\uC815\uC131\uC774 \uAC00\uC7A5 \uC911\uC694\uD588\uAE30 \uB54C\uBB38"]}),`
 `]}),`
-`,(0,r.jsxs)(n.li,{children:[`
-`,(0,r.jsxs)(n.p,{children:[(0,r.jsx)(n.strong,{children:"Jest"}),(0,r.jsx)(n.br,{}),`
+`,(0,e.jsxs)(n.li,{children:[`
+`,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.strong,{children:"Jest"}),(0,e.jsx)(n.br,{}),`
 `,"\u2192 \uBE60\uB978 \uD14C\uC2A4\uD2B8 \uC791\uC131\uACFC \uCEE4\uBC84\uB9AC\uC9C0 \uD655\uC778\uC5D0 \uC801\uD569"]}),`
 `]}),`
-`,(0,r.jsxs)(n.li,{children:[`
-`,(0,r.jsxs)(n.p,{children:[(0,r.jsx)(n.strong,{children:"Babel"}),(0,r.jsx)(n.br,{}),`
+`,(0,e.jsxs)(n.li,{children:[`
+`,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.strong,{children:"Babel"}),(0,e.jsx)(n.br,{}),`
 `,"\u2192 \uB2E4\uC591\uD55C \uC2E4\uD589 \uD658\uACBD(Node / Browser)\uC5D0\uC11C\uC758 \uD638\uD658\uC131 \uD655\uBCF4"]}),`
 `]}),`
-`,(0,r.jsxs)(n.li,{children:[`
-`,(0,r.jsxs)(n.p,{children:[(0,r.jsx)(n.strong,{children:"npm \uBC30\uD3EC"}),(0,r.jsx)(n.br,{}),`
+`,(0,e.jsxs)(n.li,{children:[`
+`,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.strong,{children:"npm \uBC30\uD3EC"}),(0,e.jsx)(n.br,{}),`
 `,"\u2192 \uC5EC\uB7EC \uD504\uB85C\uC81D\uD2B8\uC5D0\uC11C \uB3D9\uC77C\uD55C \uBC84\uC804\uC744 \uC77C\uAD00\uB418\uAC8C \uC0AC\uC6A9\uD558\uAE30 \uC704\uD568"]}),`
 `]}),`
 `]}),`
-`,(0,r.jsx)(n.hr,{}),`
-`,(0,r.jsx)(n.h2,{children:"\uACB0\uACFC \uBC0F \uC758\uC758"}),`
-`,(0,r.jsxs)(n.ul,{children:[`
-`,(0,r.jsx)(n.li,{children:"\uD504\uB85C\uC81D\uD2B8 \uAC04 \uC720\uD2F8 \uCF54\uB4DC \uC911\uBCF5 \uC81C\uAC70"}),`
-`,(0,r.jsx)(n.li,{children:"\uD0C0\uC785 \uAE30\uBC18\uC73C\uB85C \uC2E0\uB8B0 \uAC00\uB2A5\uD55C \uACF5\uD1B5 \uB85C\uC9C1 \uB808\uC774\uC5B4 \uAD6C\uCD95"}),`
-`,(0,r.jsx)(n.li,{children:"\uBE44\uB3D9\uAE30 \uC791\uC5C5 \uAD00\uB9AC(JobQueue, FlushQueue) \uB4F1 \uC2E4\uBB34 \uC911\uC2EC \uC720\uD2F8 \uCD95\uC801"}),`
-`,(0,r.jsx)(n.li,{children:"\uC9C0\uC18D\uC801\uC778 \uC720\uC9C0\uBCF4\uC218\uB97C \uC804\uC81C\uB85C \uD55C \uB77C\uC774\uBE0C\uB7EC\uB9AC \uC6B4\uC601 \uACBD\uD5D8 \uD655\uBCF4"}),`
+`,(0,e.jsx)(n.hr,{}),`
+`,(0,e.jsx)(n.h2,{children:"\uACB0\uACFC \uBC0F \uC758\uC758"}),`
+`,(0,e.jsxs)(n.ul,{children:[`
+`,(0,e.jsx)(n.li,{children:"\uD504\uB85C\uC81D\uD2B8 \uAC04 \uC720\uD2F8 \uCF54\uB4DC \uC911\uBCF5 \uC81C\uAC70"}),`
+`,(0,e.jsx)(n.li,{children:"\uD0C0\uC785 \uAE30\uBC18\uC73C\uB85C \uC2E0\uB8B0 \uAC00\uB2A5\uD55C \uACF5\uD1B5 \uB85C\uC9C1 \uB808\uC774\uC5B4 \uAD6C\uCD95"}),`
+`,(0,e.jsx)(n.li,{children:"\uBE44\uB3D9\uAE30 \uC791\uC5C5 \uAD00\uB9AC(JobQueue, FlushQueue) \uB4F1 \uC2E4\uBB34 \uC911\uC2EC \uC720\uD2F8 \uCD95\uC801"}),`
+`,(0,e.jsx)(n.li,{children:"\uC9C0\uC18D\uC801\uC778 \uC720\uC9C0\uBCF4\uC218\uB97C \uC804\uC81C\uB85C \uD55C \uB77C\uC774\uBE0C\uB7EC\uB9AC \uC6B4\uC601 \uACBD\uD5D8 \uD655\uBCF4"}),`
 `]}),`
-`,(0,r.jsxs)(n.p,{children:["ISA Util\uC740",(0,r.jsx)(n.br,{}),`
+`,(0,e.jsxs)(n.p,{children:["ISA Util\uC740",(0,e.jsx)(n.br,{}),`
 `,"\u201C\uC791\uC9C0\uB9CC \uBB34\uB108\uC9C0\uC9C0 \uC54A\uB294 \uAE30\uBC18 \uCF54\uB4DC\u201D\uB97C \uB9CC\uB4DC\uB294 \uAC83\uC744 \uBAA9\uD45C\uB85C \uD55C \uC791\uC5C5\uC774\uB2E4."]}),`
-`,(0,r.jsx)(n.hr,{}),`
-`,(0,r.jsx)(n.h2,{children:"\uB9C1\uD06C"}),`
-`,(0,r.jsxs)(n.ul,{children:[`
-`,(0,r.jsxs)(n.li,{children:["GitHub: ",(0,r.jsx)(n.a,{href:"https://github.com/yoonjonglyu/util-helper",children:"https://github.com/yoonjonglyu/util-helper"})]}),`
-`,(0,r.jsxs)(n.li,{children:["NPM: ",(0,r.jsx)(n.a,{href:"https://www.npmjs.com/package/isa-util",children:"https://www.npmjs.com/package/isa-util"})]}),`
-`]})]})}function p(e={}){let{wrapper:n}=e.components||{};return n?(0,r.jsx)(n,{...e,children:(0,r.jsx)(s,{...e})}):s(e)}return S(w);})();
-;return Component;0:{"buildId":"jukzEBMnyAZIiJFCqwqHd","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"ISA Util","content":"$3"}],["$L4"],"$L5"]}],"loading":null,"isPartial":false}
+`,(0,e.jsx)(n.hr,{}),`
+`,(0,e.jsx)(n.h2,{children:"\uB9C1\uD06C"}),`
+`,(0,e.jsxs)(n.ul,{children:[`
+`,(0,e.jsxs)(n.li,{children:["GitHub: ",(0,e.jsx)(n.a,{href:"https://github.com/yoonjonglyu/util-helper",children:"https://github.com/yoonjonglyu/util-helper"})]}),`
+`,(0,e.jsxs)(n.li,{children:["NPM: ",(0,e.jsx)(n.a,{href:"https://www.npmjs.com/package/isa-util",children:"https://www.npmjs.com/package/isa-util"})]}),`
+`]})]})}function a(i={}){let{wrapper:n}=i.components||{};return n?(0,e.jsx)(n,{...i,children:(0,e.jsx)(o,{...i})}):o(i)}return j(T);})();
+;return Component;0:{"buildId":"1Q8_N8lHUl_efbGFFyils","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"ISA Util","content":"$3"}],["$L4"],"$L5"]}],"loading":null,"isPartial":false}
 4:["$","script","script-0",{"src":"/_next/static/chunks/0a3a85198fdb92f3.js","async":true}]
 5:["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]
 8:null
