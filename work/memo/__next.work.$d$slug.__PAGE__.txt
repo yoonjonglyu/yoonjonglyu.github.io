@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
-2:I[65942,["/_next/static/chunks/fae1b863422210d1.js","/_next/static/chunks/b0f8bde3a055b8de.js","/_next/static/chunks/6e28e59f9fa83153.js","/_next/static/chunks/0a3a85198fdb92f3.js"],"default"]
+2:I[65942,["/_next/static/chunks/fae1b863422210d1.js","/_next/static/chunks/e64d022e5a8ae771.js","/_next/static/chunks/aa5c809702728ed2.js","/_next/static/chunks/0a3a85198fdb92f3.js"],"default"]
 6:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/247eb132b7f7b574.js"],"OutletBoundary"]
 7:"$Sreact.suspense"
 3:T2bc7,var Component=(()=>{var a=Object.create;var o=Object.defineProperty;var m=Object.getOwnPropertyDescriptor;var u=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,b=Object.prototype.hasOwnProperty;var y=(r,n)=>()=>(n||r((n={exports:{}}).exports,n),n.exports),D=(r,n)=>{for(var i in n)o(r,i,{get:n[i],enumerable:!0})},t=(r,n,i,c)=>{if(n&&typeof n=="object"||typeof n=="function")for(let l of u(n))!b.call(r,l)&&l!==i&&o(r,l,{get:()=>n[l],enumerable:!(c=m(n,l))||c.enumerable});return r};var f=(r,n,i)=>(i=r!=null?a(g(r)):{},t(n||!r||!r.__esModule?o(i,"default",{value:r,enumerable:!0}):i,r)),v=r=>t(o({},"__esModule",{value:!0}),r);var d=y((A,h)=>{h.exports=_jsx_runtime});var C={};D(C,{default:()=>p,frontmatter:()=>S});var e=f(d()),S={title:"Memo",summary:"PWA-based Memo application using Storybook and CDD methodology",resume:{title:"Component-Driven PWA Memo App",role:"Solo Developer (Frontend)",period:"2023.01",description:`A web memo service focused on scalable UI architecture and offline user experience. Built with Component-Driven Development using Storybook, and designed to work fully offline as a PWA.
@@ -99,7 +99,7 @@
 `,(0,e.jsxs)(n.li,{children:["Demo: ",(0,e.jsx)(n.a,{href:"https://yoonjonglyu.github.io/memo/",children:"https://yoonjonglyu.github.io/memo/"})]}),`
 `,(0,e.jsxs)(n.li,{children:["GitHub: ",(0,e.jsx)(n.a,{href:"https://github.com/yoonjonglyu/memo",children:"https://github.com/yoonjonglyu/memo"})]}),`
 `]})]})}function p(r={}){let{wrapper:n}=r.components||{};return n?(0,e.jsx)(n,{...r,children:(0,e.jsx)(s,{...r})}):s(r)}return v(C);})();
-;return Component;0:{"buildId":"1Q8_N8lHUl_efbGFFyils","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"Memo","content":"$3"}],["$L4"],"$L5"]}],"loading":null,"isPartial":false}
+;return Component;0:{"buildId":"I3CMj9WyMNvwb30kiC2Mu","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"Memo","content":"$3"}],["$L4"],"$L5"]}],"loading":null,"isPartial":false}
 4:["$","script","script-0",{"src":"/_next/static/chunks/0a3a85198fdb92f3.js","async":true}]
 5:["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]
 8:null

@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
-2:I[93157,["/_next/static/chunks/fae1b863422210d1.js","/_next/static/chunks/b0f8bde3a055b8de.js","/_next/static/chunks/6e28e59f9fa83153.js","/_next/static/chunks/737b72552a100555.js"],"default"]
+2:I[93157,["/_next/static/chunks/fae1b863422210d1.js","/_next/static/chunks/e64d022e5a8ae771.js","/_next/static/chunks/aa5c809702728ed2.js","/_next/static/chunks/737b72552a100555.js"],"default"]
 6:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/247eb132b7f7b574.js"],"OutletBoundary"]
 7:"$Sreact.suspense"
 3:T2d22,var Component=(()=>{var g=Object.create;var c=Object.defineProperty;var a=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var u=Object.getPrototypeOf,y=Object.prototype.hasOwnProperty;var A=(e,n)=>()=>(n||e((n={exports:{}}).exports,n),n.exports),b=(e,n)=>{for(var i in n)c(e,i,{get:n[i],enumerable:!0})},h=(e,n,i,o)=>{if(n&&typeof n=="object"||typeof n=="function")for(let l of m(n))!y.call(e,l)&&l!==i&&c(e,l,{get:()=>n[l],enumerable:!(o=a(n,l))||o.enumerable});return e};var S=(e,n,i)=>(i=e!=null?g(u(e)):{},h(n||!e||!e.__esModule?c(i,"default",{value:e,enumerable:!0}):i,e)),x=e=>h(c({},"__esModule",{value:!0}),e);var t=A((j,d)=>{d.exports=_jsx_runtime});var P={};b(P,{default:()=>p,frontmatter:()=>I});var r=S(t()),I={title:"memo",description:"TypeScript\uC640 Storybook\uC744 \uD65C\uC6A9\uD55C \uCEF4\uD3EC\uB10C\uD2B8 \uC8FC\uB3C4 \uAC1C\uBC1C \uAE30\uBC18\uC758 PWA \uBA54\uBAA8 \uC571",period:"2023.01",stack:["TypeScript","Storybook","PWA","HTML5","CSS3"],role:"Frontend Developer",repository:"https://github.com/yoonjonglyu/memo",homepage:"https://yoonjonglyu.github.io/memo/",tags:["CDD","PWA","LocalStorage","Vanilla-Style"],order:2};function s(e){let n={a:"a",br:"br",code:"code",h1:"h1",h2:"h2",li:"li",p:"p",strong:"strong",ul:"ul",...e.components};return(0,r.jsxs)(r.Fragment,{children:[(0,r.jsx)(n.h2,{children:"\uBC30\uACBD"}),`
@@ -69,7 +69,7 @@
 `,(0,r.jsxs)(n.ul,{children:[`
 `,(0,r.jsx)(n.li,{children:"ISA (yoonjonglyu)"}),`
 `]})]})}function p(e={}){let{wrapper:n}=e.components||{};return n?(0,r.jsx)(n,{...e,children:(0,r.jsx)(s,{...e})}):s(e)}return x(P);})();
-;return Component;0:{"buildId":"1Q8_N8lHUl_efbGFFyils","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"memo","content":"$3","repository":"https://github.com/yoonjonglyu/memo","homepage":"https://yoonjonglyu.github.io/memo/"}],["$L4"],"$L5"]}],"loading":null,"isPartial":false}
+;return Component;0:{"buildId":"I3CMj9WyMNvwb30kiC2Mu","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"memo","content":"$3","repository":"https://github.com/yoonjonglyu/memo","homepage":"https://yoonjonglyu.github.io/memo/"}],["$L4"],"$L5"]}],"loading":null,"isPartial":false}
 4:["$","script","script-0",{"src":"/_next/static/chunks/737b72552a100555.js","async":true}]
 5:["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]
 8:null

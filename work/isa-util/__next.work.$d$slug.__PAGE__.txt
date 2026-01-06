@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
-2:I[65942,["/_next/static/chunks/fae1b863422210d1.js","/_next/static/chunks/b0f8bde3a055b8de.js","/_next/static/chunks/6e28e59f9fa83153.js","/_next/static/chunks/0a3a85198fdb92f3.js"],"default"]
+2:I[65942,["/_next/static/chunks/fae1b863422210d1.js","/_next/static/chunks/e64d022e5a8ae771.js","/_next/static/chunks/aa5c809702728ed2.js","/_next/static/chunks/0a3a85198fdb92f3.js"],"default"]
 6:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/247eb132b7f7b574.js"],"OutletBoundary"]
 7:"$Sreact.suspense"
 3:T25da,var Component=(()=>{var p=Object.create;var t=Object.defineProperty;var u=Object.getOwnPropertyDescriptor;var g=Object.getOwnPropertyNames;var y=Object.getPrototypeOf,m=Object.prototype.hasOwnProperty;var b=(i,n)=>()=>(n||i((n={exports:{}}).exports,n),n.exports),f=(i,n)=>{for(var r in n)t(i,r,{get:n[r],enumerable:!0})},h=(i,n,r,c)=>{if(n&&typeof n=="object"||typeof n=="function")for(let l of g(n))!m.call(i,l)&&l!==r&&t(i,l,{get:()=>n[l],enumerable:!(c=u(n,l))||c.enumerable});return i};var S=(i,n,r)=>(r=i!=null?p(y(i)):{},h(n||!i||!i.__esModule?t(r,"default",{value:i,enumerable:!0}):r,i)),j=i=>h(t({},"__esModule",{value:!0}),i);var s=b((J,d)=>{d.exports=_jsx_runtime});var T={};f(T,{default:()=>a,frontmatter:()=>x});var e=S(s()),x={title:"ISA Util",summary:"Type-safe TypeScript utility library",resume:{title:"Type-Safe Utility Helper Library",role:"Author",period:"2023.01 - Present",description:`A frontend utility library designed for maximum reusability and type stability. It standardizes core business logic into a single, type-safe layer to reduce duplication and prevent runtime errors across multiple projects.
@@ -89,7 +89,7 @@
 `,(0,e.jsxs)(n.li,{children:["GitHub: ",(0,e.jsx)(n.a,{href:"https://github.com/yoonjonglyu/util-helper",children:"https://github.com/yoonjonglyu/util-helper"})]}),`
 `,(0,e.jsxs)(n.li,{children:["NPM: ",(0,e.jsx)(n.a,{href:"https://www.npmjs.com/package/isa-util",children:"https://www.npmjs.com/package/isa-util"})]}),`
 `]})]})}function a(i={}){let{wrapper:n}=i.components||{};return n?(0,e.jsx)(n,{...i,children:(0,e.jsx)(o,{...i})}):o(i)}return j(T);})();
-;return Component;0:{"buildId":"1Q8_N8lHUl_efbGFFyils","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"ISA Util","content":"$3"}],["$L4"],"$L5"]}],"loading":null,"isPartial":false}
+;return Component;0:{"buildId":"I3CMj9WyMNvwb30kiC2Mu","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"ISA Util","content":"$3"}],["$L4"],"$L5"]}],"loading":null,"isPartial":false}
 4:["$","script","script-0",{"src":"/_next/static/chunks/0a3a85198fdb92f3.js","async":true}]
 5:["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]
 8:null

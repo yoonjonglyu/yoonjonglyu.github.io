@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
-2:I[65942,["/_next/static/chunks/fae1b863422210d1.js","/_next/static/chunks/b0f8bde3a055b8de.js","/_next/static/chunks/6e28e59f9fa83153.js","/_next/static/chunks/0a3a85198fdb92f3.js"],"default"]
+2:I[65942,["/_next/static/chunks/fae1b863422210d1.js","/_next/static/chunks/e64d022e5a8ae771.js","/_next/static/chunks/aa5c809702728ed2.js","/_next/static/chunks/0a3a85198fdb92f3.js"],"default"]
 6:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/247eb132b7f7b574.js"],"OutletBoundary"]
 7:"$Sreact.suspense"
 3:T1581,var Component=(()=>{var p=Object.create;var o=Object.defineProperty;var u=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,y=Object.prototype.hasOwnProperty;var f=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),v=(t,e)=>{for(var r in e)o(t,r,{get:e[r],enumerable:!0})},s=(t,e,r,a)=>{if(e&&typeof e=="object"||typeof e=="function")for(let i of m(e))!y.call(t,i)&&i!==r&&o(t,i,{get:()=>e[i],enumerable:!(a=u(e,i))||a.enumerable});return t};var b=(t,e,r)=>(r=t!=null?p(g(t)):{},s(e||!t||!t.__esModule?o(r,"default",{value:t,enumerable:!0}):r,t)),w=t=>s(o({},"__esModule",{value:!0}),t);var c=f((x,l)=>{l.exports=_jsx_runtime});var S={};v(S,{default:()=>h,frontmatter:()=>I});var n=b(c()),I={title:"ISA Archive \u2013 Personal Resume Archive",summary:"A component-driven portfolio platform focused on UI architecture and scalable content rendering.",resume:{title:"Component-Driven Resume & Work Archive Platform",period:"Dec 2024 - Present",role:"Solo Frontend Engineer",description:`Designed and implemented a UI-architecture\u2013centric portfolio platform that treats resumes and work logs as programmatic structured data rather than static pages. The system emphasizes component isolation,  predictable styling, and reusable layout primitives to support long-term scalability.
@@ -45,7 +45,7 @@ UI components consume normalized data shapes rather than page-specific props.`})
 where `,(0,n.jsx)(e.strong,{children:"components, not pages, are the primary unit of design"}),"."]}),`
 `,(0,n.jsx)(e.p,{children:`This structure enables the archive to grow without increasing UI complexity,
 making it suitable as a long-term professional record rather than a static showcase.`})]})}function h(t={}){let{wrapper:e}=t.components||{};return e?(0,n.jsx)(e,{...t,children:(0,n.jsx)(d,{...t})}):d(t)}return w(S);})();
-;return Component;0:{"buildId":"1Q8_N8lHUl_efbGFFyils","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"ISA Archive – Personal Resume Archive","content":"$3"}],["$L4"],"$L5"]}],"loading":null,"isPartial":false}
+;return Component;0:{"buildId":"I3CMj9WyMNvwb30kiC2Mu","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"ISA Archive – Personal Resume Archive","content":"$3"}],["$L4"],"$L5"]}],"loading":null,"isPartial":false}
 4:["$","script","script-0",{"src":"/_next/static/chunks/0a3a85198fdb92f3.js","async":true}]
 5:["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]
 8:null

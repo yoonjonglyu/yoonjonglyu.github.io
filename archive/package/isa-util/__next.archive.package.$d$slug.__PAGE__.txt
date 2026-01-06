@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
-2:I[74832,["/_next/static/chunks/fae1b863422210d1.js","/_next/static/chunks/b0f8bde3a055b8de.js","/_next/static/chunks/6e28e59f9fa83153.js","/_next/static/chunks/e0a660edf8719343.js"],"default"]
+2:I[74832,["/_next/static/chunks/fae1b863422210d1.js","/_next/static/chunks/e64d022e5a8ae771.js","/_next/static/chunks/aa5c809702728ed2.js","/_next/static/chunks/e0a660edf8719343.js"],"default"]
 6:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/247eb132b7f7b574.js"],"OutletBoundary"]
 7:"$Sreact.suspense"
 3:T98a0,var Component=(()=>{var g=Object.create;var i=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var u=Object.getOwnPropertyNames;var m=Object.getPrototypeOf,b=Object.prototype.hasOwnProperty;var y=(r,e)=>()=>(e||r((e={exports:{}}).exports,e),e.exports),f=(r,e)=>{for(var l in e)i(r,l,{get:e[l],enumerable:!0})},c=(r,e,l,a)=>{if(e&&typeof e=="object"||typeof e=="function")for(let s of u(e))!b.call(r,s)&&s!==l&&i(r,s,{get:()=>e[s],enumerable:!(a=p(e,s))||a.enumerable});return r};var w=(r,e,l)=>(l=r!=null?g(m(r)):{},c(e||!r||!r.__esModule?i(l,"default",{value:r,enumerable:!0}):l,r)),D=r=>c(i({},"__esModule",{value:!0}),r);var t=y((U,d)=>{d.exports=_jsx_runtime});var v={};f(v,{default:()=>h,frontmatter:()=>N});var n=w(t()),N={title:"isa-util",description:"TypeScript \uAE30\uBC18\uC758 \uACF5\uD1B5 \uC720\uD2F8\uB9AC\uD2F0 \uD5EC\uD37C \uB77C\uC774\uBE0C\uB7EC\uB9AC",period:"2023.01 - \uD604\uC7AC",version:"1.0.27",stack:["TypeScript","Jest","Babel"],repository:"https://github.com/yoonjonglyu/util-helper",homepage:"https://www.npmjs.com/package/isa-util",tags:["TypeScript","Utility","Library","Jest"],order:1};function o(r){let e={a:"a",blockquote:"blockquote",br:"br",code:"code",h1:"h1",h2:"h2",h3:"h3",h4:"h4",hr:"hr",li:"li",ol:"ol",p:"p",pre:"pre",strong:"strong",ul:"ul",...r.components};return(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(e.h2,{children:"\uBC30\uACBD"}),`
@@ -639,7 +639,7 @@ Toggles a class on an element.`]}),`
 `]}),`
 `,(0,n.jsx)(e.h2,{children:"License"}),`
 `,(0,n.jsxs)(e.p,{children:["This project is licensed under the MIT License. For more details, see the ",(0,n.jsx)(e.a,{href:"./LICENSE",children:"LICENSE"}),"."]})]})}function h(r={}){let{wrapper:e}=r.components||{};return e?(0,n.jsx)(e,{...r,children:(0,n.jsx)(o,{...r})}):o(r)}return D(v);})();
-;return Component;0:{"buildId":"1Q8_N8lHUl_efbGFFyils","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"isa-util","content":"$3","repository":"https://github.com/yoonjonglyu/util-helper","homepage":"https://www.npmjs.com/package/isa-util"}],["$L4"],"$L5"]}],"loading":null,"isPartial":false}
+;return Component;0:{"buildId":"I3CMj9WyMNvwb30kiC2Mu","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"isa-util","content":"$3","repository":"https://github.com/yoonjonglyu/util-helper","homepage":"https://www.npmjs.com/package/isa-util"}],["$L4"],"$L5"]}],"loading":null,"isPartial":false}
 4:["$","script","script-0",{"src":"/_next/static/chunks/e0a660edf8719343.js","async":true}]
 5:["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]
 8:null
