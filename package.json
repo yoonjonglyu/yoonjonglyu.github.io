@@ -30,7 +30,7 @@
     "@types/mdx": "^2.0.13",
     "axios": "^1.5.0",
     "date-fns": "^4.1.0",
-    "isa-util": "^1.0.25",
+    "isa-util": "^1.0.26",
     "jotai": "^2.16.0",
     "next": "16.0.10",
     "normalize.css": "^8.0.1",
