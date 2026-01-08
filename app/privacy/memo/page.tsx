@@ -52,7 +52,7 @@ export default function PrivacyPolicyMemoPage() {
   return (
     <div style={styles.container}>
       <h1 style={styles.title}>Privacy Policy for MemoFlow</h1>
-      <p style={styles.lastUpdated}>Last Updated: January 06, 2026</p>
+      <p style={styles.lastUpdated}>Last Updated: January 08, 2026</p>
 
       <p style={styles.text}>
         MemoFlow ("we," "our," or "us") operates the MemoFlow mobile application
@@ -72,31 +72,53 @@ export default function PrivacyPolicyMemoPage() {
         stored exclusively on your device's local storage.
       </p>
 
-      <h2 style={styles.heading}>2. App Permissions</h2>
+      <h2 style={styles.heading}>2. Google Drive Synchronization (Optional)</h2>
+      <p style={styles.text}>
+        MemoFlow provides an optional synchronization feature using{' '}
+        <strong>Google Drive API</strong>. If you choose to use this feature:
+      </p>
+      <ul style={styles.list}>
+        <li>
+          <strong>Data Access:</strong> The app requests access only to the
+          specific "Application Data Folder" or files created by MemoFlow on
+          your Google Drive. We cannot access your other personal files or
+          folders.
+        </li>
+        <li>
+          <strong>Data Transmission:</strong> Your encrypted memo data is
+          transmitted directly between your device and Google's servers.
+        </li>
+        <li>
+          <strong>Purpose:</strong> This data is used solely to keep your notes
+          in sync across multiple devices (Android, Windows, Web).
+        </li>
+      </ul>
+
+      <h2 style={styles.heading}>3. App Permissions</h2>
       <p style={styles.text}>
         To provide full functionality, MemoFlow may request the following
         permissions:
       </p>
       <ul style={styles.list}>
         <li>
-          <strong>Storage/Filesystem:</strong> Used only to export your notes
-          into HTML, Markdown, or JSON files and to save them to your device.
+          <strong>Storage/Filesystem:</strong> Used to export your notes into
+          HTML, Markdown, or JSON files and to save them to your device.
         </li>
         <li>
-          <strong>Sharing:</strong> Utilizes the system's native sharing
-          functionality to allow you to send your notes to other apps.
+          <strong>Identity/Accounts:</strong> (Optional) Used for Google Login
+          to facilitate the Google Drive sync feature.
         </li>
       </ul>
 
-      <h2 style={styles.heading}>3. Data Retention and Deletion</h2>
+      <h2 style={styles.heading}>4. Data Retention and Deletion</h2>
       <p style={styles.text}>
-        Since your data is stored locally, we do not have access to it. Your
-        data is retained on your device as long as the app is installed.
-        Deleting the app will remove all locally stored content permanently
-        unless you have exported it beforehand.
+        Since your data is stored locally or on your own Google Drive, we do not
+        have access to it. Deleting the app will remove all locally stored
+        content. For data synced to Google Drive, you can manage or delete it at
+        any time through the app's settings or your Google Account.
       </p>
 
-      <h2 style={styles.heading}>4. Children's Privacy</h2>
+      <h2 style={styles.heading}>5. Children's Privacy</h2>
       <p style={styles.text}>
         Our Service is intended for a general audience and is{' '}
         <strong>safe for users of all ages</strong>. Because MemoFlow does not
@@ -105,14 +127,14 @@ export default function PrivacyPolicyMemoPage() {
         collect any personal data from children under the age of 13.
       </p>
 
-      <h2 style={styles.heading}>5. Third-Party Services</h2>
+      <h2 style={styles.heading}>6. Third-Party Services</h2>
       <p style={styles.text}>
         We do not share, sell, or trade your data with any third parties.
         MemoFlow does not contain third-party analytics, tracking tools, or
         advertisements that monitor your behavior.
       </p>
 
-      <h2 style={styles.heading}>6. Changes to This Policy</h2>
+      <h2 style={styles.heading}>7. Changes to This Policy</h2>
       <p style={styles.text}>
         We may update our Privacy Policy from time to time. Any changes will be
         posted on this page with an updated "Last Updated" date.
