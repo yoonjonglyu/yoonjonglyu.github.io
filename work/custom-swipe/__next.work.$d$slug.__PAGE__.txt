@@ -85,7 +85,7 @@
 `,(0,e.jsxs)(n.li,{children:["NPM: ",(0,e.jsx)(n.a,{href:"https://www.npmjs.com/package/custom-swipe",children:"https://www.npmjs.com/package/custom-swipe"})]}),`
 `,(0,e.jsxs)(n.li,{children:["Demo: ",(0,e.jsx)(n.a,{href:"https://yoonjonglyu.github.io/custom-swipe/",children:"https://yoonjonglyu.github.io/custom-swipe/"})]}),`
 `]})]})}function a(i={}){let{wrapper:n}=i.components||{};return n?(0,e.jsx)(n,{...i,children:(0,e.jsx)(d,{...i})}):d(i)}return S(j);})();
-;return Component;0:{"buildId":"I3CMj9WyMNvwb30kiC2Mu","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"Custom Swipe","content":"$3"}],["$L4"],"$L5"]}],"loading":null,"isPartial":false}
+;return Component;0:{"buildId":"bcV1iKKS925SZ3bxMxzJA","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"Custom Swipe","content":"$3"}],["$L4"],"$L5"]}],"loading":null,"isPartial":false}
 4:["$","script","script-0",{"src":"/_next/static/chunks/0a3a85198fdb92f3.js","async":true}]
 5:["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]
 8:null

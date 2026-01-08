@@ -55,7 +55,7 @@
 `,(0,i.jsxs)(e.ul,{children:[`
 `,(0,i.jsx)(e.li,{children:"MIT"}),`
 `]})]})}function p(n={}){let{wrapper:e}=n.components||{};return e?(0,i.jsx)(e,{...n,children:(0,i.jsx)(a,{...n})}):a(n)}return f(j);})();
-;return Component;0:{"buildId":"I3CMj9WyMNvwb30kiC2Mu","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"custom-swipe","content":"$3","repository":"https://github.com/yoonjonglyu/custom-swipe","homepage":"https://www.npmjs.com/package/custom-swipe"}],["$L4"],"$L5"]}],"loading":null,"isPartial":false}
+;return Component;0:{"buildId":"bcV1iKKS925SZ3bxMxzJA","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"custom-swipe","content":"$3","repository":"https://github.com/yoonjonglyu/custom-swipe","homepage":"https://www.npmjs.com/package/custom-swipe"}],["$L4"],"$L5"]}],"loading":null,"isPartial":false}
 4:["$","script","script-0",{"src":"/_next/static/chunks/e0a660edf8719343.js","async":true}]
 5:["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]
 8:null

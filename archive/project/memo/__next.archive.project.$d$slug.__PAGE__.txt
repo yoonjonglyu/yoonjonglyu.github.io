@@ -69,7 +69,7 @@
 `,(0,r.jsxs)(n.ul,{children:[`
 `,(0,r.jsx)(n.li,{children:"ISA (yoonjonglyu)"}),`
 `]})]})}function p(e={}){let{wrapper:n}=e.components||{};return n?(0,r.jsx)(n,{...e,children:(0,r.jsx)(s,{...e})}):s(e)}return x(P);})();
-;return Component;0:{"buildId":"I3CMj9WyMNvwb30kiC2Mu","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"memo","content":"$3","repository":"https://github.com/yoonjonglyu/memo","homepage":"https://yoonjonglyu.github.io/memo/"}],["$L4"],"$L5"]}],"loading":null,"isPartial":false}
+;return Component;0:{"buildId":"bcV1iKKS925SZ3bxMxzJA","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"memo","content":"$3","repository":"https://github.com/yoonjonglyu/memo","homepage":"https://yoonjonglyu.github.io/memo/"}],["$L4"],"$L5"]}],"loading":null,"isPartial":false}
 4:["$","script","script-0",{"src":"/_next/static/chunks/737b72552a100555.js","async":true}]
 5:["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]
 8:null

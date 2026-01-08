@@ -89,7 +89,7 @@
 `,(0,e.jsxs)(n.li,{children:["GitHub: ",(0,e.jsx)(n.a,{href:"https://github.com/yoonjonglyu/util-helper",children:"https://github.com/yoonjonglyu/util-helper"})]}),`
 `,(0,e.jsxs)(n.li,{children:["NPM: ",(0,e.jsx)(n.a,{href:"https://www.npmjs.com/package/isa-util",children:"https://www.npmjs.com/package/isa-util"})]}),`
 `]})]})}function a(i={}){let{wrapper:n}=i.components||{};return n?(0,e.jsx)(n,{...i,children:(0,e.jsx)(o,{...i})}):o(i)}return j(T);})();
-;return Component;0:{"buildId":"I3CMj9WyMNvwb30kiC2Mu","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"ISA Util","content":"$3"}],["$L4"],"$L5"]}],"loading":null,"isPartial":false}
+;return Component;0:{"buildId":"bcV1iKKS925SZ3bxMxzJA","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"ISA Util","content":"$3"}],["$L4"],"$L5"]}],"loading":null,"isPartial":false}
 4:["$","script","script-0",{"src":"/_next/static/chunks/0a3a85198fdb92f3.js","async":true}]
 5:["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]
 8:null
