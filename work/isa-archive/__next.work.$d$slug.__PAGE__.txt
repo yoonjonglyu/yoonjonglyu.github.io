@@ -51,7 +51,7 @@ component-driven UI architecture in a real-world context.`}),`
 `,(0,n.jsxs)(e.ul,{children:[`
 `,(0,n.jsxs)(e.li,{children:["GitHub: ",(0,n.jsx)(e.a,{href:"https://github.com/yoonjonglyu/yoonjonglyu.github.io",children:"https://github.com/yoonjonglyu/yoonjonglyu.github.io"})]}),`
 `]})]})}function h(t={}){let{wrapper:e}=t.components||{};return e?(0,n.jsx)(e,{...t,children:(0,n.jsx)(d,{...t})}):d(t)}return I(S);})();
-;return Component;0:{"buildId":"BIT9L0Z0ile4s0GzLuJhI","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"ISA Archive – Personal Resume Archive","content":"$3"}],["$L4"],"$L5"]}],"loading":null,"isPartial":false}
+;return Component;0:{"buildId":"XbLo_vEmMzOjHwPn-te4j","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"ISA Archive – Personal Resume Archive","content":"$3"}],["$L4"],"$L5"]}],"loading":null,"isPartial":false}
 4:["$","script","script-0",{"src":"/_next/static/chunks/0a3a85198fdb92f3.js","async":true}]
 5:["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]
 8:null

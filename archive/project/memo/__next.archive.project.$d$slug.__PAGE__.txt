@@ -195,7 +195,7 @@ android/            # Capacitor-based Android native project
 `,(0,n.jsx)(e.p,{children:"This project was developed for a personal portfolio and as a productivity tool. We welcome code reviews, feature suggestions, and bug reports through Issues!"}),`
 `,(0,n.jsxs)(e.p,{children:["Author: ISA (",(0,n.jsx)(e.a,{href:"https://github.com/yoonjonglyu",children:"@yoonjonglyu"}),")"]}),`
 `,(0,n.jsx)(e.p,{children:"License: MIT Licensed. Copyright \xA9 2026 ISA."})]})}function h(i={}){let{wrapper:e}=i.components||{};return e?(0,n.jsx)(e,{...i,children:(0,n.jsx)(d,{...i})}):d(i)}return v(k);})();
-;return Component;0:{"buildId":"BIT9L0Z0ile4s0GzLuJhI","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"MemoFlow","content":"$3","repository":"https://github.com/yoonjonglyu/memo","homepage":"https://yoonjonglyu.github.io/memo/"}],["$L4"],"$L5"]}],"loading":null,"isPartial":false}
+;return Component;0:{"buildId":"XbLo_vEmMzOjHwPn-te4j","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"MemoFlow","content":"$3","repository":"https://github.com/yoonjonglyu/memo","homepage":"https://yoonjonglyu.github.io/memo/"}],["$L4"],"$L5"]}],"loading":null,"isPartial":false}
 4:["$","script","script-0",{"src":"/_next/static/chunks/737b72552a100555.js","async":true}]
 5:["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]
 8:null
