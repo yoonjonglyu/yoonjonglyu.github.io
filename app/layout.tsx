@@ -43,10 +43,6 @@ export default function RootLayout({
           href='https://fonts.gstatic.com'
           crossOrigin=''
         />
-        <link
-          href='https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap'
-          rel='stylesheet'
-        />
         <script
           async
           src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2309708500958644'
@@ -60,15 +56,50 @@ export default function RootLayout({
           content='fb761146a5d49fa296db396340c978aac6259845'
         />
       </head>
-      <body>
-        <StyledComponentsRegistry>
-          <ConfigureStore>
-            <ReactQueryProvider>
-              <GlobalCSS />
-              <BasicLayout>{children}</BasicLayout>
-            </ReactQueryProvider>
-          </ConfigureStore>
-        </StyledComponentsRegistry>
+      <body
+        suppressHydrationWarning
+        style={{
+          backgroundColor: '#0b0e14', // 변수 대신 실제 색상값 직접 입력 (즉시 적용용)
+          margin: 0,
+          position: 'relative', // 자식 요소들의 기준점
+        }}>
+        {/* 1. 하이드레이션 전까지만 보일 정적 레이어 */}
+        {/* JS 로딩 여부와 상관없이 무조건 렌더링됨 */}
+        <div
+          style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center',
+            zIndex: 0, // 가장 아래에 배치
+            color: '#ffffff',
+            textAlign: 'center',
+          }}>
+          <p
+            style={{
+              fontSize: '1.2rem',
+              fontWeight: 500,
+              marginBottom: '8px',
+            }}>
+            Loading resources...
+          </p>
+          <p style={{ fontSize: '0.9rem', opacity: 0.6 }}>
+            If the screen stays blank, please try refreshing.
+          </p>
+        </div>
+          <StyledComponentsRegistry>
+            <ConfigureStore>
+              <ReactQueryProvider>
+                <GlobalCSS />
+                <BasicLayout>{children}</BasicLayout>
+              </ReactQueryProvider>
+            </ConfigureStore>
+          </StyledComponentsRegistry>
       </body>
     </html>
   );

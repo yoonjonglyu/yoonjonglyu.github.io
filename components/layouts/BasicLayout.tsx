@@ -4,9 +4,12 @@ import styled from 'styled-components';
 import Link from 'next/link';
 
 const Wrap = styled.div`
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: #0b0e14;
 `;
 
 const Header = styled.header`
