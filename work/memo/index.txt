@@ -1,9 +1,9 @@
 1:"$Sreact.fragment"
-2:I[17761,["/_next/static/chunks/fae1b863422210d1.js","/_next/static/chunks/e64d022e5a8ae771.js","/_next/static/chunks/aa5c809702728ed2.js"],"default"]
-3:I[56064,["/_next/static/chunks/fae1b863422210d1.js","/_next/static/chunks/e64d022e5a8ae771.js","/_next/static/chunks/aa5c809702728ed2.js"],"default"]
-4:I[44015,["/_next/static/chunks/fae1b863422210d1.js","/_next/static/chunks/e64d022e5a8ae771.js","/_next/static/chunks/aa5c809702728ed2.js"],"default"]
-5:I[17761,["/_next/static/chunks/fae1b863422210d1.js","/_next/static/chunks/e64d022e5a8ae771.js","/_next/static/chunks/aa5c809702728ed2.js"],"GlobalCSS"]
-6:I[86217,["/_next/static/chunks/fae1b863422210d1.js","/_next/static/chunks/e64d022e5a8ae771.js","/_next/static/chunks/aa5c809702728ed2.js"],"default"]
+2:I[17761,["/_next/static/chunks/fae1b863422210d1.js","/_next/static/chunks/2fa2a92df62d65f8.js","/_next/static/chunks/8e5f3b112830e943.js"],"default"]
+3:I[56064,["/_next/static/chunks/fae1b863422210d1.js","/_next/static/chunks/2fa2a92df62d65f8.js","/_next/static/chunks/8e5f3b112830e943.js"],"default"]
+4:I[44015,["/_next/static/chunks/fae1b863422210d1.js","/_next/static/chunks/2fa2a92df62d65f8.js","/_next/static/chunks/8e5f3b112830e943.js"],"default"]
+5:I[17761,["/_next/static/chunks/fae1b863422210d1.js","/_next/static/chunks/2fa2a92df62d65f8.js","/_next/static/chunks/8e5f3b112830e943.js"],"GlobalCSS"]
+6:I[86217,["/_next/static/chunks/fae1b863422210d1.js","/_next/static/chunks/2fa2a92df62d65f8.js","/_next/static/chunks/8e5f3b112830e943.js"],"default"]
 7:I[39756,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/247eb132b7f7b574.js"],"default"]
 8:I[37457,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/247eb132b7f7b574.js"],"default"]
 a:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/247eb132b7f7b574.js"],"OutletBoundary"]
@@ -12,108 +12,152 @@ d:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/247e
 f:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/247eb132b7f7b574.js"],"MetadataBoundary"]
 11:I[68027,[],"default"]
 :HL["/_next/static/chunks/4e1aabe40b9d049f.css","style"]
-:HL["https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap","style"]
-0:{"P":null,"b":"bcV1iKKS925SZ3bxMxzJA","c":["","work","memo",""],"q":"","i":false,"f":[[["",{"children":["work",{"children":[["slug","memo","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/4e1aabe40b9d049f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/fae1b863422210d1.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/e64d022e5a8ae771.js","async":true,"nonce":"$undefined"}],["$","script","script-2",{"src":"/_next/static/chunks/aa5c809702728ed2.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":""}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap","rel":"stylesheet"}],["$","script",null,{"async":true,"src":"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2309708500958644","crossOrigin":"anonymous"}],["$","meta",null,{"name":"google-site-verification","content":"qdEnPRuxwkkMBg_va4KDeC4Hb2g5XeMuQETPiTQWZ9U"}],["$","meta",null,{"name":"naver-site-verification","content":"fb761146a5d49fa296db396340c978aac6259845"}]]}],["$","body",null,{"children":["$","$L2",null,{"children":["$","$L3",null,{"children":["$","$L4",null,{"children":[["$","$L5",null,{}],["$","$L6",null,{"children":["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]]}]}]}]}]]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L9",[["$","script","script-0",{"src":"/_next/static/chunks/0a3a85198fdb92f3.js","async":true,"nonce":"$undefined"}]],["$","$La",null,{"children":["$","$b",null,{"name":"Next.MetadataOutlet","children":"$@c"}]}]]}],{},null,false,false]},null,false,false]},null,false,false]},null,false,false],["$","$1","h",{"children":[null,["$","$Ld",null,{"children":"$@e"}],["$","div",null,{"hidden":true,"children":["$","$Lf",null,{"children":["$","$b",null,{"name":"Next.Metadata","children":"$@10"}]}]}],null]}],false]],"m":"$undefined","G":["$11",[]],"S":true}
-12:I[65942,["/_next/static/chunks/fae1b863422210d1.js","/_next/static/chunks/e64d022e5a8ae771.js","/_next/static/chunks/aa5c809702728ed2.js","/_next/static/chunks/0a3a85198fdb92f3.js"],"default"]
-13:T2bc7,var Component=(()=>{var a=Object.create;var o=Object.defineProperty;var m=Object.getOwnPropertyDescriptor;var u=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,b=Object.prototype.hasOwnProperty;var y=(r,n)=>()=>(n||r((n={exports:{}}).exports,n),n.exports),D=(r,n)=>{for(var i in n)o(r,i,{get:n[i],enumerable:!0})},t=(r,n,i,c)=>{if(n&&typeof n=="object"||typeof n=="function")for(let l of u(n))!b.call(r,l)&&l!==i&&o(r,l,{get:()=>n[l],enumerable:!(c=m(n,l))||c.enumerable});return r};var f=(r,n,i)=>(i=r!=null?a(g(r)):{},t(n||!r||!r.__esModule?o(i,"default",{value:r,enumerable:!0}):i,r)),v=r=>t(o({},"__esModule",{value:!0}),r);var d=y((A,h)=>{h.exports=_jsx_runtime});var C={};D(C,{default:()=>p,frontmatter:()=>S});var e=f(d()),S={title:"Memo",summary:"PWA-based Memo application using Storybook and CDD methodology",resume:{title:"Component-Driven PWA Memo App",role:"Solo Developer (Frontend)",period:"2023.01",description:`A web memo service focused on scalable UI architecture and offline user experience. Built with Component-Driven Development using Storybook, and designed to work fully offline as a PWA.
-`,skills:["TypeScript","Storybook","PWA","CDD"]},highlights:["Built an independent visual testing environment by decoupling UI components from business logic using Storybook, significantly improving development productivity.","Applied Component-Driven Development (CDD) to maximize UI reusability and handle edge-case layouts for various data states.","Implemented offline data continuity and caching strategies using Service Workers (PWA), ensuring a seamless UX regardless of network connectivity."],featured:!0,category:"product",thumbnail:"/content/memo.png",order:2,tags:["TypeScript","Storybook","PWA","CDD","LocalStorage"]};function s(r){let n={a:"a",br:"br",code:"code",h2:"h2",h3:"h3",hr:"hr",li:"li",p:"p",strong:"strong",ul:"ul",...r.components};return(0,e.jsxs)(e.Fragment,{children:[(0,e.jsx)(n.h2,{children:"\uAC1C\uC694"}),`
-`,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.strong,{children:"Memo"}),"\uB294 \uB85C\uADF8\uC778\uC774\uB098 \uC11C\uBC84 \uC758\uC874\uC131 \uC5C6\uC774",(0,e.jsx)(n.br,{}),`
-`,"\uBE0C\uB77C\uC6B0\uC800\uB9CC\uC73C\uB85C \uC989\uC2DC \uC0AC\uC6A9\uD560 \uC218 \uC788\uB294 ",(0,e.jsx)(n.strong,{children:"\uD718\uBC1C\uC131 \uBA54\uBAA8\xB7\uD50C\uB798\uB108 \uC560\uD50C\uB9AC\uCF00\uC774\uC158"}),"\uC774\uB2E4."]}),`
-`,(0,e.jsxs)(n.p,{children:["\uC774 \uD504\uB85C\uC81D\uD2B8\uC758 \uD575\uC2EC \uBAA9\uC801\uC740 \uAE30\uB2A5 \uAD6C\uD604 \uC790\uCCB4\uAC00 \uC544\uB2C8\uB77C,",(0,e.jsx)(n.br,{}),`
-`,"**\uCEF4\uD3EC\uB10C\uD2B8 \uC8FC\uB3C4 \uAC1C\uBC1C(Component Driven Development)**\uC744 \uC2E4\uC81C \uC81C\uD488 \uB2E8\uC704\uB85C \uC801\uC6A9\uD558\uACE0",(0,e.jsx)(n.br,{}),`
-`,"UI \uC124\uACC4\xB7\uC0C1\uD0DC \uBD84\uB9AC\xB7\uD655\uC7A5 \uAC00\uB2A5\uC131\uC744 \uAC80\uC99D\uD558\uB294 \uB370 \uC788\uB2E4."]}),`
-`,(0,e.jsx)(n.hr,{}),`
-`,(0,e.jsx)(n.h2,{children:"\uBB38\uC81C \uC815\uC758"}),`
-`,(0,e.jsx)(n.p,{children:"\uD504\uB860\uD2B8\uC5D4\uB4DC \uAC1C\uBC1C \uACFC\uC815\uC5D0\uC11C \uB2E4\uC74C\uACFC \uAC19\uC740 \uAD6C\uC870\uC801 \uD55C\uACC4\uB97C \uC790\uC8FC \uACBD\uD5D8\uD588\uB2E4."}),`
-`,(0,e.jsxs)(n.ul,{children:[`
-`,(0,e.jsx)(n.li,{children:"UI\uC640 \uBE44\uC988\uB2C8\uC2A4 \uB85C\uC9C1\uC774 \uAC15\uD558\uAC8C \uACB0\uD569\uB41C \uCEF4\uD3EC\uB10C\uD2B8 \uAD6C\uC870"}),`
-`,(0,e.jsx)(n.li,{children:"\uD398\uC774\uC9C0 \uB2E8\uC704 \uAC1C\uBC1C\uB85C \uC778\uD574 \uCEF4\uD3EC\uB10C\uD2B8 \uC7AC\uC0AC\uC6A9\uC131\uC774 \uB0AE\uC544\uC9D0"}),`
-`,(0,e.jsx)(n.li,{children:"\uC0C1\uD0DC \uCF00\uC774\uC2A4(\uBE48 \uC0C1\uD0DC, \uAE34 \uD14D\uC2A4\uD2B8 \uB4F1)\uB97C \uC0AC\uD6C4\uC5D0 \uB300\uC751"}),`
-`,(0,e.jsx)(n.li,{children:"\uC791\uC740 \uC11C\uBE44\uC2A4\uC784\uC5D0\uB3C4 \uACFC\uB3C4\uD55C \uC544\uD0A4\uD14D\uCC98 \uB3C4\uC785"}),`
+0:{"P":null,"b":"BIT9L0Z0ile4s0GzLuJhI","c":["","work","memo",""],"q":"","i":false,"f":[[["",{"children":["work",{"children":[["slug","memo","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/4e1aabe40b9d049f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/fae1b863422210d1.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/2fa2a92df62d65f8.js","async":true,"nonce":"$undefined"}],["$","script","script-2",{"src":"/_next/static/chunks/8e5f3b112830e943.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":""}],["$","script",null,{"async":true,"src":"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2309708500958644","crossOrigin":"anonymous"}],["$","meta",null,{"name":"google-site-verification","content":"qdEnPRuxwkkMBg_va4KDeC4Hb2g5XeMuQETPiTQWZ9U"}],["$","meta",null,{"name":"naver-site-verification","content":"fb761146a5d49fa296db396340c978aac6259845"}]]}],["$","body",null,{"suppressHydrationWarning":true,"style":{"backgroundColor":"#0b0e14","margin":0,"position":"relative"},"children":[["$","div",null,{"style":{"position":"fixed","top":0,"left":0,"width":"100%","height":"100%","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center","zIndex":0,"color":"#ffffff","textAlign":"center"},"children":[["$","p",null,{"style":{"fontSize":"1.2rem","fontWeight":500,"marginBottom":"8px"},"children":"Loading resources..."}],["$","p",null,{"style":{"fontSize":"0.9rem","opacity":0.6},"children":"If the screen stays blank, please try refreshing."}]]}],["$","$L2",null,{"children":["$","$L3",null,{"children":["$","$L4",null,{"children":[["$","$L5",null,{}],["$","$L6",null,{"children":["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]]}]}]}]]}]]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L9",[["$","script","script-0",{"src":"/_next/static/chunks/0a3a85198fdb92f3.js","async":true,"nonce":"$undefined"}]],["$","$La",null,{"children":["$","$b",null,{"name":"Next.MetadataOutlet","children":"$@c"}]}]]}],{},null,false,false]},null,false,false]},null,false,false]},null,false,false],["$","$1","h",{"children":[null,["$","$Ld",null,{"children":"$@e"}],["$","div",null,{"hidden":true,"children":["$","$Lf",null,{"children":["$","$b",null,{"name":"Next.Metadata","children":"$@10"}]}]}],null]}],false]],"m":"$undefined","G":["$11",[]],"S":true}
+12:I[65942,["/_next/static/chunks/fae1b863422210d1.js","/_next/static/chunks/2fa2a92df62d65f8.js","/_next/static/chunks/8e5f3b112830e943.js","/_next/static/chunks/0a3a85198fdb92f3.js"],"default"]
+13:T2a8f,var Component=(()=>{var p=Object.create;var l=Object.defineProperty;var u=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,y=Object.prototype.hasOwnProperty;var f=(i,e)=>()=>(e||i((e={exports:{}}).exports,e),e.exports),b=(i,e)=>{for(var t in e)l(i,t,{get:e[t],enumerable:!0})},a=(i,e,t,o)=>{if(e&&typeof e=="object"||typeof e=="function")for(let r of m(e))!y.call(i,r)&&r!==t&&l(i,r,{get:()=>e[r],enumerable:!(o=u(e,r))||o.enumerable});return i};var v=(i,e,t)=>(t=i!=null?p(g(i)):{},a(e||!i||!i.__esModule?l(t,"default",{value:i,enumerable:!0}):t,i)),w=i=>a(l({},"__esModule",{value:!0}),i);var s=f((I,c)=>{c.exports=_jsx_runtime});var S={};b(S,{default:()=>h,frontmatter:()=>D});var n=v(s()),D={title:"MemoFlow",summary:"Component-Driven, Offline-First PWA Memo Application",resume:{title:"Component-Driven PWA Memo App",role:"Solo Developer (Frontend)",period:"2023.01",description:`A lightweight memo and planner application designed to validate scalable UI architecture and offline-first UX using Component-Driven Development with Storybook.
+`,skills:["TypeScript","Storybook","PWA","CDD"]},highlights:["Designed and validated a Component-Driven Development workflow using Storybook as a primary development environment.","Built a fully offline-capable PWA with Service Worker\u2013based caching and local-first data persistence.","Proven that even small-scale products benefit from clearly separated UI architecture and state modeling."],featured:!0,category:"product",thumbnail:"/content/memo.png",order:2,tags:["TypeScript","Storybook","PWA","CDD","LocalStorage"]};function d(i){let e={a:"a",blockquote:"blockquote",br:"br",code:"code",h2:"h2",h3:"h3",hr:"hr",li:"li",p:"p",strong:"strong",ul:"ul",...i.components};return(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(e.h2,{children:"Overview"}),`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:"Memo"}),` is a lightweight, volatile memo and planner application designed to work instantly
+without login, backend services, or network dependency.`]}),`
+`,(0,n.jsxs)(e.p,{children:[`This project was not primarily about feature richness.
+Instead, it was built as a `,(0,n.jsx)(e.strong,{children:"practical experiment to validate UI architecture"}),":"]}),`
+`,(0,n.jsxs)(e.ul,{children:[`
+`,(0,n.jsx)(e.li,{children:"Can Component-Driven Development scale beyond toy examples?"}),`
+`,(0,n.jsx)(e.li,{children:"Can Storybook function as a true development environment rather than just a showcase?"}),`
+`,(0,n.jsx)(e.li,{children:"How far can a small product go without introducing unnecessary architectural complexity?"}),`
 `]}),`
-`,(0,e.jsxs)(n.p,{children:["Memo\uB294",(0,e.jsx)(n.br,{}),`
-`,"\u201C\uC791\uC740 \uC81C\uD488\uC5D0\uC11C\uB3C4 \uC124\uACC4\uB294 \uBD84\uB9AC\uB418\uC5B4\uC57C \uD55C\uB2E4\u201D\uB294 \uAC00\uC124\uC744 \uAC80\uC99D\uD558\uAE30 \uC704\uD55C \uC2E4\uD5D8\uC774\uC5C8\uB2E4."]}),`
-`,(0,e.jsx)(n.hr,{}),`
-`,(0,e.jsx)(n.h2,{children:"\uD574\uACB0 \uC804\uB7B5"}),`
-`,(0,e.jsx)(n.h3,{children:"1. Component Driven Development (CDD)"}),`
-`,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.code,{children:"Storybook"}),"\uC744 \uC911\uC2EC\uC73C\uB85C \uAC1C\uBC1C \uD504\uB85C\uC138\uC2A4\uB97C \uC124\uACC4\uD588\uB2E4."]}),`
-`,(0,e.jsxs)(n.ul,{children:[`
-`,(0,e.jsx)(n.li,{children:"\uD398\uC774\uC9C0 \uC774\uC804\uC5D0 \uCEF4\uD3EC\uB10C\uD2B8 \uB2E8\uC704 \uC124\uACC4"}),`
-`,(0,e.jsxs)(n.li,{children:["\uBA54\uBAA8 \uC544\uC774\uD15C, \uC785\uB825\uCC3D, \uBC84\uD2BC \uB4F1\uC744 ",(0,e.jsx)(n.strong,{children:"\uB3C5\uB9BD\uB41C \uC0C1\uD0DC\uB85C \uAC1C\uBC1C"})]}),`
-`,(0,e.jsx)(n.li,{children:"Empty / Filled / Edge Case\uB97C \uC2A4\uD1A0\uB9AC\uB85C \uC0AC\uC804 \uC815\uC758"}),`
+`,(0,n.jsx)(e.p,{children:"Memo serves as a deliberately small but structurally rigorous product to answer these questions."}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h2,{children:"Problem Statement"}),`
+`,(0,n.jsx)(e.p,{children:"Through multiple frontend projects, I repeatedly encountered the same structural issues:"}),`
+`,(0,n.jsxs)(e.ul,{children:[`
+`,(0,n.jsx)(e.li,{children:"UI components tightly coupled with business logic"}),`
+`,(0,n.jsx)(e.li,{children:"Page-driven development limiting component reusability"}),`
+`,(0,n.jsx)(e.li,{children:"UI edge cases (empty states, long content) handled too late"}),`
+`,(0,n.jsx)(e.li,{children:"Over-engineering small products with heavyweight architecture"}),`
 `]}),`
-`,(0,e.jsxs)(n.p,{children:["\uC774\uB97C \uD1B5\uD574 UI\uB294 \uBE44\uC988\uB2C8\uC2A4 \uD750\uB984\uACFC \uBD84\uB9AC\uB41C \uCC44\uB85C \uAC80\uC99D\uB418\uC5C8\uACE0,",(0,e.jsx)(n.br,{}),`
-`,"\uD398\uC774\uC9C0 \uC870\uB9BD\uC740 \uC0C1\uB300\uC801\uC73C\uB85C \uB2E8\uC21C\uD574\uC84C\uB2E4."]}),`
-`,(0,e.jsx)(n.hr,{}),`
-`,(0,e.jsx)(n.h3,{children:"2. TypeScript \uAE30\uBC18 \uB370\uC774\uD130 \uBAA8\uB378\uB9C1"}),`
-`,(0,e.jsx)(n.p,{children:"\uBA54\uBAA8 \uB370\uC774\uD130 \uAD6C\uC870\uC640 \uCEF4\uD3EC\uB10C\uD2B8 Props\uB97C \uBA85\uD655\uD788 \uC815\uC758\uD588\uB2E4."}),`
-`,(0,e.jsxs)(n.ul,{children:[`
-`,(0,e.jsx)(n.li,{children:"\uBA54\uBAA8 \uC544\uC774\uD15C \uC778\uD130\uD398\uC774\uC2A4 \uD1B5\uC77C"}),`
-`,(0,e.jsx)(n.li,{children:"\uC0C1\uD0DC \uC804\uB2EC \uACFC\uC815\uC5D0\uC11C\uC758 \uD734\uBA3C \uC5D0\uB7EC \uCC28\uB2E8"}),`
-`,(0,e.jsx)(n.li,{children:"UI \uBCC0\uACBD \uC2DC \uC601\uD5A5 \uBC94\uC704\uB97C \uCEF4\uD30C\uC77C \uB2E8\uACC4\uC5D0\uC11C \uC778\uC9C0 \uAC00\uB2A5"}),`
+`,(0,n.jsx)(e.p,{children:"The hypothesis behind Memo was simple:"}),`
+`,(0,n.jsxs)(e.blockquote,{children:[`
+`,(0,n.jsx)(e.p,{children:"\u201CEven small products deserve a clean, well-separated UI architecture.\u201D"}),`
 `]}),`
-`,(0,e.jsxs)(n.p,{children:["\uC791\uC740 \uC571\uC774\uC9C0\uB9CC, ",(0,e.jsx)(n.strong,{children:"\uD655\uC7A5 \uAC00\uB2A5\uD55C \uB370\uC774\uD130 \uBAA8\uB378"}),"\uC744 \uC804\uC81C\uB85C \uC124\uACC4\uD588\uB2E4."]}),`
-`,(0,e.jsx)(n.hr,{}),`
-`,(0,e.jsx)(n.h3,{children:"3. \uD718\uBC1C\uC131 \uD50C\uB798\uB108 \uCEE8\uC149"}),`
-`,(0,e.jsxs)(n.p,{children:["Memo\uB294 \uC7A5\uAE30 \uBCF4\uAD00\uC6A9 \uB178\uD2B8\uAC00 \uC544\uB2C8\uB77C",(0,e.jsx)(n.br,{}),`
-`,(0,e.jsx)(n.strong,{children:"\uBE60\uB974\uAC8C \uC4F0\uACE0, \uC27D\uAC8C \uBC84\uB9AC\uB294 \uBA54\uBAA8"}),"\uC5D0 \uCD08\uC810\uC744 \uB9DE\uCDC4\uB2E4."]}),`
-`,(0,e.jsxs)(n.ul,{children:[`
-`,(0,e.jsx)(n.li,{children:"\uBCF5\uC7A1\uD55C \uACC4\uCE35 \uAD6C\uC870 \uC81C\uAC70"}),`
-`,(0,e.jsx)(n.li,{children:"\uC989\uAC01\uC801\uC778 \uCD94\uAC00 / \uC0AD\uC81C"}),`
-`,(0,e.jsx)(n.li,{children:"\uB2E8\uAE30 \uC77C\uC815\uACFC \uC0DD\uAC01 \uC815\uB9AC\uC5D0 \uCD5C\uC801\uD654\uB41C UX"}),`
+`,(0,n.jsx)(e.p,{children:"This project exists to test that hypothesis under real usage conditions."}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h2,{children:"Architectural Strategy"}),`
+`,(0,n.jsx)(e.h3,{children:"1. Component-Driven Development (CDD)"}),`
+`,(0,n.jsxs)(e.p,{children:["The entire development process was designed around ",(0,n.jsx)(e.strong,{children:"Storybook-first development"}),"."]}),`
+`,(0,n.jsx)(e.p,{children:"Instead of building pages first:"}),`
+`,(0,n.jsxs)(e.ul,{children:[`
+`,(0,n.jsx)(e.li,{children:"UI components were designed, implemented, and validated in isolation"}),`
+`,(0,n.jsx)(e.li,{children:"Memo items, input fields, buttons, and layouts were treated as independent units"}),`
+`,(0,n.jsx)(e.li,{children:"Edge cases such as empty states, long text, and overflow scenarios were predefined as stories"}),`
 `]}),`
-`,(0,e.jsx)(n.p,{children:"\uAE30\uB2A5\uC744 \uB298\uB9AC\uAE30\uBCF4\uB2E4 \u201C\uC9C0\uC6B0\uAE30 \uC26C\uC6B4 \uB3C4\uAD6C\u201D\uB77C\uB294 \uC131\uACA9\uC744 \uBA85\uD655\uD788 \uD588\uB2E4."}),`
-`,(0,e.jsx)(n.hr,{}),`
-`,(0,e.jsx)(n.h3,{children:"4. PWA \uAE30\uBC18 \uC624\uD504\uB77C\uC778 \uACBD\uD5D8"}),`
-`,(0,e.jsxs)(n.ul,{children:[`
-`,(0,e.jsx)(n.li,{children:"Service Worker\uB97C \uD1B5\uD55C \uCE90\uC2F1"}),`
-`,(0,e.jsx)(n.li,{children:"\uB124\uD2B8\uC6CC\uD06C \uC5C6\uC774\uB3C4 \uBA54\uBAA8 \uC791\uC131 \uBC0F \uC870\uD68C \uAC00\uB2A5"}),`
-`,(0,e.jsx)(n.li,{children:"\uD648 \uD654\uBA74 \uCD94\uAC00\uB97C \uD1B5\uD55C \uC571 \uC218\uC900 \uC811\uADFC\uC131 \uC81C\uACF5"}),`
+`,(0,n.jsx)(e.p,{children:"This approach resulted in:"}),`
+`,(0,n.jsxs)(e.ul,{children:[`
+`,(0,n.jsx)(e.li,{children:"UI validation independent of application state"}),`
+`,(0,n.jsx)(e.li,{children:"Reduced complexity when composing pages"}),`
+`,(0,n.jsx)(e.li,{children:"Faster iteration cycles with predictable visual outcomes"}),`
 `]}),`
-`,(0,e.jsxs)(n.p,{children:["\uB610\uD55C ",(0,e.jsx)(n.code,{children:"Download"})," \uAE30\uB2A5\uC740 \uD30C\uC77C \uC800\uC7A5\uC774 \uC544\uB2CC",(0,e.jsx)(n.br,{}),`
-`,(0,e.jsx)(n.strong,{children:"PWA \uC124\uCE58 \uB610\uB294 \uBAA8\uBC14\uC77C \uC571 \uB2E4\uC6B4\uB85C\uB4DC \uB9C1\uD06C"}),"\uB85C \uC5F0\uACB0\uB418\uB3C4\uB85D \uC124\uACC4\uD588\uB2E4."]}),`
-`,(0,e.jsx)(n.hr,{}),`
-`,(0,e.jsx)(n.h2,{children:"\uAE30\uC220\uC801 \uC120\uD0DD \uADFC\uAC70"}),`
-`,(0,e.jsxs)(n.ul,{children:[`
-`,(0,e.jsxs)(n.li,{children:[`
-`,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.strong,{children:"TypeScript"}),(0,e.jsx)(n.br,{}),`
-`,"\u2192 \uCEF4\uD3EC\uB10C\uD2B8 Props\uC640 \uC0C1\uD0DC \uBAA8\uB378\uC744 \uBA85\uD655\uD788 \uAD00\uB9AC\uD558\uAE30 \uC704\uD568"]}),`
+`,(0,n.jsxs)(e.p,{children:[`Storybook functioned not as documentation after the fact,
+but as the `,(0,n.jsx)(e.strong,{children:"primary UI development environment"}),"."]}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h3,{children:"2. Type-Safe UI and Data Modeling"}),`
+`,(0,n.jsx)(e.p,{children:"Although Memo is a small application, its data model was designed with extensibility in mind."}),`
+`,(0,n.jsxs)(e.ul,{children:[`
+`,(0,n.jsx)(e.li,{children:"Unified memo item interfaces"}),`
+`,(0,n.jsx)(e.li,{children:"Explicit typing for component props and state"}),`
+`,(0,n.jsx)(e.li,{children:"Compile-time detection of UI-state mismatches"}),`
 `]}),`
-`,(0,e.jsxs)(n.li,{children:[`
-`,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.strong,{children:"Storybook"}),(0,e.jsx)(n.br,{}),`
-`,"\u2192 UI\uB97C \uCF54\uB4DC \uC774\uC804\uC5D0 \uAC80\uC99D\uD558\uACE0, \uBB38\uC11C\uB85C \uB3D9\uC2DC\uC5D0 \uD65C\uC6A9\uD558\uAE30 \uC704\uD568"]}),`
+`,(0,n.jsx)(e.p,{children:`TypeScript allowed architectural decisions to surface early,
+preventing silent UI regressions as features evolved.`}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h3,{children:"3. Volatile Planner Concept"}),`
+`,(0,n.jsx)(e.p,{children:"Memo intentionally avoids becoming a long-term knowledge repository."}),`
+`,(0,n.jsx)(e.p,{children:"Instead, it focuses on:"}),`
+`,(0,n.jsxs)(e.ul,{children:[`
+`,(0,n.jsx)(e.li,{children:"Quick creation"}),`
+`,(0,n.jsx)(e.li,{children:"Easy deletion"}),`
+`,(0,n.jsx)(e.li,{children:"Minimal structural overhead"}),`
 `]}),`
-`,(0,e.jsxs)(n.li,{children:[`
-`,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.strong,{children:"PWA"}),(0,e.jsx)(n.br,{}),`
-`,"\u2192 \uC11C\uBC84 \uC5C6\uB294 \uD658\uACBD\uC5D0\uC11C\uB3C4 \uC571\uC5D0 \uAC00\uAE4C\uC6B4 \uC0AC\uC6A9\uC790 \uACBD\uD5D8 \uC81C\uACF5"]}),`
+`,(0,n.jsxs)(e.p,{children:[`There are no deep hierarchies, folders, or complex relationships.
+The UX is optimized for `,(0,n.jsx)(e.strong,{children:"short-term thinking and immediate disposal"}),"."]}),`
+`,(0,n.jsx)(e.p,{children:"This constraint directly influenced UI decisions:"}),`
+`,(0,n.jsxs)(e.ul,{children:[`
+`,(0,n.jsx)(e.li,{children:"Flat structures over nested layouts"}),`
+`,(0,n.jsx)(e.li,{children:"Immediate actions over configuration-heavy flows"}),`
+`,(0,n.jsx)(e.li,{children:"Fewer abstractions, but clearer intent"}),`
 `]}),`
-`,(0,e.jsxs)(n.li,{children:[`
-`,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.strong,{children:"Vanilla HTML / CSS"}),(0,e.jsx)(n.br,{}),`
-`,"\u2192 UI \uD504\uB808\uC784\uC6CC\uD06C\uC5D0 \uC758\uC874\uD558\uC9C0 \uC54A\uACE0 \uAD6C\uC870\xB7\uC2A4\uD0C0\uC77C \uC124\uACC4 \uC5ED\uB7C9\uC744 \uC9D1\uC911\uD558\uAE30 \uC704\uD568"]}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h3,{children:"4. Offline-First PWA Architecture"}),`
+`,(0,n.jsx)(e.p,{children:"Memo was designed to work identically regardless of network availability."}),`
+`,(0,n.jsxs)(e.ul,{children:[`
+`,(0,n.jsx)(e.li,{children:"Service Worker\u2013based caching"}),`
+`,(0,n.jsx)(e.li,{children:"Local-first data persistence using LocalStorage"}),`
+`,(0,n.jsx)(e.li,{children:"Full CRUD functionality without connectivity"}),`
 `]}),`
-`,(0,e.jsxs)(n.li,{children:[`
-`,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.strong,{children:"LocalStorage"}),(0,e.jsx)(n.br,{}),`
-`,"\u2192 \uC989\uAC01\uC801\uC778 \uB370\uC774\uD130 \uBC18\uC751\uC131\uACFC \uB2E8\uC21C\uD55C \uC0C1\uD0DC \uC800\uC7A5\uC744 \uC704\uD574 \uCC44\uD0DD"]}),`
+`,(0,n.jsxs)(e.p,{children:[`Rather than treating offline support as an enhancement,
+it was considered a `,(0,n.jsx)(e.strong,{children:"baseline architectural requirement"}),"."]}),`
+`,(0,n.jsxs)(e.p,{children:["The ",(0,n.jsx)(e.code,{children:"Download"}),` action does not export files.
+Instead, it guides users toward:`]}),`
+`,(0,n.jsxs)(e.ul,{children:[`
+`,(0,n.jsx)(e.li,{children:"PWA installation"}),`
+`,(0,n.jsx)(e.li,{children:"Mobile app distribution entry points"}),`
+`]}),`
+`,(0,n.jsx)(e.p,{children:"This reinforces the \u201Capp-like\u201D experience without server dependency."}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h2,{children:"Technical Decisions"}),`
+`,(0,n.jsxs)(e.ul,{children:[`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:"TypeScript"}),(0,n.jsx)(e.br,{}),`
+`,"Ensures predictable UI-state boundaries and scalable component contracts."]}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:"Storybook"}),(0,n.jsx)(e.br,{}),`
+`,`Enables isolated UI validation, documentation, and design verification
+without coupling to application logic.`]}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:"PWA"}),(0,n.jsx)(e.br,{}),`
+`,"Provides native-like UX while maintaining a web-first architecture."]}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:"TypeScript"}),(0,n.jsx)(e.br,{}),`
+`,"Used to explicitly define memo data models and state boundaries,",(0,n.jsx)(e.br,{}),`
+`,"ensuring long-term maintainability as features scale."]}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:"Tailwind CSS"}),(0,n.jsx)(e.br,{}),`
+`,"Selected to minimize runtime CSS overhead",(0,n.jsx)(e.br,{}),`
+`,"and to enable rapid UI iteration with a utility-first approach."]}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:"Capacitor"}),(0,n.jsx)(e.br,{}),`
+`,"Preferred over React Native Expo due to architectural simplicity",(0,n.jsx)(e.br,{}),`
+`,"and its alignment with a web-first application philosophy."]}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:"LocalStorage"}),(0,n.jsx)(e.br,{}),`
+`,"Chosen for immediacy and simplicity in a serverless context."]}),`
 `]}),`
 `]}),`
-`,(0,e.jsx)(n.hr,{}),`
-`,(0,e.jsx)(n.h2,{children:"\uACB0\uACFC \uBC0F \uC758\uC758"}),`
-`,(0,e.jsxs)(n.ul,{children:[`
-`,(0,e.jsx)(n.li,{children:"CDD \uBC29\uC2DD\uC758 \uC2E4\uC81C \uC81C\uD488 \uC801\uC6A9 \uACBD\uD5D8 \uD655\uBCF4"}),`
-`,(0,e.jsx)(n.li,{children:"\uCEF4\uD3EC\uB10C\uD2B8 \uB2E8\uC704 \uC124\uACC4 \u2192 \uD398\uC774\uC9C0 \uC870\uB9BD \uD750\uB984 \uC815\uB9BD"}),`
-`,(0,e.jsx)(n.li,{children:"\uACFC\uD558\uC9C0 \uC54A\uC740 \uC544\uD0A4\uD14D\uCC98\uB85C\uB3C4 \uC720\uC9C0\uBCF4\uC218 \uAC00\uB2A5\uD55C \uAD6C\uC870 \uAC80\uC99D"}),`
-`,(0,e.jsx)(n.li,{children:"\uC774\uD6C4 \uD504\uB85C\uC81D\uD2B8(UI \uC2DC\uC2A4\uD15C, \uB514\uC790\uC778 \uC2DC\uC2A4\uD15C)\uC758 \uAE30\uBC18 \uC0AC\uB840\uB85C \uD65C\uC6A9 \uAC00\uB2A5"}),`
+`,(0,n.jsxs)(e.p,{children:["Each choice favors ",(0,n.jsx)(e.strong,{children:"clarity and intent"})," over abstraction density."]}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h2,{children:"Outcomes and Learnings"}),`
+`,(0,n.jsxs)(e.ul,{children:[`
+`,(0,n.jsx)(e.li,{children:"Successfully validated CDD as a viable approach for real products"}),`
+`,(0,n.jsx)(e.li,{children:"Established a reusable pattern for UI-first architecture"}),`
+`,(0,n.jsx)(e.li,{children:"Demonstrated that architectural discipline does not require large-scale applications"}),`
+`,(0,n.jsx)(e.li,{children:"Provided a foundation for future UI systems and design system work"}),`
 `]}),`
-`,(0,e.jsxs)(n.p,{children:["Memo\uB294",(0,e.jsx)(n.br,{}),`
-`,"**\u201C\uC791\uC740 \uC11C\uBE44\uC2A4\uC5D0\uC11C\uC758 \uC62C\uBC14\uB978 \uD504\uB860\uD2B8\uC5D4\uB4DC \uC124\uACC4\u201D**\uB97C \uAC80\uC99D\uD55C \uC791\uC5C5\uC774\uB2E4."]}),`
-`,(0,e.jsx)(n.hr,{}),`
-`,(0,e.jsx)(n.h2,{children:"\uB9C1\uD06C"}),`
-`,(0,e.jsxs)(n.ul,{children:[`
-`,(0,e.jsxs)(n.li,{children:["Demo: ",(0,e.jsx)(n.a,{href:"https://yoonjonglyu.github.io/memo/",children:"https://yoonjonglyu.github.io/memo/"})]}),`
-`,(0,e.jsxs)(n.li,{children:["GitHub: ",(0,e.jsx)(n.a,{href:"https://github.com/yoonjonglyu/memo",children:"https://github.com/yoonjonglyu/memo"})]}),`
-`]})]})}function p(r={}){let{wrapper:n}=r.components||{};return n?(0,e.jsx)(n,{...r,children:(0,e.jsx)(s,{...r})}):s(r)}return v(C);})();
-;return Component;9:["$","$L12",null,{"title":"Memo","content":"$13"}]
+`,(0,n.jsxs)(e.p,{children:[`Memo is not a feature-heavy application.
+It is a `,(0,n.jsx)(e.strong,{children:"deliberate architectural experiment"}),`,
+proving that thoughtful UI structure scales down as effectively as it scales up.`]}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h2,{children:"Links"}),`
+`,(0,n.jsxs)(e.ul,{children:[`
+`,(0,n.jsxs)(e.li,{children:["Demo: ",(0,n.jsx)(e.a,{href:"https://yoonjonglyu.github.io/memo/",children:"https://yoonjonglyu.github.io/memo/"})]}),`
+`,(0,n.jsxs)(e.li,{children:["GitHub: ",(0,n.jsx)(e.a,{href:"https://yoonjonglyu.github.io/memo/",children:"https://github.com/yoonjonglyu/memo"})]}),`
+`]})]})}function h(i={}){let{wrapper:e}=i.components||{};return e?(0,n.jsx)(e,{...i,children:(0,n.jsx)(d,{...i})}):d(i)}return w(S);})();
+;return Component;9:["$","$L12",null,{"title":"MemoFlow","content":"$13"}]
 e:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
 14:I[27201,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/247eb132b7f7b574.js"],"IconMark"]
-10:[["$","title","0",{"children":"Memo | ISA - Archive"}],["$","meta","1",{"name":"description","content":"PWA-based Memo application using Storybook and CDD methodology"}],["$","link","2",{"rel":"author","href":"https://github.com/yoonjonglyu"}],["$","meta","3",{"name":"author","content":"YOON JONG RYU"}],["$","meta","4",{"name":"keywords","content":"TypeScript,Storybook,PWA,CDD,LocalStorage"}],["$","meta","5",{"name":"robots","content":"index, follow"}],["$","meta","6",{"property":"og:title","content":"Memo | ISA - Archive"}],["$","meta","7",{"property":"og:description","content":"PWA-based Memo application using Storybook and CDD methodology"}],["$","meta","8",{"property":"og:url","content":"https://yoonjonglyu.github.io/work/memo/"}],["$","meta","9",{"property":"og:site_name","content":"ISA - Archive"}],["$","meta","10",{"property":"og:image","content":"https://yoonjonglyu.github.io/content/memo.png"}],["$","meta","11",{"property":"og:type","content":"article"}],["$","meta","12",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","13",{"name":"twitter:title","content":"Memo | ISA - Archive"}],["$","meta","14",{"name":"twitter:description","content":"PWA-based Memo application using Storybook and CDD methodology"}],["$","meta","15",{"name":"twitter:image","content":"https://yoonjonglyu.github.io/content/memo.png"}],["$","link","16",{"rel":"icon","href":"/favicon.ico?favicon.bf767c79.ico","sizes":"48x48","type":"image/x-icon"}],["$","link","17",{"rel":"icon","href":"/_next/static/media/favicon-16x16.0c89dc20.png","sizes":"16x16","type":"image/png"}],["$","link","18",{"rel":"icon","href":"/_next/static/media/favicon-32x32.d677e4b9.png","sizes":"32x32","type":"image/png"}],["$","link","19",{"rel":"apple-touch-icon","href":"/_next/static/media/apple-touch-icon.64853cbe.png","sizes":"180x180"}],["$","$L14","20",{}]]
+10:[["$","title","0",{"children":"MemoFlow | ISA - Archive"}],["$","meta","1",{"name":"description","content":"Component-Driven, Offline-First PWA Memo Application"}],["$","link","2",{"rel":"author","href":"https://github.com/yoonjonglyu"}],["$","meta","3",{"name":"author","content":"YOON JONG RYU"}],["$","meta","4",{"name":"keywords","content":"TypeScript,Storybook,PWA,CDD,LocalStorage"}],["$","meta","5",{"name":"robots","content":"index, follow"}],["$","meta","6",{"property":"og:title","content":"MemoFlow | ISA - Archive"}],["$","meta","7",{"property":"og:description","content":"Component-Driven, Offline-First PWA Memo Application"}],["$","meta","8",{"property":"og:url","content":"https://yoonjonglyu.github.io/work/memo/"}],["$","meta","9",{"property":"og:site_name","content":"ISA - Archive"}],["$","meta","10",{"property":"og:image","content":"https://yoonjonglyu.github.io/content/memo.png"}],["$","meta","11",{"property":"og:type","content":"article"}],["$","meta","12",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","13",{"name":"twitter:title","content":"MemoFlow | ISA - Archive"}],["$","meta","14",{"name":"twitter:description","content":"Component-Driven, Offline-First PWA Memo Application"}],["$","meta","15",{"name":"twitter:image","content":"https://yoonjonglyu.github.io/content/memo.png"}],["$","link","16",{"rel":"icon","href":"/favicon.ico?favicon.bf767c79.ico","sizes":"48x48","type":"image/x-icon"}],["$","link","17",{"rel":"icon","href":"/_next/static/media/favicon-16x16.0c89dc20.png","sizes":"16x16","type":"image/png"}],["$","link","18",{"rel":"icon","href":"/_next/static/media/favicon-32x32.d677e4b9.png","sizes":"32x32","type":"image/png"}],["$","link","19",{"rel":"apple-touch-icon","href":"/_next/static/media/apple-touch-icon.64853cbe.png","sizes":"180x180"}],["$","$L14","20",{}]]
 c:null

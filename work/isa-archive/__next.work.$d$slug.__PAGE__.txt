@@ -1,51 +1,57 @@
 1:"$Sreact.fragment"
-2:I[65942,["/_next/static/chunks/fae1b863422210d1.js","/_next/static/chunks/e64d022e5a8ae771.js","/_next/static/chunks/aa5c809702728ed2.js","/_next/static/chunks/0a3a85198fdb92f3.js"],"default"]
+2:I[65942,["/_next/static/chunks/fae1b863422210d1.js","/_next/static/chunks/2fa2a92df62d65f8.js","/_next/static/chunks/8e5f3b112830e943.js","/_next/static/chunks/0a3a85198fdb92f3.js"],"default"]
 6:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/247eb132b7f7b574.js"],"OutletBoundary"]
 7:"$Sreact.suspense"
-3:T1581,var Component=(()=>{var p=Object.create;var o=Object.defineProperty;var u=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,y=Object.prototype.hasOwnProperty;var f=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),v=(t,e)=>{for(var r in e)o(t,r,{get:e[r],enumerable:!0})},s=(t,e,r,a)=>{if(e&&typeof e=="object"||typeof e=="function")for(let i of m(e))!y.call(t,i)&&i!==r&&o(t,i,{get:()=>e[i],enumerable:!(a=u(e,i))||a.enumerable});return t};var b=(t,e,r)=>(r=t!=null?p(g(t)):{},s(e||!t||!t.__esModule?o(r,"default",{value:t,enumerable:!0}):r,t)),w=t=>s(o({},"__esModule",{value:!0}),t);var c=f((x,l)=>{l.exports=_jsx_runtime});var S={};v(S,{default:()=>h,frontmatter:()=>I});var n=b(c()),I={title:"ISA Archive \u2013 Personal Resume Archive",summary:"A component-driven portfolio platform focused on UI architecture and scalable content rendering.",resume:{title:"Component-Driven Resume & Work Archive Platform",period:"Dec 2024 - Present",role:"Solo Frontend Engineer",description:`Designed and implemented a UI-architecture\u2013centric portfolio platform that treats resumes and work logs as programmatic structured data rather than static pages. The system emphasizes component isolation,  predictable styling, and reusable layout primitives to support long-term scalability.
-`,skills:["Next.js","Storybook","Contentlayer","TypeScript","Styled Components","Design System"]},highlights:["Structured all UI around a Component-Driven Development workflow, ensuring every layout and UI primitive is independently testable and reusable.","Architected a design system with strict style encapsulation using CSS-in-JS to prevent global leakage and layout coupling.","Separated content structure from presentation by introducing a typed content schema layer, enabling UI components to remain data-agnostic.","Optimized UI scalability by standardizing layout contracts (section, block, highlight), eliminating the need for page-specific styling."],featured:!0,category:"product",order:1,thumbnail:"/content/archive.png",tags:["Frontend","UI Architecture","Design System","CDD"]};function d(t){let e={h2:"h2",h3:"h3",hr:"hr",li:"li",p:"p",strong:"strong",ul:"ul",...t.components};return(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(e.h2,{children:"Background"}),`
-`,(0,n.jsxs)(e.p,{children:[`Traditional portfolio sites often degrade over time due to tightly coupled layouts, ad-hoc styling rules, and content-specific components.
-This project was conceived as an experiment in treating a personal archive as a `,(0,n.jsx)(e.strong,{children:"UI system"}),", not just a collection of pages."]}),`
-`,(0,n.jsx)(e.p,{children:`The goal was to validate whether a resume and work history could be modeled as structured data rendered through
-stable, reusable UI primitives.`}),`
+3:T16f1,var Component=(()=>{var p=Object.create;var o=Object.defineProperty;var u=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,y=Object.prototype.hasOwnProperty;var f=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),v=(t,e)=>{for(var r in e)o(t,r,{get:e[r],enumerable:!0})},s=(t,e,r,a)=>{if(e&&typeof e=="object"||typeof e=="function")for(let i of m(e))!y.call(t,i)&&i!==r&&o(t,i,{get:()=>e[i],enumerable:!(a=u(e,i))||a.enumerable});return t};var b=(t,e,r)=>(r=t!=null?p(g(t)):{},s(e||!t||!t.__esModule?o(r,"default",{value:t,enumerable:!0}):r,t)),I=t=>s(o({},"__esModule",{value:!0}),t);var l=f((k,c)=>{c.exports=_jsx_runtime});var S={};v(S,{default:()=>h,frontmatter:()=>w});var n=b(l()),w={title:"ISA Archive \u2013 Personal Resume Archive",summary:"A component-driven portfolio platform designed as a scalable UI system rather than a static website.",resume:{title:"Component-Driven Resume & Work Archive Platform",period:"Dec 2024 - Present",role:"Solo Developer (Frontend)",description:`Designed and implemented a UI-architecture\u2013centric portfolio platform where resumes and work histories are rendered from structured data through reusable, isolated UI components. The project focuses on component contracts, styling predictability, and long-term scalability rather than page-level composition.
+`,skills:["Next.js","Storybook","Contentlayer","TypeScript","Styled Components","Design System"]},highlights:["Designed the entire UI around a Component-Driven Development workflow, making each layout primitive independently testable and reusable.","Built a design system with strict style encapsulation using CSS-in-JS, eliminating global style leakage and layout coupling.","Introduced a typed content schema layer to decouple content structure from UI rendering logic.","Standardized layout primitives (section, block, highlight) to prevent page-specific UI divergence as content scales."],featured:!0,category:"product",order:1,thumbnail:"/content/archive.png",tags:["Frontend","UI Architecture","Design System","CDD"]};function d(t){let e={a:"a",h2:"h2",h3:"h3",hr:"hr",li:"li",p:"p",strong:"strong",ul:"ul",...t.components};return(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(e.h2,{children:"Overview"}),`
+`,(0,n.jsxs)(e.p,{children:["ISA Archive is a personal portfolio project treated as a ",(0,n.jsx)(e.strong,{children:"UI architecture exercise"}),`, not a visual showcase.
+Rather than designing pages directly, the platform was built as a system of reusable UI primitives
+capable of rendering resumes, work entries, and archives from structured data.`]}),`
+`,(0,n.jsxs)(e.p,{children:[`The project explores whether a personal site can remain maintainable long-term
+by prioritizing `,(0,n.jsx)(e.strong,{children:"component contracts and layout consistency"})," over ad-hoc page design."]}),`
 `,(0,n.jsx)(e.hr,{}),`
-`,(0,n.jsx)(e.h2,{children:"Architectural Focus"}),`
-`,(0,n.jsx)(e.h3,{children:"Component-Driven UI Structure"}),`
-`,(0,n.jsx)(e.p,{children:`Instead of building pages directly, the entire UI is composed from isolated components defined and verified in Storybook.
-Each component represents a stable contract\u2014where layout, spacing, typography, and interaction rules are fixed at the component level.`}),`
-`,(0,n.jsx)(e.p,{children:"This approach ensures:"}),`
+`,(0,n.jsx)(e.h2,{children:"UI Architecture Approach"}),`
+`,(0,n.jsx)(e.h3,{children:"Component-First Composition"}),`
+`,(0,n.jsx)(e.p,{children:`All UI elements are developed and validated in isolation using Storybook before being assembled into pages.
+Pages act purely as composition layers, with no layout-specific logic embedded at the route level.`}),`
+`,(0,n.jsx)(e.p,{children:"This ensures:"}),`
 `,(0,n.jsxs)(e.ul,{children:[`
-`,(0,n.jsx)(e.li,{children:"Predictable UI behavior regardless of content changes."}),`
-`,(0,n.jsx)(e.li,{children:"Safe iteration on layout without page-level regressions."}),`
-`,(0,n.jsx)(e.li,{children:"Clear separation between data structure and visual styling."}),`
+`,(0,n.jsx)(e.li,{children:"UI behavior remains predictable regardless of content variation."}),`
+`,(0,n.jsx)(e.li,{children:"Layout changes do not cascade into unrelated sections."}),`
+`,(0,n.jsx)(e.li,{children:"Components remain reusable across resume, work, and archive views."}),`
 `]}),`
 `,(0,n.jsx)(e.hr,{}),`
-`,(0,n.jsx)(e.h3,{children:"Styling Isolation & Predictability"}),`
-`,(0,n.jsx)(e.p,{children:`Styled Components were adopted to enforce strict style encapsulation.
-No global CSS rules or implicit inheritance are relied upon, ensuring high maintainability.`}),`
-`,(0,n.jsx)(e.p,{children:"Key outcomes:"}),`
+`,(0,n.jsx)(e.h3,{children:"Styling as a System Boundary"}),`
+`,(0,n.jsx)(e.p,{children:"Styled Components are used to enforce strict style boundaries at the component level."}),`
 `,(0,n.jsxs)(e.ul,{children:[`
-`,(0,n.jsx)(e.li,{children:"Zero class name collisions."}),`
-`,(0,n.jsx)(e.li,{children:"Theme-level control over color, spacing, and typography."}),`
-`,(0,n.jsx)(e.li,{children:"Consistent rendering across layout variants."}),`
+`,(0,n.jsx)(e.li,{children:"No reliance on global CSS or cascading side effects."}),`
+`,(0,n.jsx)(e.li,{children:"Layout, spacing, and typography are owned by the component itself."}),`
+`,(0,n.jsx)(e.li,{children:"Visual consistency is maintained through a centralized theme configuration."}),`
 `]}),`
+`,(0,n.jsx)(e.p,{children:"This approach treats styling as part of the component\u2019s public contract."}),`
 `,(0,n.jsx)(e.hr,{}),`
-`,(0,n.jsx)(e.h3,{children:"Data-Driven Rendering Layer"}),`
-`,(0,n.jsx)(e.p,{children:`Contentlayer is used to model resumes, work entries, and archives as typed data.
+`,(0,n.jsx)(e.h3,{children:"Data-Agnostic UI Rendering"}),`
+`,(0,n.jsx)(e.p,{children:`Contentlayer is used to define typed schemas for resumes and work entries.
 UI components consume normalized data shapes rather than page-specific props.`}),`
-`,(0,n.jsx)(e.p,{children:"This allows:"}),`
+`,(0,n.jsx)(e.p,{children:"As a result:"}),`
 `,(0,n.jsxs)(e.ul,{children:[`
-`,(0,n.jsx)(e.li,{children:"Reusing the same UI components for various views (resume, work, archive)."}),`
-`,(0,n.jsx)(e.li,{children:"Rendering different content densities without duplicating layout logic."}),`
-`,(0,n.jsx)(e.li,{children:"Long-term extensibility without refactoring the UI layer."}),`
+`,(0,n.jsx)(e.li,{children:"The same components can render different content densities."}),`
+`,(0,n.jsx)(e.li,{children:"Resume and work views share UI logic without duplication."}),`
+`,(0,n.jsx)(e.li,{children:"Content structure can evolve independently of the UI layer."}),`
 `]}),`
 `,(0,n.jsx)(e.hr,{}),`
-`,(0,n.jsx)(e.h2,{children:"Result"}),`
-`,(0,n.jsxs)(e.p,{children:[`The project functions as both a personal archive and a validation of a UI-architecture approach
-where `,(0,n.jsx)(e.strong,{children:"components, not pages, are the primary unit of design"}),"."]}),`
-`,(0,n.jsx)(e.p,{children:`This structure enables the archive to grow without increasing UI complexity,
-making it suitable as a long-term professional record rather than a static showcase.`})]})}function h(t={}){let{wrapper:e}=t.components||{};return e?(0,n.jsx)(e,{...t,children:(0,n.jsx)(d,{...t})}):d(t)}return w(S);})();
-;return Component;0:{"buildId":"bcV1iKKS925SZ3bxMxzJA","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"ISA Archive – Personal Resume Archive","content":"$3"}],["$L4"],"$L5"]}],"loading":null,"isPartial":false}
+`,(0,n.jsx)(e.h2,{children:"Outcome"}),`
+`,(0,n.jsxs)(e.p,{children:["ISA Archive functions as a representative Work demonstrating a ",(0,n.jsx)(e.strong,{children:"UI-architecture\u2013driven development approach"}),`.
+By treating components\u2014not pages\u2014as the primary design unit, the platform remains extensible
+without increasing UI complexity.`]}),`
+`,(0,n.jsx)(e.p,{children:`This project serves as both a professional portfolio and a practical validation of
+component-driven UI architecture in a real-world context.`}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h2,{children:"Links"}),`
+`,(0,n.jsxs)(e.ul,{children:[`
+`,(0,n.jsxs)(e.li,{children:["GitHub: ",(0,n.jsx)(e.a,{href:"https://github.com/yoonjonglyu/yoonjonglyu.github.io",children:"https://github.com/yoonjonglyu/yoonjonglyu.github.io"})]}),`
+`]})]})}function h(t={}){let{wrapper:e}=t.components||{};return e?(0,n.jsx)(e,{...t,children:(0,n.jsx)(d,{...t})}):d(t)}return I(S);})();
+;return Component;0:{"buildId":"BIT9L0Z0ile4s0GzLuJhI","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"ISA Archive – Personal Resume Archive","content":"$3"}],["$L4"],"$L5"]}],"loading":null,"isPartial":false}
 4:["$","script","script-0",{"src":"/_next/static/chunks/0a3a85198fdb92f3.js","async":true}]
 5:["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]
 8:null

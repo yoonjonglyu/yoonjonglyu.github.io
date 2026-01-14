@@ -31,9 +31,12 @@
           background: var(--color-background-space) !important;
         }
       `;t.s(["GlobalCSS",0,a,"default",()=>o])},86217,t=>{"use strict";var e=t.i(43476),n=t.i(97053),i=t.i(22016);let r=n.default.div.withConfig({displayName:"BasicLayout__Wrap",componentId:"sc-c89c592f-0"})`
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: #0b0e14;
 `,o=n.default.header.withConfig({displayName:"BasicLayout__Header",componentId:"sc-c89c592f-1"})`
   position: fixed;
   top: 0;
