@@ -639,6 +639,6 @@ Toggles a class on an element.`]}),`
 `]}),`
 `,(0,n.jsx)(e.h2,{children:"License"}),`
 `,(0,n.jsxs)(e.p,{children:["This project is licensed under the MIT License. For more details, see the ",(0,n.jsx)(e.a,{href:"./LICENSE",children:"LICENSE"}),"."]})]})}function h(r={}){let{wrapper:e}=r.components||{};return e?(0,n.jsx)(e,{...r,children:(0,n.jsx)(o,{...r})}):o(r)}return D(v);})();
-;return Component;0:{"buildId":"0-KLYxhGseZoz8qZDPFgN","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"isa-util","content":"$3","repository":"https://github.com/yoonjonglyu/util-helper","homepage":"https://www.npmjs.com/package/isa-util"}],null,"$L4"]}],"loading":null,"isPartial":false}
+;return Component;0:{"buildId":"reKWei9AEVMVJAqtbbdRo","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"isa-util","content":"$3","repository":"https://github.com/yoonjonglyu/util-helper","homepage":"https://www.npmjs.com/package/isa-util"}],null,"$L4"]}],"loading":null,"isPartial":false}
 4:["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]
 7:null
