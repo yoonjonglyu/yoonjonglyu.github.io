@@ -4,7 +4,7 @@ const { withContentlayer } = require('next-contentlayer2');
 // eslint-disable-next-line @typescript-eslint/no-require-imports
 const withSerwist = require('@serwist/next').default({
   swSrc: 'app/sw-root.ts',
-  swDest: 'public/sw-archive.js', // 최종 생성 파일명
+  swDest: 'public/sw.js', // 최종 생성 파일명
   disable: process.env.NODE_ENV === 'development',
 });
 
