@@ -99,14 +99,6 @@ export default function RootLayout({
             </ReactQueryProvider>
           </ConfigureStore>
         </StyledComponentsRegistry>
-
-        {/* 3. 무거운 외부 스크립트는 body 끝으로 이동 */}
-        {/* 애드센스가 head에서 데이터 대역폭을 뺏어가는 것을 방지합니다. */}
-        <script
-          async
-          src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2309708500958644'
-          crossOrigin='anonymous'
-        />
       </body>
     </html>
   );
