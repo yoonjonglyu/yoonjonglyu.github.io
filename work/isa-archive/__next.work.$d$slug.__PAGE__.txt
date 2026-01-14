@@ -51,6 +51,6 @@ component-driven UI architecture in a real-world context.`}),`
 `,(0,n.jsxs)(e.ul,{children:[`
 `,(0,n.jsxs)(e.li,{children:["GitHub: ",(0,n.jsx)(e.a,{href:"https://github.com/yoonjonglyu/yoonjonglyu.github.io",children:"https://github.com/yoonjonglyu/yoonjonglyu.github.io"})]}),`
 `]})]})}function h(t={}){let{wrapper:e}=t.components||{};return e?(0,n.jsx)(e,{...t,children:(0,n.jsx)(d,{...t})}):d(t)}return I(S);})();
-;return Component;0:{"buildId":"QSImDVXgo48ILf6Aemm9Y","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"ISA Archive – Personal Resume Archive","content":"$3"}],null,"$L4"]}],"loading":null,"isPartial":false}
+;return Component;0:{"buildId":"goFdrasOmRobD8rfSeky5","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"ISA Archive – Personal Resume Archive","content":"$3"}],null,"$L4"]}],"loading":null,"isPartial":false}
 4:["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]
 7:null
