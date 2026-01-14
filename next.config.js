@@ -21,9 +21,6 @@ const nextConfig = {
   // 빌드 시 Turbopack을 명시적으로 끄거나 webpack 환경임을 보장해야 합니다.
   turbopack: {},
   transpilePackages: ['styled-components'],
-  webpack: (config) => {
-    return config;
-  },
 };
 
 // 합치는 순서를 바꿔봅니다. 보통 Serwist가 가장 바깥에 있는 것이 안정적입니다.
