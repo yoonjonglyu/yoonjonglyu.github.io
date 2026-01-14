@@ -35,7 +35,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en'>
+    // 1. html 태그에 직접 배경색 주입: 헤드에서 끊겨도 흰 화면 방지
+    <html lang='en' style={{ backgroundColor: '#0b0e14' }}>
       <head>
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link
@@ -43,10 +44,7 @@ export default function RootLayout({
           href='https://fonts.gstatic.com'
           crossOrigin=''
         />
-        <script
-          async
-          src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2309708500958644'
-          crossOrigin='anonymous'></script>
+        {/* 폰트/구글 검증 등 필수 메타만 상단 유지 */}
         <meta
           name='google-site-verification'
           content='qdEnPRuxwkkMBg_va4KDeC4Hb2g5XeMuQETPiTQWZ9U'
@@ -59,12 +57,12 @@ export default function RootLayout({
       <body
         suppressHydrationWarning
         style={{
-          backgroundColor: '#0b0e14', // 변수 대신 실제 색상값 직접 입력 (즉시 적용용)
+          backgroundColor: '#0b0e14',
           margin: 0,
-          position: 'relative', // 자식 요소들의 기준점
+          position: 'relative',
+          minHeight: '100vh',
         }}>
-        {/* 1. 하이드레이션 전까지만 보일 정적 레이어 */}
-        {/* JS 로딩 여부와 상관없이 무조건 렌더링됨 */}
+        {/* 2. 정적 레이어: z-index를 -1로 내려서 기본 배경처럼 작동하게 함 */}
         <div
           style={{
             position: 'fixed',
@@ -76,9 +74,10 @@ export default function RootLayout({
             flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'center',
-            zIndex: 0, // 가장 아래에 배치
+            zIndex: -1,
             color: '#ffffff',
             textAlign: 'center',
+            pointerEvents: 'none', // 클릭 방해 방지
           }}>
           <p
             style={{
@@ -92,14 +91,23 @@ export default function RootLayout({
             If the screen stays blank, please try refreshing.
           </p>
         </div>
-          <StyledComponentsRegistry>
-            <ConfigureStore>
-              <ReactQueryProvider>
-                <GlobalCSS />
-                <BasicLayout>{children}</BasicLayout>
-              </ReactQueryProvider>
-            </ConfigureStore>
-          </StyledComponentsRegistry>
+
+        <StyledComponentsRegistry>
+          <ConfigureStore>
+            <ReactQueryProvider>
+              <GlobalCSS />
+              <BasicLayout>{children}</BasicLayout>
+            </ReactQueryProvider>
+          </ConfigureStore>
+        </StyledComponentsRegistry>
+
+        {/* 3. 무거운 외부 스크립트는 body 끝으로 이동 */}
+        {/* 애드센스가 head에서 데이터 대역폭을 뺏어가는 것을 방지합니다. */}
+        <script
+          async
+          src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2309708500958644'
+          crossOrigin='anonymous'
+        />
       </body>
     </html>
   );
