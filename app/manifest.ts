@@ -4,6 +4,8 @@ import Icon192 from '../assets/favicon_io/android-chrome-192x192.png';
 import Icon512 from '../assets/favicon_io/android-chrome-512x512.png';
 import AppleIcon from '../assets/favicon_io/apple-touch-icon.png'; // 애플 전용 아이콘
 
+export const dynamic = 'force-static';
+
 export default function manifest(): MetadataRoute.Manifest {
   return {
     id: 'isa-root-pwa',
