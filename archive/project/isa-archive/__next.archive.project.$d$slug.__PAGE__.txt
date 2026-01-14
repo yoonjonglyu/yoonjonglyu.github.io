@@ -1,7 +1,7 @@
 1:"$Sreact.fragment"
-2:I[93157,["/_next/static/chunks/fae1b863422210d1.js","/_next/static/chunks/2fa2a92df62d65f8.js","/_next/static/chunks/8e5f3b112830e943.js","/_next/static/chunks/737b72552a100555.js"],"default"]
-6:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/247eb132b7f7b574.js"],"OutletBoundary"]
-7:"$Sreact.suspense"
+2:I[1767,["332","static/chunks/332-db28e5022a3b0b4f.js","500","static/chunks/500-ede29cb3bc8a7d4a.js","787","static/chunks/app/archive/project/%5Bslug%5D/page-982f109ab0296654.js"],"default"]
+5:I[484,[],"OutletBoundary"]
+6:"$Sreact.suspense"
 3:T1b05,var Component=(()=>{var p=Object.create;var o=Object.defineProperty;var u=Object.getOwnPropertyDescriptor;var g=Object.getOwnPropertyNames;var m=Object.getPrototypeOf,y=Object.prototype.hasOwnProperty;var f=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),b=(t,e)=>{for(var i in e)o(t,i,{get:e[i],enumerable:!0})},l=(t,e,i,a)=>{if(e&&typeof e=="object"||typeof e=="function")for(let r of g(e))!y.call(t,r)&&r!==i&&o(t,r,{get:()=>e[r],enumerable:!(a=u(e,r))||a.enumerable});return t};var v=(t,e,i)=>(i=t!=null?p(m(t)):{},l(e||!t||!t.__esModule?o(i,"default",{value:t,enumerable:!0}):i,t)),S=t=>l(o({},"__esModule",{value:!0}),t);var s=f((j,c)=>{c.exports=_jsx_runtime});var x={};b(x,{default:()=>d,frontmatter:()=>w});var n=v(s()),w={title:"ISA Archive",description:"A technical archive and resume platform built with Next.js 16 and Storybook to showcase engineering growth.",period:"Dec 2024 - Present",stack:["Next.js 16","TypeScript","Contentlayer2","Storybook","Styled Components","Vite"],role:"Solo Developer",repository:"https://github.com/yoonjonglyu/yoonjonglyu.github.io",homepage:"https://yoonjonglyu.github.io",tags:["portfolio","archive","resume"],order:1};function h(t){let e={br:"br",code:"code",h2:"h2",h3:"h3",hr:"hr",li:"li",p:"p",strong:"strong",ul:"ul",...t.components};return(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(e.h2,{children:"Background"}),`
 `,(0,n.jsxs)(e.p,{children:["ISA Archive was conceived as a ",(0,n.jsx)(e.strong,{children:"self-hosted engineering archive and resume platform"}),".",(0,n.jsx)(e.br,{}),`
 `,"Instead of relying on third-party services, the project treats the portfolio itself as a product\u2014",(0,n.jsx)(e.br,{}),`
@@ -68,7 +68,6 @@
 `]}),`
 `,(0,n.jsxs)(e.p,{children:["ISA Archive functions as both a ",(0,n.jsx)(e.strong,{children:"technical showcase"})," and a ",(0,n.jsx)(e.strong,{children:"long-term architectural sandbox"}),"\u2014",(0,n.jsx)(e.br,{}),`
 `,"demonstrating how deliberate UI structure can turn a personal site into a sustainable product."]})]})}function d(t={}){let{wrapper:e}=t.components||{};return e?(0,n.jsx)(e,{...t,children:(0,n.jsx)(h,{...t})}):h(t)}return S(x);})();
-;return Component;0:{"buildId":"XbLo_vEmMzOjHwPn-te4j","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"ISA Archive","content":"$3","repository":"https://github.com/yoonjonglyu/yoonjonglyu.github.io","homepage":"https://yoonjonglyu.github.io"}],["$L4"],"$L5"]}],"loading":null,"isPartial":false}
-4:["$","script","script-0",{"src":"/_next/static/chunks/737b72552a100555.js","async":true}]
-5:["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]
-8:null
+;return Component;0:{"buildId":"WBrTJubXWFY1xNMd9eC-g","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"ISA Archive","content":"$3","repository":"https://github.com/yoonjonglyu/yoonjonglyu.github.io","homepage":"https://yoonjonglyu.github.io"}],null,"$L4"]}],"loading":null,"isPartial":false}
+4:["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]
+7:null

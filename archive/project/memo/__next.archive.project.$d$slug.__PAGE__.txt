@@ -1,7 +1,7 @@
 1:"$Sreact.fragment"
-2:I[93157,["/_next/static/chunks/fae1b863422210d1.js","/_next/static/chunks/2fa2a92df62d65f8.js","/_next/static/chunks/8e5f3b112830e943.js","/_next/static/chunks/737b72552a100555.js"],"default"]
-6:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/247eb132b7f7b574.js"],"OutletBoundary"]
-7:"$Sreact.suspense"
+2:I[1767,["332","static/chunks/332-db28e5022a3b0b4f.js","500","static/chunks/500-ede29cb3bc8a7d4a.js","787","static/chunks/app/archive/project/%5Bslug%5D/page-982f109ab0296654.js"],"default"]
+5:I[484,[],"OutletBoundary"]
+6:"$Sreact.suspense"
 3:T4002,var Component=(()=>{var p=Object.create;var o=Object.defineProperty;var g=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var u=Object.getPrototypeOf,b=Object.prototype.hasOwnProperty;var y=(i,e)=>()=>(e||i((e={exports:{}}).exports,e),e.exports),f=(i,e)=>{for(var r in e)o(i,r,{get:e[r],enumerable:!0})},a=(i,e,r,l)=>{if(e&&typeof e=="object"||typeof e=="function")for(let t of m(e))!b.call(i,t)&&t!==r&&o(i,t,{get:()=>e[t],enumerable:!(l=g(e,t))||l.enumerable});return i};var w=(i,e,r)=>(r=i!=null?p(u(i)):{},a(e||!i||!i.__esModule?o(r,"default",{value:i,enumerable:!0}):r,i)),v=i=>a(o({},"__esModule",{value:!0}),i);var s=y((x,c)=>{c.exports=_jsx_runtime});var k={};f(k,{default:()=>h,frontmatter:()=>A});var n=w(s()),A={title:"MemoFlow",description:"An offline-first, volatile planner PWA designed for lightweight personal note-taking",period:"2023.01 \u2013 2025.01 (v2 Renewal)",stack:["TypeScript","React","Tailwind CSS","PWA","Capacitor"],role:"Frontend Developer",repository:"https://github.com/yoonjonglyu/memo",homepage:"https://yoonjonglyu.github.io/memo/",tags:["Productivity","Offline-First","PWA","Personal-Tool"],order:2};function d(i){let e={a:"a",blockquote:"blockquote",br:"br",code:"code",em:"em",h1:"h1",h2:"h2",h3:"h3",hr:"hr",li:"li",p:"p",pre:"pre",strong:"strong",ul:"ul",...i.components};return(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(e.h1,{children:"\u{1F4DD} MemoFlow"}),`
 `,(0,n.jsx)(e.p,{children:(0,n.jsx)(e.strong,{children:"Offline-first Volatile Planner"})}),`
 `,(0,n.jsxs)(e.p,{children:["MemoFlow is a personal productivity tool designed around a simple assumption:",(0,n.jsx)(e.br,{}),`
@@ -195,7 +195,6 @@ android/            # Capacitor-based Android native project
 `,(0,n.jsx)(e.p,{children:"This project was developed for a personal portfolio and as a productivity tool. We welcome code reviews, feature suggestions, and bug reports through Issues!"}),`
 `,(0,n.jsxs)(e.p,{children:["Author: ISA (",(0,n.jsx)(e.a,{href:"https://github.com/yoonjonglyu",children:"@yoonjonglyu"}),")"]}),`
 `,(0,n.jsx)(e.p,{children:"License: MIT Licensed. Copyright \xA9 2026 ISA."})]})}function h(i={}){let{wrapper:e}=i.components||{};return e?(0,n.jsx)(e,{...i,children:(0,n.jsx)(d,{...i})}):d(i)}return v(k);})();
-;return Component;0:{"buildId":"XbLo_vEmMzOjHwPn-te4j","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"MemoFlow","content":"$3","repository":"https://github.com/yoonjonglyu/memo","homepage":"https://yoonjonglyu.github.io/memo/"}],["$L4"],"$L5"]}],"loading":null,"isPartial":false}
-4:["$","script","script-0",{"src":"/_next/static/chunks/737b72552a100555.js","async":true}]
-5:["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]
-8:null
+;return Component;0:{"buildId":"WBrTJubXWFY1xNMd9eC-g","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"MemoFlow","content":"$3","repository":"https://github.com/yoonjonglyu/memo","homepage":"https://yoonjonglyu.github.io/memo/"}],null,"$L4"]}],"loading":null,"isPartial":false}
+4:["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]
+7:null

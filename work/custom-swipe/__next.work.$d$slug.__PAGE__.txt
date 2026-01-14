@@ -1,7 +1,7 @@
 1:"$Sreact.fragment"
-2:I[65942,["/_next/static/chunks/fae1b863422210d1.js","/_next/static/chunks/2fa2a92df62d65f8.js","/_next/static/chunks/8e5f3b112830e943.js","/_next/static/chunks/0a3a85198fdb92f3.js"],"default"]
-6:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/247eb132b7f7b574.js"],"OutletBoundary"]
-7:"$Sreact.suspense"
+2:I[9099,["332","static/chunks/332-db28e5022a3b0b4f.js","774","static/chunks/app/work/%5Bslug%5D/page-5683808e81aad6c0.js"],"default"]
+5:I[484,[],"OutletBoundary"]
+6:"$Sreact.suspense"
 3:T262c,var Component=(()=>{var p=Object.create;var t=Object.defineProperty;var u=Object.getOwnPropertyDescriptor;var g=Object.getOwnPropertyNames;var m=Object.getPrototypeOf,w=Object.prototype.hasOwnProperty;var b=(i,n)=>()=>(n||i((n={exports:{}}).exports,n),n.exports),y=(i,n)=>{for(var r in n)t(i,r,{get:n[r],enumerable:!0})},s=(i,n,r,c)=>{if(n&&typeof n=="object"||typeof n=="function")for(let l of g(n))!w.call(i,l)&&l!==r&&t(i,l,{get:()=>n[l],enumerable:!(c=u(n,l))||c.enumerable});return i};var f=(i,n,r)=>(r=i!=null?p(m(i)):{},s(n||!i||!i.__esModule?t(r,"default",{value:i,enumerable:!0}):r,i)),S=i=>s(t({},"__esModule",{value:!0}),i);var o=b((I,h)=>{h.exports=_jsx_runtime});var j={};y(j,{default:()=>a,frontmatter:()=>M});var e=f(o()),M={title:"Custom Swipe",summary:"Universal Headless Swipe library with zero UI styling constraints",resume:{title:"Framework-Agnostic Headless Swipe Library",role:"Author",period:"2024.02 - Present",description:`An open-source headless swipe library designed with a framework-independent architecture. It provides pure, high-performance swipe logic without imposing UI or styling constraints, enabling seamless integration with any design system.
 `,skills:["TypeScript","Headless","Swipe","Library","Multi-Framework"]},highlights:["Adopted a Headless architecture to provide pure swipe logic, granting developers full freedom in UI customization without style conflicts.","Designed core logic using Vanilla DOM APIs to ensure consistent behavior across React, Vue, Svelte, and other frameworks.","Maintained an ultra-lightweight bundle by focusing strictly on high-performance swipe essentials and removing non-core features."],featured:!1,category:"system",thumbnail:"/content/swipe.png",order:3,tags:["TypeScript","Headless","Swipe","Library","Multi-Framework"]};function d(i){let n={a:"a",br:"br",code:"code",h2:"h2",h3:"h3",hr:"hr",li:"li",p:"p",strong:"strong",ul:"ul",...i.components};return(0,e.jsxs)(e.Fragment,{children:[(0,e.jsx)(n.h2,{children:"\uAC1C\uC694"}),`
 `,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.strong,{children:"Custom Swipe"}),"\uB294 UI \uC2A4\uD0C0\uC77C\uC744 \uAC15\uC81C\uD558\uC9C0 \uC54A\uACE0, \uC2A4\uC640\uC774\uD504\uC758 \uD575\uC2EC \uB85C\uC9C1\uB9CC \uC81C\uACF5\uD558\uB294",(0,e.jsx)(n.br,{}),`
@@ -85,7 +85,6 @@
 `,(0,e.jsxs)(n.li,{children:["NPM: ",(0,e.jsx)(n.a,{href:"https://www.npmjs.com/package/custom-swipe",children:"https://www.npmjs.com/package/custom-swipe"})]}),`
 `,(0,e.jsxs)(n.li,{children:["Demo: ",(0,e.jsx)(n.a,{href:"https://yoonjonglyu.github.io/custom-swipe/",children:"https://yoonjonglyu.github.io/custom-swipe/"})]}),`
 `]})]})}function a(i={}){let{wrapper:n}=i.components||{};return n?(0,e.jsx)(n,{...i,children:(0,e.jsx)(d,{...i})}):d(i)}return S(j);})();
-;return Component;0:{"buildId":"XbLo_vEmMzOjHwPn-te4j","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"Custom Swipe","content":"$3"}],["$L4"],"$L5"]}],"loading":null,"isPartial":false}
-4:["$","script","script-0",{"src":"/_next/static/chunks/0a3a85198fdb92f3.js","async":true}]
-5:["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]
-8:null
+;return Component;0:{"buildId":"WBrTJubXWFY1xNMd9eC-g","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"Custom Swipe","content":"$3"}],null,"$L4"]}],"loading":null,"isPartial":false}
+4:["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]
+7:null
