@@ -1,13 +1,13 @@
 import 'normalize.css/normalize.css';
+import './global.css';
 
 import generateMeta from '@lib/seo/generateMeta';
 
-import StyledComponentsRegistry, {
-  GlobalCSS,
-} from '../provider/style/GlobalCSS';
+import StyledComponentsRegistry from '../provider/style/GlobalCSS';
 import BasicLayout from '../components/layouts/BasicLayout';
 import ConfigureStore from '../store';
 import ReactQueryProvider from '../provider/query/QueryProvider';
+
 
 export const metadata = generateMeta({
   title: 'Frontend Engineer',
@@ -95,7 +95,6 @@ export default function RootLayout({
         <StyledComponentsRegistry>
           <ConfigureStore>
             <ReactQueryProvider>
-              <GlobalCSS />
               <BasicLayout>{children}</BasicLayout>
             </ReactQueryProvider>
           </ConfigureStore>
