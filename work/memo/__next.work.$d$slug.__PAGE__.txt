@@ -144,6 +144,6 @@ proving that thoughtful UI structure scales down as effectively as it scales up.
 `,(0,n.jsxs)(e.li,{children:["Demo: ",(0,n.jsx)(e.a,{href:"https://yoonjonglyu.github.io/memo/",children:"https://yoonjonglyu.github.io/memo/"})]}),`
 `,(0,n.jsxs)(e.li,{children:["GitHub: ",(0,n.jsx)(e.a,{href:"https://github.com/yoonjonglyu/memo",children:"https://github.com/yoonjonglyu/memo"})]}),`
 `]})]})}function h(i={}){let{wrapper:e}=i.components||{};return e?(0,n.jsx)(e,{...i,children:(0,n.jsx)(d,{...i})}):d(i)}return w(S);})();
-;return Component;0:{"buildId":"WBrTJubXWFY1xNMd9eC-g","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"MemoFlow","content":"$3"}],null,"$L4"]}],"loading":null,"isPartial":false}
+;return Component;0:{"buildId":"QSImDVXgo48ILf6Aemm9Y","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"MemoFlow","content":"$3"}],null,"$L4"]}],"loading":null,"isPartial":false}
 4:["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]
 7:null
