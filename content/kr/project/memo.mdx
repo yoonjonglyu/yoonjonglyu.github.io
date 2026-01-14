@@ -1,0 +1,213 @@
+---
+title: 'MemoFlow'
+description: '오프라인 퍼스트 기반의 휘발성 플래너 PWA 메모 앱'
+period: '2023.01 ~ 2025.01 (v2 Renewal)'
+stack:
+  - TypeScript
+  - React
+  - Tailwind CSS
+  - PWA
+  - Capacitor
+role: 'Frontend Developer'
+repository: 'https://github.com/yoonjonglyu/memo'
+homepage: 'https://yoonjonglyu.github.io/memo/'
+tags:
+  - Productivity
+  - Offline-First
+  - PWA
+  - Personal-Tool
+order: 2
+---
+
+# 📝 MemoFlow
+
+오프라인 퍼스트 기반 휘발성 플래너
+
+MemoFlow는 짧게 기록하고, 필요 없으면 바로 지우는 것을 전제로 설계된
+개인 생산성 도구입니다.
+
+노션처럼 무겁지 않고,
+옵시디안처럼 깊게 파고들지 않으며,
+포스트잇처럼 즉각적으로 기록할 수 있는 경험을 목표로 합니다.
+
+기록을 “쌓아두는 자산”이 아니라
+“지금 생각을 정리하기 위한 도구”로 정의하고 설계했습니다.
+
+## 프로젝트 배경 — “가벼움”에 대한 갈증
+
+이 프로젝트는 노션(Notion)을 사용하며 느꼈던 두 가지 불편함에서 시작되었습니다.
+
+데이터 주권
+
+사적인 기록이 항상 외부 서버에 저장되는 구조에 대한 거부감
+개인 메모조차 타인의 인프라에 의존해야 하는 구조가 불편하게 느껴졌습니다.
+
+과도한 비대함
+
+포스트잇에 적을 수준의 기록조차
+페이지 구조, 링크, 계층 설계를 요구하는 UX의 피로감
+
+제가 필요했던 것은 거창한 지식 관리 시스템이 아니라,
+브라우저만 있으면 어디서든 바로 쓰고 지울 수 있는 최소한의 메모 도구였습니다.
+
+아날로그는 관리가 번거롭고,
+기존 디지털 도구는 지나치게 복잡한 상황에서
+“내가 원하는 최소 단위의 도구를 직접 만들자”는 결론에 도달했습니다.
+
+이후 ‘오프라인 퍼스트(Offline-first)’라는 개념이 자연스럽게 핵심 설계 방향이 되었습니다.
+
+## 해결한 문제
+
+과도한 기능으로 인한 기록 피로도
+→ Memo / Todo / Note / Draft
+기록 목적에 따라 타입을 명확히 분리하여
+“어떻게 써야 할지 고민하지 않아도 되는 구조”를 설계했습니다.
+
+별도의 설명 없이 바로 사용할 수 있는 UX
+→ 플로팅 버튼 기반 진입 + 타입 선택 구조
+앱 실행 직후 별도의 학습 없이 온보딩 튜토리얼을 확인후 즉시 기록 가능하도록 설계했습니다.
+
+네트워크 의존성 제거
+→ Local-first 데이터 구조 + PWA 캐싱
+네트워크 상태와 무관하게 항상 동일한 사용 경험을 제공합니다.
+
+확장 가능한 하이브리드 앱 아키텍처
+→ 단일 웹 코드베이스를 유지하면서
+Capacitor를 통해 Android 앱 배포까지 확장 가능한 구조를 구성했습니다.
+
+## 기술적 선택 근거
+
+- **TypeScript**: 메모 데이터 모델과 상태 구조를 명확히 정의하여 규모 확장 시에도 안정성을 유지하기 위해 채택했습니다.
+- **Storybook**: UI 컴포넌트를 문서화하고 시각적으로 검증하기 위한 최적의 도구로 판단했습니다. 별도의 페이지 구현 없이도 컴포넌트 단위의 빠른 피드백 루프를 생성하기 위해 활용했습니다.
+- **React**: 메모 타입별 UI 분리와 상태 흐름 관리에 적합한 컴포넌트 기반 구조를 위해 사용했습니다.
+- **Tailwind CSS**: 런타임 CSS 비용을 줄이고, UI 수정과 실험을 빠르게 반복할 수 있는 생산성 중심의 스타일링을 위해 선택했습니다
+- **PWA (Progressive Web App)**: 웹 기반이지만 네이티브 앱에 가까운 사용성을 제공하기 위해 적용했습니다. Service Worker 기반 캐싱을 통해 오프라인 환경에서도 동작합니다.
+- **Capacitor**: React Native Expo 대비 구조가 단순하며, 웹 중심 앱을 모바일로 확장하기에 해당 프로젝트에 가장 적절한 선택이라고 판단했습니다.
+- **LocalStorage API**: 서버 의존 없이 즉각적인 데이터 반응성을 제공하기 위해 클라이언트 사이드 스토리지를 우선 데이터 저장소로 사용했습니다.
+
+### 마무리
+
+MemoFlow는  
+“모든 기록을 남겨야 한다”는 강박에서 벗어나  
+지금 필요한 생각만 남기고 정리하는 도구를 목표로 합니다.  
+  
+이번 v2 리뉴얼은 기능 추가보다  
+덜어내기와 정렬에 더 집중한 작업이었습니다.  
+  
+포트폴리오로서 설명 가능한 구조를 갖추는 동시에,  
+실제로 매일 사용할 수 있는 개인 도구로 남는 것.  
+그 균형점을 찾는 과정이 이 프로젝트의 핵심이었습니다.  
+
+--- 
+
+# 📝 MemoFlow: Simple Memo & Volatile Planner
+
+<p align="center">
+  <a href="https://github.com/yoonjonglyu/memo/blob/main/README.md"><strong>English</strong></a> | 
+  <a href="https://github.com/yoonjonglyu/memo/blob/main/packages/demo/README.md">한국어</a>
+</p>
+
+> **"Fast to Record, Light to Manage"**
+> A **volatile planner** designed for instant memos and short-term scheduling without complex features.  
+> Experience seamless continuity across Android, Windows, and Web using Google Drive synchronization.
+
+---
+
+## 🔹 Service Concept
+
+MemoFlow aims for 'lightness,' distinguishing itself from heavy calendars or bloated note-taking apps.
+
+- **Short-term Focus**: Perfect for managing volatile schedules that you record and delete quickly.
+- **Tetris Design**: A minimalist UI concept that reduces visual fatigue with a clean, block-style interface.
+- **Offline First**: Record instantly without a network connection using `@capacitor/filesystem` and `localStorage`, and sync when online.
+
+---
+
+## 🚀 Key Features
+
+### 1. Multi-Platform Support
+
+- **Mobile**: Native experience on Android (powered by Capacitor 8).
+- **Desktop**: Standalone software for Windows (powered by Electron 23) and PWA support.
+- **Web**: Immediate access and usage through any modern web browser.
+
+### 2. Smart Sync & Backup
+
+- **Google Drive Sync**: Secure data synchronization and continuity using your personal Google Drive—no separate server required.
+- **Flexible Export/Import**: Export data in JSON, Markdown, or HTML formats, and restore via JSON import.
+
+### 3. Modern UI/UX & Quality
+
+- **Tailwind CSS 4.0**: High-performance styling with the latest engine and a minimalist "Tetris-inspired" design.
+- **Storybook 8**: UI reliability ensured through component documentation and Interaction Testing (Play functions).
+- **MSW**: Robust verification of network scenarios using Mock Service Worker for API mocking.
+
+---
+
+## 📈 Version Log (via Storybook)
+
+Explore the evolution of our components through the following Chromatic links:
+
+- [**Initial Version**](https://64105a493828b256671845d2-ijtzcntnsm.chromatic.com/?path=/story/%EB%A9%94%EB%AA%A8-ui-atoms-floatbtn--basic) : UI Atom-level design.
+- [**v1.0.1**](https://64105a493828b256671845d2-pphrrzkvqx.chromatic.com/?path=/docs/%EB%A9%94%EB%AA%A8-page-index--docs) : Implementation of page-level documentation.
+- [**v2.0.0**](https://64105a493828b256671845d2-kcsdeyunzi.chromatic.com/?path=/story/%EB%A9%94%EB%AA%A8-page-index--basic) : Full interaction testing applied.
+- [**v2.0.2**](https://64105a493828b256671845d2-wlfyjvsxmm.chromatic.com/?path=/story/%EB%A9%94%EB%AA%A8-page-index--basic) : onboard tutorial + App edge + App Back Exit UX
+
+---
+
+## 📦 Installation & Setup
+
+```bash
+# 1. Clone the repository
+git clone [https://github.com/yoonjonglyu/memo.git](https://github.com/yoonjonglyu/memo.git)
+
+# 2. Install dependencies
+yarn install
+
+# 3. Configure environment variables (Create .env file)
+# GOOGLE_CID=your_google_client_id
+# GOOGLE_DEV_KEY=your_google_developer_key
+
+# 4. Run scripts
+yarn dev      # Launch Web development server
+yarn dev:pc   # Launch Electron desktop app
+yarn storybook # Launch UI component test environment
+yarn build    # Production build (outputs to dist folder)
+```
+
+---
+
+## 📁 Project Structure
+
+```txt
+src/
+├── components/     # Common UI & Atom components
+├── features/       # Main domain components (Memo, Setting)
+├── hooks/          # Core domain logic & custom hooks
+├── mocks/          # MSW handlers & mock data
+├── providers/      # Modal & Context configurations
+├── store/          # Recoil-based state models
+├── index.css       # Tailwind 4 global styles
+electron/           # Electron main/preload process settings
+android/            # Capacitor-based Android native project
+```
+
+---
+
+## 🚀 Recommended For...
+
+✔ Users who prefer writing quick notes and deleting them immediately.
+✔ Managing short-term schedules and goals.
+✔ Those looking for a lightweight memo tool instead of a complex calendar app.
+
+📌 **Go to MemoFlow → [🔗Project Link](https://yoonjonglyu.github.io/memo/)**
+
+---
+
+## 🤝 Contributing
+
+This project was developed for a personal portfolio and as a productivity tool. We welcome code reviews, feature suggestions, and bug reports through Issues!
+
+Author: ISA ([@yoonjonglyu](https://github.com/yoonjonglyu))
+
+License: MIT Licensed. Copyright © 2026 ISA.

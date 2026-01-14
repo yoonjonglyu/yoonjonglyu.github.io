@@ -18,11 +18,90 @@ tags:
   - resume
 order: 1
 ---
-## Background
-I initiated this project to build a dedicated space that functions as both a professional resume and a technical archive. The goal was to migrate away from third-party platforms and create a self-hosted environment where I could document my engineering journey with full architectural control.
 
-## Technical Decisions
-- **Next.js 16**: Leveraged the latest features of Next.js to ensure high performance and experiment with cutting-edge React patterns.
-- **Styled Components**: Adopted a CSS-in-JS approach to manage component-scoped styles effectively. This allowed for dynamic styling based on props and a cleaner separation of concerns within React components.
-- **Storybook**: Integrated to manage and document UI components in isolation, ensuring visual consistency and reusability across the site.
-- **Contentlayer2**: Automated the content pipeline to turn MDX-based project logs into structured data.
+## Background
+
+ISA Archive was conceived as a **self-hosted engineering archive and resume platform**.  
+Instead of relying on third-party services, the project treats the portfolio itself as a product—  
+one that prioritizes **clear UI architecture, component reusability, and structured content management**.
+
+The primary objective was to unify **technical documentation, project records, and resume data**  
+within a single system, while maintaining full control over layout, data modeling, and rendering strategy.
+
+---
+
+## UI Architecture & Technical Decisions
+
+### Component-Driven UI Architecture
+
+The UI was designed following a **Component-Driven Development (CDD)** approach.
+
+- UI components are developed and validated independently before page composition
+- State variations (empty, loading, edge cases) are defined at the component level
+- Page layouts act as thin composition layers rather than logic-heavy containers
+
+This structure ensures that UI complexity scales horizontally through components,  
+not vertically through page logic.
+
+---
+
+### Storybook as a Design System Backbone
+
+`Storybook` serves as both a **visual testing environment** and a **living design reference**.
+
+- Isolated rendering prevents layout regressions during refactors
+- Component behavior is documented implicitly through stories
+- Visual consistency is enforced without manual QA overhead
+
+This allows UI changes to remain predictable even as the archive grows in scope.
+
+---
+
+### Styled Components for Scoped & Predictable Styling
+
+A **CSS-in-JS architecture** was adopted to avoid global style leakage and naming conflicts.
+
+- Component-level style encapsulation
+- Theme-based styling via `ThemeProvider`
+- Runtime-safe dynamic styles without class name collisions
+
+This approach aligns styling boundaries directly with component boundaries,  
+simplifying long-term maintenance.
+
+---
+
+### Contentlayer2-Based Content Pipeline
+
+Instead of a traditional CMS, the archive uses **Contentlayer2 + MDX** as a static content pipeline.
+
+- MDX files act as the single source of truth
+- Structured schemas convert content into type-safe data
+- Resume data and archive data share the same pipeline with different projections
+
+By leveraging Next.js SSG, the platform achieves CMS-level flexibility  
+without runtime dependencies or backend complexity.
+
+---
+
+### Next.js 16 & Static Rendering Strategy
+
+The platform is built on **Next.js 16 (App Router)** with a static-first mindset.
+
+- Static generation for predictable performance and SEO
+- Minimal runtime logic on the client
+- Clear separation between content, presentation, and routing
+
+This makes the archive suitable for GitHub Pages deployment  
+while still benefiting from modern React architecture.
+
+---
+
+## Outcome
+
+- Unified resume and technical archive under a single UI system
+- Scalable component architecture validated through Storybook
+- Clean, type-safe content flow without external CMS dependency
+- A maintainable foundation for future expansion (packages, work logs, experiments)
+
+ISA Archive functions as both a **technical showcase** and a **long-term architectural sandbox**—  
+demonstrating how deliberate UI structure can turn a personal site into a sustainable product.

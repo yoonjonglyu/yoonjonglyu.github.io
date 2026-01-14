@@ -1,14 +1,14 @@
 ---
-title: 'Memo'
-summary: 'PWA-based Memo application using Storybook and CDD methodology'
+title: 'MemoFlow'
+summary: 'Component-Driven, Offline-First PWA Memo Application'
 
 resume:
   title: 'Component-Driven PWA Memo App'
   role: 'Solo Developer (Frontend)'
   period: '2023.01'
   description: >
-    A web memo service focused on scalable UI architecture and offline user experience.
-    Built with Component-Driven Development using Storybook, and designed to work fully offline as a PWA.
+    A lightweight memo and planner application designed to validate scalable UI architecture
+    and offline-first UX using Component-Driven Development with Storybook.
   skills:
     - TypeScript
     - Storybook
@@ -16,9 +16,9 @@ resume:
     - CDD
 
 highlights:
-  - Built an independent visual testing environment by decoupling UI components from business logic using Storybook, significantly improving development productivity.
-  - Applied Component-Driven Development (CDD) to maximize UI reusability and handle edge-case layouts for various data states.
-  - Implemented offline data continuity and caching strategies using Service Workers (PWA), ensuring a seamless UX regardless of network connectivity.
+  - Designed and validated a Component-Driven Development workflow using Storybook as a primary development environment.
+  - Built a fully offline-capable PWA with Service Worker–based caching and local-first data persistence.
+  - Proven that even small-scale products benefit from clearly separated UI architecture and state modeling.
 
 featured: true
 category: 'product'
@@ -32,114 +32,158 @@ tags:
   - LocalStorage
 ---
 
-## 개요
+## Overview
 
-**Memo**는 로그인이나 서버 의존성 없이  
-브라우저만으로 즉시 사용할 수 있는 **휘발성 메모·플래너 애플리케이션**이다.
+**Memo** is a lightweight, volatile memo and planner application designed to work instantly
+without login, backend services, or network dependency.
 
-이 프로젝트의 핵심 목적은 기능 구현 자체가 아니라,  
-**컴포넌트 주도 개발(Component Driven Development)**을 실제 제품 단위로 적용하고  
-UI 설계·상태 분리·확장 가능성을 검증하는 데 있다.
+This project was not primarily about feature richness.
+Instead, it was built as a **practical experiment to validate UI architecture**:
 
----
+- Can Component-Driven Development scale beyond toy examples?
+- Can Storybook function as a true development environment rather than just a showcase?
+- How far can a small product go without introducing unnecessary architectural complexity?
 
-## 문제 정의
-
-프론트엔드 개발 과정에서 다음과 같은 구조적 한계를 자주 경험했다.
-
-- UI와 비즈니스 로직이 강하게 결합된 컴포넌트 구조
-- 페이지 단위 개발로 인해 컴포넌트 재사용성이 낮아짐
-- 상태 케이스(빈 상태, 긴 텍스트 등)를 사후에 대응
-- 작은 서비스임에도 과도한 아키텍처 도입
-
-Memo는  
-“작은 제품에서도 설계는 분리되어야 한다”는 가설을 검증하기 위한 실험이었다.
+Memo serves as a deliberately small but structurally rigorous product to answer these questions.
 
 ---
 
-## 해결 전략
+## Problem Statement
 
-### 1. Component Driven Development (CDD)
+Through multiple frontend projects, I repeatedly encountered the same structural issues:
 
-`Storybook`을 중심으로 개발 프로세스를 설계했다.
+- UI components tightly coupled with business logic
+- Page-driven development limiting component reusability
+- UI edge cases (empty states, long content) handled too late
+- Over-engineering small products with heavyweight architecture
 
-- 페이지 이전에 컴포넌트 단위 설계
-- 메모 아이템, 입력창, 버튼 등을 **독립된 상태로 개발**
-- Empty / Filled / Edge Case를 스토리로 사전 정의
+The hypothesis behind Memo was simple:
 
-이를 통해 UI는 비즈니스 흐름과 분리된 채로 검증되었고,  
-페이지 조립은 상대적으로 단순해졌다.
+> “Even small products deserve a clean, well-separated UI architecture.”
 
----
-
-### 2. TypeScript 기반 데이터 모델링
-
-메모 데이터 구조와 컴포넌트 Props를 명확히 정의했다.
-
-- 메모 아이템 인터페이스 통일
-- 상태 전달 과정에서의 휴먼 에러 차단
-- UI 변경 시 영향 범위를 컴파일 단계에서 인지 가능
-
-작은 앱이지만, **확장 가능한 데이터 모델**을 전제로 설계했다.
+This project exists to test that hypothesis under real usage conditions.
 
 ---
 
-### 3. 휘발성 플래너 컨셉
+## Architectural Strategy
 
-Memo는 장기 보관용 노트가 아니라  
-**빠르게 쓰고, 쉽게 버리는 메모**에 초점을 맞췄다.
+### 1. Component-Driven Development (CDD)
 
-- 복잡한 계층 구조 제거
-- 즉각적인 추가 / 삭제
-- 단기 일정과 생각 정리에 최적화된 UX
+The entire development process was designed around **Storybook-first development**.
 
-기능을 늘리기보다 “지우기 쉬운 도구”라는 성격을 명확히 했다.
+Instead of building pages first:
+- UI components were designed, implemented, and validated in isolation
+- Memo items, input fields, buttons, and layouts were treated as independent units
+- Edge cases such as empty states, long text, and overflow scenarios were predefined as stories
 
----
+This approach resulted in:
+- UI validation independent of application state
+- Reduced complexity when composing pages
+- Faster iteration cycles with predictable visual outcomes
 
-### 4. PWA 기반 오프라인 경험
-
-- Service Worker를 통한 캐싱
-- 네트워크 없이도 메모 작성 및 조회 가능
-- 홈 화면 추가를 통한 앱 수준 접근성 제공
-
-또한 `Download` 기능은 파일 저장이 아닌  
-**PWA 설치 또는 모바일 앱 다운로드 링크**로 연결되도록 설계했다.
+Storybook functioned not as documentation after the fact,
+but as the **primary UI development environment**.
 
 ---
 
-## 기술적 선택 근거
+### 2. Type-Safe UI and Data Modeling
+
+Although Memo is a small application, its data model was designed with extensibility in mind.
+
+- Unified memo item interfaces
+- Explicit typing for component props and state
+- Compile-time detection of UI-state mismatches
+
+TypeScript allowed architectural decisions to surface early,
+preventing silent UI regressions as features evolved.
+
+---
+
+### 3. Volatile Planner Concept
+
+Memo intentionally avoids becoming a long-term knowledge repository.
+
+Instead, it focuses on:
+- Quick creation
+- Easy deletion
+- Minimal structural overhead
+
+There are no deep hierarchies, folders, or complex relationships.
+The UX is optimized for **short-term thinking and immediate disposal**.
+
+This constraint directly influenced UI decisions:
+- Flat structures over nested layouts
+- Immediate actions over configuration-heavy flows
+- Fewer abstractions, but clearer intent
+
+---
+
+### 4. Offline-First PWA Architecture
+
+Memo was designed to work identically regardless of network availability.
+
+- Service Worker–based caching
+- Local-first data persistence using LocalStorage
+- Full CRUD functionality without connectivity
+
+Rather than treating offline support as an enhancement,
+it was considered a **baseline architectural requirement**.
+
+The `Download` action does not export files.
+Instead, it guides users toward:
+- PWA installation
+- Mobile app distribution entry points
+
+This reinforces the “app-like” experience without server dependency.
+
+---
+
+## Technical Decisions
 
 - **TypeScript**  
-  → 컴포넌트 Props와 상태 모델을 명확히 관리하기 위함
+  Ensures predictable UI-state boundaries and scalable component contracts.
 
 - **Storybook**  
-  → UI를 코드 이전에 검증하고, 문서로 동시에 활용하기 위함
+  Enables isolated UI validation, documentation, and design verification
+  without coupling to application logic.
 
 - **PWA**  
-  → 서버 없는 환경에서도 앱에 가까운 사용자 경험 제공
+  Provides native-like UX while maintaining a web-first architecture.
 
-- **Vanilla HTML / CSS**  
-  → UI 프레임워크에 의존하지 않고 구조·스타일 설계 역량을 집중하기 위함
+- **TypeScript**  
+  Used to explicitly define memo data models and state boundaries,  
+  ensuring long-term maintainability as features scale.
+
+- **Tailwind CSS**  
+  Selected to minimize runtime CSS overhead  
+  and to enable rapid UI iteration with a utility-first approach.
+
+
+- **Capacitor**  
+  Preferred over React Native Expo due to architectural simplicity  
+  and its alignment with a web-first application philosophy.
 
 - **LocalStorage**  
-  → 즉각적인 데이터 반응성과 단순한 상태 저장을 위해 채택
+  Chosen for immediacy and simplicity in a serverless context.
+
+Each choice favors **clarity and intent** over abstraction density.
 
 ---
 
-## 결과 및 의의
+## Outcomes and Learnings
 
-- CDD 방식의 실제 제품 적용 경험 확보
-- 컴포넌트 단위 설계 → 페이지 조립 흐름 정립
-- 과하지 않은 아키텍처로도 유지보수 가능한 구조 검증
-- 이후 프로젝트(UI 시스템, 디자인 시스템)의 기반 사례로 활용 가능
+- Successfully validated CDD as a viable approach for real products
+- Established a reusable pattern for UI-first architecture
+- Demonstrated that architectural discipline does not require large-scale applications
+- Provided a foundation for future UI systems and design system work
 
-Memo는  
-**“작은 서비스에서의 올바른 프론트엔드 설계”**를 검증한 작업이다.
+Memo is not a feature-heavy application.
+It is a **deliberate architectural experiment**,
+proving that thoughtful UI structure scales down as effectively as it scales up.
 
 ---
 
-## 링크
+## Links
 
 - Demo: [https://yoonjonglyu.github.io/memo/](https://yoonjonglyu.github.io/memo/)
-- GitHub: [https://github.com/yoonjonglyu/memo](https://github.com/yoonjonglyu/memo)
+- GitHub: [https://github.com/yoonjonglyu/memo](https://yoonjonglyu.github.io/memo/)
