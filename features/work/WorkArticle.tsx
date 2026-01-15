@@ -16,6 +16,11 @@ const ArticleArea = styled.section`
   display: flex;
   flex-direction: column;
   gap: 64px;
+  line-break: anywhere;
+    & img {
+    max-width: 100%;
+    height: auto;
+  }
 `;
 
 export interface WorkArticleProps {

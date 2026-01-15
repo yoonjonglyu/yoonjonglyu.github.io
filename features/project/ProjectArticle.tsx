@@ -21,8 +21,13 @@ const ArticleArea = styled.section`
   gap: 8px;
   padding: 3px;
   overflow: hidden;
+  line-break: anywhere;
   & a {
     color: var(--color-rare);
+  }
+  & img {
+    max-width: 100%;
+    height: auto;
   }
 `;
 const ArticleLinkConainer = styled.div`
@@ -53,10 +58,18 @@ const ProjectArticle: FC<ProjectArticleProps> = ({
           <Link href='/archive' style={{ textDecoration: 'none' }}>
             ← Back to Archive
           </Link>
-          <Link href={repository} style={{ textDecoration: 'none' }} target='_blank' rel='noopener noreferrer'>
+          <Link
+            href={repository}
+            style={{ textDecoration: 'none' }}
+            target='_blank'
+            rel='noopener noreferrer'>
             Github
           </Link>
-          <Link href={homepage} style={{ textDecoration: 'none' }} target='_blank' rel='noopener noreferrer'>
+          <Link
+            href={homepage}
+            style={{ textDecoration: 'none' }}
+            target='_blank'
+            rel='noopener noreferrer'>
             Web
           </Link>
         </ArticleLinkConainer>
