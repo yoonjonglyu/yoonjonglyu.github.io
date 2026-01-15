@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
-2:I[9099,["332","static/chunks/332-db28e5022a3b0b4f.js","774","static/chunks/app/work/%5Bslug%5D/page-5683808e81aad6c0.js"],"default"]
+2:I[9099,["332","static/chunks/332-db28e5022a3b0b4f.js","774","static/chunks/app/work/%5Bslug%5D/page-c85614d4d32bcae6.js"],"default"]
 5:I[484,[],"OutletBoundary"]
 6:"$Sreact.suspense"
 3:T16f1,var Component=(()=>{var p=Object.create;var o=Object.defineProperty;var u=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,y=Object.prototype.hasOwnProperty;var f=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),v=(t,e)=>{for(var r in e)o(t,r,{get:e[r],enumerable:!0})},s=(t,e,r,a)=>{if(e&&typeof e=="object"||typeof e=="function")for(let i of m(e))!y.call(t,i)&&i!==r&&o(t,i,{get:()=>e[i],enumerable:!(a=u(e,i))||a.enumerable});return t};var b=(t,e,r)=>(r=t!=null?p(g(t)):{},s(e||!t||!t.__esModule?o(r,"default",{value:t,enumerable:!0}):r,t)),I=t=>s(o({},"__esModule",{value:!0}),t);var l=f((k,c)=>{c.exports=_jsx_runtime});var S={};v(S,{default:()=>h,frontmatter:()=>w});var n=b(l()),w={title:"ISA Archive \u2013 Personal Resume Archive",summary:"A component-driven portfolio platform designed as a scalable UI system rather than a static website.",resume:{title:"Component-Driven Resume & Work Archive Platform",period:"Dec 2024 - Present",role:"Solo Developer (Frontend)",description:`Designed and implemented a UI-architecture\u2013centric portfolio platform where resumes and work histories are rendered from structured data through reusable, isolated UI components. The project focuses on component contracts, styling predictability, and long-term scalability rather than page-level composition.
@@ -51,6 +51,6 @@ component-driven UI architecture in a real-world context.`}),`
 `,(0,n.jsxs)(e.ul,{children:[`
 `,(0,n.jsxs)(e.li,{children:["GitHub: ",(0,n.jsx)(e.a,{href:"https://github.com/yoonjonglyu/yoonjonglyu.github.io",children:"https://github.com/yoonjonglyu/yoonjonglyu.github.io"})]}),`
 `]})]})}function h(t={}){let{wrapper:e}=t.components||{};return e?(0,n.jsx)(e,{...t,children:(0,n.jsx)(d,{...t})}):d(t)}return I(S);})();
-;return Component;0:{"buildId":"4E8CBU6GTE9eQ8U_jAwp7","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"ISA Archive – Personal Resume Archive","content":"$3"}],null,"$L4"]}],"loading":null,"isPartial":false}
+;return Component;0:{"buildId":"QAG63ul3ontHE2znfl9Ac","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"ISA Archive – Personal Resume Archive","content":"$3"}],null,"$L4"]}],"loading":null,"isPartial":false}
 4:["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]
 7:null
