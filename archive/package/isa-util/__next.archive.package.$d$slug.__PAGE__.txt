@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
-2:I[7875,["332","static/chunks/332-db28e5022a3b0b4f.js","500","static/chunks/500-ede29cb3bc8a7d4a.js","336","static/chunks/app/archive/package/%5Bslug%5D/page-193fe09d319d8148.js"],"default"]
+2:I[7875,["332","static/chunks/332-4ff7931130dcfad6.js","500","static/chunks/500-ede29cb3bc8a7d4a.js","336","static/chunks/app/archive/package/%5Bslug%5D/page-193fe09d319d8148.js"],"default"]
 5:I[484,[],"OutletBoundary"]
 6:"$Sreact.suspense"
 3:T98a0,var Component=(()=>{var g=Object.create;var i=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var u=Object.getOwnPropertyNames;var m=Object.getPrototypeOf,b=Object.prototype.hasOwnProperty;var y=(r,e)=>()=>(e||r((e={exports:{}}).exports,e),e.exports),f=(r,e)=>{for(var l in e)i(r,l,{get:e[l],enumerable:!0})},c=(r,e,l,a)=>{if(e&&typeof e=="object"||typeof e=="function")for(let s of u(e))!b.call(r,s)&&s!==l&&i(r,s,{get:()=>e[s],enumerable:!(a=p(e,s))||a.enumerable});return r};var w=(r,e,l)=>(l=r!=null?g(m(r)):{},c(e||!r||!r.__esModule?i(l,"default",{value:r,enumerable:!0}):l,r)),D=r=>c(i({},"__esModule",{value:!0}),r);var t=y((U,d)=>{d.exports=_jsx_runtime});var v={};f(v,{default:()=>h,frontmatter:()=>N});var n=w(t()),N={title:"isa-util",description:"TypeScript \uAE30\uBC18\uC758 \uACF5\uD1B5 \uC720\uD2F8\uB9AC\uD2F0 \uD5EC\uD37C \uB77C\uC774\uBE0C\uB7EC\uB9AC",period:"2023.01 - \uD604\uC7AC",version:"1.0.27",stack:["TypeScript","Jest","Babel"],repository:"https://github.com/yoonjonglyu/util-helper",homepage:"https://www.npmjs.com/package/isa-util",tags:["TypeScript","Utility","Library","Jest"],order:1};function o(r){let e={a:"a",blockquote:"blockquote",br:"br",code:"code",h1:"h1",h2:"h2",h3:"h3",h4:"h4",hr:"hr",li:"li",ol:"ol",p:"p",pre:"pre",strong:"strong",ul:"ul",...r.components};return(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(e.h2,{children:"\uBC30\uACBD"}),`
@@ -639,6 +639,6 @@ Toggles a class on an element.`]}),`
 `]}),`
 `,(0,n.jsx)(e.h2,{children:"License"}),`
 `,(0,n.jsxs)(e.p,{children:["This project is licensed under the MIT License. For more details, see the ",(0,n.jsx)(e.a,{href:"./LICENSE",children:"LICENSE"}),"."]})]})}function h(r={}){let{wrapper:e}=r.components||{};return e?(0,n.jsx)(e,{...r,children:(0,n.jsx)(o,{...r})}):o(r)}return D(v);})();
-;return Component;0:{"buildId":"QAG63ul3ontHE2znfl9Ac","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"isa-util","content":"$3","repository":"https://github.com/yoonjonglyu/util-helper","homepage":"https://www.npmjs.com/package/isa-util"}],null,"$L4"]}],"loading":null,"isPartial":false}
+;return Component;0:{"buildId":"Npd3Fw1-SLVD5GVuf5EyR","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"isa-util","content":"$3","repository":"https://github.com/yoonjonglyu/util-helper","homepage":"https://www.npmjs.com/package/isa-util"}],null,"$L4"]}],"loading":null,"isPartial":false}
 4:["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]
 7:null
