@@ -54,6 +54,8 @@ jobs:
         run: |
           touch out/.nojekyll
           echo -e "User-agent: *\nAllow:/" > out/robots.txt # robot.txt -> robots.txt (파일명 교정)
+          # 🎯 AdMob app-ads.txt 추가
+          echo "google.com, pub-2309708500958644, DIRECT, f08c47fec0942fa0" > out/app-ads.txt
 
       - name: Generate Sitemap
         uses: cicirello/generate-sitemap@v1.9.1
