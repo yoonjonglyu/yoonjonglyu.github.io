@@ -68,6 +68,6 @@
 `]}),`
 `,(0,n.jsxs)(e.p,{children:["ISA Archive functions as both a ",(0,n.jsx)(e.strong,{children:"technical showcase"})," and a ",(0,n.jsx)(e.strong,{children:"long-term architectural sandbox"}),"\u2014",(0,n.jsx)(e.br,{}),`
 `,"demonstrating how deliberate UI structure can turn a personal site into a sustainable product."]})]})}function d(t={}){let{wrapper:e}=t.components||{};return e?(0,n.jsx)(e,{...t,children:(0,n.jsx)(h,{...t})}):h(t)}return S(x);})();
-;return Component;0:{"buildId":"U27ouNm3_F_w4mZXm9XZx","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"ISA Archive","content":"$3","repository":"https://github.com/yoonjonglyu/yoonjonglyu.github.io","homepage":"https://yoonjonglyu.github.io"}],null,"$L4"]}],"loading":null,"isPartial":false}
+;return Component;0:{"buildId":"YbhjyVaaklmlqG0f9-zqa","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"ISA Archive","content":"$3","repository":"https://github.com/yoonjonglyu/yoonjonglyu.github.io","homepage":"https://yoonjonglyu.github.io"}],null,"$L4"]}],"loading":null,"isPartial":false}
 4:["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]
 7:null
