@@ -1,0 +1,111 @@
+---
+title: 'ABILITY: Gravity & Time'
+summary: 'Superpower-Themed Minimal Productivity Tool with Immersive UX'
+
+resume:
+  title: 'Superpower-Themed Productivity Tool'
+  role: 'Solo Developer (Frontend & Native Integration)'
+  period: '2026.04'
+  description: >
+    The first installment of the ABILITY series. A premium productivity timer 
+    that transforms boring focus sessions into a superpower-like experience 
+    through immersive UI, persistent display, and focus visualization.
+  skills:
+    - Flutter
+    - Local Notifications
+    - AdMob
+    - Wakelock
+    - Statistics (Local Data)
+
+highlights:
+  - Developed a "Superpower Concept" UI where users control time like a gravitational force.
+  - Solved the "Screen-Off" issue by implementing a WakeupLock to keep focus status visible.
+  - Built a persistent notification system ensuring the "End of Session" is never missed.
+  - Visualized focus effort through a statistics module to provide a sense of achievement.
+
+featured: true
+category: 'product'
+thumbnail: '/content/gravity.png'
+order: 1
+tags:
+  - Flutter
+  - AdMob
+  - UX-Design
+  - Productivity
+  - Immersive-UI
+---
+
+## Overview
+
+**ABILITY: Gravity & Time** is not just a utility; it’s a "Superpower" in your pocket. 
+While existing timers are often dry and utilitarian, this project was born from a desire to make the **act of focusing** more engaging and visually rewarding.
+
+The focus was on moving away from "just a tool" to an **"Experience-Driven Product"** that keeps the user motivated through its unique concept and persistent feedback.
+
+---
+
+## Problem Statement
+
+As a developer and user of productivity tools, I found three major frustrations with existing timers:
+
+1. **Boring & Static UX**: Most timers are visually uninspiring, making the period of concentration feel like a chore rather than a specialized "state."
+2. **The "Black Screen" Anxiety**: Standard timers allow the screen to turn off, forcing users to manually check how much time is left—breaking their flow and focus.
+3. **Ghost Efforts**: Once a timer ends, the effort vanishes. There is no visual record of how long I endured or how my focus patterns evolved.
+
+---
+
+## Architectural Strategy
+
+### 1. Immersive "Superpower" Concept
+
+Instead of a standard dial, the UI centers around a **Temporal Core**:
+- **Concept Over Physics**: The "Gravity" theme is a metaphor for the user's "Ability" to hold and control time.
+- **Visual Engagement**: Every interaction is designed to make the user feel like they are "deploying a field" rather than just setting a clock.
+- **Deep Grey Aesthetic**: A premium dark theme that keeps the focus on the core and reduces eye strain during long sessions.
+
+### 2. Eliminating the Focus Gap (WakeupLock)
+
+To solve the frustration of screens turning off mid-session:
+- **Persistent Visibility**: Integrated `Wakelock` to keep the gravity field visible throughout the session.
+- **Real-time Feedback**: Users can instantly see their progress at a glance, eliminating the need to touch the phone and risk distraction.
+
+### 3. Native Reliability (The Unmissable Alert)
+
+A timer's primary job is to tell you when it's over, regardless of app state:
+- **Native Alarm Integration**: Used `AndroidScheduleMode.alarmClock` to ensure the "Gravity Stabilized" alert cuts through OS-level battery optimizations.
+- **Sound & Haptics**: Designed custom feedback patterns that mimic the stabilization of a high-energy field.
+
+### 4. Visualizing Effort (Statistics)
+
+To turn "sessions" into "growth," I implemented a local-first statistics module:
+- **Proof of Ability**: Every completed session is logged and visualized.
+- **Pattern Analysis**: Users can see their focus trends, transforming abstract effort into a concrete sense of achievement.
+
+---
+
+## Technical Decisions
+
+- **Flutter & Custom Painting** Used to create a unique UI that doesn't feel like a standard mobile app.
+- **WakeupLock API** Critical for the "Always-On" focus experience.
+- **Android Native Alarm Manager** Chosen to guarantee 100% notification reliability.
+- **AdMob (Rewarded Ads)** Integrated as an "Energy Recharge" mechanic to fund development
+
+---
+
+## Outcomes and Learnings
+
+- **Concept-Driven UX**: Proven that a strong metaphor (Superpower) can make a routine task (Timing) much more enjoyable.
+- **Practical Utility**: By solving the "Screen-Off" and "Lack of History" problems, the app became a daily-driver tool rather than a one-time experiment.
+- **Sustainable Solo-Dev Model**: Successfully balanced premium UX with a monetization strategy that respects the user's focus state.
+
+**ABILITY: Gravity** is a deliberate departure from "boring" productivity. It proves that by addressing small frustrations like screen timeouts and lack of statistics, we can create a tool that users actually *want* to use.
+
+---
+
+## Links
+
+- Google Play Store: [https://play.google.com/store/apps/details?id=com.yoonjongryu.timer]
+- GitHub: **Private Repository**
+- **Status**: Stable Production (v1.0.2)
+
+---

@@ -1,0 +1,136 @@
+---
+title: 'ABILITY: Gravity & Time'
+description: 'A superpower-themed, immersive productivity timer designed to eliminate focus fatigue'
+period: '2026.04 – Present'
+stack:
+  - Flutter
+  - Dart
+  - AdMob
+  - Wakelock
+  - Local Notifications
+role: 'Solo Developer'
+repository: '' # Private Repository
+homepage: 'https://play.google.com/store/apps/details?id=your.package.name' # 스토어 링크 입력
+tags:
+  - Productivity
+  - Immersive-UX
+  - Superpower-Concept
+  - Focus-Tool
+order: 1
+---
+
+# 🌌 ABILITY: Gravity & Time
+
+**Immersive Focus with the Force of Gravity**
+
+ABILITY: Gravity & Time은 단순한 시간 측정 도구가 아닙니다. 당신의 주머니 속에 특별한 능력을 선사하는 미니멀 생산성 도구 시리즈, **'ABILITY'**의 첫 번째 프로젝트입니다.
+
+이 제품은 타이머를 사용하는 동안의 **'몰입 경험'** 그 자체를 재정의합니다. 
+기존 타이머가 단순히 숫자가 줄어드는 것을 보여주는 '도구'였다면, ABILITY는 사용자가 직접 중력장을 전개하고 유지하는 **'초능력자'의 경험**을 제공합니다.
+
+제품이 지향하는 가치는 다음과 같습니다:
+
+- 무미건조한 숫자 대신 시각적인 중력의 흐름을 제공
+- 집중하는 동안 화면이 꺼지지 않는 '지속적인 몰입' 보장
+- 휘발되는 노력을 통계로 자산화
+
+---
+
+## Project Background — Focus as an "Ability"
+
+이 프로젝트는 기존 생산성 도구들의 '지루함'과 '불친절함'에 대한 의문에서 시작되었습니다.
+
+### The "Boring" UX
+대부분의 타이머는 시각적으로 정적이어서, 집중하는 동안 사용자에게 어떠한 시각적 피드백이나 동기부여도 주지 못합니다. 집중은 고통스러운 인내가 아니라, 흥미로운 몰입이어야 합니다.
+
+### The "Black Screen" Anxiety
+타이머를 돌려놓고 집중하다 보면 화면이 꺼져버립니다. 내가 얼마나 집중했는지, 얼마나 더 버텨야 하는지 확인하기 위해 폰을 만지는 순간, 몰입의 흐름(Flow)은 깨지고 맙니다.
+
+### Ghost Efforts (휘발되는 노력)
+타이머가 종료되는 순간, 그 시간 동안의 노력은 연기처럼 사라집니다. 내가 오늘, 이번 주에 얼마나 '중력(집중력)'을 잘 통제했는지 시각적으로 확인할 수 있는 데이터가 필요했습니다.
+
+이러한 불편함을 해결하기 위해, **"집중력을 중력이라는 초능력으로 치환한다"**는 결론에 도달했습니다.
+
+---
+
+## Problems Addressed
+
+### 집중의 시각화: 중력장 UI
+→ **Temporal Core + Physics-based UI**
+
+시간을 단순히 숫자로 보는 것이 아니라, '코어'를 드래그하여 중력의 질량을 설정하는 시각적 경험을 구현했습니다. Deep Grey 톤의 프리미엄 디자인은 눈의 피로를 줄이고 몰입감을 극대화합니다.
+
+---
+
+### 몰입의 단절 방지: 화면 유지 시스템
+→ **Wakelock Integration**
+
+집중하는 동안 화면이 꺼지지 않도록 고정하는 기능을 탑재했습니다. 사용자는 폰을 터치하지 않고도 곁눈질만으로 현재의 중력 상태(남은 시간)를 확인하며 몰입을 유지할 수 있습니다.
+
+---
+
+### 보장된 마침표: 네이티브 알람 시스템
+→ **Android Native Alarm Manager + Haptics**
+
+배터리 최적화로 인해 백그라운드에서 알람이 씹히는 문제를 해결하기 위해 네이티브 레벨의 알람 매니저를 활용했습니다. 중력장이 안정화(종료)되는 순간, 강력한 햅틱과 사운드로 확실한 피드백을 전달합니다.
+
+---
+
+### 노력의 자산화: 집중 통계
+→ **Daily/Weekly Stats Visualization**
+
+완료된 모든 세션은 로컬 데이터베이스에 기록됩니다. 내가 지배한 시간의 통계를 보며 성취감을 느끼고, 다음 집중을 위한 에너지를 얻게 됩니다.
+
+---
+
+## Technical Decision Rationale
+
+- **Flutter & Custom Painting** 기존의 정형화된 UI를 벗어나 초능력 컨셉에 맞는 독특한 그래픽과 애니메이션을 구현하기 위해 채택했습니다.
+
+- **Wakelock API** 타이머 작동 중 화면 꺼짐을 방지하여 사용자의 몰입 흐름이 끊기는 UX 문제를 기술적으로 해결했습니다.
+
+- **Android Native Alarm Manager** 앱이 백그라운드에 있거나 절전 모드인 상황에서도 100% 알림 신뢰성을 확보하기 위해 `exactAllowWhileIdle` 및 `alarmClock` 모드를 적용했습니다.
+
+- **AdMob (Rewarded Ads) - Energy System** 단순한 배너 광고가 아닌, '에너지 충전'이라는 앱 내 세계관에 녹아든 보상형 광고 모델을 통해 사용자 경험을 해치지 않는 수익화를 구현했습니다.
+
+---
+
+## Outcome
+
+ABILITY: Gravity & Time은 **“생산성 도구도 아름답고 즐거울 수 있다”**는 것을 증명합니다.
+
+단순히 시간을 재는 기능을 넘어, 사용자가 자신의 집중력을 데이터로 확인하고 시각적 감동을 느끼게 함으로써 매일 쓰고 싶은 도구로 자리 잡는 것이 이 프로젝트의 성과입니다.
+
+**“시간은 단순히 흐르는 것이 아니라, 당신이 끌어당기는 힘입니다.”**
+
+---
+
+## 🚀 Key Features
+
+### 1. Immersive Superpower UI
+- **Gravity Field**: 중력의 질량을 설정하는 듯한 직관적이고 미니멀한 UI.
+- **Dynamic Controls**: 상태에 따라 변화하는 적응형 버튼과 햅틱 피드백.
+
+### 2. Reliability & Continuity
+- **Stay Awake**: 집중 세션 동안 화면을 계속 켜두는 기능.
+- **Native Precision**: 안드로이드 시스템과 완벽하게 연동되는 백그라운드 알림.
+
+### 3. Energy & Rewards
+- **Energy Charge**: 보상형 광고를 통한 에너지 충전 시스템.
+- **Lore-driven UX**: 앱의 컨셉을 해치지 않는 자연스러운 수익화 구조.
+
+### 4. Progress Tracking
+- **Visual Stats**: 일간, 주간 단위로 시각화되는 당신의 '중력 제어' 기록.
+
+---
+
+## 📦 Installation (Store)
+
+📌 **Go to Google Play Store → [🔗ABILITY: Gravity & Time](당신의_스토어_링크)**
+
+---
+
+## 🤝 Contact & License
+
+Author: ISA ([@yoonjonglyu](https://github.com/yoonjonglyu))  
+Copyright © 2026 ISA. All rights reserved.
