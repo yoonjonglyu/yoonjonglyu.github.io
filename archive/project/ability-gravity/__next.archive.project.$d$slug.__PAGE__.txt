@@ -1,0 +1,93 @@
+1:"$Sreact.fragment"
+2:I[1767,["332","static/chunks/332-4ff7931130dcfad6.js","500","static/chunks/500-ede29cb3bc8a7d4a.js","787","static/chunks/app/archive/project/%5Bslug%5D/page-f6e478fb89fd8d1b.js"],"default"]
+5:I[484,[],"OutletBoundary"]
+6:"$Sreact.suspense"
+3:T26f1,var Component=(()=>{var u=Object.create;var o=Object.defineProperty;var m=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,y=Object.prototype.hasOwnProperty;var f=(i,e)=>()=>(e||i((e={exports:{}}).exports,e),e.exports),v=(i,e)=>{for(var r in e)o(i,r,{get:e[r],enumerable:!0})},a=(i,e,r,s)=>{if(e&&typeof e=="object"||typeof e=="function")for(let t of p(e))!y.call(i,t)&&t!==r&&o(i,t,{get:()=>e[t],enumerable:!(s=m(e,t))||s.enumerable});return i};var w=(i,e,r)=>(r=i!=null?u(g(i)):{},a(e||!i||!i.__esModule?o(r,"default",{value:i,enumerable:!0}):r,i)),b=i=>a(o({},"__esModule",{value:!0}),i);var h=f((k,l)=>{l.exports=_jsx_runtime});var A={};v(A,{default:()=>c,frontmatter:()=>I});var n=w(h()),I={title:"ABILITY: Gravity & Time",description:"A superpower-themed, immersive productivity timer designed to eliminate focus fatigue",period:"2026.04 \u2013 Present",stack:["Flutter","Dart","AdMob","Wakelock","Local Notifications"],role:"Solo Developer",repository:"",homepage:"https://play.google.com/store/apps/details?id=your.package.name",tags:["Productivity","Immersive-UX","Superpower-Concept","Focus-Tool"],order:1};function d(i){let e={a:"a",br:"br",code:"code",em:"em",h1:"h1",h2:"h2",h3:"h3",hr:"hr",li:"li",p:"p",strong:"strong",ul:"ul",...i.components};return(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(e.h1,{children:"\u{1F30C} ABILITY: Gravity & Time"}),`
+`,(0,n.jsx)(e.p,{children:(0,n.jsx)(e.strong,{children:"Immersive Focus with the Force of Gravity"})}),`
+`,(0,n.jsxs)(e.p,{children:['ABILITY: Gravity & Time is not just a utility; it is a "Superpower" in your pocket. It is the first installment of the ',(0,n.jsx)(e.strong,{children:"'ABILITY'"})," series\u2014a minimal productivity toolset designed to give users extraordinary control over their daily routines."]}),`
+`,(0,n.jsxs)(e.p,{children:["This project redefines the ",(0,n.jsx)(e.strong,{children:'"immersive experience"'}),' of using a timer. While conventional timers are mere tools that display decreasing numbers, ABILITY provides an experience where the user becomes a "master of time," deploying and sustaining a gravitational field to protect their focus.']}),`
+`,(0,n.jsx)(e.p,{children:"The core values of the product are:"}),`
+`,(0,n.jsxs)(e.ul,{children:[`
+`,(0,n.jsx)(e.li,{children:"Providing a visual flow of gravity instead of dry, static numbers."}),`
+`,(0,n.jsx)(e.li,{children:'Ensuring "Continuous Immersion" by preventing the screen from dimming during focus.'}),`
+`,(0,n.jsx)(e.li,{children:'Transforming "evaporating efforts" into valuable personal assets through statistics.'}),`
+`]}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h2,{children:'Project Background \u2014 Focus as an "Ability"'}),`
+`,(0,n.jsx)(e.p,{children:'This project originated from questions regarding the "boredom" and "unfriendliness" of existing productivity tools.'}),`
+`,(0,n.jsx)(e.h3,{children:'The "Boring" UX'}),`
+`,(0,n.jsx)(e.p,{children:"Most timers are visually static, offering no visual feedback or motivation during the concentration period. Focus should not be painful endurance; it should be an engaging state of flow."}),`
+`,(0,n.jsx)(e.h3,{children:'The "Black Screen" Anxiety'}),`
+`,(0,n.jsx)(e.p,{children:"Standard timers allow the screen to turn off mid-session. The moment a user touches their phone to check their progress, their flow is broken. I wanted to eliminate this friction."}),`
+`,(0,n.jsx)(e.h3,{children:"Ghost Efforts"}),`
+`,(0,n.jsx)(e.p,{children:'The moment a timer ends, the effort of that session often vanishes into thin air. I recognized the need for data that allows users to visually track how well they have controlled their "Gravity (Focus)" daily and weekly.'}),`
+`,(0,n.jsxs)(e.p,{children:["To address these pain points, I arrived at the conclusion: ",(0,n.jsx)(e.strong,{children:'"Translate focus into the superpower of Gravity."'})]}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h2,{children:"Problems Addressed"}),`
+`,(0,n.jsx)(e.h3,{children:"Visualizing Focus: The Gravity Field UI"}),`
+`,(0,n.jsxs)(e.p,{children:["\u2192 ",(0,n.jsx)(e.strong,{children:"Temporal Core + Physics-based UI"})]}),`
+`,(0,n.jsx)(e.p,{children:'Instead of viewing time as mere digits, I implemented a visual experience where users drag a "Core" to set the temporal mass. The premium Deep Grey aesthetic minimizes eye strain while maximizing immersion.'}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h3,{children:"Preventing Interruption: Persistent Display System"}),`
+`,(0,n.jsxs)(e.p,{children:["\u2192 ",(0,n.jsx)(e.strong,{children:"Wakelock Integration"})]}),`
+`,(0,n.jsx)(e.p,{children:'I implemented a feature that prevents the screen from sleeping during focus sessions. Users can monitor their "Gravity Status" (remaining time) with a quick glance without touching the device, keeping their flow intact.'}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h3,{children:"The Guaranteed Period: Native Alert System"}),`
+`,(0,n.jsxs)(e.p,{children:["\u2192 ",(0,n.jsx)(e.strong,{children:"Android Native Alarm Manager + Haptics"})]}),`
+`,(0,n.jsx)(e.p,{children:"To solve the issue of notifications being suppressed by background battery optimization, I utilized the Native Alarm Manager. The moment the gravity field stabilizes (timer ends), it delivers unmistakable feedback through powerful haptics and deep ambient sound."}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h3,{children:"Capitalizing Effort: Focus Statistics"}),`
+`,(0,n.jsxs)(e.p,{children:["\u2192 ",(0,n.jsx)(e.strong,{children:"Daily/Weekly Stats Visualization"})]}),`
+`,(0,n.jsx)(e.p,{children:'Every completed session is recorded in a local database. By viewing their "Time Mastery" stats, users gain a sense of achievement and the energy required for their next session.'}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h2,{children:"Technical Decision Rationale"}),`
+`,(0,n.jsxs)(e.ul,{children:[`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:"Flutter & Custom Painting"}),' Chosen to break away from standardized UI and implement unique graphics and animations that align with the "Superpower" concept.']}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:"Wakelock API"})," Technically resolved the UX issue of screen timeouts, ensuring the user\u2019s immersion remains unbroken throughout the session."]}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:"Android Native Alarm Manager"})," Applied ",(0,n.jsx)(e.code,{children:"exactAllowWhileIdle"})," and ",(0,n.jsx)(e.code,{children:"alarmClock"})," modes to ensure 100% notification reliability even when the app is in the background or in power-saving mode."]}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:"AdMob (Rewarded Ads) - Energy System"}),` Instead of intrusive banner ads, I implemented a "Rewarded Ad" model framed as an "Energy Recharge." This ensures monetization is woven into the app's lore without harming the UX.`]}),`
+`]}),`
+`]}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h2,{children:"Outcome"}),`
+`,(0,n.jsxs)(e.p,{children:["ABILITY: Gravity & Time proves that ",(0,n.jsx)(e.strong,{children:"\u201CProductivity tools can be beautiful and engaging.\u201D"})]}),`
+`,(0,n.jsxs)(e.p,{children:["By going beyond a simple clock and allowing users to visualize their effort while enjoying a premium aesthetic, this project has evolved into a tool users ",(0,n.jsx)(e.em,{children:"want"})," to use every day."]}),`
+`,(0,n.jsx)(e.p,{children:(0,n.jsx)(e.strong,{children:"\u201CTime doesn\u2019t just pass\u2014it is a force that you pull.\u201D"})}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h2,{children:"\u{1F680} Key Features"}),`
+`,(0,n.jsx)(e.h3,{children:"1. Immersive Superpower UI"}),`
+`,(0,n.jsxs)(e.ul,{children:[`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"Gravity Field"}),": An intuitive, minimal UI that feels like setting the mass of gravity."]}),`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"Dynamic Controls"}),": Adaptive buttons and haptic feedback that change based on the session state."]}),`
+`]}),`
+`,(0,n.jsx)(e.h3,{children:"2. Reliability & Continuity"}),`
+`,(0,n.jsxs)(e.ul,{children:[`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"Stay Awake"}),": A dedicated mode to keep the screen on during focus sessions."]}),`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"Native Precision"}),": Background alerts perfectly synced with the Android system."]}),`
+`]}),`
+`,(0,n.jsx)(e.h3,{children:"3. Energy & Rewards"}),`
+`,(0,n.jsxs)(e.ul,{children:[`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"Energy Charge"}),": A recharge system powered by rewarded ads."]}),`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"Lore-driven UX"}),": A monetization structure that respects the app's theme."]}),`
+`]}),`
+`,(0,n.jsx)(e.h3,{children:"4. Progress Tracking"}),`
+`,(0,n.jsxs)(e.ul,{children:[`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"Visual Stats"}),': Daily and weekly visualizations of your "Gravity Control" history.']}),`
+`]}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h2,{children:"\u{1F4E6} Installation (Store)"}),`
+`,(0,n.jsxs)(e.p,{children:["\u{1F4CC} ",(0,n.jsxs)(e.strong,{children:["Go to Google Play Store \u2192 ",(0,n.jsx)(e.a,{href:"https://play.google.com/store/apps/details?id=com.yoonjongryu.timer",children:"\u{1F517}ABILITY: Gravity & Time"})]})]}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h2,{children:"\u{1F91D} Contact & License"}),`
+`,(0,n.jsxs)(e.p,{children:["Author: ISA (",(0,n.jsx)(e.a,{href:"https://github.com/yoonjonglyu",children:"@yoonjonglyu"}),")",(0,n.jsx)(e.br,{}),`
+`,"Copyright \xA9 2026 ISA. All rights reserved."]})]})}function c(i={}){let{wrapper:e}=i.components||{};return e?(0,n.jsx)(e,{...i,children:(0,n.jsx)(d,{...i})}):d(i)}return b(A);})();
+;return Component;0:{"buildId":"U27ouNm3_F_w4mZXm9XZx","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"ABILITY: Gravity & Time","content":"$3","repository":"","homepage":"https://play.google.com/store/apps/details?id=your.package.name"}],null,"$L4"]}],"loading":null,"isPartial":false}
+4:["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]
+7:null

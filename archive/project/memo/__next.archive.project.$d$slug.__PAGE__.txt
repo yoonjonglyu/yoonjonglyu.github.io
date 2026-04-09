@@ -2,7 +2,7 @@
 2:I[1767,["332","static/chunks/332-4ff7931130dcfad6.js","500","static/chunks/500-ede29cb3bc8a7d4a.js","787","static/chunks/app/archive/project/%5Bslug%5D/page-f6e478fb89fd8d1b.js"],"default"]
 5:I[484,[],"OutletBoundary"]
 6:"$Sreact.suspense"
-3:T4002,var Component=(()=>{var p=Object.create;var o=Object.defineProperty;var g=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var u=Object.getPrototypeOf,b=Object.prototype.hasOwnProperty;var y=(i,e)=>()=>(e||i((e={exports:{}}).exports,e),e.exports),f=(i,e)=>{for(var r in e)o(i,r,{get:e[r],enumerable:!0})},a=(i,e,r,l)=>{if(e&&typeof e=="object"||typeof e=="function")for(let t of m(e))!b.call(i,t)&&t!==r&&o(i,t,{get:()=>e[t],enumerable:!(l=g(e,t))||l.enumerable});return i};var w=(i,e,r)=>(r=i!=null?p(u(i)):{},a(e||!i||!i.__esModule?o(r,"default",{value:i,enumerable:!0}):r,i)),v=i=>a(o({},"__esModule",{value:!0}),i);var s=y((x,c)=>{c.exports=_jsx_runtime});var k={};f(k,{default:()=>h,frontmatter:()=>A});var n=w(s()),A={title:"MemoFlow",description:"An offline-first, volatile planner PWA designed for lightweight personal note-taking",period:"2023.01 \u2013 2025.01 (v2 Renewal)",stack:["TypeScript","React","Tailwind CSS","PWA","Capacitor"],role:"Frontend Developer",repository:"https://github.com/yoonjonglyu/memo",homepage:"https://yoonjonglyu.github.io/memo/",tags:["Productivity","Offline-First","PWA","Personal-Tool"],order:2};function d(i){let e={a:"a",blockquote:"blockquote",br:"br",code:"code",em:"em",h1:"h1",h2:"h2",h3:"h3",hr:"hr",li:"li",p:"p",pre:"pre",strong:"strong",ul:"ul",...i.components};return(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(e.h1,{children:"\u{1F4DD} MemoFlow"}),`
+3:T46b8,var Component=(()=>{var p=Object.create;var t=Object.defineProperty;var g=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var u=Object.getPrototypeOf,b=Object.prototype.hasOwnProperty;var y=(i,e)=>()=>(e||i((e={exports:{}}).exports,e),e.exports),f=(i,e)=>{for(var r in e)t(i,r,{get:e[r],enumerable:!0})},a=(i,e,r,l)=>{if(e&&typeof e=="object"||typeof e=="function")for(let o of m(e))!b.call(i,o)&&o!==r&&t(i,o,{get:()=>e[o],enumerable:!(l=g(e,o))||l.enumerable});return i};var v=(i,e,r)=>(r=i!=null?p(u(i)):{},a(e||!i||!i.__esModule?t(r,"default",{value:i,enumerable:!0}):r,i)),w=i=>a(t({},"__esModule",{value:!0}),i);var d=y((x,c)=>{c.exports=_jsx_runtime});var k={};f(k,{default:()=>h,frontmatter:()=>A});var n=v(d()),A={title:"MemoFlow",description:"An offline-first, volatile planner PWA designed for lightweight personal note-taking",period:"2023.01 \u2013 2025.01 (v2 Renewal)",stack:["TypeScript","React","Tailwind CSS","PWA","Capacitor"],role:"Frontend Developer",repository:"https://github.com/yoonjonglyu/memo",homepage:"https://yoonjonglyu.github.io/memo/",tags:["Productivity","Offline-First","PWA","Personal-Tool"],order:2};function s(i){let e={a:"a",blockquote:"blockquote",br:"br",code:"code",em:"em",h1:"h1",h2:"h2",h3:"h3",hr:"hr",li:"li",p:"p",pre:"pre",strong:"strong",ul:"ul",...i.components};return(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(e.h1,{children:"\u{1F4DD} MemoFlow"}),`
 `,(0,n.jsx)(e.p,{children:(0,n.jsx)(e.strong,{children:"Offline-first Volatile Planner"})}),`
 `,(0,n.jsxs)(e.p,{children:["MemoFlow is a personal productivity tool designed around a simple assumption:",(0,n.jsx)(e.br,{}),`
 `,(0,n.jsx)(e.strong,{children:"notes are meant to be written quickly and deleted without hesitation."})]}),`
@@ -111,7 +111,8 @@ pages, links, hierarchy, and deliberate structural decisions.`,(0,n.jsx)(e.br,{}
 `,(0,n.jsx)(e.p,{children:"was the central architectural challenge of this project."}),`
 `,(0,n.jsx)(e.hr,{}),`
 `,(0,n.jsx)(e.h1,{children:"\u{1F4DD} MemoFlow: Simple Memo & Volatile Planner"}),`
-`,(0,n.jsxs)("p",{align:"center",children:[(0,n.jsx)("a",{href:"https://github.com/yoonjonglyu/memo/blob/main/README.md",children:(0,n.jsx)("strong",{children:"English"})})," ",(0,n.jsx)(e.p,{children:"|"}),(0,n.jsx)("a",{href:"https://github.com/yoonjonglyu/memo/blob/main/packages/demo/README.md",children:(0,n.jsx)(e.p,{children:"\uD55C\uAD6D\uC5B4"})})]}),`
+`,(0,n.jsx)("p",{align:"center",children:(0,n.jsxs)(e.p,{children:[(0,n.jsx)("a",{href:"https://github.com/yoonjonglyu/memo/blob/main/README.md",children:(0,n.jsx)("strong",{children:"English"})}),` |
+`,(0,n.jsx)("a",{href:"https://github.com/yoonjonglyu/memo/blob/main/packages/demo/README.md",children:"\uD55C\uAD6D\uC5B4"})]})}),`
 `,(0,n.jsxs)(e.blockquote,{children:[`
 `,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:'"Fast to Record, Light to Manage"'}),`
 A `,(0,n.jsx)(e.strong,{children:"volatile planner"})," designed for instant memos and short-term scheduling without complex features.",(0,n.jsx)(e.br,{}),`
@@ -145,13 +146,23 @@ A `,(0,n.jsx)(e.strong,{children:"volatile planner"})," designed for instant mem
 `,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"MSW"}),": Robust verification of network scenarios using Mock Service Worker for API mocking."]}),`
 `]}),`
 `,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h2,{children:"\u{1F6E0} Tech Stack"}),`
+`,(0,n.jsxs)(e.p,{children:[`| Category         | Tech Stack                                             |
+| :--------------- | :----------------------------------------------------- |
+| `,(0,n.jsx)(e.strong,{children:"Core"}),"         | ",(0,n.jsx)(e.code,{children:"React 18"}),", ",(0,n.jsx)(e.code,{children:"Recoil"})," (State Management), ",(0,n.jsx)(e.code,{children:"Babel"}),`       |
+| `,(0,n.jsx)(e.strong,{children:"Styling"}),"      | ",(0,n.jsx)(e.code,{children:"Tailwind CSS 4"}),", ",(0,n.jsx)(e.code,{children:"Styled-components"}),", ",(0,n.jsx)(e.code,{children:"FontAwesome 6"}),` |
+| `,(0,n.jsx)(e.strong,{children:"Build & Tool"})," | ",(0,n.jsx)(e.code,{children:"Webpack 5"}),`                                            |
+| `,(0,n.jsx)(e.strong,{children:"Platform"}),"     | ",(0,n.jsx)(e.code,{children:"Capacitor 8"})," (Android), ",(0,n.jsx)(e.code,{children:"Electron 23"}),` (Desktop)       |
+| `,(0,n.jsx)(e.strong,{children:"Testing"}),"      | ",(0,n.jsx)(e.code,{children:"Storybook 8"}),", ",(0,n.jsx)(e.code,{children:"MSW"}),", ",(0,n.jsx)(e.code,{children:"React Testing Library"}),"          |"]}),`
+`,(0,n.jsx)(e.hr,{}),`
 `,(0,n.jsx)(e.h2,{children:"\u{1F4C8} Version Log (via Storybook)"}),`
 `,(0,n.jsx)(e.p,{children:"Explore the evolution of our components through the following Chromatic links:"}),`
 `,(0,n.jsxs)(e.ul,{children:[`
 `,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.a,{href:"https://64105a493828b256671845d2-ijtzcntnsm.chromatic.com/?path=/story/%EB%A9%94%EB%AA%A8-ui-atoms-floatbtn--basic",children:(0,n.jsx)(e.strong,{children:"Initial Version"})})," : UI Atom-level design."]}),`
 `,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.a,{href:"https://64105a493828b256671845d2-pphrrzkvqx.chromatic.com/?path=/docs/%EB%A9%94%EB%AA%A8-page-index--docs",children:(0,n.jsx)(e.strong,{children:"v1.0.1"})})," : Implementation of page-level documentation."]}),`
 `,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.a,{href:"https://64105a493828b256671845d2-kcsdeyunzi.chromatic.com/?path=/story/%EB%A9%94%EB%AA%A8-page-index--basic",children:(0,n.jsx)(e.strong,{children:"v2.0.0"})})," : Full interaction testing applied."]}),`
-`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.a,{href:"https://64105a493828b256671845d2-wlfyjvsxmm.chromatic.com/?path=/story/%EB%A9%94%EB%AA%A8-page-index--basic",children:(0,n.jsx)(e.strong,{children:"v2.0.2"})})," : onboard tutorial + App edge + App Back Exit UX"]}),`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.a,{href:"https://64105a493828b256671845d2-wlfyjvsxmm.chromatic.com/?path=/story/%EB%A9%94%EB%AA%A8-page-index--basic",children:(0,n.jsx)(e.strong,{children:"v2.0.2"})})," : Onboard Tutorial + App edge + App Back Exit UX"]}),`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.a,{href:"https://64105a493828b256671845d2-upakptadnq.chromatic.com/?path=/story/%EB%A9%94%EB%AA%A8-page-index--basic",children:(0,n.jsx)(e.strong,{children:"v2.0.6"})})," : Sort Memo + Google Drive Sync"]}),`
 `]}),`
 `,(0,n.jsx)(e.hr,{}),`
 `,(0,n.jsx)(e.h2,{children:"\u{1F4E6} Installation & Setup"}),`
@@ -180,6 +191,7 @@ yarn build    # Production build (outputs to dist folder)
 \u251C\u2500\u2500 mocks/          # MSW handlers & mock data
 \u251C\u2500\u2500 providers/      # Modal & Context configurations
 \u251C\u2500\u2500 store/          # Recoil-based state models
+\u251C\u2500\u2500 services/       # heavy domain logic Services
 \u251C\u2500\u2500 index.css       # Tailwind 4 global styles
 electron/           # Electron main/preload process settings
 android/            # Capacitor-based Android native project
@@ -189,12 +201,13 @@ android/            # Capacitor-based Android native project
 `,(0,n.jsx)(e.p,{children:`\u2714 Users who prefer writing quick notes and deleting them immediately.
 \u2714 Managing short-term schedules and goals.
 \u2714 Those looking for a lightweight memo tool instead of a complex calendar app.`}),`
-`,(0,n.jsxs)(e.p,{children:["\u{1F4CC} ",(0,n.jsxs)(e.strong,{children:["Go to MemoFlow \u2192 ",(0,n.jsx)(e.a,{href:"https://yoonjonglyu.github.io/memo/",children:"\u{1F517}Project Link"})]})]}),`
+`,(0,n.jsxs)(e.p,{children:["\u{1F4CC} ",(0,n.jsxs)(e.strong,{children:["Go to MemoFlow(Web) \u2192 ",(0,n.jsx)(e.a,{href:"https://yoonjonglyu.github.io/memo/",children:"\u{1F517}Project Link"})]}),`
+\u{1F4CC} `,(0,n.jsxs)(e.strong,{children:["Go to MemoFlow(Android) \u2192 ",(0,n.jsx)(e.a,{href:"https://play.google.com/store/apps/details?id=com.yoonjongryu.memo",children:"\u{1F517}AppStore Link"})]})]}),`
 `,(0,n.jsx)(e.hr,{}),`
 `,(0,n.jsx)(e.h2,{children:"\u{1F91D} Contributing"}),`
 `,(0,n.jsx)(e.p,{children:"This project was developed for a personal portfolio and as a productivity tool. We welcome code reviews, feature suggestions, and bug reports through Issues!"}),`
 `,(0,n.jsxs)(e.p,{children:["Author: ISA (",(0,n.jsx)(e.a,{href:"https://github.com/yoonjonglyu",children:"@yoonjonglyu"}),")"]}),`
-`,(0,n.jsx)(e.p,{children:"License: MIT Licensed. Copyright \xA9 2026 ISA."})]})}function h(i={}){let{wrapper:e}=i.components||{};return e?(0,n.jsx)(e,{...i,children:(0,n.jsx)(d,{...i})}):d(i)}return v(k);})();
-;return Component;0:{"buildId":"uQf_EgPrrmuZ4CvE6eVcI","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"MemoFlow","content":"$3","repository":"https://github.com/yoonjonglyu/memo","homepage":"https://yoonjonglyu.github.io/memo/"}],null,"$L4"]}],"loading":null,"isPartial":false}
+`,(0,n.jsx)(e.p,{children:"License: MIT Licensed. Copyright \xA9 2026 ISA."})]})}function h(i={}){let{wrapper:e}=i.components||{};return e?(0,n.jsx)(e,{...i,children:(0,n.jsx)(s,{...i})}):s(i)}return w(k);})();
+;return Component;0:{"buildId":"U27ouNm3_F_w4mZXm9XZx","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"MemoFlow","content":"$3","repository":"https://github.com/yoonjonglyu/memo","homepage":"https://yoonjonglyu.github.io/memo/"}],null,"$L4"]}],"loading":null,"isPartial":false}
 4:["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]
 7:null

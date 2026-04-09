@@ -1,0 +1,84 @@
+1:"$Sreact.fragment"
+2:I[9424,["332","static/chunks/332-4ff7931130dcfad6.js","500","static/chunks/500-ede29cb3bc8a7d4a.js","892","static/chunks/892-5901b761845d0908.js","177","static/chunks/app/layout-d3f9aec8fc223903.js"],"default"]
+3:I[2064,["332","static/chunks/332-4ff7931130dcfad6.js","500","static/chunks/500-ede29cb3bc8a7d4a.js","892","static/chunks/892-5901b761845d0908.js","177","static/chunks/app/layout-d3f9aec8fc223903.js"],"default"]
+4:I[7346,["332","static/chunks/332-4ff7931130dcfad6.js","500","static/chunks/500-ede29cb3bc8a7d4a.js","892","static/chunks/892-5901b761845d0908.js","177","static/chunks/app/layout-d3f9aec8fc223903.js"],"default"]
+5:I[8327,["332","static/chunks/332-4ff7931130dcfad6.js","500","static/chunks/500-ede29cb3bc8a7d4a.js","892","static/chunks/892-5901b761845d0908.js","177","static/chunks/app/layout-d3f9aec8fc223903.js"],"default"]
+6:I[7121,[],""]
+7:I[4581,[],""]
+9:I[484,[],"OutletBoundary"]
+a:"$Sreact.suspense"
+c:I[484,[],"ViewportBoundary"]
+e:I[484,[],"MetadataBoundary"]
+10:I[7123,[],""]
+:HL["/_next/static/css/e9c7a5e7c904de76.css","style"]
+0:{"P":null,"b":"U27ouNm3_F_w4mZXm9XZx","c":["","work","ability-gravity",""],"q":"","i":false,"f":[[["",{"children":["work",{"children":[["slug","ability-gravity","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/e9c7a5e7c904de76.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","style":{"backgroundColor":"#0b0e14"},"children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":""}],["$","meta",null,{"name":"google-site-verification","content":"qdEnPRuxwkkMBg_va4KDeC4Hb2g5XeMuQETPiTQWZ9U"}],["$","meta",null,{"name":"naver-site-verification","content":"fb761146a5d49fa296db396340c978aac6259845"}]]}],["$","body",null,{"suppressHydrationWarning":true,"style":{"backgroundColor":"#0b0e14","margin":0,"position":"relative","minHeight":"100vh"},"children":[["$","div",null,{"style":{"position":"fixed","top":0,"left":0,"width":"100%","height":"100%","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center","zIndex":-1,"color":"#ffffff","textAlign":"center","pointerEvents":"none"},"children":[["$","p",null,{"style":{"fontSize":"1.2rem","fontWeight":500,"marginBottom":"8px"},"children":"Loading resources..."}],["$","p",null,{"style":{"fontSize":"0.9rem","opacity":0.6},"children":"If the screen stays blank, please try refreshing."}]]}],["$","$L2",null,{"children":["$","$L3",null,{"children":["$","$L4",null,{"children":["$","$L5",null,{"children":["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]}]}]]}]]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L8",null,["$","$L9",null,{"children":["$","$a",null,{"name":"Next.MetadataOutlet","children":"$@b"}]}]]}],{},null,false,false]},null,false,false]},null,false,false]},null,false,false],["$","$1","h",{"children":[null,["$","$Lc",null,{"children":"$@d"}],["$","div",null,{"hidden":true,"children":["$","$Le",null,{"children":["$","$a",null,{"name":"Next.Metadata","children":"$@f"}]}]}],null]}],false]],"m":"$undefined","G":["$10",[]],"S":true}
+11:I[9099,["332","static/chunks/332-4ff7931130dcfad6.js","774","static/chunks/app/work/%5Bslug%5D/page-c85614d4d32bcae6.js"],"default"]
+12:T2171,var Component=(()=>{var u=Object.create;var o=Object.defineProperty;var m=Object.getOwnPropertyDescriptor;var g=Object.getOwnPropertyNames;var p=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var y=(n,e)=>()=>(e||n((e={exports:{}}).exports,e),e.exports),v=(n,e)=>{for(var i in e)o(n,i,{get:e[i],enumerable:!0})},a=(n,e,i,s)=>{if(e&&typeof e=="object"||typeof e=="function")for(let r of g(e))!f.call(n,r)&&r!==i&&o(n,r,{get:()=>e[r],enumerable:!(s=m(e,r))||s.enumerable});return n};var k=(n,e,i)=>(i=n!=null?u(p(n)):{},a(e||!n||!n.__esModule?o(i,"default",{value:n,enumerable:!0}):i,n)),b=n=>a(o({},"__esModule",{value:!0}),n);var c=y((A,l)=>{l.exports=_jsx_runtime});var S={};v(S,{default:()=>d,frontmatter:()=>w});var t=k(c()),w={title:"ABILITY: Gravity & Time",summary:"Superpower-Themed Minimal Productivity Tool with Immersive UX",resume:{title:"Superpower-Themed Productivity Tool",role:"Solo Developer (Frontend & Native Integration)",period:"2026.04",description:`The first installment of the ABILITY series. A premium productivity timer  that transforms boring focus sessions into a superpower-like experience  through immersive UI, persistent display, and focus visualization.
+`,skills:["Flutter","Local Notifications","AdMob","Wakelock","Statistics (Local Data)"]},highlights:['Developed a "Superpower Concept" UI where users control time like a gravitational force.','Solved the "Screen-Off" issue by implementing a WakeupLock to keep focus status visible.','Built a persistent notification system ensuring the "End of Session" is never missed.',"Visualized focus effort through a statistics module to provide a sense of achievement."],featured:!0,category:"product",thumbnail:"/content/gravity.png",order:1,tags:["Flutter","AdMob","UX-Design","Productivity","Immersive-UI"]};function h(n){let e={code:"code",em:"em",h2:"h2",h3:"h3",hr:"hr",li:"li",ol:"ol",p:"p",strong:"strong",ul:"ul",...n.components};return(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(e.h2,{children:"Overview"}),`
+`,(0,t.jsxs)(e.p,{children:[(0,t.jsx)(e.strong,{children:"ABILITY: Gravity & Time"}),` is not just a utility; it\u2019s a "Superpower" in your pocket.
+While existing timers are often dry and utilitarian, this project was born from a desire to make the `,(0,t.jsx)(e.strong,{children:"act of focusing"})," more engaging and visually rewarding."]}),`
+`,(0,t.jsxs)(e.p,{children:['The focus was on moving away from "just a tool" to an ',(0,t.jsx)(e.strong,{children:'"Experience-Driven Product"'})," that keeps the user motivated through its unique concept and persistent feedback."]}),`
+`,(0,t.jsx)(e.hr,{}),`
+`,(0,t.jsx)(e.h2,{children:"Problem Statement"}),`
+`,(0,t.jsx)(e.p,{children:"As a developer and user of productivity tools, I found three major frustrations with existing timers:"}),`
+`,(0,t.jsxs)(e.ol,{children:[`
+`,(0,t.jsxs)(e.li,{children:[(0,t.jsx)(e.strong,{children:"Boring & Static UX"}),': Most timers are visually uninspiring, making the period of concentration feel like a chore rather than a specialized "state."']}),`
+`,(0,t.jsxs)(e.li,{children:[(0,t.jsx)(e.strong,{children:'The "Black Screen" Anxiety'}),": Standard timers allow the screen to turn off, forcing users to manually check how much time is left\u2014breaking their flow and focus."]}),`
+`,(0,t.jsxs)(e.li,{children:[(0,t.jsx)(e.strong,{children:"Ghost Efforts"}),": Once a timer ends, the effort vanishes. There is no visual record of how long I endured or how my focus patterns evolved."]}),`
+`]}),`
+`,(0,t.jsx)(e.hr,{}),`
+`,(0,t.jsx)(e.h2,{children:"Architectural Strategy"}),`
+`,(0,t.jsx)(e.h3,{children:'1. Immersive "Superpower" Concept'}),`
+`,(0,t.jsxs)(e.p,{children:["Instead of a standard dial, the UI centers around a ",(0,t.jsx)(e.strong,{children:"Temporal Core"}),":"]}),`
+`,(0,t.jsxs)(e.ul,{children:[`
+`,(0,t.jsxs)(e.li,{children:[(0,t.jsx)(e.strong,{children:"Concept Over Physics"}),`: The "Gravity" theme is a metaphor for the user's "Ability" to hold and control time.`]}),`
+`,(0,t.jsxs)(e.li,{children:[(0,t.jsx)(e.strong,{children:"Visual Engagement"}),': Every interaction is designed to make the user feel like they are "deploying a field" rather than just setting a clock.']}),`
+`,(0,t.jsxs)(e.li,{children:[(0,t.jsx)(e.strong,{children:"Deep Grey Aesthetic"}),": A premium dark theme that keeps the focus on the core and reduces eye strain during long sessions."]}),`
+`]}),`
+`,(0,t.jsx)(e.h3,{children:"2. Eliminating the Focus Gap (WakeupLock)"}),`
+`,(0,t.jsx)(e.p,{children:"To solve the frustration of screens turning off mid-session:"}),`
+`,(0,t.jsxs)(e.ul,{children:[`
+`,(0,t.jsxs)(e.li,{children:[(0,t.jsx)(e.strong,{children:"Persistent Visibility"}),": Integrated ",(0,t.jsx)(e.code,{children:"Wakelock"})," to keep the gravity field visible throughout the session."]}),`
+`,(0,t.jsxs)(e.li,{children:[(0,t.jsx)(e.strong,{children:"Real-time Feedback"}),": Users can instantly see their progress at a glance, eliminating the need to touch the phone and risk distraction."]}),`
+`]}),`
+`,(0,t.jsx)(e.h3,{children:"3. Native Reliability (The Unmissable Alert)"}),`
+`,(0,t.jsx)(e.p,{children:"A timer's primary job is to tell you when it's over, regardless of app state:"}),`
+`,(0,t.jsxs)(e.ul,{children:[`
+`,(0,t.jsxs)(e.li,{children:[(0,t.jsx)(e.strong,{children:"Native Alarm Integration"}),": Used ",(0,t.jsx)(e.code,{children:"AndroidScheduleMode.alarmClock"}),' to ensure the "Gravity Stabilized" alert cuts through OS-level battery optimizations.']}),`
+`,(0,t.jsxs)(e.li,{children:[(0,t.jsx)(e.strong,{children:"Sound & Haptics"}),": Designed custom feedback patterns that mimic the stabilization of a high-energy field."]}),`
+`]}),`
+`,(0,t.jsx)(e.h3,{children:"4. Visualizing Effort (Statistics)"}),`
+`,(0,t.jsx)(e.p,{children:'To turn "sessions" into "growth," I implemented a local-first statistics module:'}),`
+`,(0,t.jsxs)(e.ul,{children:[`
+`,(0,t.jsxs)(e.li,{children:[(0,t.jsx)(e.strong,{children:"Proof of Ability"}),": Every completed session is logged and visualized."]}),`
+`,(0,t.jsxs)(e.li,{children:[(0,t.jsx)(e.strong,{children:"Pattern Analysis"}),": Users can see their focus trends, transforming abstract effort into a concrete sense of achievement."]}),`
+`]}),`
+`,(0,t.jsx)(e.hr,{}),`
+`,(0,t.jsx)(e.h2,{children:"Technical Decisions"}),`
+`,(0,t.jsxs)(e.ul,{children:[`
+`,(0,t.jsxs)(e.li,{children:[(0,t.jsx)(e.strong,{children:"Flutter & Custom Painting"})," Used to create a unique UI that doesn't feel like a standard mobile app."]}),`
+`,(0,t.jsxs)(e.li,{children:[(0,t.jsx)(e.strong,{children:"WakeupLock API"}),' Critical for the "Always-On" focus experience.']}),`
+`,(0,t.jsxs)(e.li,{children:[(0,t.jsx)(e.strong,{children:"Android Native Alarm Manager"})," Chosen to guarantee 100% notification reliability."]}),`
+`,(0,t.jsxs)(e.li,{children:[(0,t.jsx)(e.strong,{children:"AdMob (Rewarded Ads)"}),' Integrated as an "Energy Recharge" mechanic to fund development']}),`
+`]}),`
+`,(0,t.jsx)(e.hr,{}),`
+`,(0,t.jsx)(e.h2,{children:"Outcomes and Learnings"}),`
+`,(0,t.jsxs)(e.ul,{children:[`
+`,(0,t.jsxs)(e.li,{children:[(0,t.jsx)(e.strong,{children:"Concept-Driven UX"}),": Proven that a strong metaphor (Superpower) can make a routine task (Timing) much more enjoyable."]}),`
+`,(0,t.jsxs)(e.li,{children:[(0,t.jsx)(e.strong,{children:"Practical Utility"}),': By solving the "Screen-Off" and "Lack of History" problems, the app became a daily-driver tool rather than a one-time experiment.']}),`
+`,(0,t.jsxs)(e.li,{children:[(0,t.jsx)(e.strong,{children:"Sustainable Solo-Dev Model"}),": Successfully balanced premium UX with a monetization strategy that respects the user's focus state."]}),`
+`]}),`
+`,(0,t.jsxs)(e.p,{children:[(0,t.jsx)(e.strong,{children:"ABILITY: Gravity"}),' is a deliberate departure from "boring" productivity. It proves that by addressing small frustrations like screen timeouts and lack of statistics, we can create a tool that users actually ',(0,t.jsx)(e.em,{children:"want"})," to use."]}),`
+`,(0,t.jsx)(e.hr,{}),`
+`,(0,t.jsx)(e.h2,{children:"Links"}),`
+`,(0,t.jsxs)(e.ul,{children:[`
+`,(0,t.jsx)(e.li,{children:"Google Play Store: [https://play.google.com/store/apps/details?id=com.yoonjongryu.timer]"}),`
+`,(0,t.jsxs)(e.li,{children:["GitHub: ",(0,t.jsx)(e.strong,{children:"Private Repository"})]}),`
+`,(0,t.jsxs)(e.li,{children:[(0,t.jsx)(e.strong,{children:"Status"}),": Stable Production (v1.0.2)"]}),`
+`]}),`
+`,(0,t.jsx)(e.hr,{})]})}function d(n={}){let{wrapper:e}=n.components||{};return e?(0,t.jsx)(e,{...n,children:(0,t.jsx)(h,{...n})}):h(n)}return b(S);})();
+;return Component;8:["$","$L11",null,{"title":"ABILITY: Gravity & Time","content":"$12"}]
+d:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+13:I[6869,[],"IconMark"]
+f:[["$","title","0",{"children":"ABILITY: Gravity & Time | ISA - Archive"}],["$","meta","1",{"name":"description","content":"Superpower-Themed Minimal Productivity Tool with Immersive UX"}],["$","link","2",{"rel":"author","href":"https://github.com/yoonjonglyu"}],["$","meta","3",{"name":"author","content":"YOON JONG RYU"}],["$","link","4",{"rel":"manifest","href":"/manifest.webmanifest","crossOrigin":"$undefined"}],["$","meta","5",{"name":"keywords","content":"Flutter,AdMob,UX-Design,Productivity,Immersive-UI"}],["$","meta","6",{"name":"robots","content":"index, follow"}],["$","meta","7",{"property":"og:title","content":"ABILITY: Gravity & Time | ISA - Archive"}],["$","meta","8",{"property":"og:description","content":"Superpower-Themed Minimal Productivity Tool with Immersive UX"}],["$","meta","9",{"property":"og:url","content":"https://yoonjonglyu.github.io/work/ability-gravity/"}],["$","meta","10",{"property":"og:site_name","content":"ISA - Archive"}],["$","meta","11",{"property":"og:image","content":"https://yoonjonglyu.github.io/content/gravity.png"}],["$","meta","12",{"property":"og:type","content":"article"}],["$","meta","13",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","14",{"name":"twitter:title","content":"ABILITY: Gravity & Time | ISA - Archive"}],["$","meta","15",{"name":"twitter:description","content":"Superpower-Themed Minimal Productivity Tool with Immersive UX"}],["$","meta","16",{"name":"twitter:image","content":"https://yoonjonglyu.github.io/content/gravity.png"}],["$","link","17",{"rel":"icon","href":"/favicon.ico?0442523079e4433b","type":"image/x-icon","sizes":"16x16"}],["$","link","18",{"rel":"icon","href":"/_next/static/media/favicon-16x16.20819376.png","sizes":"16x16","type":"image/png"}],["$","link","19",{"rel":"icon","href":"/_next/static/media/favicon-32x32.ea868b1f.png","sizes":"32x32","type":"image/png"}],["$","link","20",{"rel":"apple-touch-icon","href":"/_next/static/media/apple-touch-icon.b2dfcbf7.png","sizes":"180x180"}],["$","$L13","21",{}]]
+b:null
