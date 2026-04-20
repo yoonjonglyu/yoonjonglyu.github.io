@@ -16,7 +16,7 @@ const serwist = new Serwist({
       matcher: ({ request }) => request.mode === 'navigate',
       handler: new NetworkFirst({
         cacheName: 'pages-cache',
-        networkTimeoutSeconds: 3,
+        networkTimeoutSeconds: 7,
         // [중요] 네트워크도 실패하고 캐시도 없을 때, 
         // 서비스 워커가 에러를 내뱉는 대신 브라우저가 직접 네트워크를 다시 시도하게 함
         fetchOptions: {
