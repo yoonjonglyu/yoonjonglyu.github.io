@@ -42,10 +42,10 @@ jobs:
         env:
           CI: true
           DEPLORY_TARGET: gh-pages
-          # TypeScript 에러가 빌드를 중단시키지 않도록 설정
-          NEXTJS_IGNORE_TYPE_CHECK: true
-          # 필요하다면 ESLint도 건너뛰기
-          NEXTJS_IGNORE_ESLINT: true
+          # 안정성을 위해 가급적 에러 체크를 활성화하는 것이 좋습니다.
+          # 하얀 화면 문제가 지속된다면 아래 두 줄을 false로 바꾸어 에러를 확인하세요.
+          NEXTJS_IGNORE_TYPE_CHECK: false
+          NEXTJS_IGNORE_ESLINT: false
       # Next.js 14+ 에서는 'next export' 명령어가 필요 없으므로 'npm run export' 단계는 생략 가능합니다.
       # 만약 프로젝트 설정에 따라 꼭 필요하다면 아래 줄의 주석을 해제하세요.
       # - run: npm run export
@@ -53,6 +53,8 @@ jobs:
       - name: Prepare static files
         run: |
           touch out/.nojekyll
+          # SPA 라우팅 지원: index.html을 404.html로 복사
+          cp out/index.html out/404.html
           echo -e "User-agent: *\nAllow:/" > out/robots.txt # robot.txt -> robots.txt (파일명 교정)
           # 🎯 AdMob app-ads.txt 추가
           echo "google.com, pub-2309708500958644, DIRECT, f08c47fec0942fa0" > out/app-ads.txt

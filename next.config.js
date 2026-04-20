@@ -10,7 +10,7 @@ const withSerwist = require('@serwist/next').default({
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: false,
+  reactStrictMode: true,
   output: 'export',
   trailingSlash: true,
   images: { unoptimized: true },
