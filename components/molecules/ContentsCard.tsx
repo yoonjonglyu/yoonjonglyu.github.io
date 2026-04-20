@@ -2,7 +2,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import Card from '@components/atoms/Card';
-import { Mdx } from '@components/mdx';
+
+// 스토리북 환경에서 Next.js/Contentlayer 내부 의존성 충돌을 방지하기 위해 지연 로딩(Lazy Loading)
+const Mdx = React.lazy(() =>
+  import('@components/mdx').then((mod) => ({ default: mod.Mdx })),
+);
 
 // 헤더 디자인 개선: 그라데이션 포인트 라인
 const ContentsHeader = styled.div`
@@ -103,15 +107,19 @@ const ContentsBody = styled.div`
 
 export interface ContentsCardProps {
   header: React.ReactNode;
-  contents: string;
+  contents: React.ReactNode;
   CSS?: string;
 }
 
-const ContentsCard: React.FC<ContentsCardProps> = ({
-  header,
-  contents,
-  CSS,
-}) => {
+const ContentsCard: React.FC<ContentsCardProps> = ({ header, contents, CSS }) => {
+  // Contentlayer에 의해 컴파일된 MDX 코드인지 확인하는 간단한 체크
+  const isMdxCode =
+    typeof contents === 'string' && (
+      contents.includes('var Component') || 
+      contents.includes('__mdx_scope__') || 
+      contents.includes('MDXLayout')
+    );
+
   return (
     <Card
       css={`
@@ -127,16 +135,16 @@ const ContentsCard: React.FC<ContentsCardProps> = ({
       `}>
       <ContentsHeader>{header}</ContentsHeader>
       <ContentsBody>
-        <Mdx code={contents} />
+        {isMdxCode ? (
+          <React.Suspense fallback={null}>
+            <Mdx code={contents as string} />
+          </React.Suspense>
+        ) : (
+          contents
+        )}
       </ContentsBody>
     </Card>
   );
 };
 
 export default ContentsCard;
-
-const PreviewMode = ({ code }: { code: string }) => (
-  <div style={{ opacity: 0.5, fontStyle: 'italic' }}>
-    [Preview Mode]: {code}...
-  </div>
-);
