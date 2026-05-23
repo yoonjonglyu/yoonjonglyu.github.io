@@ -1,0 +1,87 @@
+---
+title: 'daoxin'
+description: 'Architectural analysis of atomic state nodes, vanilla CSS, and cross-platform runtime for an experience-driven app'
+period: '2026.04 – Present'
+stack:
+  - React
+  - Jotai
+  - Capacitor
+  - CSS
+  - TypeScript
+role: 'Solo Developer'
+repository: 'https://github.com/yoonjonglyu/daoxin'
+homepage: 'https://yoonjonglyu.github.io/daoxin'
+tags:
+  - Frontend-Architecture
+  - Atomic-State
+  - Pure-CSS
+  - Hybrid-App
+order: 3
+---
+
+# 🛠️ daoxin: Technical Rigor & Atomic Architecture
+
+**A Reference Model for Lightweight Cross-Platform Applications with Rich Metaphorical Structures**
+
+`daoxin` 프로젝트는 "추상적인 인간의 의지와 누적되는 행위를 어떻게 하면 가장 가볍고 견고한 데이터 구조로 박제할 수 있는가?"라는 프론트엔드 아키텍처적 질문에 답하는 단단한 참조 모델(Reference Model)입니다.
+
+이 프로젝트는 무거운 엔터프라이즈급 전역 상태 도구를 과감히 배제하고 **React**와 상태 패러다임의 최전선에 있는 **Jotai**를 도입하여 원자(Atomic) 단위의 상태 관리를 실현했습니다. 스타일링 레이어에서는 외부 추상화 레이어를 걷어내고 브라우저 네이티브한 **순수 CSS(Vanilla CSS)**를 사용하여 스타일링 예측 가능성을 확보했으며, **Capacitor** 런타임을 통해 하이브리드 크로스플랫폼 파이프라인을 구축했습니다.
+
+The technical core pillars are:
+
+- **Jotai 기반의 원자적 데이터 모델링**: 거대한 단일 상태 트리를 쪼개어 독립적인 상태 노드(Atoms) 단위로 스케줄 및 통계 데이터 관리.
+- **하위 종속형 데이터 구조 설계**: 다중 스케줄 레이어와 카테고리 통계 모듈이 최상위 룰인 '도심(道心)' 시스템에 엄격하게 귀속되는 트리형 구조 확립.
+- **순수 CSS 기반의 제로 오버헤드 스타일링**: 어떠한 런타임 스타일 연산이나 전처리 빌드 오버헤드가 없는 완전한 웹 표준 스타일 생태계 구축.
+- **Capacitor 하이브리드 최적화**: 런타임 오버헤드가 제로에 수렴하는 크로스플랫폼 파이프라인 마스터링.
+
+---
+
+## Technical Challenges & Architecture Strategy
+
+### 1. Pure CSS for Zero-Overhead High Performance
+동양적인 수묵화 테마, 비단 질감 레이어, 무협 서체 등 고유하고 아티스틱한 시각적 아이덴티티를 어떠한 프레임워크적 제약이나 오버헤드 없이 온전히 제어하기 위해 **순수 CSS(Vanilla CSS)** 방식을 채택했습니다.
+- CSS-in-JS 계열이 가진 JavaScript 런타임 스타일 연산 비용을 완전히 배제하고, 무거운 CSS 전처리기 빌드 파이프라인까지 제거하여 프론트엔드의 구조적 담백함을 극대화했습니다.
+- 브라우저 네이티브 스타일 엔진을 직접 활용함으로써, 하이브리드 웹뷰 환경에서도 스케줄 변동이나 통계 그래프 변환 시 연산 지연 없이 기민하고 매끄러운 60fps 프레임 레이트를 보장합니다.
+
+### 2. Three-Page State Segmentation & Bounded Context
+애플리케이션은 아키텍처적 무결성을 유지하기 위해 정밀하게 분리된 **3개의 핵심 페이지 단위**로 데이터 관심사를 획정하고 이를 Jotai의 독립된 원자(Atoms) 노드로 구현했습니다.
+
+- **Main View (도심 및 스케줄 요약)**: 최상위 심리 코어인 '도심' 상태창과 오늘 수행해야 할 스케줄들을 결합(Derived Atoms)하여 전면에 렌더링 최적화를 달성한 코어 허브입니다.
+- **Category View (카테고리 및 통계)**: 각 스케줄이 축적한 정진 수치를 종류별(분류)로 나누고 유저의 노력을 스스로 지표화하여 다차원 그래프 형태로 가공하는 복잡한 연산 레이어를 캡슐화했습니다.
+- **Schedule View (각종 스케줄 관리)**: 일일 반복 습관부터 오랜 호흡이 필요한 중장기 목표까지 다양한 도정의 일들을 독립적으로 등록·조율·폐기하는 스케줄 파이프라인입니다.
+
+### 3. Core-Dependent Data Architecture (도심 종속 구조)
+매일 루틴을 관리하는 앱의 특성상 중장기 목표와 카테고리 시스템이 유기적으로 연동되어야 편의성이 극대화됩니다. `daoxin`은 모든 하위 스케줄러와 분류 지표가 유저의 내면 상태인 **'도심(道心)'이라는 최상위 컨텍스트에 하위 종속되는 트리형 데이터 구조**로 설계되었습니다. TypeScript 인터페이스 레벨에서 이를 엄격하게 제약하여 데이터 흐름의 단방향성과 무결성을 보장하며 빌드 타임에 강력한 데이터 무결성을 유지합니다.
+
+---
+
+## Technical Decision Rationale
+
+- **Jotai (Atomic State)**: 상향식(Bottom-up) 상태 결합 및 파생 아톰(Derived Atoms) 생성이 용이하여, 가볍고 파편화된 다중 스케줄러 로직을 메인 요약 레이어와 깔끔하게 동기화할 수 있어 선택했습니다.
+- **Vanilla CSS**: 특정 라이브러리의 추상화 레이어에 의존하지 않고 웹 표준 기술을 그대로 사용하여, 프로젝트의 장기적인 아카이빙 가치와 성능 최적화를 동시에 확보하기 위한 본질적 결단이었습니다.
+- **Capacitor Hybrid Bridge**: 별도의 네이티브 추상화 레이어 없이 웹 표준 아키텍처를 그대로 패키징하므로, 웹 개발의 생산성을 유지한 채 모바일 환경(구글 플레이 스토어 등)으로 기민하게 확장할 수 있는 최적의 크로스플랫폼 런타임으로 판단하여 적용했습니다.
+
+---
+
+## Outcomes and Learnings
+
+- 고유하고 짙은 스토리텔링 메타포(선협·무협)가 단단한 데이터 종속 구조 및 3개 페이지 아키텍처와 결합했을 때 프로덕트의 유지보수 품질과 몰입도가 극대화됨을 확인했습니다.
+- 외부 의존성을 최소화한 순수 CSS와 Jotai의 조합이 컴포넌트 주도 개발 관점에서 소규모 프로젝트의 코드 경량화와 성능을 얼마나 비약적으로 상승시키는지 실증했습니다.
+- Capacitor를 통해 웹의 단순함과 모바일의 네이티브 UX 도달력을 최소한의 공수로 동시 획득하는 실질적인 모던 프론트엔드 파이프라인 경험을 완성했습니다.
+
+---
+
+## 📦 Repository & Technical Links
+
+- **Core Repository**: [🔗 github.com/yoonjonglyu/daoxin](https://github.com/yoonjonglyu/daoxin)
+- **Architecture Base**: React, Jotai, Capacitor, Pure CSS 기반의 하이브리드 앱 참조 구현 완료.
+- **web**: [🔗 Web 바로가기 ](https://yoonjonglyu.github.io/daoxin)
+- **android**: [🔗 Android 바로가기 ](https://play.google.com/store/apps/details?id=com.yoonjongryu.daoxin)
+
+---
+
+## 🤝 Contact & License
+
+Author: ISA ([@yoonjonglyu](https://github.com/yoonjonglyu))  
+Copyright © 2026 ISA. All rights reserved.  
+Licensed under the **Apache License 2.0**.
