@@ -1,0 +1,81 @@
+1:"$Sreact.fragment"
+2:I[9099,["276","static/chunks/276-81aa1d94b952b148.js","774","static/chunks/app/work/%5Bslug%5D/page-444ab7132a89271a.js"],"default"]
+5:I[484,[],"OutletBoundary"]
+6:"$Sreact.suspense"
+3:T2ccf,var Component=(()=>{var u=Object.create;var a=Object.defineProperty;var g=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var p=Object.getPrototypeOf,y=Object.prototype.hasOwnProperty;var f=(i,e)=>()=>(e||i((e={exports:{}}).exports,e),e.exports),v=(i,e)=>{for(var t in e)a(i,t,{get:e[t],enumerable:!0})},l=(i,e,t,o)=>{if(e&&typeof e=="object"||typeof e=="function")for(let r of m(e))!y.call(i,r)&&r!==t&&a(i,r,{get:()=>e[r],enumerable:!(o=g(e,r))||o.enumerable});return i};var w=(i,e,t)=>(t=i!=null?u(p(i)):{},l(e||!i||!i.__esModule?a(t,"default",{value:i,enumerable:!0}):t,i)),b=i=>l(a({},"__esModule",{value:!0}),i);var c=f((k,s)=>{s.exports=_jsx_runtime});var x={};v(x,{default:()=>h,frontmatter:()=>S});var n=w(c()),S={title:"ABILITY: DaoXin",summary:"An Experience-Driven Cultivation Tracker Visualizing the Inner Will and Consistency",resume:{title:"Xianxia-Themed Habit Tracker",role:"Solo Developer (Frontend & Native Packaging)",period:"2026.04",description:`A minimalist productivity platform that transforms repetitive daily routines  into a structured spiritual "Cultivation" experience through a core-dependent  data architecture, vanilla CSS, and atomic state management.
+`,skills:["React","Jotai","Capacitor","CSS (Vanilla)","TypeScript"]},highlights:['Framed a unique "Cultivation Lore" where consistency advances ranks and broken will leaves one as a mortal.','Implemented a trinary page layout mapping all multi-tier schedules and analytics directly into a central "Daoxin" core.',"Optimized rendering efficiency and system longevity using pure Vanilla CSS with zero runtime style overhead.","Engineered reactive data streams via Jotai to synchronize modular schedule states without parent component re-renders."],featured:!0,category:"product",thumbnail:"/content/daoxin.png",order:2,tags:["React","Jotai","Capacitor","Pure-CSS","Productivity","Immersive-UI"]};function d(i){let e={a:"a",br:"br",code:"code",em:"em",h2:"h2",h3:"h3",hr:"hr",li:"li",ol:"ol",p:"p",strong:"strong",ul:"ul",...i.components};return(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(e.h2,{children:"Overview"}),`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:"ABILITY DaoXin (\u9053\u5FC3)"})," is not just a utility or a generic planner; it is a philosophy captured in code."]}),`
+`,(0,n.jsxs)(e.p,{children:["In a world where the final results of our external endeavors are fundamentally unpredictable and temporal, everything eventually fades away. This project was born from a profound question: ",(0,n.jsx)(e.em,{children:'"When all else evaporates, what truly remains?"'})," The answer is the inner mind and the unrelenting will\u2014the ",(0,n.jsx)(e.strong,{children:"Daoxin"}),"."]}),`
+`,(0,n.jsxs)(e.p,{children:["Human will, however, is fragile by nature. It can only be maintained, fortified, and accumulated through the repetition of intentional daily actions. Project Daoxin is an ",(0,n.jsx)(e.strong,{children:'"Experience-Driven Product"'})," designed to help users modularize, visualize, and map their abstract dedication into an explicit, tangible record of spiritual growth."]}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h2,{children:"Problem Statement"}),`
+`,(0,n.jsx)(e.p,{children:"Traditional habit trackers and scheduling software often fail due to three core structural limitations:"}),`
+`,(0,n.jsxs)(e.ol,{children:[`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"The Pressure of Cold Grids"}),": Most tools present task lists as dry, uninspiring checklists or corporate dashboards, turning self-improvement into an exhausting chore rather than a mindful ritual."]}),`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"Lack of Immersive Lore"}),": Checking off a routine lacks an internal narrative. Without a unifying story or immediate conceptual weight, long-term user motivation naturally decays."]}),`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"Fragmented Workflows"}),": Daily habits, mid-term milestones, and high-level categorization are rarely unified cleanly. Users are forced to juggle disparate systems, diluting the perceived continuity of their efforts."]}),`
+`]}),`
+`,(0,n.jsxs)(e.p,{children:["To solve these frictions, this project approaches productivity through a singular conclusion: ",(0,n.jsx)(e.strong,{children:'"Translate consistent routine into the Eastern Art of Cultivation."'})]}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h2,{children:"Architectural Strategy"}),`
+`,(0,n.jsx)(e.h3,{children:'1. Immersive "Cultivation & Martial Arts" Concept'}),`
+`,(0,n.jsx)(e.p,{children:"The entire application layer is stylized with ancient Eastern aesthetic frameworks to evoke a sense of quiet focus:"}),`
+`,(0,n.jsxs)(e.ul,{children:[`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"Concept Over Checklist"}),": Routines are recontextualized as spiritual \uC815\uC9C4 (Progress). Maintaining consistency builds internal \uAE30\uC6B4 (Qi), allowing users to break through to higher existential ranks. Breaking one's focus leaves them a \uBC94\uBD80 (Mortal)."]}),`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"Trinary Core Infrastructure"}),": The architecture strictly converges into exactly three structural page layers:",`
+`,(0,n.jsxs)(e.ul,{children:[`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"Main View"}),': Displays the central "Daoxin" status indicator and a concise summary of immediate commitments.']}),`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"Category View"}),": The domain where user effort is categorized like martial arts disciplines and explicitly translated into self-statistical metrics."]}),`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"Schedule View"}),": The core scheduler handling short-term routines and persistent long-term workflows."]}),`
+`]}),`
+`]}),`
+`]}),`
+`,(0,n.jsx)(e.h3,{children:"2. Core-Dependent Data Architecture"}),`
+`,(0,n.jsx)(e.p,{children:"To ensure high utility and internal sync, every data model inside the application is structured hierarchically:"}),`
+`,(0,n.jsxs)(e.ul,{children:[`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"Subordinate Data Trees"}),': Rather than treating schedules and metrics as isolated state pools, all workflows and nested categories are designed as strict subordinates to the master "Daoxin" core state configuration.']}),`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"Unidirectional Integrity"}),": Enforced strictly via TypeScript type unions, ensuring that any lower-level task completion instantly and predictably reflects upward into the user's primary progression metrics."]}),`
+`]}),`
+`,(0,n.jsx)(e.h3,{children:"3. Pure CSS for Zero-Overhead Longevity"}),`
+`,(0,n.jsx)(e.p,{children:"To create a serene, minimalist presentation layer reminiscent of traditional ink wash paintings and silk textures without sacrificing platform performance:"}),`
+`,(0,n.jsxs)(e.ul,{children:[`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"Native Style Execution"}),": Avoided heavy JavaScript CSS-in-JS runtimes and complex preprocessor build chains in favor of pure ",(0,n.jsx)(e.strong,{children:"Vanilla CSS"}),"."]}),`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"WebView Fluidity"}),": Bypassing framework styling compilation guarantees a flawless, stutter-free 60fps rendering speed during high-frequency data mutations or statistics rendering inside cross-platform layers."]}),`
+`]}),`
+`,(0,n.jsx)(e.h3,{children:"4. Atomic State Boundaries (Jotai)"}),`
+`,(0,n.jsx)(e.p,{children:"Managing scattered schedulers and state counters requires predictable decoupling:"}),`
+`,(0,n.jsxs)(e.ul,{children:[`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"Orthogonal State Nodes"}),": Utilized ",(0,n.jsx)(e.strong,{children:"Jotai"})," to break the global context into small, highly isolated state atoms (",(0,n.jsx)(e.code,{children:"daoxinStateAtom"}),", ",(0,n.jsx)(e.code,{children:"categoryStatsAtom"}),", etc.)."]}),`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"Targeted Re-renders"}),": Changes within the schedule workflows update their isolated states reactively, flowing into the main page summary view via derived atoms without polluting or re-rendering unrelated layout segments."]}),`
+`]}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h2,{children:"Technical Decisions"}),`
+`,(0,n.jsxs)(e.ul,{children:[`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"React & Functional Hooks"})," Chosen to maintain clear component boundaries and encapsulate atomic logic."]}),`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"Jotai (Atomic State)"})," Applied for lightweight, bottom-up state composition and derived calculations."]}),`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"Vanilla CSS"})," Selected to achieve zero runtime styling overhead and maximize the product's long-term compatibility and archiving value."]}),`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"Capacitor Hybrid Bridge"})," Leveraged to containerize standard web architectures seamlessly, deploying to mobile ecosystems with minimal native friction."]}),`
+`]}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h2,{children:"Outcomes and Learnings"}),`
+`,(0,n.jsxs)(e.ul,{children:[`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"Lore-Driven Productivity"}),": Proved that embedding a rich, traditional metaphor into a utility tool dramatically transforms user psychology from chore-endurance to mindful cultivation."]}),`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"Strength in Standard Technologies"}),": Confirmed that balancing lightweight atomic state libraries with native Vanilla CSS yields exceptionally fluid layouts within hybrid WebView shells, proving that clean architecture scales down beautifully."]}),`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"Unified Architectural Discipline"}),": Demonstrated that structural cohesion (such as the trinary page hierarchy and strict data dependency) ensures a robust, easily maintainable code structure even within a serverless, local-first context."]}),`
+`]}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h2,{children:"Links"}),`
+`,(0,n.jsxs)(e.ul,{children:[`
+`,(0,n.jsxs)(e.li,{children:["Web App: ",(0,n.jsx)(e.a,{href:"https://yoonjonglyu.github.io/daoxin",children:"https://yoonjonglyu.github.io/daoxin"})]}),`
+`,(0,n.jsxs)(e.li,{children:["Google Play Store: ",(0,n.jsx)(e.a,{href:"https://play.google.com/store/apps/details?id=com.yoonjongryu.daoxin",children:"https://play.google.com/store/apps/details?id=com.yoonjongryu.daoxin"})]}),`
+`,(0,n.jsxs)(e.li,{children:["GitHub: ",(0,n.jsx)(e.a,{href:"https://github.com/yoonjonglyu/daoxin",children:"https://github.com/yoonjonglyu/daoxin"})]}),`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"Status"}),": Stable Production (v2.0.0)"]}),`
+`]}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h2,{children:"\u{1F91D} Contact & License"}),`
+`,(0,n.jsxs)(e.p,{children:["Author: ISA (",(0,n.jsx)(e.a,{href:"https://github.com/yoonjonglyu",children:"@yoonjonglyu"}),")",(0,n.jsx)(e.br,{}),`
+`,"Copyright \xA9 2026 ISA. All rights reserved.",(0,n.jsx)(e.br,{}),`
+`,"Licensed under the ",(0,n.jsx)(e.strong,{children:"Apache License 2.0"}),"."]})]})}function h(i={}){let{wrapper:e}=i.components||{};return e?(0,n.jsx)(e,{...i,children:(0,n.jsx)(d,{...i})}):d(i)}return b(x);})();
+;return Component;0:{"buildId":"yAgr5iV5Mq_i3DbDRDsat","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"ABILITY: DaoXin","content":"$3"}],null,"$L4"]}],"loading":null,"isPartial":false}
+4:["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]
+7:null
