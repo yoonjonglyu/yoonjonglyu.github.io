@@ -57,6 +57,6 @@
 `,(0,i.jsxs)(e.p,{children:["Author: ISA (",(0,i.jsx)(e.a,{href:"https://github.com/yoonjonglyu",children:"@yoonjonglyu"}),")",(0,i.jsx)(e.br,{}),`
 `,"Copyright \xA9 2026 ISA. All rights reserved.",(0,i.jsx)(e.br,{}),`
 `,"Licensed under the ",(0,i.jsx)(e.strong,{children:"Apache License 2.0"}),"."]})]})}function d(t={}){let{wrapper:e}=t.components||{};return e?(0,i.jsx)(e,{...t,children:(0,i.jsx)(h,{...t})}):h(t)}return S(x);})();
-;return Component;0:{"buildId":"yAgr5iV5Mq_i3DbDRDsat","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"ABILITY: DaoXin","content":"$3","repository":"https://github.com/yoonjonglyu/daoxin","homepage":"https://yoonjonglyu.github.io/daoxin"}],null,"$L4"]}],"loading":null,"isPartial":false}
+;return Component;0:{"buildId":"clFNm6ABAVob2Il-BFnS9","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"ABILITY: DaoXin","content":"$3","repository":"https://github.com/yoonjonglyu/daoxin","homepage":"https://yoonjonglyu.github.io/daoxin"}],null,"$L4"]}],"loading":null,"isPartial":false}
 4:["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]
 7:null
