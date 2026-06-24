@@ -17,11 +17,6 @@ const ResumeWork: FC = () => {
           desc={work.resume.description}
         />
       ))}
-      <ReadItem
-        title='Asharyu Design System — Author'
-        sub='TypeScript · React · Storybook'
-        desc='A Storybook-based component library designed to support consistent UI patterns and component reuse across projects.'
-      />
     </>
   );
 };

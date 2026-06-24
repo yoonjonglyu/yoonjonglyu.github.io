@@ -113,9 +113,10 @@ const HomeShelf: FC = () => {
   const carouselItems = useMemo(() => {
     if (!works.length) return [];
 
-    const chunks = [works.slice(0, 3), works.slice(3, 6)].filter(
-      (item) => item.length > 0,
-    );
+    const chunks = [
+      works.slice(0, 3),
+      works.slice(3, 6) /*,works.slice(6, 9)*/,
+    ].filter((item) => item.length > 0);
 
     return chunks.map((items, key) => (
       <Item key={key}>
