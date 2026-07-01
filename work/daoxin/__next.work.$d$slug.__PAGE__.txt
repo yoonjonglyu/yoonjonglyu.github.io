@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
-2:I[9099,["276","static/chunks/276-81aa1d94b952b148.js","774","static/chunks/app/work/%5Bslug%5D/page-444ab7132a89271a.js"],"default"]
+2:I[9099,["276","static/chunks/276-0d4bd4873866a8b8.js","774","static/chunks/app/work/%5Bslug%5D/page-444ab7132a89271a.js"],"default"]
 5:I[484,[],"OutletBoundary"]
 6:"$Sreact.suspense"
 3:T2cf0,var Component=(()=>{var u=Object.create;var a=Object.defineProperty;var g=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var p=Object.getPrototypeOf,y=Object.prototype.hasOwnProperty;var f=(i,e)=>()=>{try{return e||i((e={exports:{}}).exports,e),e.exports}catch(t){throw e=0,t}},v=(i,e)=>{for(var t in e)a(i,t,{get:e[t],enumerable:!0})},l=(i,e,t,o)=>{if(e&&typeof e=="object"||typeof e=="function")for(let r of m(e))!y.call(i,r)&&r!==t&&a(i,r,{get:()=>e[r],enumerable:!(o=g(e,r))||o.enumerable});return i};var w=(i,e,t)=>(t=i!=null?u(p(i)):{},l(e||!i||!i.__esModule?a(t,"default",{value:i,enumerable:!0}):t,i)),b=i=>l(a({},"__esModule",{value:!0}),i);var c=f((k,s)=>{s.exports=_jsx_runtime});var x={};v(x,{default:()=>h,frontmatter:()=>S});var n=w(c()),S={title:"ABILITY: DaoXin",summary:"An Experience-Driven Cultivation Tracker Visualizing the Inner Will and Consistency",resume:{title:"Xianxia-Themed Habit Tracker",role:"Solo Developer (Frontend & Native Packaging)",period:"2026.04",description:`A minimalist productivity platform that transforms repetitive daily routines  into a structured spiritual "Cultivation" experience through a core-dependent  data architecture, vanilla CSS, and atomic state management.
@@ -76,6 +76,6 @@
 `,(0,n.jsxs)(e.p,{children:["Author: ISA (",(0,n.jsx)(e.a,{href:"https://github.com/yoonjonglyu",children:"@yoonjonglyu"}),")",(0,n.jsx)(e.br,{}),`
 `,"Copyright \xA9 2026 ISA. All rights reserved.",(0,n.jsx)(e.br,{}),`
 `,"Licensed under the ",(0,n.jsx)(e.strong,{children:"Apache License 2.0"}),"."]})]})}function h(i={}){let{wrapper:e}=i.components||{};return e?(0,n.jsx)(e,{...i,children:(0,n.jsx)(d,{...i})}):d(i)}return b(x);})();
-;return Component;0:{"buildId":"MkdX-eDezkicQdLNZPbwS","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"ABILITY: DaoXin","content":"$3"}],null,"$L4"]}],"loading":null,"isPartial":false}
+;return Component;0:{"buildId":"BqWJuZVLAVSdikmmd1Ejs","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"ABILITY: DaoXin","content":"$3"}],null,"$L4"]}],"loading":null,"isPartial":false}
 4:["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]
 7:null
