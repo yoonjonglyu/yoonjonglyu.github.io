@@ -9,7 +9,7 @@ const ResumeFocus: FC = () => (
 • Structures frontend codebases for long-term maintainability in solo or small-team environments
 • Experienced in PWA and offline-first applications with performance-conscious UI design
 
-Comfortable owning frontend architecture end-to-end in remote and freelance contexts.`}
+Ships end-to-end as a solo developer - architecture, implementation, and live deployment.`}
     highlight={[
       'UI Architect',
       'Frontend Engineer',

@@ -129,15 +129,12 @@ const HomeBanner: FC = () => {
 
       <TextBox>
         <Title>
-          Designing
+          Building Products.
           <br />
-          Scalable UI Systems
+          Architecting Systems.
         </Title>
         <SubTitle>
-          UI Architect & Frontend Engineer.
-          <br />
-          Exploring reusable components, design systems, and real-world web
-          applications.
+          Designing scalable UI systems and<br />  shipping them as real, live products.
         </SubTitle>
       </TextBox>
 

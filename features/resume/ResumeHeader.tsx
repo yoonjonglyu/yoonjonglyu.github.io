@@ -50,13 +50,12 @@ const Summary = styled.p`
 const ResumeHeader: FC = () => (
   <HeaderWrap>
     <Name>YOON JONG RYU</Name>
-    <Title>Frontend Engineer · Remote-ready</Title>
+    <Title>Indie Developer & UI Architect · Remote-first</Title>
     <Summary>
       <strong>
-        Frontend engineer focused on component-driven architecture and
-        type-safe UI development.
+        Indie developer and UI architect who ships real products - from architecture to App Store.
       </strong>{' '}
-      Experienced in building Storybook-based design systems, PWAs, and
+      Experienced in building Storybook-based design systems, PWAs, Apps, and
       reusable utility libraries.
     </Summary>
   </HeaderWrap>
