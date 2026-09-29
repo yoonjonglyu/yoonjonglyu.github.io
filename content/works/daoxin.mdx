@@ -1,11 +1,11 @@
 ---
-title: 'ABILITY: DaoXin'
-summary: 'An Experience-Driven Cultivation Tracker Visualizing the Inner Will and Consistency'
+title: "ABILITY: DaoXin"
+summary: "An Experience-Driven Cultivation Tracker Visualizing the Inner Will and Consistency"
 
 resume:
-  title: 'Xianxia-Themed Habit Tracker'
-  role: 'Solo Developer (Frontend & Native Packaging)'
-  period: '2026.04'
+  title: "Xianxia-Themed Habit Tracker"
+  role: "Solo Developer (Frontend & Native Packaging)"
+  period: "2026.04"
   description: >
     A minimalist productivity platform that transforms repetitive daily routines 
     into a structured spiritual "Cultivation" experience through a core-dependent 
@@ -24,8 +24,8 @@ highlights:
   - Engineered reactive data streams via Jotai to synchronize modular schedule states without parent component re-renders.
 
 featured: true
-category: 'product'
-thumbnail: '/content/daoxin.png'
+category: "product"
+thumbnail: "/content/daoxin.png"
 order: 2
 tags:
   - React
@@ -38,9 +38,9 @@ tags:
 
 ## Overview
 
-**ABILITY DaoXin (道心)** is not just a utility or a generic planner; it is a philosophy captured in code. 
+**ABILITY DaoXin (道心)** is not just a utility or a generic planner; it is a philosophy captured in code.
 
-In a world where the final results of our external endeavors are fundamentally unpredictable and temporal, everything eventually fades away. This project was born from a profound question: *"When all else evaporates, what truly remains?"* The answer is the inner mind and the unrelenting will—the **Daoxin**. 
+In a world where the final results of our external endeavors are fundamentally unpredictable and temporal, everything eventually fades away. This project was born from a profound question: _"When all else evaporates, what truly remains?"_ The answer is the inner mind and the unrelenting will—the **Daoxin**.
 
 Human will, however, is fragile by nature. It can only be maintained, fortified, and accumulated through the repetition of intentional daily actions. Project Daoxin is an **"Experience-Driven Product"** designed to help users modularize, visualize, and map their abstract dedication into an explicit, tangible record of spiritual growth.
 
@@ -61,7 +61,9 @@ To solve these frictions, this project approaches productivity through a singula
 ## Architectural Strategy
 
 ### 1. Immersive "Cultivation & Martial Arts" Concept
+
 The entire application layer is stylized with ancient Eastern aesthetic frameworks to evoke a sense of quiet focus:
+
 - **Concept Over Checklist**: Routines are recontextualized as spiritual 정진 (Progress). Maintaining consistency builds internal 기운 (Qi), allowing users to break through to higher existential ranks. Breaking one's focus leaves them a 범부 (Mortal).
 - **Trinary Core Infrastructure**: The architecture strictly converges into exactly three structural page layers:
   - **Main View**: Displays the central "Daoxin" status indicator and a concise summary of immediate commitments.
@@ -69,17 +71,23 @@ The entire application layer is stylized with ancient Eastern aesthetic framewor
   - **Schedule View**: The core scheduler handling short-term routines and persistent long-term workflows.
 
 ### 2. Core-Dependent Data Architecture
+
 To ensure high utility and internal sync, every data model inside the application is structured hierarchically:
+
 - **Subordinate Data Trees**: Rather than treating schedules and metrics as isolated state pools, all workflows and nested categories are designed as strict subordinates to the master "Daoxin" core state configuration.
 - **Unidirectional Integrity**: Enforced strictly via TypeScript type unions, ensuring that any lower-level task completion instantly and predictably reflects upward into the user's primary progression metrics.
 
 ### 3. Pure CSS for Zero-Overhead Longevity
+
 To create a serene, minimalist presentation layer reminiscent of traditional ink wash paintings and silk textures without sacrificing platform performance:
+
 - **Native Style Execution**: Avoided heavy JavaScript CSS-in-JS runtimes and complex preprocessor build chains in favor of pure **Vanilla CSS**.
 - **WebView Fluidity**: Bypassing framework styling compilation guarantees a flawless, stutter-free 60fps rendering speed during high-frequency data mutations or statistics rendering inside cross-platform layers.
 
 ### 4. Atomic State Boundaries (Jotai)
+
 Managing scattered schedulers and state counters requires predictable decoupling:
+
 - **Orthogonal State Nodes**: Utilized **Jotai** to break the global context into small, highly isolated state atoms (`daoxinStateAtom`, `categoryStatsAtom`, etc.).
 - **Targeted Re-renders**: Changes within the schedule workflows update their isolated states reactively, flowing into the main page summary view via derived atoms without polluting or re-rendering unrelated layout segments.
 
@@ -107,7 +115,7 @@ Managing scattered schedulers and state counters requires predictable decoupling
 - Web App: [https://yoonjonglyu.github.io/daoxin](https://yoonjonglyu.github.io/daoxin)
 - Google Play Store: [https://play.google.com/store/apps/details?id=com.yoonjongryu.daoxin](https://play.google.com/store/apps/details?id=com.yoonjongryu.daoxin)
 - GitHub: [https://github.com/yoonjonglyu/daoxin](https://github.com/yoonjonglyu/daoxin)
-- **Status**: Stable Production (v2.0.0)
+- **Status**: Stable Production (v2.1.0)
 
 ---
 

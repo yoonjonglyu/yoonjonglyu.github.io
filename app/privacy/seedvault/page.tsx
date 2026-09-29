@@ -81,8 +81,8 @@ export default function PrivacyPolicyPage() {
         <div style={{ marginTop: '10px', backgroundColor: '#f5f5f5', padding: '12px 16px', borderRadius: '6px' }}>
           <p style={{ margin: '4px 0' }}>
             <strong>Developer Email:</strong>{' '}
-            <a href="mailto:yunjonglyu@gmail.com" style={{ color: '#0066cc' }}>
-              yunjonglyu@gmail.com
+            <a href="mailto:content@ryuislabs.com" style={{ color: '#0066cc' }}>
+              content@ryuislabs.com
             </a>
           </p>
         </div>

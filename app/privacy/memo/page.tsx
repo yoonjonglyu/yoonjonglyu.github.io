@@ -147,7 +147,7 @@ export default function PrivacyPolicyMemoPage() {
           not hesitate to contact us at:
         </p>
         <p style={styles.text}>
-          <strong>Email:</strong> yunjonglyu@gmail.com
+          <strong>Email:</strong> content@ryuislabs.com
         </p>
       </div>
     </div>

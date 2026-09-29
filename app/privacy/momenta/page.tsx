@@ -50,18 +50,18 @@ export default function PrivacyPolicyMomentaPage() {
   };
   return (
     <div style={styles.container}>
-      <h1 style={styles.title}>Privacy Policy for Momenta</h1>
+      <h1 style={styles.title}>Privacy Policy for ABILITY: Gravity & Time</h1>
       <p style={styles.lastUpdated}>Last Updated: April 08, 2026</p>
 
       <p style={styles.text}>
-        Momenta ("we," "our," or "us") operates the Momenta (GravityTimer)
+        ABILITY: Gravity & Time ("we," "our," or "us") operates the ABILITY: Gravity & Time
         mobile application (the "Service"). Your privacy is our top priority,
         and this policy explains how we handle your data.
       </p>
 
       <h2 style={styles.heading}>1. Information Collection and Use</h2>
       <p style={styles.text}>
-        Momenta is designed to be a local-first productivity tool.
+        ABILITY: Gravity & Time is designed to be a local-first productivity tool.
         <strong>
           {' '}
           We do not collect, store, or transmit any of your personal focus data
@@ -75,14 +75,14 @@ export default function PrivacyPolicyMomentaPage() {
         2. Google Drive Synchronization (Optional)
       </h2>
       <p style={styles.text}>
-        Momenta provides an optional synchronization feature using the{' '}
+        ABILITY: Gravity & Time provides an optional synchronization feature using the{' '}
         <strong>Google Drive API</strong>. This feature is disabled by default
         and only activated upon your explicit choice:
       </p>
       <ul style={styles.list}>
         <li>
           <strong>Data Access:</strong> The app requests access only to the
-          specific "Application Data Folder" created by Momenta on your Google
+          specific "Application Data Folder" created by ABILITY: Gravity & Time on your Google
           Drive. We cannot access your other personal files or folders.
         </li>
         <li>
@@ -145,7 +145,7 @@ export default function PrivacyPolicyMomentaPage() {
           <strong>Developer:</strong> RYUIS
         </p>
         <p style={styles.text}>
-          <strong>Email:</strong> yunjonglyu@gmail.com
+          <strong>Email:</strong> content@ryuislabs.com
         </p>
       </div>
     </div>

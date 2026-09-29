@@ -149,7 +149,7 @@ export default function PrivacyPolicyDaoxinPage() {
           <strong>Developer:</strong> RYUIS
         </p>
         <p style={styles.text}>
-          <strong>Email:</strong> yunjonglyu@gmail.com
+          <strong>Email:</strong> content@ryuislabs.com
         </p>
       </div>
     </div>
