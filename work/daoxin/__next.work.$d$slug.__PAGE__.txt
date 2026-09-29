@@ -69,13 +69,13 @@
 `,(0,n.jsxs)(e.li,{children:["Web App: ",(0,n.jsx)(e.a,{href:"https://yoonjonglyu.github.io/daoxin",children:"https://yoonjonglyu.github.io/daoxin"})]}),`
 `,(0,n.jsxs)(e.li,{children:["Google Play Store: ",(0,n.jsx)(e.a,{href:"https://play.google.com/store/apps/details?id=com.yoonjongryu.daoxin",children:"https://play.google.com/store/apps/details?id=com.yoonjongryu.daoxin"})]}),`
 `,(0,n.jsxs)(e.li,{children:["GitHub: ",(0,n.jsx)(e.a,{href:"https://github.com/yoonjonglyu/daoxin",children:"https://github.com/yoonjonglyu/daoxin"})]}),`
-`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"Status"}),": Stable Production (v2.0.0)"]}),`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"Status"}),": Stable Production (v2.1.0)"]}),`
 `]}),`
 `,(0,n.jsx)(e.hr,{}),`
 `,(0,n.jsx)(e.h2,{children:"\u{1F91D} Contact & License"}),`
 `,(0,n.jsxs)(e.p,{children:["Author: ISA (",(0,n.jsx)(e.a,{href:"https://github.com/yoonjonglyu",children:"@yoonjonglyu"}),")",(0,n.jsx)(e.br,{}),`
 `,"Copyright \xA9 2026 ISA. All rights reserved.",(0,n.jsx)(e.br,{}),`
 `,"Licensed under the ",(0,n.jsx)(e.strong,{children:"Apache License 2.0"}),"."]})]})}function h(i={}){let{wrapper:e}=i.components||{};return e?(0,n.jsx)(e,{...i,children:(0,n.jsx)(d,{...i})}):d(i)}return b(x);})();
-;return Component;0:{"buildId":"gblSl0JLNfu7FUxm68Jyf","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"ABILITY: DaoXin","content":"$3"}],null,"$L4"]}],"loading":null,"isPartial":false}
+;return Component;0:{"buildId":"wp50v4c_4rSs_oyialzGG","rsc":["$","$1","c",{"children":[["$","$L2",null,{"title":"ABILITY: DaoXin","content":"$3"}],null,"$L4"]}],"loading":null,"isPartial":false}
 4:["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]
 7:null
