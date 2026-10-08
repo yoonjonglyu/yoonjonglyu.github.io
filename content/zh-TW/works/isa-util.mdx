@@ -1,0 +1,78 @@
+---
+title: 'ISA Util'
+summary: '型別安全的 TypeScript 核心工具函式庫'
+
+resume:
+  title: '型別安全工具輔助庫'
+  role: '作者'
+  period: '2023.01 - 至今'
+  description: >
+    專為極致可重用性與型別穩定度設計的前端核心工具函式庫。
+    將常見商業邏輯標準化為單一型別安全層，大幅降低專案間重複程式碼並防止執行時期錯誤。
+  skills:
+    - TypeScript
+    - Utility
+    - Library
+    - Jest
+
+highlights:
+  - 標準化日期格式化與數值解析等通用邏輯，顯著降低跨專案重複代碼。
+  - 導入嚴格的 TypeScript 定義與泛型架構，消除調用函式時的潛在人為疏失。
+  - 運用 Jest 建立完整的單元測試套件，杜絕邏輯更新帶來的副作用並確保高可靠性。
+
+featured: false
+category: 'system'
+thumbnail: '/content/isautil.png'
+order: 8
+tags:
+  - TypeScript
+  - Utility
+  - Library
+  - Jest
+---
+
+## 背景
+
+**ISA Util** 是一款基於 TypeScript 的通用輔助函式庫，旨在為前端生態系中反覆發生的資料處理、驗證與非同步排程提供一致的呼叫介面。
+
+主要目標是整合散落在各專案中的零散輔助函式，建立絕對型別安全與穩健的單元測試保護。
+
+---
+
+## 問題定義
+
+在多個前端專案開發中，常見以下架構痛點：
+
+- 跨專案反覆出現類似工具程式碼的**多餘重複**
+- 未經嚴格驗證的參數與**模糊的型別定義**引發執行時期錯誤
+- 無測試保護的臨時封裝函式任意被調用
+- 更新共用邏輯時需跨儲存庫同步重構的維護瓶頸
+
+---
+
+## 解決方針
+
+### 1. Type-First 架構設計
+
+所有模組對參數與回傳值皆強制規範契約介面，在編譯時期即阻斷調用錯誤，並提供完善的 IDE 自動補全體驗。
+
+### 2. 領域驅動模組化
+
+依權責清晰拆分以支援最佳化的 Tree-shaking：
+- 型別檢查 (Type checking)
+- 格式化 (Formatting)
+- 非同步控制 (`JobQueue`, `FlushQueue`, debounce, throttle)
+- 儲存引擎 (LocalStorage, 型別安全 IndexedDB)
+- 加密基底 (Crypto primitives)
+- 環境與平台偵測
+
+### 3. 測試驅動可靠性
+
+全面使用 Jest 覆蓋邊界情況，打造可完全信賴的基礎設施層。
+
+---
+
+## 連結
+
+- GitHub: [https://github.com/yoonjonglyu/util-helper](https://github.com/yoonjonglyu/util-helper)
+- NPM: [https://www.npmjs.com/package/isa-util](https://www.npmjs.com/package/isa-util)

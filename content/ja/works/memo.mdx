@@ -1,0 +1,79 @@
+---
+title: 'MemoFlow'
+summary: 'コンポーネント駆動型、オフラインファーストPWAメモアプリケーション'
+
+resume:
+  title: 'コンポーネント駆動型 PWAメモアプリ'
+  role: '個人開発（フロントエンド）'
+  period: '2023.01'
+  description: >
+    Storybookを用いたコンポーネント駆動開発（CDD）により、スケーラブルなUIアーキテクチャと
+    オフラインファーストUXを検証するために設計された軽量メモ＆プランナーアプリです。
+  skills:
+    - TypeScript
+    - Storybook
+    - PWA
+    - CDD
+
+highlights:
+  - Storybookを主要な開発環境として活用したコンポーネント駆動開発（CDD）ワークフローを確立・検証。
+  - Service WorkerによるキャッシュとLocalStorageを活用した完全オフライン対応PWAを構築。
+  - 小規模なプロダクトであっても明確に分離されたUIアーキテクチャと状態モデリングが有効であることを実証。
+
+featured: true
+category: 'product'
+thumbnail: '/content/memo.png'
+order: 5
+tags:
+  - TypeScript
+  - Storybook
+  - PWA
+  - CDD
+  - LocalStorage
+---
+
+## 概要
+
+**Memo**は、ログインやバックエンド、ネットワーク接続を必要とせず、即座に起動して使える軽量かつ揮発性の高いメモ＆プランナーアプリです。
+
+機能の多さではなく、**「UIアーキテクチャの妥当性を検証する実験」**として構築されました：
+- コンポーネント駆動開発は小規模ツールを超えてスケールできるか？
+- Storybookは単なるカタログではなく真の開発環境として機能するか？
+- 余分な複雑性を持ち込まずにどこまで堅牢なプロダクトを作れるか？
+
+---
+
+## 課題の定義
+
+複数のフロントエンド開発を通じて直面した構造的課題：
+- ビジネスロジックと密結合したUIコンポーネント
+- ページ主導の開発によるコンポーネント再利用の制限
+- 空状態や長文などのUIエッジケース処理の遅れ
+- 小さなプロダクトに対する過度なアーキテクチャ設計
+
+仮説はシンプルでした：
+> 「小さなプロダクトであっても、明確に分離されたクリーンなUIアーキテクチャを持つ価値がある。」
+
+---
+
+## アーキテクチャ戦略
+
+### 1. コンポーネント駆動開発 (CDD)
+
+ページを直接作るのではなく、Storybook上で各UIパーツ（入力欄、ボタン、カード）を隔離された状態で設計・実装・検証。空状態やオーバーフローなどのエッジケースをあらかじめストーリーとして定義しました。
+
+### 2. 揮発性プランナーのUX
+
+長期的な知識の蓄積ツールではなく、「素早く作成し、簡単に削除できる」短期的な思考の整理に最適化。階層構造を持たないフラットなレイアウトを採用しました。
+
+### 3. オフラインファースト PWA
+
+Service WorkerによるアセットキャッシュとLocalStorageによるデータ永続化により、電波の届かない環境でも完全なCRUD操作を保証しました。
+
+---
+
+## リンク
+
+- Google Play Store: [https://play.google.com/store/apps/details?id=com.yoonjongryu.memo](https://play.google.com/store/apps/details?id=com.yoonjongryu.memo)
+- Web: [https://yoonjonglyu.github.io/memo/](https://yoonjonglyu.github.io/memo/)
+- GitHub: [https://github.com/yoonjonglyu/memo](https://github.com/yoonjonglyu/memo)

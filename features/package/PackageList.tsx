@@ -2,6 +2,8 @@
 import { type FC } from 'react';
 import styled from 'styled-components';
 import { allPackages } from '@contentlayer/generated';
+import { useTranslation } from '@hooks/useTranslation';
+import { getLocalizedDocs } from '@lib/content';
 
 import TextItem from '@components/molecules/TextItem';
 
@@ -23,7 +25,8 @@ const ListArea = styled.section`
 `;
 
 const PackageList: FC = () => {
-  const packages = allPackages.sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
+  const { locale } = useTranslation();
+  const packages = getLocalizedDocs(allPackages, locale);
 
   return (
     <Container>

@@ -2,6 +2,8 @@
 import { type FC } from 'react';
 import styled from 'styled-components';
 import { allProjects } from '@contentlayer/generated';
+import { useTranslation } from '@hooks/useTranslation';
+import { getLocalizedDocs } from '@lib/content';
 
 import TextItem from '@components/molecules/TextItem';
 
@@ -23,9 +25,8 @@ const ListArea = styled.section`
 `;
 
 const ProjectList: FC = () => {
-  const projects = allProjects
-    .slice()
-    .sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
+  const { locale } = useTranslation();
+  const projects = getLocalizedDocs(allProjects, locale);
 
   return (
     <Container>

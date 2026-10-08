@@ -1,0 +1,105 @@
+---
+title: 'SeedVault (시드볼트)'
+description: '가상자산 지갑 프로젝트에서 규제 리스크를 분리하여 탄생한 Argon2id + AES-256-GCM 기반 온디바이스 제로 지식 암호화 금고 모바일 앱'
+period: '2026.01 – 2026.09'
+stack:
+  - React 19
+  - TypeScript
+  - Vite
+  - Capacitor 8
+  - Jotai
+  - Argon2id
+  - AES-256-GCM
+role: '1인 설계 및 개발 (스핀오프 & 모바일 출시)'
+repository: 'https://github.com/yoonjonglyu/seedwallet'
+homepage: 'https://play.google.com/store/apps/details?id=com.ryuislabs.seedvault'
+tags:
+  - Mobile-Security
+  - Zero-Knowledge
+  - Argon2id
+  - AES-256-GCM
+  - Capacitor
+  - Google-Play
+  - Offline-First
+order: 2
+---
+
+# 🔐 SeedVault: 온디바이스 제로 지식 암호화 금고
+
+> *"서버를 신뢰하지 마십시오. 오직 수학과 당신의 기기만을 신뢰하십시오."*  
+> *"법적 규제로 프로젝트가 멈췄을 때, 우리는 핵심 보안 기술을 분리하여 세상에 선보였습니다."*
+
+**SeedVault**는 블록체인 시드 구문(Mnemonic Seed Phrase), 개인 키(Private Key), 중요 패스워드를 인터넷 연결 없이 오직 사용자 기기 내부에서만 암호화하여 격리 보관하는 **온디바이스 제로 지식(Zero-Knowledge) 보안 금고 모바일 앱**입니다.
+
+가상자산 지갑 솔루션인 `SeedWallet` 개발 과정에서 맞닥뜨린 가상자산 사업자(VASP) 규제 장벽을 계기로, 트랜잭션 및 네트워크 요소를 전면 배제하고 순수한 **로컬 암호학 금고 코어**만을 분리(Spin-off)하여 **Google Play 스토어 정식 출시**에 성공했습니다.
+
+---
+
+## 프로젝트 배경 및 피봇 (Pivot)
+
+### 1. SeedWallet의 도전과 규제적 벽
+초기 기획은 체인 간 브릿지와 자산 전송을 포괄하는 차세대 가상자산 지갑 **SeedWallet**이었습니다. 그러나 프로젝트 진행 중 다음과 같은 비기술적 난관에 부딪혔습니다:
+- 가상자산 사업자(VASP) 인가 및 금융 정보 분석 규제
+- 커스터디(Custodial) 서비스에 요구되는 막대한 법률·보안 감사 비용
+- 개인 개발자로서 감당하기 어려운 규제 준수(Compliance) 리스크
+
+### 2. 가치의 재정의: 지갑에서 '금고'로의 스핀오프
+프로젝트를 전면 백지화하는 대신, "사용자가 자신의 개인 키를 스스로 안전하게 통제할 수 있는 가장 신뢰성 높은 방법"이라는 본질에 집중했습니다.
+- 모든 외부 블록체인 노드 통신과 네트워크 권한을 코드베이스에서 제거
+- 순수 암호학 연산 패키지(`@seedvault/crypto-core`)를 독립 분리
+- 규제 이슈가 전무한 순수 오프라인 유틸리티 모바일 앱 **SeedVault**로 피봇 후 Google Play 출시
+
+---
+
+## 핵심 보안 아키텍처
+
+```
+[ Master Password ]
+        │
+        ▼ (hash-wasm: Argon2id KDF)
+[ 256-bit High-Entropy Key ]
+        │
+        ├── (AES-256-GCM Encryption) ──► [ Encrypted Seed Envelope ]
+        │                                  ├── Salt & Nonce/IV
+        │                                  ├── Ciphertext
+        │                                  └── Auth Tag
+        │
+        └── (Biometric Hardware Binding) ──► [ Capacitor Secure Storage ]
+```
+
+### 1. Argon2id 기반 KDF (Key Derivation Function)
+- 무차별 대입(Brute-Force) 및 ASIC/GPU 공격을 방어하기 위해 패스워드 해싱 표준인 **Argon2id**를 WebAssembly(`hash-wasm`)로 구동
+- 모바일 기기의 CPU/메모리 부하를 고려해 최적화된 파라미터(Time Cost, Memory Cost, Threads)를 설정하여 키 유도 과정 보호
+
+### 2. AES-256-GCM 봉투 암호화 (Authenticated Encryption)
+- 대칭키 암호화의 표준인 **AES-256-GCM**을 적용해 데이터 기밀성과 변조 방지(Integrity) 동시 만족
+- `EncryptedSeedEnvelope` 구조를 통해 데이터 암호문, 솔트, IV, 인증 태그를 일체형으로 안전하게 직렬화
+
+### 3. 완전한 제로 지식 & 로컬 퍼스트
+- 백엔드 서버 없음: 서버 탈취나 데이터베이스 유출의 위험이 원천적으로 불가능
+- 생체 인증 연동: 기기 내 안전 영역(Hardware Keystore)과 통신하는 Capacitor 플러그인을 결합하여 지문/얼굴 인식으로 즉각 잠금 해제 지원
+
+### 4. 에어갭(Air-Gapped) QR 백업 및 복원
+- 네트워크 통신 없이 기기 간 데이터를 안전하게 이동하거나 종이 금고로 보관할 수 있도록 QR 백업 파이프라인 설계
+- 암호화된 Envelope를 Zlib(`pako`) 무손실 압축 후 고밀도 QR 코드로 인코딩(`qrcode`), 카메라 스캐너(`jsqr`)로 즉시 복원
+
+---
+
+## 기술 스택 및 구조
+
+| 영역 | 기술 스택 | 설명 |
+| :--- | :--- | :--- |
+| **프론트엔드** | React 19, TypeScript, Vite | React Compiler 적용 및 빠른 빌드 |
+| **모바일 런타임** | Capacitor 8 | Android/iOS 크로스 플랫폼 네이티브 연동 |
+| **암호화 라이브러리** | `hash-wasm`, WebCrypto API | 고성능 WASM 기반 Argon2id 및 AES-256-GCM 구현 |
+| **상태 관리** | Jotai | 모듈식 아토믹 상태로 보안 컨텍스트 제어 |
+| **스토리지 & 생체 인증** | `@capgo/capacitor-native-biometric`, `capacitor-secure-storage-plugin` | 하드웨어 레벨 보안 스토리지 바인딩 |
+| **디자인 시스템** | `asharyu-design-token` | 미니멀하고 정밀한 다크 톤앤매너 |
+
+---
+
+## 주요 성과 및 링크
+
+- **Google Play 스토어 출시**: [`com.ryuislabs.seedvault`](https://play.google.com/store/apps/details?id=com.ryuislabs.seedvault)
+- **규제 위기를 제품 출시 기회로 전환**: 프로젝트 중단 위기에서 본질적 가치만을 추려 완성도 높은 실물 앱으로 배포
+- **엔드투엔드 1인 개발 완성**: 아키텍처 설계부터 WASM 암호화, 네이티브 하드웨어 바인딩, Google Play 배포 전 과정을 단독 수행

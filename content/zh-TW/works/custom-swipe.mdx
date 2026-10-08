@@ -1,0 +1,93 @@
+---
+title: 'Custom Swipe'
+summary: '完全無UI樣式束縛、跨前端框架的通用Headless滑動手勢庫'
+
+resume:
+  title: '跨框架通用Headless滑動手勢庫'
+  role: '作者'
+  period: '2024.02 - 至今'
+  description: >
+    採用無框架相依架構設計的開源Headless滑動函式庫。
+    不強制任何UI或樣式限制，專注提供高效能核心滑動邏輯，可無縫整合至任何內部設計系統。
+  skills:
+    - TypeScript
+    - Headless
+    - Swipe
+    - Library
+    - Multi-Framework
+
+highlights:
+  - 導入Headless架構提供純粹滑動運算，賦予開發者完全自訂UI的自由且不產生樣式衝突。
+  - 使用原生Vanilla DOM API設計核心邏輯，確保在React、Vue、Svelte等環境間保持一致行為。
+  - 專注於滑動核心必備機能並屏除冗餘特性，達成極致輕量的打包體積。
+
+featured: false
+category: 'system'
+thumbnail: '/content/swipe.png'
+order: 7
+tags:
+  - TypeScript
+  - Headless
+  - Swipe
+  - Library
+  - Multi-Framework
+---
+
+## 背景
+
+**Custom Swipe** 是一款無框架相依的Headless滑動手勢函式庫，專注於提供底層手勢運算邏輯而不強制綁定任何視覺表現層樣式。
+
+與React、Vue、Svelte等特定框架解耦，並以低階硬體裝置上的**超輕量打包**與**可預期執行時期表現**為目標打造。
+
+---
+
+## 問題定義
+
+既有的主流滑動套件往往存在以下結構瓶頸：
+
+- 功能過度擴充導致**打包體積過大**
+- 內建樣式與專案自身的**設計系統產生樣式衝突**
+- 過度依賴特定框架的生命週期與狀態機制
+- 客製化門檻高，需要深入閱讀內部實作
+
+特別是針對「僅需精準手勢運算，但希望完全掌控表現層UI」的開發情境，市場上缺乏理想的輕量解法。
+
+---
+
+## 解決方案
+
+### 1. Headless 架構
+
+完全剝離視覺UI渲染層，核心僅對外暴露**座標運算、觸控/指標事件處理與內部狀態轉移規則**。
+
+### 2. 以 DOM 為核心的非受控模式
+
+為避免框架層重新渲染的開銷，核心運算迴圈以純 **Vanilla DOM API** 實作：
+- 消除框架層級昂貴的多餘重繪
+- 確保動畫與原始手勢處理的高精準度時間視窗
+- 確保跨框架使用時行為表現完全一致
+
+### 3. Core + Wrapper 架構 (Monorepo)
+
+透過 Monorepo 維護單一真理來源並提供各生態系的轉接套件：
+- `custom-swipe` (核心引擎)
+- `react-custom-swipe`
+- `vue-custom-swipe`
+- `svelte-custom-swipe`
+
+---
+
+## 核心功能
+
+- 滑動 (Swipe)
+- 無限滾動循環 (Infinite Swipe)
+- 走馬燈 / 輪播機制 (Carousel / Slider)
+- 基於 Hook 的程式化控制
+
+---
+
+## 連結
+
+- GitHub: [https://github.com/yoonjonglyu/custom-swipe](https://github.com/yoonjonglyu/custom-swipe)
+- NPM: [https://www.npmjs.com/package/custom-swipe](https://www.npmjs.com/package/custom-swipe)
+- Demo: [https://yoonjonglyu.github.io/custom-swipe/](https://yoonjonglyu.github.io/custom-swipe/)

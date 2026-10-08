@@ -1,0 +1,41 @@
+---
+title: 'react-daumpost-hook'
+description: '以 React Hook 模式封裝 Daum 郵遞區號服務 API 的超輕量模組'
+period: '2021.11 - 至今'
+version: '1.1.8'
+stack:
+  - JavaScript
+  - React
+  - TypeScript
+repository: 'https://github.com/yoonjonglyu/react-daumpost-hook'
+homepage: 'https://www.npmjs.com/package/react-daumpost-hook'
+tags:
+  - react-hook
+  - daum-postcode
+  - address-search
+  - open-source
+order: 4
+---
+
+## 背景
+
+開發當時，現有的地址搜尋套件多半以完整元件形式封裝，難以自然融入專案既有UI系統或客製化視覺樣式。  
+為了在保留原有UI架構與設計完整性的前提下無縫注入地址搜尋功能，我設計了這款**非受控模式的Hook**。  
+彼時React Hooks尚未全面普及且Headless UI概念稀缺，自行實作並開源發佈此實用功能別具意義，也成為我個人涉足開源社群的起點。
+
+## 解決的問題
+
+- **解除UI綁定：** 不強制使用內建彈窗或按鈕，開發者僅需將`open`函式綁定至既有按鈕或輸入框即可調用。
+- **支援多元模式：** 同時支援彈跳視窗（Popup）模式與嵌入指定DOM節點（Embed）模式，彈性配合專案需求。
+- **開源實用貢獻：** 將實務常見需求輕量套件化，提供輕巧乾淨的架構選擇。
+
+## 技術決策
+
+- **React Hooks：** 配合元件生命週期安全載入外部腳本，並將結果優雅轉化為狀態管理。
+- **Lightweight Package：** 屏除第三方套件依賴，以純JavaScript邏輯與最少React API維持極簡體積。
+- **TypeScript Support：** 隨附型別宣告檔（.d.ts），使開發者能明確辨識資料結構（`zonecode`, `address`等）。
+
+## 連結
+
+- GitHub: [https://github.com/yoonjonglyu/react-daumpost-hook](https://github.com/yoonjonglyu/react-daumpost-hook)
+- NPM: [https://www.npmjs.com/package/react-daumpost-hook](https://www.npmjs.com/package/react-daumpost-hook)

@@ -2,6 +2,7 @@ import { ImageResponse } from 'next/og';
 import { pascalCase } from 'isa-util';
 
 import { allWorks } from '@contentlayer/generated';
+import { getLocalizedDocBySlug, getUniqueSlugs } from '@lib/content';
 import {
   containerStyle,
   labelStyle,
@@ -14,8 +15,8 @@ export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
 export async function generateStaticParams() {
-  return allWorks.map((work) => ({
-    slug: work.slug,
+  return getUniqueSlugs(allWorks).map((slug) => ({
+    slug,
   }));
 }
 
@@ -25,7 +26,7 @@ export default async function Image({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const post = allWorks.find((p) => p.slug === slug);
+  const post = getLocalizedDocBySlug(allWorks, slug, 'en');
 
   return new ImageResponse(
     (

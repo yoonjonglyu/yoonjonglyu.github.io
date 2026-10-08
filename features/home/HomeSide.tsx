@@ -5,6 +5,8 @@ import Link from 'next/link';
 
 import { allProjects, allPackages } from '@contentlayer/generated';
 import SideCard from '@components/molecules/SideCard';
+import { useTranslation } from '@hooks/useTranslation';
+import { getLocalizedDocs } from '@lib/content';
 
 const SideArea = styled.aside`
   flex: 1;
@@ -118,19 +120,16 @@ const StyledSideCard = styled(SideCard)`
 `;
 
 const HomeSide: FC = () => {
-  const projects = allProjects
-    .slice()
-    .sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
-  const packages = allPackages
-    .slice()
-    .sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
+  const { t, locale } = useTranslation();
+  const projects = getLocalizedDocs(allProjects, locale);
+  const packages = getLocalizedDocs(allPackages, locale);
     
   return (
     <SideArea>
       <StyledSideCard
         header={
           <CardHead>
-            <h3>Project</h3>
+            <h3>{t.home.projects}</h3>
           </CardHead>
         }
         contents={
@@ -146,7 +145,7 @@ const HomeSide: FC = () => {
       <StyledSideCard
         header={
           <CardHead>
-            <h3>Package</h3>
+            <h3>{t.home.packages}</h3>
           </CardHead>
         }
         contents={

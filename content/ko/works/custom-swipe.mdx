@@ -1,0 +1,123 @@
+---
+title: 'Custom Swipe'
+summary: 'UI 스타일링 제약이 없는 프레임워크 독립형 Headless 스와이프 라이브러리'
+
+resume:
+  title: '프레임워크 비종속 Headless 스와이프 라이브러리'
+  role: '제작자'
+  period: '2024.02 - 현재'
+  description: >
+    프레임워크 독립적 아키텍처로 설계된 오픈소스 Headless 스와이프 라이브러리입니다.
+    UI나 스타일 제약을 강제하지 않고 순수 고성능 스와이프 로직만을 제공하여,
+    모든 사내 디자인 시스템과 완벽하게 통합됩니다.
+  skills:
+    - TypeScript
+    - Headless
+    - Swipe
+    - Library
+    - Multi-Framework
+
+highlights:
+  - Headless 아키텍처를 도입하여 순수 스와이프 로직만 제공, 스타일 충돌 없이 자유로운 UI 커스터마이징 실현
+  - Vanilla DOM API 기반으로 코어 로직을 설계하여 React, Vue, Svelte 등 서로 다른 환경에서도 일관된 동작 보장
+  - 스와이프 필수 기능(무한 스크롤, 캐러셀)에 집중하고 부가 기능을 배제하여 극도로 가벼운 번들 사이즈 유지
+
+featured: false
+category: 'system'
+thumbnail: '/content/swipe.png'
+order: 7
+tags:
+  - TypeScript
+  - Headless
+  - Swipe
+  - Library
+  - Multi-Framework
+---
+
+## 개요
+
+**Custom Swipe**는 UI 스타일을 강제하지 않고, 스와이프의 핵심 연산 로직만 제공하는 프레임워크 독립형 Headless Swipe 라이브러리입니다.
+
+React, Vue, Svelte 등 특정 프레임워크에 종속되지 않도록 설계되었으며, 저사양 기기나 네트워크 제약 환경에서도 안정적으로 동작하는 **경량성**과 **예측 가능한 런타임 동작**을 목표로 개발되었습니다.
+
+---
+
+## 문제 정의
+
+기존의 주요 스와이프 라이브러리들은 다음과 같은 구조적 한계를 가지고 있었습니다:
+
+- 기능 과다로 인한 **비대한 번들 사이즈**
+- 라이브러리 내장 스타일로 인한 **디자인 시스템과의 스타일 충돌**
+- 프레임워크별 상태 라이프사이클에 과도하게 의존하는 구조
+- 내부 구현을 깊이 파악해야만 가능한 높은 커스터마이징 진입 장벽
+
+특히 “수학적인 스와이프 제스처만 필요하고 표현 UI는 완전히 직접 제어하고 싶은” 개발자들에게 적합한 선택지가 부족했습니다.
+
+---
+
+## 해결 전략
+
+### 1. Headless 아키텍처
+
+시각적 UI 렌더링을 완전히 배제하고, 스와이프에 필요한 **좌표 계산 · 터치/포인터 이벤트 처리 · 내부 상태 전이 규칙**만을 노출하도록 코어를 설계했습니다.
+
+이를 통해 마크업 구조나 스타일 제약 없이 프로젝트별 디자인 시스템에 유연하게 통합할 수 있습니다.
+
+---
+
+### 2. DOM 중심의 비제어 방식
+
+React 등의 상태 관리 흐름에 따른 렌더링 오버헤드를 배제하기 위해, 핵심 연산 루프를 **Vanilla DOM API** 기반으로 작성했습니다.
+
+- 프레임워크 레벨의 불필요하고 무거운 리렌더링 제거
+- 애니메이션 및 제스처 처리 시 정확하고 예측 가능한 타이밍 윈도우 확보
+- 서로 다른 프레임워크 간에도 100% 동일한 동작 보장
+
+---
+
+### 3. Core + Wrapper 구조 (Monorepo)
+
+모노레포를 활용하여 단일 소스로부터 각 프레임워크 전용 Wrapper를 효율적으로 분리·제공하는 구조를 채택했습니다:
+
+- `custom-swipe` (코어 엔진)
+- `react-custom-swipe`
+- `vue-custom-swipe`
+- `svelte-custom-swipe`
+
+---
+
+## 주요 기능
+
+- 스와이프 (Swipe)
+- 무한 루프 스크롤 (Infinite Swipe)
+- 캐러셀 / 슬라이더 메커니즘 (Carousel)
+- Headless Hook 기반 프로그래밍 제어
+
+---
+
+## 기술 스택 및 선택 이유
+
+- **TypeScript**  
+  → 복잡한 제스처 이벤트와 옵션 인터페이스를 엄격하게 타입 모델링
+- **Vanilla DOM API**  
+  → 밀리초 단위의 정밀한 제스처 연산과 프레임워크 독립성 확보
+- **Monorepo 구조**  
+  → 코어 로직의 일관성과 래퍼 패키지 유지보수 최적화
+
+---
+
+## 결과 및 의의
+
+- 클라이언트 번들 사이즈 최소화 달성
+- 다양한 런타임 환경에서 동일하고 정밀한 스와이프 인터랙션 제공
+- 디자인 시스템 친화적인 Headless 패러다임 확립
+
+Custom Swipe의 핵심 개발 철학은 **“라이브러리의 힘을 빌리되, 라이브러리에 아키텍처를 지배당하지 않는다”**였습니다.
+
+---
+
+## 링크
+
+- GitHub: [https://github.com/yoonjonglyu/custom-swipe](https://github.com/yoonjonglyu/custom-swipe)
+- NPM: [https://www.npmjs.com/package/custom-swipe](https://www.npmjs.com/package/custom-swipe)
+- Demo: [https://yoonjonglyu.github.io/custom-swipe/](https://yoonjonglyu.github.io/custom-swipe/)

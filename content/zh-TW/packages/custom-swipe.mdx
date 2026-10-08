@@ -1,0 +1,46 @@
+---
+title: 'custom-swipe'
+description: '跨框架、超輕量的通用Headless滑動手勢與走馬燈函式庫'
+period: '2024.02 - 至今'
+version: '1.0.0'
+stack:
+  - TypeScript
+  - JavaScript
+  - React
+  - Vue
+  - Svelte
+repository: 'https://github.com/yoonjonglyu/custom-swipe'
+homepage: 'https://www.npmjs.com/package/custom-swipe'
+tags:
+  - TypeScript
+  - Headless
+  - Swipe
+  - Library
+  - Multi-Framework
+order: 3
+---
+
+## 背景
+
+現有主流滑動庫功能龐雜且打包體積過大，在客製化設計時經常與專案原生樣式產生衝突。  
+特別是在低規格硬體或不穩定網路環境下，迫切需要一款**極致輕量的滑動解決方案**。  
+為此，我設計了核心運算完全託管、UI呈現全然交由開發者主導的「Headless」架構套件。
+
+## 解決的問題
+
+- **消除框架相依：** 將核心手勢運算抽離為非受控、原生DOM操作導向層。使相同邏輯在React、Vue、Svelte等框架中維持絕對一致的執行表現。
+- **打包體積最佳化：** 聚焦於無限滾動與走馬燈等本質滑動能力，達成遠低於傳統套件的極致微型體積。
+- **無約束的UI客製：** 提供程式化Headless Hook方式，不強制任何標籤結構或內聯樣式，使開發者能自由吻合內部設計系統。
+
+## 技術決策
+
+- **Headless Architecture：** 分離視覺展示與手勢運算，極大化可復用性。
+- **TypeScript：** 提供完備型別契約，杜絕複雜手勢事件處理時的執行時期錯誤。
+- **Multi-Package (Monorepo)：** 單一真相來源高效管理React、Vue、Svelte轉接包。
+- **Vanilla DOM API：** 避開虛擬DOM生命週期開銷，保證最高渲染幀率與零延遲互動。
+
+## 連結
+
+- GitHub: [https://github.com/yoonjonglyu/custom-swipe](https://github.com/yoonjonglyu/custom-swipe)
+- NPM: [https://www.npmjs.com/package/custom-swipe](https://www.npmjs.com/package/custom-swipe)
+- Demo: [https://yoonjonglyu.github.io/custom-swipe/](https://yoonjonglyu.github.io/custom-swipe/)

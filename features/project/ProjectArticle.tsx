@@ -4,6 +4,7 @@ import { styled } from 'styled-components';
 import Link from 'next/link';
 
 import ContentsCard from '@components/molecules/ContentsCard';
+import { useTranslation } from '@hooks/useTranslation';
 
 const Container = styled.div`
   display: flex;
@@ -42,6 +43,7 @@ export interface ProjectArticleProps {
   content: string;
   repository: string;
   homepage: string;
+  translations?: Record<string, { title: string; content: string }>;
 }
 
 const ProjectArticle: FC<ProjectArticleProps> = ({
@@ -49,28 +51,33 @@ const ProjectArticle: FC<ProjectArticleProps> = ({
   content,
   repository,
   homepage,
+  translations,
 }) => {
+  const { t, locale } = useTranslation();
+
+  const activeDoc = translations?.[locale] || translations?.['en'] || { title, content };
+
   return (
     <Container>
       <ArticleArea>
-        <ContentsCard header={title} contents={content} />
+        <ContentsCard header={activeDoc.title} contents={activeDoc.content} />
         <ArticleLinkConainer>
           <Link href='/archive' style={{ textDecoration: 'none' }}>
-            ← Back to Archive
+            {t.archive.backToArchive}
           </Link>
           <Link
             href={repository}
             style={{ textDecoration: 'none' }}
             target='_blank'
             rel='noopener noreferrer'>
-            Github
+            {t.archive.github}
           </Link>
           <Link
             href={homepage}
             style={{ textDecoration: 'none' }}
             target='_blank'
             rel='noopener noreferrer'>
-            Web
+            {t.archive.website}
           </Link>
         </ArticleLinkConainer>
       </ArticleArea>

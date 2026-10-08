@@ -2,6 +2,11 @@ import { notFound } from 'next/navigation';
 
 import { allWorks } from '@contentlayer/generated';
 import generateMeta from '@lib/seo/generateMeta';
+import {
+  getUniqueSlugs,
+  getLocalizedDocBySlug,
+  getDocTranslations,
+} from '@lib/content';
 
 import WorkArticle from '@features/work/WorkArticle';
 
@@ -13,18 +18,14 @@ type PageProps = {
 
 /** ✅ SSG */
 export async function generateStaticParams() {
-  // 1. 데이터가 있는지 확인 (방어 코드)
   if (!allWorks) return [];
-
-  // 2. Next.js가 기대하는 구조로 반환
-  return allWorks.map((work) => ({
-    slug: work.slug, // 여기서 work.slug가 문자열인지 확인하세요.
-  }));
+  return getUniqueSlugs(allWorks).map((slug) => ({ slug }));
 }
-/** ✅ 메타데이터는 여기서 생성 */
+
+/** ✅ 메타데이터 생성 (기본 영어 또는 사용 가능한 문서 우선) */
 export async function generateMetadata({ params }: PageProps) {
   const { slug } = await params;
-  const work = allWorks.find((p) => p.slug === slug);
+  const work = getLocalizedDocBySlug(allWorks, slug, 'en');
 
   if (!work) return {};
 
@@ -32,21 +33,48 @@ export async function generateMetadata({ params }: PageProps) {
     title: work.title,
     description: work.summary,
     url: `/work/${work.slug}`,
-    image:
-      work.thumbnail ??
-      `/work/${work.slug}/opengraph-image`,
+    image: work.thumbnail ?? `/work/${work.slug}/opengraph-image`,
     keywords: work.tags,
     type: 'article',
     robots: true,
   });
 }
 
-/** ✅ 페이지 본문 */
+/** ✅ 페이지 본문 (실시간 다국어 전환 지원) */
 export default async function WorkArticlePage({ params }: PageProps) {
   const { slug } = await params;
-  const work = allWorks.find((p) => p.slug === slug);
+  const translations = getDocTranslations(allWorks, slug);
 
-  if (!work) return notFound();
+  if (Object.keys(translations).length === 0) return notFound();
 
-  return <WorkArticle title={work.title} content={work.body.code} />;
+  // 기본 영어 또는 첫 번째 사용 가능한 문서
+  const defaultWork = getLocalizedDocBySlug(allWorks, slug, 'en');
+
+  return (
+    <>
+      <script
+        type='application/ld+json'
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'TechArticle',
+            headline: defaultWork?.title,
+            description: defaultWork?.summary,
+            author: {
+              '@type': 'Person',
+              name: 'YOON JONG RYU',
+              url: 'https://yoonjonglyu.github.io',
+            },
+            url: `https://yoonjonglyu.github.io/work/${slug}`,
+            keywords: defaultWork?.tags?.join(', '),
+          }),
+        }}
+      />
+      <WorkArticle
+        title={defaultWork?.title}
+        content={defaultWork?.body.code}
+        translations={translations}
+      />
+    </>
+  );
 }

@@ -1,4 +1,4 @@
-import { type FC, useState } from 'react';
+import { type FC, useState, useEffect, type SyntheticEvent } from 'react';
 import Image, { type ImageProps } from 'next/image';
 import { isUndefined } from 'isa-util';
 
@@ -10,8 +10,14 @@ const Img: FC<ImgProps> = (props) => {
   const { noImage, src, alt, onError, ...Iprops } = props;
   const [iSrc, setISrc] = useState(src);
 
-  const handleError = (e) => {
-    setISrc(noImage);
+  useEffect(() => {
+    setISrc(src);
+  }, [src]);
+
+  const handleError = (e: SyntheticEvent<HTMLImageElement, Event>) => {
+    if (noImage) {
+      setISrc(noImage);
+    }
     if (!isUndefined(onError)) onError(e);
   };
 

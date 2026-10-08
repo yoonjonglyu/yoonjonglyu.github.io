@@ -1,0 +1,104 @@
+---
+title: 'SeedVault'
+summary: 'An on-device zero-knowledge security vault mobile app built with Argon2id + AES-256-GCM, spun off from a crypto wallet project to overcome regulatory hurdles'
+
+resume:
+  title: 'On-Device Zero-Knowledge Security Vault'
+  role: 'Solo Developer (Mobile Security & Frontend)'
+  period: '2026.01 – 2026.09'
+  description: >
+    Following the discontinuation of a crypto wallet project due to legal and regulatory barriers,
+    its core cryptographic vault mechanism was extracted into an independent, serverless mobile security app
+    protecting seed phrases and private keys with Argon2id and AES-256-GCM, successfully published on Google Play.
+  skills:
+    - React 19
+    - TypeScript
+    - Capacitor
+    - Argon2id
+    - AES-256-GCM
+    - Zero-Knowledge
+    - Jotai
+
+highlights:
+  - Spun off the cryptographic security core from a canceled crypto wallet project into a dedicated security product, successfully launching on Google Play
+  - Designed an authenticated envelope encryption architecture using hash-wasm Argon2id key derivation (KDF) and AES-256-GCM to prevent brute-force attacks
+  - Implemented a strictly offline-first, zero-knowledge architecture with zero backend servers and zero network telemetry
+  - Developed an air-gapped vault migration pipeline utilizing Deflate compression with high-density QR code export and camera scanning
+
+featured: true
+category: 'product'
+thumbnail: '/content/seedvault.png'
+order: 3
+tags:
+  - React 19
+  - TypeScript
+  - Capacitor
+  - Mobile-Security
+  - Zero-Knowledge
+  - Argon2id
+  - AES-256-GCM
+  - Offline-First
+---
+
+## Overview
+
+**SeedVault** is an **on-device, zero-knowledge mobile security vault application** designed to operate entirely offline without servers, cloud synchronization, or network dependencies.
+
+Decrypted exclusively via the user's master password and biometric hardware authentication, it isolates and secures cryptocurrency mnemonic seed phrases, private keys, and sensitive account credentials using military-grade encryption algorithms.
+
+---
+
+## Project Background & Pivot
+
+### 1. Discontinuation of SeedWallet due to Regulatory Hurdles
+Originally, the project began as **SeedWallet**, a comprehensive cryptocurrency wallet solution encompassing blockchain transactions and asset custody. However, the project encountered substantial non-technical regulatory barriers—including global Virtual Asset Service Provider (VASP) regulations, licensing compliance, and legal liabilities surrounding custodial operations.
+
+### 2. Identifying Core Value & The Spin-Off
+Rather than discarding the work, focus was redirected entirely to the most essential part of the wallet engine: **"providing users with the most secure, verifiable method to store private keys and seed phrases without relying on any third-party server."**
+- Completely excised transaction broadcasting and network communication modules
+- Extracted the cryptographic core (`@seedvault/crypto-core`) and redesigned the UI into a dedicated security vault app
+- **Officially published on the Google Play Store (`com.ryuislabs.seedvault`)**
+
+---
+
+## Core Security Architecture
+
+### 1. Argon2id Memory-Hard Key Derivation (KDF)
+Standard SHA-256 or basic PBKDF2 implementations are susceptible to high-throughput GPU/ASIC brute-force attacks. SeedVault utilizes WebAssembly-optimized **Argon2id** to derive encryption keys from master passwords.
+- Configured time cost, memory cost, and parallelism parameters to achieve maximum resistance against brute-force and side-channel threats within mobile constraints
+
+### 2. AES-256-GCM Authenticated Envelope Encryption
+To safeguard both confidentiality and data integrity, SeedVault implements **AES-256-GCM**.
+- Packages encrypted credentials into an envelope format (`EncryptedSeedEnvelope`) containing unique salts, initialization vectors (IV), and authentication tags to detect any local tampering
+
+### 3. Absolute Zero-Knowledge & Local-First Design
+- **No Backend, No Cloud**: Contains no API client, requiring no network permissions and executing 100% of cryptographic operations on-device
+- **Secure Hardware Keystore**: Integrates Capacitor Secure Storage and Native Biometric plugins for convenient fingerprint/Face ID unlock without exposing master keys
+
+### 4. Air-Gapped QR Backup & Recovery Pipeline
+Facilitates completely offline data backups and device-to-device transfers:
+- Vault payloads are compressed with Zlib (`pako`) and encoded in Base64
+- Generates high-density QR codes (`qrcode`) and enables camera-based restoration (`jsqr`) in completely air-gapped environments
+
+---
+
+## Tech Stack
+
+| Domain | Technology | Rationale |
+| :--- | :--- | :--- |
+| **Core UI** | React 19, TypeScript, Vite | Fast build pipelines and optimized rendering via React Compiler |
+| **Mobile Runtime** | Capacitor 8 | Web-to-native bridge ensuring secure access to biometric authentication and filesystem |
+| **State Management** | Jotai | Atomic state primitives that prevent unnecessary re-renders across security screens |
+| **Cryptography Core** | `@seedvault/crypto-core` | Isolated monorepo package separating cryptographic math from UI rendering |
+| **Design System** | `asharyu-design-token` | Consistent, precision-focused dark theme aesthetic |
+
+---
+
+## Key Achievements & Retrospective
+
+1. **Agile Pivot Amidst Regulatory Risks**:
+   Overcame external compliance roadblocks by isolating core cryptographic value and transforming it into a high-utility, single-purpose security tool.
+2. **Deepening Web Standards Cryptography**:
+   Gained hands-on experience tuning memory-hard WASM hash functions (Argon2id) and managing secure cryptographic key lifecycles on constrained mobile runtimes.
+3. **End-to-End Google Play Launch**:
+   Independently managed Android permission configurations, app signing, biometric hardware integration, and store listing deployment.

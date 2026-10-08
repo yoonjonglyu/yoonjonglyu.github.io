@@ -1,0 +1,123 @@
+---
+title: 'ISA Util'
+summary: 'Type-safe TypeScript utility library'
+
+resume:
+  title: 'Type-Safe Utility Helper Library'
+  role: 'Author'
+  period: '2023.01 - Present'
+  description: >
+    A frontend utility library designed for maximum reusability and type stability.
+    It standardizes core business logic into a single, type-safe layer to reduce duplication
+    and prevent runtime errors across multiple projects.
+  skills:
+    - TypeScript
+    - Utility
+    - Library
+    - Jest
+
+highlights:
+  - Standardized core business logic such as date formatting and numeric parsing, leading to a significant reduction in code duplication across projects.
+  - Eliminated potential human errors during function calls by implementing strict TypeScript definitions and generics.
+  - Established a unit testing suite using Jest to prevent side effects during logic updates and ensure high code reliability.
+
+featured: false
+category: 'system'
+thumbnail: '/content/isautil.png'
+order: 8
+tags:
+  - TypeScript
+  - Utility
+  - Library
+  - Jest
+---
+
+## Background
+
+**ISA Util** is a TypeScript-based utility library engineered to deliver a consistent interface for recurring data processing, validation, and asynchronous orchestration workflows across frontend ecosystems.
+
+The primary objective was to consolidate fragmented helper functions scattered across various projects, while ensuring absolute type safety and robust testability.
+
+---
+
+## Problem Definition
+
+During multiple frontend production lifecycles, the following structural patterns continuously introduced technical debt:
+
+- **Redundant duplication** of identical utility snippets across separate codebases.
+- Runtime failures originating from unverified arguments and **ambiguous type schemas** in JavaScript helpers.
+- Uncontrolled consumption of untested, ad-hoc wrapper functions.
+- Maintenance bottlenecks where updating a shared business logic required synchronous multi-repository refactoring.
+
+It became evident that a **reliable, highly secure common layer** was mandatory rather than maintaining an arbitrary assortment of independent functions.
+
+---
+
+## Resolution Strategy
+
+### 1. Type-First Architectural Foundation
+
+Every utility module enforces rigorous contract boundaries on both arguments and return schemas.
+
+- Prevents programmatic misuse directly at the compilation stage.
+- Drastically scales Developer Experience (DX) via predictable IDE autocomplete mappings and deep type hints.
+- Built self-documenting codebases where the type signatures inherently serve as the source of behavioral truth.
+
+---
+
+### 2. Domain-Driven Modularization
+
+Isolated functions into discrete, single-responsibility domains for deterministic tree-shaking and imports:
+
+- Type checking
+- Formatting
+- Async control (debounce, throttle, queue mechanisms)
+- Storage engines (localStorage abstractions, fully typed IndexedDB wraps)
+- Crypto primitives
+- Environment & platform detection
+- DOM helpers
+
+This architecture empowers client codebases to selectively cherry-pick granular modules, eliminating bundle bloat.
+
+---
+
+### 3. Test-Driven Reliability Isolation
+
+Constructed exhaustive unit test suites using `Jest` by aggressively targeting complex operational edge cases:
+
+- Date templates and locale numeric parsing
+- Non-blocking asynchronous task queue executions
+- Symmetrical cryptographic encryption/decryption states
+- Cross-agent environmental boundary detection
+
+The overarching goal was to transform the utility layer into an "unquestioned ecosystem zone of absolute trust."
+
+---
+
+## Technical Decisions & Rationale
+
+- **TypeScript** → Critical for utilities to guarantee maximum code resilience, polymorphic reusability, and compile-time boundaries.
+
+- **Jest** → Selected to construct a zero-friction testing lifecycle while verifying granular, line-by-line coverage analysis.
+
+- **Babel** → Configured to transpile downward layers, ensuring cross-runtime compatibility across diverse client browsers and modern Node.js environments.
+
+- **NPM Package Registry Delivery** → Implemented to enforce strict, predictable semantic versioning syncs across multiple decoupled microservices.
+
+---
+
+## Results & Impact
+
+- Eradicated cross-project helper redundancy.
+- Solidified a bulletproof shared logic layer powered by strict structural types.
+- Engineered specialized production-ready async workflows such as `JobQueue` and `FlushQueue` to handle complex interface concurrency.
+- Gained deep architecture-level experience in establishing and continuously maintaining open-source software libraries.
+
+ISA Util was ultimately driven by a core development standard: **"To build minimal, yet entirely unbreakable baseline architectures."**
+
+---
+
+## Links
+
+- GitHub: [https://github.com/yoonjonglyu/util-helper](https://github.com/yoonjonglyu/util-helper)
+- NPM: [https://www.npmjs.com/package/isa-util](https://www.npmjs.com/package/isa-util)

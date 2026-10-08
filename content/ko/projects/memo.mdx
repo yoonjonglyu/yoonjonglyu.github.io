@@ -1,0 +1,93 @@
+---
+title: 'MemoFlow'
+description: '가벼운 개인 메모와 단기 일정 관리를 위해 설계된 오프라인 우선(Offline-First) 휘발성 플래너 PWA'
+period: '2023.01 – 2025.01 (v2 Renewal)'
+stack:
+  - TypeScript
+  - React
+  - Tailwind CSS
+  - PWA
+  - Capacitor
+role: '1인 개발'
+repository: 'https://github.com/yoonjonglyu/memo'
+homepage: 'https://yoonjonglyu.github.io/memo/'
+tags:
+  - Productivity
+  - Offline-First
+  - PWA
+  - Personal-Tool
+order: 3
+---
+
+# 📝 MemoFlow
+
+**오프라인 퍼스트 기반 휘발성 플래너**
+
+MemoFlow는 **“메모란 빠르게 기록하고 주저 없이 지우기 위한 것이다”**라는 직관적인 전제 아래 설계된 개인 생산성 도구입니다.
+
+기록을 영구히 보관해야 할 자산으로 다루기보다, **“지금 이 순간의 생각을 정돈하기 위한 단기적인 보조 도구”**로 정의했습니다.
+
+- 노션처럼 무겁지 않고,
+- 옵시디안처럼 구조가 깊지 않으며,
+- 포스트잇처럼 부담 없이 즉시 떼어 쓸 수 있는 도구를 지향합니다.
+
+---
+
+## 프로젝트 배경 — “가벼움”에 대한 갈증
+
+노션(Notion)을 사용하며 느꼈던 두 가지 본질적인 불편함에서 시작되었습니다:
+
+### 1. 데이터 주권에 대한 의문
+아무리 사소한 생각의 파편이라도 항상 외부 서버에 저장되는 구조에 대한 거부감. 지극히 개인적인 메모조차 제3자의 인프라에 의존해야 하는 구조가 불필요하게 느껴졌습니다.
+
+### 2. 과도한 구조적 오버헤드
+포스트잇 한 장 수준의 메모조차 페이지 생성, 링크 연결, 계층 구조 설정을 요구하는 UX의 피로감. “어떻게 분류할 것인가”에 드는 인지 비용이 기록하는 행위 자체를 압도했습니다.
+
+필요했던 것은 거창한 지식 관리 시스템이 아니라, 브라우저나 스마트폰에서 즉시 열어 바로 쓰고 버릴 수 있는 **“가장 작은 메모 도구”**였습니다.
+
+---
+
+## 해결한 문제
+
+### 기능 과부하로 인한 작성 피로도 해소
+→ **Memo / Todo / Note / Draft의 명확한 의도 분리**  
+단일 메모 형태 대신 목적별로 유형을 분리하여, 글을 쓰기 전에 구조를 고민할 필요 없이 즉각 작성을 시작할 수 있도록 유도했습니다.
+
+### 학습 비용 제로 UX
+→ **플로팅 액션 버튼 + 즉각적인 작성 인터랙션**  
+설명서를 읽지 않아도 첫 실행 직후 바로 타이핑할 수 있는 직관적인 조작감을 완성했습니다.
+
+### 네트워크 의존성 원천 차단
+→ **LocalStorage + Service Worker 캐싱**  
+네트워크 연결 유무와 상관없이 동일하게 동작하며, 오프라인과 온라인 상태의 사용자 경험 차이를 완전히 없앴습니다.
+
+### 단일 코드베이스 기반 멀티플랫폼 확장
+→ **웹 표준 아키텍처 + Capacitor**  
+웹 기반 단일 코드베이스를 유지하면서 Capacitor를 활용해 Android 네이티브 앱으로 원활하게 패키징 및 배포했습니다.
+
+---
+
+## 기술적 선택 근거
+
+- **TypeScript**: 메모 데이터 모델과 상태 경계를 명확히 규정하여 장기적 유지보수성 확보
+- **Storybook**: 비즈니스 로직과 결합되지 않은 상태에서 UI를 독립적으로 검증하고 문서화
+- **React**: 컴포넌트 조합을 통해 메모 유형별 UI를 예측 가능하게 구성
+- **Tailwind CSS**: 런타임 스타일 오버헤드를 배제하고 유틸리티 우선 방식으로 빠른 UI 이터레이션 달성
+- **PWA**: 웹 표준 기술을 통해 별도 설치 없이도 네이티브 앱에 준하는 접근성과 오프라인 구동력 제공
+- **Capacitor**: 가벼운 하이브리드 브릿지로 웹 코드를 Android 스토어 생태계로 직결
+- **LocalStorage**: 서버리스 환경에서 지연 없는 즉각적 반응성 확보
+
+---
+
+## 결과 및 의의
+
+MemoFlow는 **“모든 것을 영구히 보존해야 한다”는 강박에서 벗어나고자 한 시도**입니다.  
+지금 당장 필요한 것만 남기고 나머지는 자연스럽게 비워내는 도구로서 자리 잡았습니다.
+
+---
+
+## 링크
+
+- **웹 앱**: [https://yoonjonglyu.github.io/memo/](https://yoonjonglyu.github.io/memo/)
+- **Google Play Store**: [https://play.google.com/store/apps/details?id=com.yoonjongryu.memo](https://play.google.com/store/apps/details?id=com.yoonjongryu.memo)
+- **GitHub**: [https://github.com/yoonjonglyu/memo](https://github.com/yoonjonglyu/memo)

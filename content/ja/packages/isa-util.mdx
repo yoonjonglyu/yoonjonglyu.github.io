@@ -1,0 +1,41 @@
+---
+title: 'isa-util'
+description: 'TypeScriptベースの包括的で軽量なユーティリティヘルパーライブラリ'
+period: '2023.01 - 現在'
+version: '1.0.27'
+stack:
+  - TypeScript
+  - Jest
+  - Babel
+repository: 'https://github.com/yoonjonglyu/util-helper'
+homepage: 'https://www.npmjs.com/package/isa-util'
+tags:
+  - TypeScript
+  - Utility
+  - Library
+  - Jest
+order: 3
+---
+
+## 背景
+
+複数のフロントエンド開発サイクルにおいて、日付のフォーマット、バリデーション、数値表記、暗号化などの反復的なデータ処理モジュールが毎回ゼロから作成される場面に直面しました。これにより、保守性の低下やモジュール依存関係の断片化が生じていました。  
+これらの非効率を根本から解決するため、システム全体のコードの一貫性を確保し、高度に最適化されたロジックを再利用して開発効率を最大化する一元管理されたライブラリを構築しました。
+
+## 解決した課題
+
+- **絶対的な型安全性の強制:** 標準JavaScriptヘルパーに見られる不確実な引数や曖昧な戻り値の型を、厳格かつ詳細なTypeScript型定義に置き換え、実行時エラーを完全に排除して安全な開発体験を提供。
+- **モジュール式ドメインアーキテクチャ:** 単一責任の原則に基づき、日付、数値、検証、ストレージ、非同期、暗号化などの独立したドメインに分割。不要なコードをバンドルすることなく必要なモジュールのみを安全にインポート可能。
+- **徹底した単体テストと高い信頼性:** Jestを用いてブラウザ固有の環境や複雑な境界条件を網羅するテストスイートを構築し、本番環境での信頼性を飛躍的に高めました。
+
+## 技術的決定
+
+- **TypeScript:** 明確で読みやすい入出力契約を策定し、潜在的な脆弱性をコンパイル時に捕捉。
+- **Babel Pipeline:** レガシーブラウザおよび様々なNode.js環境での後方互換性を保証するトランスパイルパイプラインを構築。
+- **Jest Test Runner:** ゼロコンフィグで高速なテストサイクルを確立し、カバレッジを測定して最高レベルの堅牢性を確保。
+- **NPM Package エコシステム:** グローバルNPMレジストリを通じてプラグアンドプレイで即座に導入可能なモジュールとして公開。
+
+## リンク
+
+- GitHub: [https://github.com/yoonjonglyu/util-helper](https://github.com/yoonjonglyu/util-helper)
+- NPM: [https://www.npmjs.com/package/isa-util](https://www.npmjs.com/package/isa-util)

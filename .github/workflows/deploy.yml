@@ -41,7 +41,7 @@ jobs:
         run: yarn run build
         env:
           CI: true
-          DEPLORY_TARGET: gh-pages
+          DEPLOY_TARGET: gh-pages
           # 안정성을 위해 가급적 에러 체크를 활성화하는 것이 좋습니다.
           # 하얀 화면 문제가 지속된다면 아래 두 줄을 false로 바꾸어 에러를 확인하세요.
           NEXTJS_IGNORE_TYPE_CHECK: false

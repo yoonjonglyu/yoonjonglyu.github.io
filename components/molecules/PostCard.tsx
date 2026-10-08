@@ -7,7 +7,7 @@ import Card from '@components/atoms/Card';
 
 import NoImage from '../../assets/images/noimg.png';
 
-const CardThumnail = styled.div`
+const CardThumbnail = styled.div`
   & img {
     width: 100%;
     height: 160px;
@@ -39,14 +39,17 @@ const CardBody = styled.div`
 `;
 
 export interface PostCardProps {
-  thumnail: { src?: string; alt: string };
+  thumbnail?: { src?: string; alt: string };
+  /** @deprecated Use thumbnail instead */
+  thumnail?: { src?: string; alt: string };
   title: string;
   description: string;
   href: string;
 }
 
 const PostCard: React.FC<PostCardProps> = (props) => {
-  const { thumnail, title, description, href } = props;
+  const { thumbnail, thumnail, title, description, href } = props;
+  const imageInfo = thumbnail ?? thumnail ?? { alt: title };
 
   return (
     <Card
@@ -69,11 +72,11 @@ const PostCard: React.FC<PostCardProps> = (props) => {
           margin: 0 auto;
         }
       `}>
-      <CardThumnail>
+      <CardThumbnail>
         <Link href={href}>
-          <Img src={thumnail.src || NoImage} alt={thumnail.alt} noImage={NoImage.src} />
+          <Img src={imageInfo.src || NoImage} alt={imageInfo.alt} noImage={NoImage.src} />
         </Link>
-      </CardThumnail>
+      </CardThumbnail>
       <CardBody>
         <Link href={href}>
           <h3>{title}</h3>

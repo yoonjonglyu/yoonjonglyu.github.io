@@ -1,0 +1,53 @@
+---
+title: 'ISA Archive'
+description: '為展現工程成長歷程與UI架構實踐、使用Next.js 16與Storybook打造的技術典藏與個人履歷平台。'
+period: '2024.12 - 至今'
+stack:
+  - Next.js 16
+  - TypeScript
+  - Contentlayer2
+  - Storybook
+  - Styled Components
+  - Vite
+role: '個人開發'
+repository: 'https://github.com/yoonjonglyu/yoonjonglyu.github.io'
+homepage: 'https://yoonjonglyu.github.io'
+tags:
+  - portfolio
+  - archive
+  - resume
+order: 4
+---
+
+## 背景
+
+ISA Archive 是以**自託管技術典藏庫與履歷平台**為核心構想而啟動的專案。  
+跳脫對第三方平台的依賴，將作品集本身視為一項產品，  
+並將**清晰的UI架構、元件可復用性與結構化內容管理**置於最高優先順序。
+
+首要目標是在完整掌控排版、資料模型與渲染策略的同時，將**技術文件、專案歷程與履歷數據**整合至單一系統中。
+
+---
+
+## UI架構與技術決策
+
+### 元件驅動UI架構 (CDD)
+UI元件在頁面組裝前即於隔離環境中獨立開發與驗證，邊界狀態（空狀態、載入中、極端案例）皆在元件層級明確規範。
+
+### 以 Storybook 為設計系統基石
+將 Storybook 作為視覺化測試環境與動態設計規範，防止重構期間產生介面回歸。
+
+### Styled Components 嚴密樣式邊界
+採 CSS-in-JS 達成元件級樣式封裝，徹底杜絕全域樣式污染與類別名稱衝突。
+
+### Contentlayer2 靜態內容管線
+以 MDX 為單一真理來源，轉譯為強型別安全的資料模型。
+
+### Next.js 16 靜態導向策略
+透過 `output: 'export'` 產出完全靜態 HTML，兼具極致載入效能與 GitHub Pages 零主機負擔維運。
+
+---
+
+## 連結
+
+- GitHub: [https://github.com/yoonjonglyu/yoonjonglyu.github.io](https://github.com/yoonjonglyu/yoonjonglyu.github.io)

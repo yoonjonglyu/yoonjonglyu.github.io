@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 
 import { allProjects } from '@contentlayer/generated';
+import { getDocTranslations, getLocalizedDocBySlug, getUniqueSlugs } from '@lib/content';
 import generateMeta from '@lib/seo/generateMeta';
 
 import ProjectArticle from '@features/project/ProjectArticle';
@@ -10,9 +11,10 @@ export const dynamicParams = false;
 type PageProps = {
   params: Promise<{ slug: string }>;
 };
+
 export async function generateMetadata({ params }: PageProps) {
   const { slug } = await params;
-  const project = allProjects.find((p) => p.slug === slug);
+  const project = getLocalizedDocBySlug(allProjects, slug, 'en');
   if (!project) return {};
 
   return generateMeta({
@@ -27,24 +29,48 @@ export async function generateMetadata({ params }: PageProps) {
 }
 
 export async function generateStaticParams() {
-  // 1. 데이터가 있는지 확인 (방어 코드)
   if (!allProjects) return [];
-  return allProjects.map((project) => ({
-    slug: project.slug,
-  }));
+  return getUniqueSlugs(allProjects).map((slug) => ({ slug }));
 }
 
-export default async function PackageArticlePage({ params }: PageProps) {
+export default async function ProjectArticlePage({ params }: PageProps) {
   const { slug } = await params;
-  const packageInfo = allProjects.find((p) => p.slug === slug);
+  const projectInfo = getLocalizedDocBySlug(allProjects, slug, 'en');
 
-  if (!packageInfo) return notFound();
+  if (!projectInfo) return notFound();
+
+  const translations = getDocTranslations(allProjects, slug);
+
   return (
-    <ProjectArticle
-      title={packageInfo.title}
-      content={packageInfo.body.code}
-      repository={packageInfo.repository}
-      homepage={packageInfo.homepage}
-    />
+    <>
+      <script
+        type='application/ld+json'
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'SoftwareApplication',
+            name: projectInfo.title,
+            description: projectInfo.description,
+            applicationCategory: 'DeveloperApplication',
+            operatingSystem: 'All',
+            author: {
+              '@type': 'Person',
+              name: 'YOON JONG RYU',
+              url: 'https://yoonjonglyu.github.io',
+            },
+            url: `https://yoonjonglyu.github.io/archive/project/${slug}`,
+            sameAs: [projectInfo.repository, projectInfo.homepage].filter(Boolean),
+            keywords: projectInfo.tags?.join(', '),
+          }),
+        }}
+      />
+      <ProjectArticle
+        title={projectInfo.title}
+        content={projectInfo.body.code}
+        repository={projectInfo.repository}
+        homepage={projectInfo.homepage}
+        translations={translations}
+      />
+    </>
   );
 }

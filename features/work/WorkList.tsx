@@ -5,6 +5,8 @@ import styled from 'styled-components';
 
 import PanelCard from '@components/molecules/PanelCard';
 import { allWorks } from '@contentlayer/generated';
+import { useTranslation } from '@hooks/useTranslation';
+import { getLocalizedDocs } from '@lib/content';
 
 const Container = styled.section`
   max-width: 1200px;
@@ -42,9 +44,8 @@ const List = styled.section`
 `;
 
 const WorkList: FC = () => {
-  const works = allWorks
-    .slice()
-    .sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
+  const { locale } = useTranslation();
+  const works = getLocalizedDocs(allWorks, locale);
 
   return (
     <Container>

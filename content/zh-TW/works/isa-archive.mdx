@@ -1,0 +1,75 @@
+---
+title: 'ISA Archive – 個人履歷與作品典藏庫'
+summary: '跳脫靜態網站框架、以可擴展UI系統為核心設計的元件驅動型作品集平台'
+
+resume:
+  title: '元件驅動型履歷與作品庫平台'
+  period: '2024.12 - 至今'
+  role: '個人開發（前端）'
+  description: >
+    以UI架構為核心打造的個人作品集平台，透過可重用且相互隔離的UI元件自結構化資料渲染履歷與工作歷程。
+    著眼於元件契約、樣式可預期性與長期維護性，而非單純的頁面層級堆砌。
+  skills:
+    - Next.js
+    - Storybook
+    - Contentlayer
+    - TypeScript
+    - Styled Components
+    - Design System
+
+highlights:
+  - 圍繞元件驅動開發（CDD）工作流設計全站UI，使每個排版基礎單元皆可獨立測試與復用。
+  - 藉由 CSS-in-JS 達成嚴謹的樣式封裝，徹底杜絕全域樣式污染與排版相依。
+  - 導入強型別內容架構層，將內容結構與視覺渲染邏輯徹底分離。
+  - 標準化區塊與標籤等基礎介面單元，避免隨著內容增加造成UI破碎。
+
+featured: false
+category: 'product'
+order: 6
+thumbnail: '/content/archive.png'
+tags:
+  - Frontend
+  - UI Architecture
+  - Design System
+  - CDD
+---
+
+## 概述
+
+ISA Archive 不僅是個人視覺展示，更是 **UI 架構實踐專案**。
+平台並非直接繪製各個頁面，而是建構成一個能自結構化數據渲染出履歷、工作歷程與典藏項目的可重用介面系統。
+
+探索在捨棄隨意的逐頁設計、轉而優先重視**元件契約與排版一致性**的情況下，個人網站能如何長久維持高維護性。
+
+---
+
+## UI 架構實踐方針
+
+### 元件優先合成 (Component-First Composition)
+
+所有介面元素在組裝為完整頁面前，皆透過 Storybook 在隔離環境中獨立開發與驗證。頁面純粹作為合成層，不包含路由層級的排版細節。
+
+- 面對內容長度多樣性仍保有可預期的UI行為
+- 排版變更不會擴散至無關的介面區塊
+- 履歷、工作與典藏頁面全面共用相同元件
+
+---
+
+### 將樣式視為系統邊界
+
+運用 Styled Components 在元件層級落實嚴格的樣式界線：
+- 不依賴全域 CSS 規則或層疊副作用
+- 排版、留白與字體階層皆受元件自身公開契約規範
+- 透過集中式主題設定確保全站視覺統一
+
+---
+
+### 資料非相依型UI渲染
+
+使用 Contentlayer 定義履歷與專案紀錄的強型別規格，元件直接取用標準化數據模型而非頁面客製化 props。
+
+---
+
+## 連結
+
+- GitHub: [https://github.com/yoonjonglyu/yoonjonglyu.github.io](https://github.com/yoonjonglyu/yoonjonglyu.github.io)

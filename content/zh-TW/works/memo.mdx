@@ -1,0 +1,78 @@
+---
+title: 'MemoFlow'
+summary: '元件驅動、離線優先的 PWA 便條記事應用'
+
+resume:
+  title: '元件驅動 PWA 筆記應用'
+  role: '個人開發（前端）'
+  period: '2023.01'
+  description: >
+    為驗證可擴展 UI 架構與離線優先 UX，結合 Storybook 元件驅動開發（CDD）打造的輕量備忘與排程工具。
+  skills:
+    - TypeScript
+    - Storybook
+    - PWA
+    - CDD
+
+highlights:
+  - 以 Storybook 為主要開發環境，確立並實踐元件驅動開發（CDD）工作流。
+  - 結合 Service Worker 快取與 LocalStorage 本機儲存，實現完全離線可用的 PWA。
+  - 驗證即使是小規模輕量產品，也能從清晰分工的 UI 架構與狀態模型中獲益。
+
+featured: true
+category: 'product'
+thumbnail: '/content/memo.png'
+order: 5
+tags:
+  - TypeScript
+  - Storybook
+  - PWA
+  - CDD
+  - LocalStorage
+---
+
+## 概述
+
+**Memo** 是一款輕量且易於即時記錄的便籤與排程應用，無需登入、後端或網路連線即可瞬間開啟使用。
+
+本專案著眼於**驗證 UI 架構可行性的實踐性實驗**：
+- 元件驅動開發能否在精巧工具中展現擴展性？
+- Storybook 能否作為核心開發環境而非僅僅是元件展示冊？
+- 如何在不引入多餘複雜度的前提下打造堅固的產品？
+
+---
+
+## 問題定義
+
+多次前端開發中經常面臨的結構問題：
+- UI 元件與業務邏輯過度耦合
+- 頁面主導開發限制了元件的跨介面復用
+- 空白狀態或過長內容等邊界狀況未能及早處理
+- 對小規模工具過度架構化
+
+核心假設十分明確：
+> 「即使是小巧的工具，也值得擁有清晰分明的乾淨 UI 架構。」
+
+---
+
+## 架構策略
+
+### 1. 元件驅動開發 (CDD)
+
+並非先拼湊完整頁面，而是在 Storybook 隔離環境中逐一定義、實作與驗證輸入框、按鈕與卡片，將極端案例化為故事規範。
+
+### 2. 即時短暫記錄理念
+
+並非追求長遠知識庫管理，而是專注於「快速建立、即時清理」的輕量思維整理，採無巢狀結構的扁平設計。
+
+### 3. 離線優先 PWA
+
+透過 Service Worker 與 LocalStorage，確保在無網路訊號環境下仍具備完整 CRUD 操作能力。
+
+---
+
+## 連結
+
+- Google Play Store: [https://play.google.com/store/apps/details?id=com.yoonjongryu.memo](https://play.google.com/store/apps/details?id=com.yoonjongryu.memo)
+- Web: [https://yoonjonglyu.github.io/memo/](https://yoonjonglyu.github.io/memo/)
+- GitHub: [https://github.com/yoonjonglyu/memo](https://github.com/yoonjonglyu/memo)

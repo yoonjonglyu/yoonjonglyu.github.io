@@ -1,0 +1,104 @@
+---
+title: 'SeedVault'
+summary: '克服監管風險並拆分核心加密架構推出的 Argon2id + AES-256-GCM 端側零知識安全金庫應用'
+
+resume:
+  title: '端側零知識加密安全金庫'
+  role: '獨立開發者 (移動安全與前端)'
+  period: '2026.01 – 2026.09'
+  description: >
+    在加密貨幣錢包專案因監管壁壘中止後，抽離其核心加密機制，
+    完全不依賴伺服器與網路，在設備端透過 Argon2id 與 AES-256-GCM
+    隔離保護助記詞與私鑰，成功於 Google Play 上架發布。
+  skills:
+    - React 19
+    - TypeScript
+    - Capacitor
+    - Argon2id
+    - AES-256-GCM
+    - Zero-Knowledge
+    - Jotai
+
+highlights:
+  - 將因法規監管受阻的加密錢包專案核心安全理念拆分，轉型為獨立安全產品並成功上架 Google Play
+  - 運用基於 hash-wasm 的 Argon2id 金鑰衍生（KDF）與 AES-256-GCM 信封加密架構，徹底抵禦暴力破解攻擊
+  - 摒除任何後端伺服器與網路連線，實現真正的離線優先（Offline-First）與零知識（Zero-Knowledge）防護模型
+  - 結合 Deflate 壓縮與高密度 QR Code 生成/掃描，建立氣隙隔離（Air-Gapped）設備間金庫備份管道
+
+featured: true
+category: 'product'
+thumbnail: '/content/seedvault.png'
+order: 3
+tags:
+  - React 19
+  - TypeScript
+  - Capacitor
+  - Mobile-Security
+  - Zero-Knowledge
+  - Argon2id
+  - AES-256-GCM
+  - Offline-First
+---
+
+## 概述
+
+**SeedVault** 是一款無須伺服器、雲端或網路連線，完全在設備內部運行的**端側零知識（Zero-Knowledge）加密安全金庫移動應用**。
+
+僅能透過使用者的主密碼與設備生物辨識進行解密，以軍規等級加密演算法安全隔離存放加密貨幣助記詞（Mnemonic Seed Phrase）、私鑰（Private Key）及敏感帳戶密碼。
+
+---
+
+## 專案背景與轉型歷程
+
+### 1. SeedWallet 專案的中止與監管壁壘
+專案最初名為 **SeedWallet**，旨在打造涵蓋區塊鏈互動與資產託管的綜合錢包方案。然而，隨即面臨全球虛擬資產服務商（VASP）法規、牌照合規要求及託管營運伴隨的巨大法律監管障礙。
+
+### 2. 核心價值提煉與獨立拆分（Spin-off）
+團隊並未廢棄整體研發成果，而是聚焦於錢包引擎最本質的核心：**「讓使用者無須經過任何伺服器，以最安全、可驗證的方式自行保管私鑰與助記詞」**。
+- 完全剔除交易廣播與網路通訊模組
+- 提取端側加密核心（`@seedvault/crypto-core`），重構成獨立的純安全金庫應用
+- **順利於 Google Play 商店正式上架（`com.ryuislabs.seedvault`）**
+
+---
+
+## 核心安全架構
+
+### 1. 基於 Argon2id 的記憶體密集型金鑰衍生（KDF）
+傳統 SHA-256 或一般 PBKDF2 易遭受 GPU/ASIC 高並發暴力破解攻擊。SeedVault 採用針對 WebAssembly 優化的 **Argon2id**，從主密碼衍生出高熵加密金鑰。
+- 針對移動硬體調整時間成本、記憶體消耗與並行參數，大幅增強側信道攻擊防禦力
+
+### 2. AES-256-GCM 認證信封加密
+為確保機密性（Confidentiality）與防篡改完整性（Integrity），採用 **AES-256-GCM**。
+- 定義封裝規範（`EncryptedSeedEnvelope`），每個加密項目均包含獨立 Salt、IV（初始向量）及 Auth Tag
+
+### 3. 純粹零知識與離線優先
+- **No Backend, No Cloud**: 無任何 API 客戶端與聯網權限，所有操作 100% 在設備本機完成
+- **硬體級安全儲存整合**: 結合 Capacitor Secure Storage 與 Native Biometric 插件，支援指紋/Face ID 解鎖且絕不暴露主金鑰
+
+### 4. 氣隙隔離（Air-Gapped）QR Code 備份與恢復
+構建無需網路的物理備份管道：
+- 加密金庫資料經 Zlib（`pako`）無損壓縮後以 Base64 編碼
+- 生成高密度 QR Code（`qrcode`）並支援鏡頭掃描恢復（`jsqr`），實現離線跨設備遷移
+
+---
+
+## 技術棧
+
+| 領域 | 技術棧 | 選用理由 |
+| :--- | :--- | :--- |
+| **核心 UI** | React 19, TypeScript, Vite | 快速打包與 React Compiler 優化移動端渲染效能 |
+| **移動運行時** | Capacitor 8 | 藉由 Web 技術安全調用原生生物辨識與檔案系統 |
+| **狀態管理** | Jotai | 原子化狀態管理，避免安全驗證畫面產生多餘重繪 |
+| **加密核心** | `@seedvault/crypto-core` | Monorepo 架構實現密碼學演算法與 UI 的完全解耦 |
+| **設計系統** | `asharyu-design-token` | 維持精準、具科技感的深色主題風格 |
+
+---
+
+## 主要成果與收穫
+
+1. **應對法規風險的務實轉型能力**:
+   在外部合規限制下，快速提取核心資產並轉換為高實用性的單一目的安全產品。
+2. **Web 標準密碼學與端側安全深造**:
+   掌握 WASM 版 Argon2id 參數調優與移動記憶體限制下的密鑰生命週期隔離。
+3. **Google Play 商店完整上架歷程**:
+   獨立完成 Android 權限控管、金鑰簽章、生物辨識整合與商店發布維護。

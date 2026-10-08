@@ -1,5 +1,6 @@
 import { type FC } from 'react';
 import styled from 'styled-components';
+import { useTranslation } from '@hooks/useTranslation';
 
 const HeaderWrap = styled.header`
   margin-bottom: 96px;
@@ -47,18 +48,19 @@ const Summary = styled.p`
   }
 `;
 
-const ResumeHeader: FC = () => (
-  <HeaderWrap>
-    <Name>YOON JONG RYU</Name>
-    <Title>Indie Developer & UI Architect · Remote-first</Title>
-    <Summary>
-      <strong>
-        Indie developer and UI architect who ships real products - from architecture to App Store.
-      </strong>{' '}
-      Experienced in building Storybook-based design systems, PWAs, Apps, and
-      reusable utility libraries.
-    </Summary>
-  </HeaderWrap>
-);
+const ResumeHeader: FC = () => {
+  const { t } = useTranslation();
+
+  return (
+    <HeaderWrap>
+      <Name>YOON JONG RYU</Name>
+      <Title>{t.resume.headerRole}</Title>
+      <Summary>
+        <strong>{t.resume.headerSummaryBold}</strong>{' '}
+        {t.resume.headerSummaryText}
+      </Summary>
+    </HeaderWrap>
+  );
+};
 
 export default ResumeHeader;

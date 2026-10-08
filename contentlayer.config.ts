@@ -6,7 +6,7 @@ import {
 
 export const Project = defineDocumentType(() => ({
   name: 'Project',
-  filePathPattern: `projects/*.mdx`,
+  filePathPattern: `**/projects/*.mdx`,
   contentType: 'mdx',
   fields: {
     title: { type: 'string', required: true },
@@ -24,12 +24,17 @@ export const Project = defineDocumentType(() => ({
       type: 'string',
       resolve: (doc) => doc._raw.sourceFileName.replace(/\.mdx$/, ''),
     },
+    locale: {
+      type: 'string',
+      resolve: (doc) =>
+        doc._raw.sourceFilePath.replace(/\\/g, '/').split('/')[0] || 'en',
+    },
   },
 }));
 
 export const Package = defineDocumentType(() => ({
   name: 'Package',
-  filePathPattern: `packages/*.mdx`,
+  filePathPattern: `**/packages/*.mdx`,
   contentType: 'mdx',
   fields: {
     title: { type: 'string', required: true },
@@ -46,6 +51,11 @@ export const Package = defineDocumentType(() => ({
     slug: {
       type: 'string',
       resolve: (doc) => doc._raw.sourceFileName.replace(/\.mdx$/, ''),
+    },
+    locale: {
+      type: 'string',
+      resolve: (doc) =>
+        doc._raw.sourceFilePath.replace(/\\/g, '/').split('/')[0] || 'en',
     },
   },
 }));
@@ -64,7 +74,7 @@ const Resume = defineNestedType(() => ({
 // 2. Work 타입에서 위에서 정의한 Resume 타입을 사용합니다.
 export const Work = defineDocumentType(() => ({
   name: 'Work',
-  filePathPattern: `works/*.mdx`,
+  filePathPattern: `**/works/*.mdx`,
   contentType: 'mdx',
   fields: {
     title: { type: 'string', required: true },
@@ -88,6 +98,11 @@ export const Work = defineDocumentType(() => ({
     slug: {
       type: 'string',
       resolve: (doc) => doc._raw.sourceFileName.replace(/\.mdx$/, ''),
+    },
+    locale: {
+      type: 'string',
+      resolve: (doc) =>
+        doc._raw.sourceFilePath.replace(/\\/g, '/').split('/')[0] || 'en',
     },
   },
 }));

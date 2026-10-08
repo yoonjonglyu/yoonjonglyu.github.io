@@ -1,0 +1,52 @@
+---
+title: 'ISA Archive'
+description: 'エンジニアリングの成長とUIアーキテクチャを実証するためにNext.js 16とStorybookで構築された技術アーカイブ＆職務経歴プラットフォーム。'
+period: '2024.12 - 現在'
+stack:
+  - Next.js 16
+  - TypeScript
+  - Contentlayer2
+  - Storybook
+  - Styled Components
+  - Vite
+role: '個人開発'
+repository: 'https://github.com/yoonjonglyu/yoonjonglyu.github.io'
+homepage: 'https://yoonjonglyu.github.io'
+tags:
+  - portfolio
+  - archive
+  - resume
+order: 4
+---
+
+## 背景
+
+ISA Archiveは、**セルフホスト型のエンジニアリングアーカイブおよび職務経歴プラットフォーム**として構想されました。  
+外部のサードパーティサービスに依存するのではなく、ポートフォリオ自体を1つの製品として捉え、**明確なUIアーキテクチャ、コンポーネントの再利用性、構造化されたコンテンツ管理**を最優先事項として設計しました。
+
+レイアウト、データモデリング、レンダリング戦略を完全に制御しながら、**技術文書、制作実績、職務経歴データ**を単一のシステム内に統合することを目標としました。
+
+---
+
+## UIアーキテクチャと技術的決定
+
+### コンポーネント駆動UIアーキテクチャ (CDD)
+UIコンポーネントはページの組み立て前に独立して開発・検証され、状態のバリエーション（空状態、ローディング、エッジケース）はコンポーネントレベルで定義されます。
+
+### Storybook によるデザインシステムの確立
+Storybookを視覚的テスト環境および生きたデザインリファレンスとして活用し、リファクタリング時のレイアウト崩れを防止。
+
+### Styled Components によるスコープ制限と予測可能なスタイリング
+CSS-in-JSを採用し、グローバルスタイルの汚染やクラス名の衝突を排除。
+
+### Contentlayer2 による静的コンテンツパイプライン
+MDXファイルを単一の真理ソースとし、型安全なデータへと変換。
+
+### Next.js 16 & 静的レンダリング戦略
+完全なStatic Export (`output: 'export'`) により、GitHub Pagesでの超高速配信と優れたSEOを実現。
+
+---
+
+## リンク
+
+- GitHub: [https://github.com/yoonjonglyu/yoonjonglyu.github.io](https://github.com/yoonjonglyu/yoonjonglyu.github.io)

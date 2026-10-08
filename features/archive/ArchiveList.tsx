@@ -2,6 +2,8 @@
 import { type FC } from 'react';
 import styled from 'styled-components';
 import { allProjects, allPackages } from '@contentlayer/generated';
+import { getLocalizedDocs } from '@lib/content';
+import { useTranslation } from '@hooks/useTranslation';
 
 import TextItem from '@components/molecules/TextItem';
 
@@ -39,8 +41,9 @@ const ListArea = styled.div`
 `;
 
 const ArchiveList: FC = () => {
-  const projects = allProjects.sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
-  const packages = allPackages.sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
+  const { t, locale } = useTranslation();
+  const projects = getLocalizedDocs(allProjects, locale).sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
+  const packages = getLocalizedDocs(allPackages, locale).sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
 
   return (
     <Container>

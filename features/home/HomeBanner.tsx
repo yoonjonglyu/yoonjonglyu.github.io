@@ -3,6 +3,7 @@ import { type FC } from 'react';
 import styled, { keyframes } from 'styled-components';
 
 import Card from '@components/atoms/Card';
+import { useTranslation } from '@hooks/useTranslation';
 
 // 둥실둥실 떠다니는 애니메이션 추가 (입체감)
 const float = keyframes`
@@ -105,6 +106,8 @@ const Sphere = styled.div<{
 `;
 
 const HomeBanner: FC = () => {
+  const { t } = useTranslation();
+
   return (
     <Card
       css={`
@@ -129,12 +132,14 @@ const HomeBanner: FC = () => {
 
       <TextBox>
         <Title>
-          Building Products.
+          {t.home.title1}
           <br />
-          Architecting Systems.
+          {t.home.title2}
         </Title>
         <SubTitle>
-          Designing scalable UI systems and<br />  shipping them as real, live products.
+          {t.home.subtitle1}
+          <br />
+          {t.home.subtitle2}
         </SubTitle>
       </TextBox>
 

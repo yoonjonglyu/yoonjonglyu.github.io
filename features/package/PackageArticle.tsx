@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Link from 'next/link';
 
 import ContentsCard from '@components/molecules/ContentsCard';
+import { useTranslation } from '@hooks/useTranslation';
 
 const Container = styled.div`
   display: flex;
@@ -38,39 +39,49 @@ const ArticleLinkConainer = styled.div`
 `;
 
 export interface PackageArticleProps {
-  title: string;
-  content: string;
-  repository: string;
-  homepage: string;
+  title?: string;
+  content?: string;
+  repository?: string;
+  homepage?: string;
+  translations?: Record<string, { title: string; content: string }>;
 }
-const PackageArticle: FC<PackageArticleProps> = ({
-  title,
-  content,
-  repository,
-  homepage,
-}) => {
+const PackageArticle: FC<PackageArticleProps> = (props) => {
+  const { t, locale } = useTranslation();
+
+  const localized =
+    props.translations?.[locale] ??
+    props.translations?.en ??
+    (props.translations ? Object.values(props.translations)[0] : undefined);
+
+  const activeTitle = localized?.title ?? props.title ?? 'package';
+  const activeContent = localized?.content ?? props.content ?? '';
+
   return (
     <Container>
       <ArticleArea>
-        <ContentsCard header={title || 'pacakge'} contents={content} />
+        <ContentsCard header={activeTitle} contents={activeContent} />
         <ArticleLinkConainer>
           <Link href='/archive' style={{ textDecoration: 'none' }}>
-            ← Back to Archive
+            {t.archive.backToArchive}
           </Link>
-          <Link
-            href={repository}
-            style={{ textDecoration: 'none' }}
-            target='_blank'
-            rel='noopener noreferrer'>
-            Github
-          </Link>
-          <Link
-            href={homepage}
-            style={{ textDecoration: 'none' }}
-            target='_blank'
-            rel='noopener noreferrer'>
-            NPM
-          </Link>
+          {props.repository && (
+            <Link
+              href={props.repository}
+              style={{ textDecoration: 'none' }}
+              target='_blank'
+              rel='noopener noreferrer'>
+              {t.archive.github}
+            </Link>
+          )}
+          {props.homepage && (
+            <Link
+              href={props.homepage}
+              style={{ textDecoration: 'none' }}
+              target='_blank'
+              rel='noopener noreferrer'>
+              {t.archive.npm}
+            </Link>
+          )}
         </ArticleLinkConainer>
       </ArticleArea>
     </Container>

@@ -1,0 +1,105 @@
+---
+title: 'SeedVault (種子金庫)'
+description: '從加密貨幣錢包專案中抽離監管風險，以 Argon2id + AES-256-GCM 密碼學核心打造的端側零知識安全金庫移動應用'
+period: '2026.01 – 2026.09'
+stack:
+  - React 19
+  - TypeScript
+  - Vite
+  - Capacitor 8
+  - Jotai
+  - Argon2id
+  - AES-256-GCM
+role: '獨立架構與全端開發 (專案拆分與移動發布)'
+repository: 'https://github.com/yoonjonglyu/seedwallet'
+homepage: 'https://play.google.com/store/apps/details?id=com.ryuislabs.seedvault'
+tags:
+  - Mobile-Security
+  - Zero-Knowledge
+  - Argon2id
+  - AES-256-GCM
+  - Capacitor
+  - Google-Play
+  - Offline-First
+order: 2
+---
+
+# 🔐 SeedVault: 端側零知識加密安全金庫
+
+> *"勿信遠端伺服器。僅信數學法則與手邊之硬體設備。"*  
+> *"當繁重監管壁壘阻斷專案之路，我們將最核心的安全機制拆分獨立，帶向世界。"*
+
+**SeedVault** 是一款無須連接網際網路，完全在使用者設備內部進行加密隔離保護的**端側零知識（Zero-Knowledge）安全金庫移動應用**，專為守護區塊鏈助記詞（Mnemonic Seed Phrase）、私鑰（Private Key）與極度敏感之密碼而設計。
+
+在開發加密貨幣錢包 `SeedWallet` 過程中面臨虛擬資產服務商（VASP）嚴苛之法規障礙，毅然剔除交易與網路模組，將純粹的**本地密碼學金庫核心**獨立拆分（Spin-off），並成功於 **Google Play 商店正式上架發布**。
+
+---
+
+## 專案背景與策略性轉型 (Pivot)
+
+### 1. SeedWallet 的挑戰與監管之壁
+專案原先定位為跨鏈整合之綜合錢包 **SeedWallet**。然而在研發過程中遭遇重大非技術性阻礙：
+- 全球虛擬資產服務商（VASP）許可與繁重之合規門檻
+- 託管型（Custodial）架構所帶來的高額審計與法律合規成本
+- 個人獨立開發者無法承受之監管法律風險
+
+### 2. 價值重新聚焦：由「錢包」轉型為「獨立金庫」
+團隊選擇不全盤放棄現有成果，而是專注於最核心命題：「如何提供使用者最極致、無需信任任何第三方的私鑰本機保護方案」。
+- 從程式庫中全數移除區塊鏈節點連線與網路存取權限
+- 將純密碼學運算封裝為獨立套件（`@seedvault/crypto-core`）
+- 轉型為零合規風險的純離線安全工具 **SeedVault**，並直接發布至 Google Play
+
+---
+
+## 核心安全架構
+
+```
+[ Master Password ]
+        │
+        ▼ (hash-wasm: Argon2id KDF)
+[ 256-bit High-Entropy Key ]
+        │
+        ├── (AES-256-GCM Encryption) ──► [ Encrypted Seed Envelope ]
+        │                                  ├── Salt & Nonce/IV
+        │                                  ├── Ciphertext
+        │                                  └── Auth Tag
+        │
+        └── (Biometric Hardware Binding) ──► [ Capacitor Secure Storage ]
+```
+
+### 1. 基於 Argon2id 的金鑰衍生 (KDF)
+- 採用 WebAssembly 版 **Argon2id**（`hash-wasm`）抵抗 GPU/ASIC 高並行暴力破解攻擊
+- 針對移動設備運算能力細緻調校記憶體成本與計算迴圈，在手機硬體上兼顧防護力與順暢度
+
+### 2. AES-256-GCM 認證信封加密
+- 採用對稱加密標準 **AES-256-GCM**，同時保證資料機密性與防篡改完整性（Integrity）
+- 透過 `EncryptedSeedEnvelope` 規格將密文、Salt、IV 與驗證標籤（Auth Tag）進行一體化安全序列化
+
+### 3. 極致零知識與離線優先
+- 零後端伺服器架構：杜絕任何伺服器被駭或資料庫外洩之可能
+- 原生硬體生物辨識整合：透過 Capacitor 外掛與手機安全晶片（Hardware Keystore）通訊，支援指紋/臉部迅速解鎖
+
+### 4. 氣隙隔離（Air-Gapped）QR Code 備份與還原
+- 專為無網路環境設計之實體備份管道
+- 將加密封套經由 Zlib（`pako`）無損壓縮後編碼為高密度 QR Code（`qrcode`），支援鏡頭掃描（`jsqr`）即時復原
+
+---
+
+## 技術棧與架構總覽
+
+| 領域 | 技術棧 | 角色與優勢 |
+| :--- | :--- | :--- |
+| **前端架構** | React 19, TypeScript, Vite | 導入 React Compiler，提供流暢的移動端操作體驗 |
+| **移動運行環境** | Capacitor 8 | 橋接 Android/iOS 硬體安全模組與檔案系統 |
+| **密碼學核心** | `hash-wasm`, WebCrypto API | 高效能 WASM Argon2id 與 AES-256-GCM 演算法 |
+| **狀態管理** | Jotai | 原子化狀態管理，精準控管記憶體內敏感驗證狀態 |
+| **生物辨識與儲存** | `@capgo/capacitor-native-biometric`, `capacitor-secure-storage-plugin` | 硬體安全區（Secure Enclave）綁定 |
+| **設計系統** | `asharyu-design-token` | 極簡且具工業精準感的深色工程風格 |
+
+---
+
+## 重大成果與商店資訊
+
+- **Google Play 商店正式上架**: [`com.ryuislabs.seedvault`](https://play.google.com/store/apps/details?id=com.ryuislabs.seedvault)
+- **化監管困境為發布契機**: 在專案被迫中止之際，成功提煉核心價值並打造出高度實用的實體產品
+- **獨立全端一人開發**: 單獨貫徹從密碼學架構設計、WASM 實現、硬體綁定到 Google Play 發布全流程

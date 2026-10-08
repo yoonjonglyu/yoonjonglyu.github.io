@@ -7,6 +7,8 @@ import Img from '@components/atoms/Img';
 import WCarousel from '@components/organisms/WCarousel';
 
 import { allWorks } from '@contentlayer/generated';
+import { useTranslation } from '@hooks/useTranslation';
+import { getLocalizedDocs } from '@lib/content';
 
 import NoImage from '../../assets/images/noimg.png';
 
@@ -106,9 +108,8 @@ const Item = styled.ul`
 `;
 
 const HomeShelf: FC = () => {
-  const works = allWorks
-    .slice()
-    .sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
+  const { locale } = useTranslation();
+  const works = getLocalizedDocs(allWorks, locale);
   // 끊김 방지를 위한 메모이제이션
   const carouselItems = useMemo(() => {
     if (!works.length) return [];

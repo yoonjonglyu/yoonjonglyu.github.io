@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 
 import { allPackages } from '@contentlayer/generated';
+import { getDocTranslations, getLocalizedDocBySlug, getUniqueSlugs } from '@lib/content';
 import generateMeta from '@lib/seo/generateMeta';
 
 import PackageArticle from '@features/package/PackageArticle';
@@ -8,19 +9,17 @@ import PackageArticle from '@features/package/PackageArticle';
 export const dynamicParams = false;
 
 export async function generateStaticParams() {
-  // 1. 데이터가 있는지 확인 (방어 코드)
   if (!allPackages) return [];
-  return allPackages.map((project) => ({
-    slug: project.slug,
-  }));
+  return getUniqueSlugs(allPackages).map((slug) => ({ slug }));
 }
 
 type PageProps = {
   params: Promise<{ slug: string }>;
 };
+
 export async function generateMetadata({ params }: PageProps) {
   const { slug } = await params;
-  const pkg = allPackages.find((p) => p.slug === slug);
+  const pkg = getLocalizedDocBySlug(allPackages, slug, 'en');
   if (!pkg) return {};
 
   return generateMeta({
@@ -33,18 +32,44 @@ export async function generateMetadata({ params }: PageProps) {
     robots: true,
   });
 }
+
 export default async function PackageArticlePage({ params }: PageProps) {
   const { slug } = await params;
-  const packageInfo = allPackages.find((p) => p.slug === slug);
+  const packageInfo = getLocalizedDocBySlug(allPackages, slug, 'en');
 
   if (!packageInfo) return notFound();
 
+  const translations = getDocTranslations(allPackages, slug);
+
   return (
-    <PackageArticle
-      title={packageInfo.title}
-      content={packageInfo.body.code}
-      repository={packageInfo.repository}
-      homepage={packageInfo.homepage}
-    />
+    <>
+      <script
+        type='application/ld+json'
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'SoftwareSourceCode',
+            name: packageInfo.title,
+            description: packageInfo.description,
+            programmingLanguage: 'TypeScript',
+            author: {
+              '@type': 'Person',
+              name: 'YOON JONG RYU',
+              url: 'https://yoonjonglyu.github.io',
+            },
+            url: `https://yoonjonglyu.github.io/archive/package/${slug}`,
+            codeRepository: packageInfo.repository,
+            keywords: packageInfo.tags?.join(', '),
+          }),
+        }}
+      />
+      <PackageArticle
+        title={packageInfo.title}
+        content={packageInfo.body.code}
+        repository={packageInfo.repository}
+        homepage={packageInfo.homepage}
+        translations={translations}
+      />
+    </>
   );
 }

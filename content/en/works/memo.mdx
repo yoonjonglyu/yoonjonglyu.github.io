@@ -1,0 +1,190 @@
+---
+title: 'MemoFlow'
+summary: 'Component-Driven, Offline-First PWA Memo Application'
+
+resume:
+  title: 'Component-Driven PWA Memo App'
+  role: 'Solo Developer (Frontend)'
+  period: '2023.01'
+  description: >
+    A lightweight memo and planner application designed to validate scalable UI architecture
+    and offline-first UX using Component-Driven Development with Storybook.
+  skills:
+    - TypeScript
+    - Storybook
+    - PWA
+    - CDD
+
+highlights:
+  - Designed and validated a Component-Driven Development workflow using Storybook as a primary development environment.
+  - Built a fully offline-capable PWA with Service Worker–based caching and local-first data persistence.
+  - Proven that even small-scale products benefit from clearly separated UI architecture and state modeling.
+
+featured: true
+category: 'product'
+thumbnail: '/content/memo.png'
+order: 5
+tags:
+  - TypeScript
+  - Storybook
+  - PWA
+  - CDD
+  - LocalStorage
+---
+
+## Overview
+
+**Memo** is a lightweight, volatile memo and planner application designed to work instantly
+without login, backend services, or network dependency.
+
+This project was not primarily about feature richness.
+Instead, it was built as a **practical experiment to validate UI architecture**:
+
+- Can Component-Driven Development scale beyond toy examples?
+- Can Storybook function as a true development environment rather than just a showcase?
+- How far can a small product go without introducing unnecessary architectural complexity?
+
+Memo serves as a deliberately small but structurally rigorous product to answer these questions.
+
+---
+
+## Problem Statement
+
+Through multiple frontend projects, I repeatedly encountered the same structural issues:
+
+- UI components tightly coupled with business logic
+- Page-driven development limiting component reusability
+- UI edge cases (empty states, long content) handled too late
+- Over-engineering small products with heavyweight architecture
+
+The hypothesis behind Memo was simple:
+
+> “Even small products deserve a clean, well-separated UI architecture.”
+
+This project exists to test that hypothesis under real usage conditions.
+
+---
+
+## Architectural Strategy
+
+### 1. Component-Driven Development (CDD)
+
+The entire development process was designed around **Storybook-first development**.
+
+Instead of building pages first:
+- UI components were designed, implemented, and validated in isolation
+- Memo items, input fields, buttons, and layouts were treated as independent units
+- Edge cases such as empty states, long text, and overflow scenarios were predefined as stories
+
+This approach resulted in:
+- UI validation independent of application state
+- Reduced complexity when composing pages
+- Faster iteration cycles with predictable visual outcomes
+
+Storybook functioned not as documentation after the fact,
+but as the **primary UI development environment**.
+
+---
+
+### 2. Type-Safe UI and Data Modeling
+
+Although Memo is a small application, its data model was designed with extensibility in mind.
+
+- Unified memo item interfaces
+- Explicit typing for component props and state
+- Compile-time detection of UI-state mismatches
+
+TypeScript allowed architectural decisions to surface early,
+preventing silent UI regressions as features evolved.
+
+---
+
+### 3. Volatile Planner Concept
+
+Memo intentionally avoids becoming a long-term knowledge repository.
+
+Instead, it focuses on:
+- Quick creation
+- Easy deletion
+- Minimal structural overhead
+
+There are no deep hierarchies, folders, or complex relationships.
+The UX is optimized for **short-term thinking and immediate disposal**.
+
+This constraint directly influenced UI decisions:
+- Flat structures over nested layouts
+- Immediate actions over configuration-heavy flows
+- Fewer abstractions, but clearer intent
+
+---
+
+### 4. Offline-First PWA Architecture
+
+Memo was designed to work identically regardless of network availability.
+
+- Service Worker–based caching
+- Local-first data persistence using LocalStorage
+- Full CRUD functionality without connectivity
+
+Rather than treating offline support as an enhancement,
+it was considered a **baseline architectural requirement**.
+
+The `Download` action does not export files.
+Instead, it guides users toward:
+- PWA installation
+- Mobile app distribution entry points
+
+This reinforces the “app-like” experience without server dependency.
+
+---
+
+## Technical Decisions
+
+- **TypeScript**  
+  Ensures predictable UI-state boundaries and scalable component contracts.
+
+- **Storybook**  
+  Enables isolated UI validation, documentation, and design verification
+  without coupling to application logic.
+
+- **PWA**  
+  Provides native-like UX while maintaining a web-first architecture.
+
+- **TypeScript**  
+  Used to explicitly define memo data models and state boundaries,  
+  ensuring long-term maintainability as features scale.
+
+- **Tailwind CSS**  
+  Selected to minimize runtime CSS overhead  
+  and to enable rapid UI iteration with a utility-first approach.
+
+
+- **Capacitor**  
+  Preferred over React Native Expo due to architectural simplicity  
+  and its alignment with a web-first application philosophy.
+
+- **LocalStorage**  
+  Chosen for immediacy and simplicity in a serverless context.
+
+Each choice favors **clarity and intent** over abstraction density.
+
+---
+
+## Outcomes and Learnings
+
+- Successfully validated CDD as a viable approach for real products
+- Established a reusable pattern for UI-first architecture
+- Demonstrated that architectural discipline does not require large-scale applications
+- Provided a foundation for future UI systems and design system work
+
+Memo is not a feature-heavy application.
+It is a **deliberate architectural experiment**,
+proving that thoughtful UI structure scales down as effectively as it scales up.
+
+---
+
+## Links
+
+- Google Play Store: [https://play.google.com/store/apps/details?id=com.yoonjongryu.memo](https://play.google.com/store/apps/details?id=com.yoonjongryu.memo)
+- Web: [https://yoonjonglyu.github.io/memo/](https://yoonjonglyu.github.io/memo/)
+- GitHub: [https://github.com/yoonjonglyu/memo](https://github.com/yoonjonglyu/memo)

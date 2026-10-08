@@ -1,0 +1,42 @@
+---
+title: 'react-daumpost-hook'
+description: 'Daum郵便番号サービスAPIをReact Hook方式で接続する超軽量モジュール'
+period: '2021.11 - 現在'
+version: '1.1.8'
+stack:
+  - JavaScript
+  - React
+  - TypeScript
+repository: 'https://github.com/yoonjonglyu/react-daumpost-hook'
+homepage: 'https://www.npmjs.com/package/react-daumpost-hook'
+tags:
+  - react-hook
+  - daum-postcode
+  - address-search
+  - open-source
+order: 4
+---
+
+## 背景
+
+開発当時、既存の郵便番号検索ライブラリは主に完成されたコンポーネントの形態で提供されており、既存のUIシステムに自然に組み込んだりデザインをカスタマイズしたりするのに限界がありました。  
+デザインの違和感なく既存のUI構造を維持しながら、住所検索機能のみをスマートに注入できる**非制御方式のHook**が必要となり制作しました。  
+当時はまだReact Hooksが広く普及しておらず、Headless UIライブラリも少なかったため、自身で必要な機能を実装してオープンソースとして公開することに意義があると考えました。  
+このパッケージが私にとって最初のオープンソース活動への挑戦となりました。
+
+## 解決した課題
+
+- **UI依存性の解消:** 独自のモーダルやボタンコンポーネントを強制せず、開発者が作成した既存のボタンや入力欄に`open`関数をバインドするだけで機能を実装できるように設計。
+- **多様なモードのサポート:** ポップアップ（Popup）方式と、指定したDOM要素内に挿入される埋め込み（Embed）方式の双方をサポートし、プロジェクトの要件に柔軟に対応。
+- **オープンソース貢献:** 実務で必須となる機能を軽量にパッケージ化して配布することで、同様の課題を持つ開発者に軽快な代替案を提示。
+
+## 技術的決定
+
+- **React Hooks:** コンポーネントのライフサイクルに合わせて外部スクリプトを安全にロードし、検索結果を状態として管理するための標準的手法として採用。
+- **Lightweight Package:** バンドルサイズを最小化するため、外部依存関係を排除し純粋なJavaScriptロジックと最小限のReact APIのみで実装。
+- **TypeScript Support:** ライブラリ利用者が住所データの構造（`zonecode`, `address`など）を正確に把握して使用できるよう、型定義ファイル（.d.ts）を提供。
+
+## リンク
+
+- GitHub: [https://github.com/yoonjonglyu/react-daumpost-hook](https://github.com/yoonjonglyu/react-daumpost-hook)
+- NPM: [https://www.npmjs.com/package/react-daumpost-hook](https://www.npmjs.com/package/react-daumpost-hook)

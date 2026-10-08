@@ -1,0 +1,95 @@
+---
+title: 'Custom Swipe'
+summary: 'UIスタイルの制約を一切排除したフレームワーク非依存のHeadlessスワイプライブラリ'
+
+resume:
+  title: 'フレームワーク非依存のHeadlessスワイプライブラリ'
+  role: '制作者'
+  period: '2024.02 - 現在'
+  description: >
+    フレームワークに依存しないアーキテクチャで設計されたオープンソースのHeadlessスワイプライブラリ。
+    UIやスタイルの制約を強制せず、純粋で高パフォーマンスなスワイプロジックのみを提供し、
+    あらゆるデザインシステムへシームレスに統合可能です。
+  skills:
+    - TypeScript
+    - Headless
+    - Swipe
+    - Library
+    - Multi-Framework
+
+highlights:
+  - Headlessアーキテクチャを採用し純粋なスワイプロジックのみを提供。スタイルの衝突なしに自由なUIカスタマイズを実現。
+  - Vanilla DOM APIを活用してコアロジックを設計し、React、Vue、Svelteなど異なる環境間でも一貫した動作を担保。
+  - スワイプの本質的な機能に特化し、不要な機能を排除することで極限まで軽量なバンドルサイズを維持。
+
+featured: false
+category: 'system'
+thumbnail: '/content/swipe.png'
+order: 7
+tags:
+  - TypeScript
+  - Headless
+  - Swipe
+  - Library
+  - Multi-Framework
+---
+
+## 背景
+
+**Custom Swipe**は、UIプレゼンテーションスタイルを強制せず、コアとなるスワイプの数値計算メカニクスのみを提供するフレームワーク非依存のHeadlessスワイプライブラリです。
+
+React、Vue、Svelteなどの特定のフレームワークから疎結合に保たれ、低スペック端末でも**軽量なフットプリント**と**予測可能なランタイム動作**を実現することを目標に開発されました。
+
+---
+
+## 課題の定義
+
+既存のメジャースワイプライブラリには次のような構造的制約がありました：
+
+- 機能の肥大化による**過大なバンドルサイズ**
+- ライブラリ内蔵のスタイルによる**デザインシステムとの衝突**
+- フレームワーク固有のライフサイクルや状態管理への過度な依存
+- 内部実装の深いリバースエンジニアリングを要する高いカスタマイズのハードル
+
+特に「数学的なスワイプジェスチャーのみが必要で、表示UIは完全に制御したい」開発者にとって選択肢が不足していました。
+
+---
+
+## 解決戦略
+
+### 1. Headless アーキテクチャ
+
+視覚的なUI描画層を完全に排除し、**座標計算、タッチ・ポインターイベント処理、内部状態遷移ルール**のみを公開するようにコアを構築しました。
+
+### 2. DOM中心の非制御パターン
+
+Reactなどの再レンダリングサイクルのオーバーヘッドから完全に独立させるため、コア計算ループは**Vanilla DOM API**を用いてネイティブに実装しました。
+
+- フレームワーク層での高コストな再レンダリングを排除
+- アニメーションやジェスチャーの正確なタイミングウィンドウを確保
+- 異なるフレームワーク間でも完全に一致した動作プロファイルを提供
+
+### 3. Core + Wrapper アーキテクチャ (Monorepo)
+
+モノレポを活用したマルチパッケージ構成を採用：
+- `custom-swipe` (コアエンジン)
+- `react-custom-swipe`
+- `vue-custom-swipe`
+- `svelte-custom-swipe`
+
+---
+
+## 主な機能
+
+- スワイプ (Swipe)
+- 無限ループスクロール (Infinite Swipe)
+- カルーセル / スライダー機能
+- フックベースのプログラマブル制御
+
+---
+
+## リンク
+
+- GitHub: [https://github.com/yoonjonglyu/custom-swipe](https://github.com/yoonjonglyu/custom-swipe)
+- NPM: [https://www.npmjs.com/package/custom-swipe](https://www.npmjs.com/package/custom-swipe)
+- Demo: [https://yoonjonglyu.github.io/custom-swipe/](https://yoonjonglyu.github.io/custom-swipe/)

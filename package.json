@@ -1,13 +1,13 @@
 {
   "name": "yoonjonglyu.github.io",
   "description": "homepage",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev",
+    "predev": "contentlayer2 build",
+    "dev": "next dev --webpack",
     "prebuild": "contentlayer2 build",
     "build": "next build --webpack",
-    "export": "next export",
     "start": "next start",
     "lint": "eslint .",
     "storybook": "storybook dev -p 6006",
@@ -28,7 +28,6 @@
     "@mdx-js/react": "^3.1.1",
     "@next/mdx": "^16.0.10",
     "@types/mdx": "^2.0.13",
-    "axios": "^1.5.0",
     "date-fns": "^4.1.0",
     "isa-util": "^1.0.26",
     "jotai": "^2.16.0",
@@ -37,7 +36,6 @@
     "react": "19.2.3",
     "react-custom-swipe": "^1.2.7",
     "react-dom": "19.2.3",
-    "react-query": "^3.39.3",
     "styled-components": "^6.1.19"
   },
   "devDependencies": {
@@ -75,7 +73,7 @@
     "@types/react": "19.2.7"
   },
   "overrides": {
-    "next-contentlayer": {
+    "next-contentlayer2": {
       "next": "$next"
     }
   }

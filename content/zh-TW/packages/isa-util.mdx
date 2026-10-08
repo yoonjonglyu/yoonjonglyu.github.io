@@ -1,0 +1,41 @@
+---
+title: 'isa-util'
+description: '全面且型別安全的 TypeScript 輕量輔助工具函式庫'
+period: '2023.01 - 至今'
+version: '1.0.27'
+stack:
+  - TypeScript
+  - Jest
+  - Babel
+repository: 'https://github.com/yoonjonglyu/util-helper'
+homepage: 'https://www.npmjs.com/package/isa-util'
+tags:
+  - TypeScript
+  - Utility
+  - Library
+  - Jest
+order: 3
+---
+
+## 背景
+
+在多個前端開發專案中，日期格式化、欄位驗證、數值解析、加密運算等重複模組往往每次都得重新撰寫，造成維護成本攀升與模組破碎化。  
+為根除此低效現象，我建構了統一的中心化函式庫，確保系統級程式碼一致性並極大化優化邏輯的復用價值。
+
+## 解決的問題
+
+- **強制絕對型別安全：** 以精確嚴謹的TypeScript型別取代JavaScript常見的不確定引數與寬鬆回傳型別，杜絕執行時期錯誤並提供流暢提示。
+- **領域驅動模組化：** 依單一職責拆分為獨立領域（日期、數值、驗證、儲存、非同步、加密），支援按需匯入不打包多餘程式碼。
+- **邊界測試與高可靠度：** 透過Jest建構覆蓋複雜邊界條件的單元測試套件，大幅提升生產環境穩定性。
+
+## 技術決策
+
+- **TypeScript：** 建立嚴謹合約介面，於編譯期攔截潛在瑕疵。
+- **Babel Pipeline：** 配置轉譯管線以保障舊版瀏覽器與各式Node.js環境的向下相容性。
+- **Jest Test Runner：** 建立零摩擦快速測試循環，實踐高覆蓋率評估。
+- **NPM Package 生態發佈：** 透過NPM Registry提供隨插即用的現代化模組。
+
+## 連結
+
+- GitHub: [https://github.com/yoonjonglyu/util-helper](https://github.com/yoonjonglyu/util-helper)
+- NPM: [https://www.npmjs.com/package/isa-util](https://www.npmjs.com/package/isa-util)

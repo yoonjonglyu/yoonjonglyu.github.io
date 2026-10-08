@@ -1,0 +1,112 @@
+---
+title: 'MemoFlow'
+summary: '컴포넌트 주도 개발(CDD)과 오프라인 우선(Offline-First) UX를 검증한 PWA 메모 애플리케이션'
+
+resume:
+  title: '컴포넌트 주도 PWA 메모 앱'
+  role: '1인 개발 (프론트엔드)'
+  period: '2023.01'
+  description: >
+    Storybook 기반의 컴포넌트 주도 개발(CDD)을 통해 확장 가능한 UI 아키텍처와
+    오프라인 우선 사용자 경험을 검증하도록 설계된 경량 메모 및 플래너 애플리케이션입니다.
+  skills:
+    - TypeScript
+    - Storybook
+    - PWA
+    - CDD
+
+highlights:
+  - Storybook을 주 개발 환경으로 삼아 UI 컴포넌트와 비즈니스 로직을 분리하는 컴포넌트 주도 개발(CDD) 워크플로우 정립 및 검증
+  - Service Worker 기반 캐싱과 LocalStorage를 결합하여 완전 오프라인 구동이 가능한 PWA 구축
+  - 소규모 제품에서도 명확하게 격리된 UI 아키텍처와 상태 모델링이 장기적 확장성에 기여함을 실증
+
+featured: true
+category: 'product'
+thumbnail: '/content/memo.png'
+order: 5
+tags:
+  - TypeScript
+  - Storybook
+  - PWA
+  - CDD
+  - LocalStorage
+---
+
+## 개요
+
+**MemoFlow**는 로그인, 백엔드 서버, 네트워크 연결 없이 브라우저에서 즉시 실행되는 **가볍고 휘발성 높은 메모·플래너 애플리케이션**입니다.
+
+이 프로젝트는 단순한 기능 확장이 아닌 **"UI 아키텍처의 유효성을 검증하기 위한 실천적 실험"**으로 시작되었습니다:
+
+- 컴포넌트 주도 개발이 소규모 도구를 넘어 실제 제품으로 스케일할 수 있는가?
+- Storybook이 단순 컴포넌트 전시관을 넘어 진정한 개발 환경으로 기능할 수 있는가?
+- 불필요한 아키텍처 복잡도를 배제하면서 얼마나 완성도 높은 제품을 만들 수 있는가?
+
+---
+
+## 문제 정의
+
+다수의 프론트엔드 프로젝트를 진행하며 다음과 같은 구조적 한계에 직면했습니다:
+
+- 비즈니스 로직과 강하게 결합된 UI 컴포넌트
+- 페이지 단위 개발로 인한 컴포넌트 재사용성 제약
+- 빈 상태나 긴 텍스트 등 UI 엣지 케이스 처리의 지연
+- 작은 규모의 제품에 과도하게 도입되는 비대한 아키텍처
+
+MemoFlow의 가설은 명확했습니다:
+> “아무리 작은 제품이라도 명확히 분리된 정갈한 UI 아키텍처를 가질 가치가 있다.”
+
+---
+
+## 아키텍처 전략
+
+### 1. 컴포넌트 주도 개발 (CDD)
+
+전체 개발 흐름을 **Storybook 우선 개발**로 설계했습니다.
+페이지를 먼저 구성하는 대신:
+- 메모 아이템, 입력 필드, 액션 버튼, 레이아웃을 독립된 단위로 설계·구현·검증
+- 빈 상태, 오버플로우, 비정상 입력 등의 엣지 케이스를 사전에 스토리로 정의
+
+이를 통해 애플리케이션 상태와 무관하게 UI를 사전에 검증할 수 있었으며, 페이지 조립 과정의 복잡도를 극적으로 낮췄습니다.
+
+---
+
+### 2. 휘발성 플래너 컨셉
+
+MemoFlow는 지식을 영구 보관하는 거대한 아카이브를 지양합니다.
+대신 다음 가치에 집중했습니다:
+- 빠른 작성과 쉬운 삭제
+- 최소한의 구조적 오버헤드
+- 단기적인 생각 정리와 즉각적인 소비
+
+복잡한 계층이나 폴더 구조를 배제하고 플랫한 레이아웃을 채택하여 사용자의 인지 피로를 최소화했습니다.
+
+---
+
+### 3. 오프라인 우선 PWA
+
+네트워크 연결 상태와 무관하게 언제나 동일하게 동작하도록 설계했습니다:
+- Service Worker 기반 정적 에셋 캐싱
+- LocalStorage를 활용한 로컬 퍼스트 데이터 영속화
+- 오프라인 환경에서도 완전한 CRUD 기능 보장
+
+`Download` 액션은 단순 파일 내보내기가 아닌 **PWA 설치 및 모바일 앱 진입점**으로 안내하여 네이티브 앱과 같은 경험을 제공합니다.
+
+---
+
+## 기술적 결정
+
+- **TypeScript**: 컴포넌트 Props와 데이터 모델의 경계를 엄격히 유지
+- **Storybook**: 비즈니스 로직과 결합되지 않은 독립적 UI 검증 및 문서화
+- **PWA**: 웹 표준을 유지하면서 네이티브 앱 수준의 접근성 제공
+- **Tailwind CSS**: 런타임 오버헤드를 배제하고 유틸리티 우선 방식으로 빠른 UI 이터레이션 실현
+- **Capacitor**: 웹 우선 철학을 유지하면서 Android 모바일 생태계로 원활히 확장
+- **LocalStorage**: 서버리스 환경에서 지연 없는 즉각적 반응성 확보
+
+---
+
+## 링크
+
+- Google Play Store: [https://play.google.com/store/apps/details?id=com.yoonjongryu.memo](https://play.google.com/store/apps/details?id=com.yoonjongryu.memo)
+- Web: [https://yoonjonglyu.github.io/memo/](https://yoonjonglyu.github.io/memo/)
+- GitHub: [https://github.com/yoonjonglyu/memo](https://github.com/yoonjonglyu/memo)

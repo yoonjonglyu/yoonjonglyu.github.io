@@ -1,0 +1,46 @@
+---
+title: 'custom-swipe'
+description: 'フレームワーク非依存で軽量なHeadlessスワイプ＆カルーセルライブラリ'
+period: '2024.02 - 現在'
+version: '1.0.0'
+stack:
+  - TypeScript
+  - JavaScript
+  - React
+  - Vue
+  - Svelte
+repository: 'https://github.com/yoonjonglyu/custom-swipe'
+homepage: 'https://www.npmjs.com/package/custom-swipe'
+tags:
+  - TypeScript
+  - Headless
+  - Swipe
+  - Library
+  - Multi-Framework
+order: 3
+---
+
+## 背景
+
+既存のメジャースワイプライブラリは豊富な機能を提供する一方で、バンドルサイズが肥大化しがちであり、デザインカスタマイズ時にプロジェクト本来のスタイルと頻繁に衝突していました。  
+特に、低スペック端末や不安定なネットワーク環境でもスムーズに動作する**軽量なスワイプソリューション**への強い需要がありました。  
+この課題を解決するため、コアとなる挙動は完全に管理しつつ、UIスタイリングは全面的に開発者に委ねる「Headless」ライブラリを設計しました。
+
+## 解決した課題
+
+- **フレームワーク依存の排除:** コアとなるスワイプ機構を非制御・DOM直接操作を中心としたレイヤーに分離。これにより、React、Vue、Svelteなど、あらゆるフロントエンドフレームワーク間で同一ロジックが一貫して動作します。
+- **バンドルサイズの最適化:** 無限スクロールやカルーセルなどの本質的なスワイプ機能に集中することで、他ライブラリと比較して大幅に軽量なフットプリントを実現しました。
+- **制約のないUIカスタマイズ:** 特定のマークアップやインラインスタイルを強制しないHeadless Hookアプローチを提供。開発者は独自の内部デザインシステムに合わせてスワイプUIを自在に構築できます。
+
+## 技術的決定
+
+- **Headless Architecture:** 表現層とビジネスロジックを分離し、再利用性を最大化して多様なデザイン要求に柔軟に適応。
+- **TypeScript:** 厳格な型定義と静的ガードレールを提供し、複雑なジェスチャーイベント処理時のランタイムエラーを防止してDXを向上。
+- **Multi-Package (Monorepo):** 単一のコアロジックからフレームワーク固有のラッパー（React、Vue、Svelte）を効率的に管理・配信。
+- **Vanilla DOM API:** 仮想DOMや再レンダリングサイクルのオーバーヘッドを排除し、ミリ秒単位の正確なジェスチャー検出と最高レベルの描画速度を確保。
+
+## リンク
+
+- GitHub: [https://github.com/yoonjonglyu/custom-swipe](https://github.com/yoonjonglyu/custom-swipe)
+- NPM: [https://www.npmjs.com/package/custom-swipe](https://www.npmjs.com/package/custom-swipe)
+- Demo: [https://yoonjonglyu.github.io/custom-swipe/](https://yoonjonglyu.github.io/custom-swipe/)

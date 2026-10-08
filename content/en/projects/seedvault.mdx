@@ -1,0 +1,105 @@
+---
+title: 'SeedVault'
+description: 'An on-device zero-knowledge encrypted vault mobile app born from spinning off the cryptographic core of a discontinued crypto wallet project to overcome regulatory barriers'
+period: '2026.01 – 2026.09'
+stack:
+  - React 19
+  - TypeScript
+  - Vite
+  - Capacitor 8
+  - Jotai
+  - Argon2id
+  - AES-256-GCM
+role: 'Solo Architect & Developer (Spin-off & Mobile Launch)'
+repository: 'https://github.com/yoonjonglyu/seedwallet'
+homepage: 'https://play.google.com/store/apps/details?id=com.ryuislabs.seedvault'
+tags:
+  - Mobile-Security
+  - Zero-Knowledge
+  - Argon2id
+  - AES-256-GCM
+  - Capacitor
+  - Google-Play
+  - Offline-First
+order: 2
+---
+
+# 🔐 SeedVault: On-Device Zero-Knowledge Security Vault
+
+> *"Never trust a remote server. Trust only mathematics and your physical device."*  
+> *"When regulatory hurdles halted the wallet project, we extracted its cryptographic heart and published it to the world."*
+
+**SeedVault** is an **on-device, zero-knowledge security vault mobile application** engineered to isolate and protect cryptocurrency mnemonic seed phrases, private keys, and sensitive credentials entirely offline on the user's hardware.
+
+Originating as a response to complex Virtual Asset Service Provider (VASP) regulatory barriers that halted the parent `SeedWallet` project, all network and transaction modules were excised. The pure **local cryptographic vault core** was spun off and successfully **published on the Google Play Store**.
+
+---
+
+## Project Background & Strategic Pivot
+
+### 1. The Regulatory Obstacle of SeedWallet
+The initiative originally started as **SeedWallet**, an ambitious multi-chain crypto wallet. However, it encountered significant non-technical barriers:
+- Stringent global licensing and financial compliance regulations (VASP requirements)
+- Prohibitive legal and security audit overhead for custodial systems
+- Unsustainable regulatory compliance liability for a solo indie developer
+
+### 2. Redefining Value: From Wallet to Standalone Vault
+Instead of abandoning the cryptographic foundations, focus was realigned onto the core thesis: "Empower users with the safest, trustless on-device mechanism to guard their private keys."
+- Excised all external RPC/node communication and internet permissions
+- Decoupled the cryptographic core into an independent package (`@seedvault/crypto-core`)
+- Pivoted into **SeedVault**, a zero-liability, 100% offline mobile utility published directly to Google Play
+
+---
+
+## Core Security Architecture
+
+```
+[ Master Password ]
+        │
+        ▼ (hash-wasm: Argon2id KDF)
+[ 256-bit High-Entropy Key ]
+        │
+        ├── (AES-256-GCM Encryption) ──► [ Encrypted Seed Envelope ]
+        │                                  ├── Salt & Nonce/IV
+        │                                  ├── Ciphertext
+        │                                  └── Auth Tag
+        │
+        └── (Biometric Hardware Binding) ──► [ Capacitor Secure Storage ]
+```
+
+### 1. Argon2id Key Derivation Function (KDF)
+- Implements WebAssembly-powered **Argon2id** (`hash-wasm`) to resist GPU/ASIC brute-force cracking
+- Tunes memory cost, iteration counts, and concurrency parameters to deliver robust defense within mobile hardware thermal envelopes
+
+### 2. AES-256-GCM Authenticated Envelope Encryption
+- Employs **AES-256-GCM** to ensure both confidentiality and tamper-proof data integrity
+- The `EncryptedSeedEnvelope` specification safely bundles ciphertext alongside unique salts, IVs, and authentication tags
+
+### 3. Absolute Zero-Knowledge & Local-First Philosophy
+- **No Backend**: Data theft or server database breaches are architecturally impossible
+- **Hardware Keystore Integration**: Couples Capacitor Native Biometric and Secure Storage plugins to enable swift fingerprint/Face ID unlock while keeping master secrets locked in hardware
+
+### 4. Air-Gapped QR Backup & Restoration
+- Employs an offline physical backup pipeline allowing users to export encrypted vaults without network connectivity
+- Compresses envelopes via Zlib (`pako`), encodes them into dense QR codes (`qrcode`), and supports direct restoration via camera scanning (`jsqr`)
+
+---
+
+## Tech Stack & Architecture
+
+| Layer | Technologies | Role & Highlights |
+| :--- | :--- | :--- |
+| **Frontend** | React 19, TypeScript, Vite | React Compiler optimizations and rapid build pipelines |
+| **Mobile Runtime** | Capacitor 8 | Native bridge for hardware biometrics and secure storage |
+| **Crypto Engine** | `hash-wasm`, WebCrypto API | High-performance WASM Argon2id and AES-256-GCM primitives |
+| **State Management** | Jotai | Atomic state primitives managing runtime security states |
+| **Biometrics & Storage** | `@capgo/capacitor-native-biometric`, `capacitor-secure-storage-plugin` | Hardware-level secure enclave integration |
+| **Design System** | `asharyu-design-token` | Minimalist engineering dark aesthetic |
+
+---
+
+## Key Milestones & Links
+
+- **Google Play Release**: [`com.ryuislabs.seedvault`](https://play.google.com/store/apps/details?id=com.ryuislabs.seedvault)
+- **Turning Regulatory Risk into a Shipped Product**: Overcame a deadlocked development cycle by distilling core value into a polished, compliant utility
+- **Full-Cycle Solo Development**: Executed the complete lifecycle from cryptographic design and WASM implementation to mobile store release
