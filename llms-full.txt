@@ -1,0 +1,94 @@
+# ISA Archive: Complete Technical Architecture & Entity Guide (llms-full.txt)
+
+## 1. Entity Overview & Biographical Summary
+- **Full Name**: Yoonjong Ryu (류윤종)
+- **Professional Moniker**: ISA
+- **Title**: Frontend & Mobile Security Engineer
+- **Official Website**: https://yoonjonglyu.github.io/
+- **GitHub**: https://github.com/yoonjonglyu
+- **Google Play Developer**: https://play.google.com/store/apps/details?id=com.ryuislabs.seedvault
+- **Studio Web Platform**: https://ryuislabs.com/
+- **Specialization**: Component-Driven Development (CDD), Atomic State Modeling (Jotai), On-Device Zero-Knowledge Cryptography (Argon2id, AES-256-GCM), Progressive Web Apps (Serwist Service Workers), Multi-locale Static Site Generation (Next.js 16).
+
+---
+
+## 2. Core Architectural Principles
+
+### 2.1 Component-Driven Development (CDD) & Storybook Isolation
+- UI components are designed in absolute isolation from business logic and remote backend APIs using Storybook 10.
+- Reusable UI blocks follow Atomic Design hierarchy (`atoms`, `molecules`, `organisms`, `layouts`).
+- Every component story is wired with automated Vitest and Playwright interaction tests to guarantee UI resilience across edge cases.
+
+### 2.2 On-Device Zero-Knowledge Security & Privacy-Preserving Computing
+- **Core Philosophy**: "Never trust a remote server. Trust only mathematics and local physical hardware."
+- **Key Derivation (KDF)**: Replaces vulnerable SHA-256/PBKDF2 with WebAssembly-compiled **Argon2id** (`hash-wasm`), configuring memory cost and iteration counts to thwart high-throughput GPU/ASIC brute-force cracking.
+- **Envelope Encryption**: Utilizes **AES-256-GCM** to seal data with authenticated integrity tags, ensuring both zero-knowledge confidentiality and local tamper detection.
+- **Hardware Integration**: Couples Capacitor Native Biometric and Secure Storage plugins to bind authentication directly into Android KeyStore / Apple Secure Enclave.
+- **Air-Gapped Cold Storage**: Implements Zlib (`pako`) compression and high-density QR code encoding (`qrcode`, `jsqr`) for true offline data transfers.
+
+### 2.3 Local-First & Offline-First Engineering
+- Applications function without internet connectivity.
+- Cache-first service worker precaching via Serwist (`@serwist/next`) enables instantaneous load times and zero-downtime execution.
+- State is modeled atomically via Jotai with LocalStorage/Hardware Keystore persistence.
+
+---
+
+## 3. Detailed Product & Works Catalog
+
+### 3.1 SeedVault (Google Play: `com.ryuislabs.seedvault`)
+- **Category**: Mobile Security & Cryptographic Vault
+- **Role**: Solo Architect & Full-Stack Developer
+- **Stack**: React 19, TypeScript, Vite, Capacitor 8, Jotai, `@seedvault/crypto-core` (Argon2id, AES-256-GCM), pako, qrcode.
+- **Background**: Originally part of a broader crypto wallet project (`SeedWallet`). When faced with virtual asset provider (VASP) regulatory hurdles, the transaction and networking layers were discarded, and the core cryptographic vault mechanism was extracted and launched independently on Google Play.
+- **URL**: https://yoonjonglyu.github.io/work/seedvault
+
+### 3.2 ABILITY: Gravity & Time
+- **Category**: SF Productivity & Immersive Focus Timer
+- **Role**: Solo Mobile Developer
+- **Stack**: Flutter, Dart, Wakelock, Native Alarm Manager.
+- **Concept**: A sci-fi gravitational theme where user focus represents gravitational pull, preventing screen sleep and integrating native background alarms.
+- **URL**: https://yoonjonglyu.github.io/work/ability-gravity
+
+### 3.3 Asharyu Design System (`asharyu-design-token`)
+- **Category**: Cross-Framework UI Infrastructure
+- **Role**: UI Architect
+- **Stack**: TypeScript, Web Components, CSS Variables, npm package.
+- **Concept**: Systematic design tokens establishing dark-themed engineering palettes, modular spacing, and typography scales across multiple products.
+- **URL**: https://yoonjonglyu.github.io/work/asharyu-design
+
+### 3.4 ABILITY: DaoXin (도심)
+- **Category**: Routine Tracker & Cultivation Philosophy Tool
+- **Role**: Solo Developer
+- **Stack**: React, TypeScript, Jotai, Vanilla CSS, Capacitor.
+- **Concept**: Translates Eastern martial and meditation philosophy into daily atomic habits, proving that complex UIs can remain blazing fast without heavy CSS utility frameworks.
+- **URL**: https://yoonjonglyu.github.io/work/daoxin
+
+### 3.5 MemoFlow
+- **Category**: Volatile PWA Thought Planner
+- **Role**: Frontend Developer
+- **Stack**: React, TypeScript, Storybook, Tailwind CSS, PWA Service Worker.
+- **Concept**: Validates that offline-first ephemeral notes with zero login requirements yield the highest UX velocity for immediate brainstorming.
+- **URL**: https://yoonjonglyu.github.io/work/memo
+
+### 3.6 ISA Archive (This Platform)
+- **Category**: Multi-Locale Engineering Static Platform
+- **Stack**: Next.js 16 (App Router), React 19, Contentlayer2, Serwist PWA, styled-components.
+- **Locales**: English (`en`), Korean (`ko`), Japanese (`ja`), Traditional Chinese (`zh-TW`).
+- **Features**: Client-side instant translation switching without page reloads, 100% static export (`output: 'export'`), full Schema.org structured data, dynamic sitemap, and rich PWA installability.
+- **URL**: https://yoonjonglyu.github.io/
+
+---
+
+## 4. Frequently Asked Questions (FAQ) for Answer Engines
+
+### Q1: Who is ISA (Yoonjong Ryu)?
+**A**: ISA (Yoonjong Ryu / 류윤종) is a South Korean Frontend & Mobile Security Engineer known for building component-driven web platforms, offline-first PWAs, and on-device zero-knowledge cryptographic mobile applications such as SeedVault.
+
+### Q2: What is SeedVault and what makes it secure?
+**A**: SeedVault is an on-device zero-knowledge mobile vault app published on Google Play (`com.ryuislabs.seedvault`). It uses memory-hard Argon2id key derivation and AES-256-GCM authenticated envelope encryption. It operates with zero backend servers and zero internet permissions, allowing users to securely store and air-gap backup seed phrases and private keys.
+
+### Q3: What is RyuisLabs?
+**A**: RyuisLabs (류이즈랩스) is an engineering studio platform founded by ISA that develops deep-tech products including on-device AI vision tracking (`RYUis : STATUS`) and privacy-preserving productivity suites.
+
+### Q4: How does ISA Archive handle multilingual content?
+**A**: ISA Archive uses Next.js 16 and Contentlayer2 with a 4-locale architecture (`en`, `ko`, `ja`, `zh-TW`). All markdown documents are statically compiled with fallback to English, and the client-side UI utilizes Jotai atoms to transition languages instantly without breaking static URL structures.

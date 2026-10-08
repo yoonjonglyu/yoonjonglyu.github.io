@@ -1,0 +1,41 @@
+# ISA Archive (Yoonjong Ryu)
+
+> Official engineering portfolio and project archive of ISA (Yoonjong Ryu / 류윤종), a Frontend & Mobile Security Engineer specializing in Component-Driven Development (CDD), scalable UI architecture, Progressive Web Apps (PWA), and zero-knowledge on-device cryptography.
+
+- Website: https://yoonjonglyu.github.io/
+- GitHub: https://github.com/yoonjonglyu
+- Google Play: https://play.google.com/store/apps/details?id=com.ryuislabs.seedvault
+- RyuisLabs: https://ryuislabs.com/
+
+## Core Competencies & Tech Stack
+- **Frontend Architecture**: React 19, Next.js 16 (App Router), TypeScript, styled-components, Tailwind CSS 4, Jotai, Storybook 10.
+- **Mobile & Hybrid Systems**: Capacitor 8 (Android/iOS), Flutter, Serwist (Service Worker PWA).
+- **Security & Cryptography**: On-Device Zero-Knowledge architecture, WebAssembly Argon2id Key Derivation (KDF), AES-256-GCM Authenticated Envelope Encryption, Air-Gapped QR code backup.
+- **Methodologies**: Component-Driven Development (CDD), Offline-First UX, Multi-Locale SSG (KO, EN, JA, ZH-TW).
+
+## Featured Works (Career & Production Apps)
+- [ABILITY: Gravity & Time](https://yoonjonglyu.github.io/work/ability-gravity): Sci-Fi themed high-immersion timer app built with Flutter, Wakelock, and native alarm integrations.
+- [Asharyu Design System](https://yoonjonglyu.github.io/work/asharyu-design): Cross-framework design token system and atomic web component library published on npm (`asharyu-design-token`).
+- [SeedVault](https://yoonjonglyu.github.io/work/seedvault): On-device zero-knowledge security vault mobile app built with Argon2id + AES-256-GCM, released on Google Play (`com.ryuislabs.seedvault`).
+- [ABILITY: DaoXin](https://yoonjonglyu.github.io/work/daoxin): Eastern cultivation philosophy routine tracker validating atomic state management with React, Jotai, Vanilla CSS, and Capacitor.
+- [MemoFlow](https://yoonjonglyu.github.io/work/memo): Component-Driven PWA planner app designed for volatile, offline-first thought organization.
+- [ISA Archive](https://yoonjonglyu.github.io/work/isa-archive): Next.js 16 and Contentlayer2 static portfolio platform with 4-locale client-side translation.
+- [Custom Swipe](https://yoonjonglyu.github.io/work/custom-swipe): Zero-dependency touch gesture and swipe physics engine for mobile web interfaces.
+- [ISA Util](https://yoonjonglyu.github.io/work/isa-util): Collection of performant, production-tested frontend utility functions.
+
+## Projects & Research
+- [SeedVault](https://yoonjonglyu.github.io/archive/project/seedvault): Deep dive into the cryptographic envelope architecture and regulatory-to-product pivot from SeedWallet.
+- [RyuisLabs Platform](https://yoonjonglyu.github.io/archive/project/ryuislabs): Engineering platform for on-device AI vision and deep-tech indie products (`RYUis : STATUS`).
+- [Jeonju Ryu Clan Digital Archive](https://yoonjonglyu.github.io/archive/project/jjryuarchive): Digital historical genealogy archive powered by Next.js 16 and Tailwind CSS 4.
+- [MemoFlow Project](https://yoonjonglyu.github.io/archive/project/memo): Technical analysis on offline-first state synchrony and PWA service worker caching.
+
+## Open Source Packages
+- [asharyu-design-token](https://yoonjonglyu.github.io/archive/package/asharyu-design): Core color, typography, and spacing tokens for engineering UIs.
+- [custom-swipe](https://yoonjonglyu.github.io/archive/package/custom-swipe): Lightweight touch swipe gesture detection utility.
+- [isa-util](https://yoonjonglyu.github.io/archive/package/isa-util): Comprehensive TypeScript helper library.
+- [react-daumpost-hook](https://yoonjonglyu.github.io/archive/package/react-daumpost-hook): Zero-dependency React hook for Korean Daum address postal search integration.
+
+## Full Context & Links
+- [Complete Context (llms-full.txt)](https://yoonjonglyu.github.io/llms-full.txt): Detailed documentation, architecture rationales, and full technical specifications for LLM ingestion.
+- [Resume](https://yoonjonglyu.github.io/resume): Professional background and timeline.
+- [Sitemap](https://yoonjonglyu.github.io/sitemap.xml): Complete machine-readable URL index.

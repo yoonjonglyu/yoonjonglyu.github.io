@@ -1,0 +1,293 @@
+1:"$Sreact.fragment"
+2:I[1767,["344","static/chunks/344-b62c34f39c43f863.js","500","static/chunks/500-ede29cb3bc8a7d4a.js","787","static/chunks/app/archive/project/%5Bslug%5D/page-c02f2fe915b201a6.js"],"default"]
+9:I[484,[],"OutletBoundary"]
+a:"$Sreact.suspense"
+3:T1f3c,var Component=(()=>{var u=Object.create;var l=Object.defineProperty;var g=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var m=Object.getPrototypeOf,y=Object.prototype.hasOwnProperty;var f=(n,e)=>()=>{try{return e||n((e={exports:{}}).exports,e),e.exports}catch(r){throw e=0,r}},b=(n,e)=>{for(var r in e)l(n,r,{get:e[r],enumerable:!0})},c=(n,e,r,o)=>{if(e&&typeof e=="object"||typeof e=="function")for(let t of p(e))!y.call(n,t)&&t!==r&&l(n,t,{get:()=>e[t],enumerable:!(o=g(e,t))||o.enumerable});return n};var v=(n,e,r)=>(r=n!=null?u(m(n)):{},c(e||!n||!n.__esModule?l(r,"default",{value:n,enumerable:!0}):r,n)),S=n=>c(l({},"__esModule",{value:!0}),n);var a=f((L,s)=>{s.exports=_jsx_runtime});var w={};b(w,{default:()=>h,frontmatter:()=>A});var i=v(a()),A={title:"RyuisLabs",description:"Official engineering web platform showcasing privacy-preserving STATUS engine based on on-device AI vision & zero-knowledge proofs and deep-tech indie products",period:"2026 \u2013 Present",stack:["Next.js 16","React 19","TypeScript","Tailwind CSS 4","CSS Modules"],role:"Solo Founder & Engineer",repository:"https://github.com/yoonjonglyu/ryuislabs",homepage:"https://ryuislabs.com",tags:["Deep-Tech","AI-Vision","Studio-Platform","Next.js 16","Multi-locale","Blueprint-Design"],order:7};function d(n){let e={a:"a",blockquote:"blockquote",br:"br",code:"code",em:"em",h1:"h1",h2:"h2",h3:"h3",hr:"hr",li:"li",p:"p",strong:"strong",ul:"ul",...n.components};return(0,i.jsxs)(i.Fragment,{children:[(0,i.jsx)(e.h1,{children:"\u{1F310} RyuisLabs: Deep-Tech Indie Studio Web Platform"}),`
+`,(0,i.jsxs)(e.blockquote,{children:[`
+`,(0,i.jsxs)(e.p,{children:[(0,i.jsx)(e.em,{children:'"Behind every achievement lies an unrelenting, deliberate process."'}),(0,i.jsx)(e.br,{}),`
+`,(0,i.jsx)(e.em,{children:'"We do not rely on chance. Business success and system operations are the deliberate results of engineered causality."'})]}),`
+`]}),`
+`,(0,i.jsxs)(e.p,{children:[(0,i.jsx)(e.strong,{children:"RyuisLabs"})," is the official engineering web platform dedicated to articulating the technical architecture, business tiers, and product portfolio of RyuisLabs\u2014including the flagship ",(0,i.jsx)(e.strong,{children:(0,i.jsx)(e.code,{children:"RYUis : STATUS"})})," on-device AI vision verification engine, the ABILITY productivity series, MemoFlow, and SeedVault."]}),`
+`,(0,i.jsx)(e.p,{children:"Engineered to discard the transient feel of generic developer portfolios, the platform evokes the gravitas and procedural legitimacy of architectural blueprints."}),`
+`,(0,i.jsx)(e.hr,{}),`
+`,(0,i.jsx)(e.h2,{children:"Brand Identity & Aesthetic Philosophy"}),`
+`,(0,i.jsxs)(e.p,{children:["As an indie deep-tech studio, RyuisLabs pioneers ",(0,i.jsx)(e.strong,{children:'"technologies that substantiate human focus and physical mastery into verifiable data."'})]}),`
+`,(0,i.jsxs)(e.ul,{children:[`
+`,(0,i.jsxs)(e.li,{children:[(0,i.jsx)(e.strong,{children:"The Blueprint Aesthetics"}),": Deep dark base (",(0,i.jsx)(e.code,{children:"bg-zinc-950"}),") paired with subtle engineering grid lines, creating a determined, high-precision visual atmosphere."]}),`
+`,(0,i.jsxs)(e.li,{children:[(0,i.jsx)(e.strong,{children:"Procedural Legitimacy"}),": Avoiding emotional hyperbole, the platform maintains a rigorous, structured engineering tone centered around causality and system architecture."]}),`
+`,(0,i.jsxs)(e.li,{children:[(0,i.jsx)(e.strong,{children:"Global Reach by Design"}),": Built from day one with a 4-language (KO, EN, JA, ZH-TW) subpath SSG architecture to facilitate international enterprise and consumer relationships."]}),`
+`]}),`
+`,(0,i.jsx)(e.hr,{}),`
+`,(0,i.jsx)(e.h2,{children:"Core Flagship & Product Ecosystem"}),`
+`,(0,i.jsxs)(e.h3,{children:["1. Flagship Engine: ",(0,i.jsx)(e.code,{children:"RYUis : STATUS"})]}),`
+`,(0,i.jsx)(e.p,{children:"A privacy-preserving status interface that verifies focus and physical exercise through on-device AI vision:"}),`
+`,(0,i.jsxs)(e.ul,{children:[`
+`,(0,i.jsxs)(e.li,{children:[(0,i.jsx)(e.strong,{children:"MODULE_01 / FOCUS_VISION"}),": Eye-tracking pipeline determining Pure Focus Time without video retention."]}),`
+`,(0,i.jsxs)(e.li,{children:[(0,i.jsx)(e.strong,{children:"MODULE_02 / PHYSICAL_VISION"}),": Pose estimation tracking joint flexion angles and repetition fidelity."]}),`
+`,(0,i.jsxs)(e.li,{children:[(0,i.jsx)(e.strong,{children:"MODULE_03 / ZERO_KNOWLEDGE_LOG"}),": Raw video streams are purged immediately post-inference; only cryptographic statistical vectors are retained."]}),`
+`,(0,i.jsxs)(e.li,{children:[(0,i.jsx)(e.strong,{children:"Commercial Tiers"}),": B2C (Personal training logs), B2B2C (Third-party verification reports for tutors/coaches), B2B (Licensing verification SDK/APIs for study spaces and gym facilities)."]}),`
+`]}),`
+`,(0,i.jsx)(e.h3,{children:"2. Product Showcase"}),`
+`,(0,i.jsxs)(e.ul,{children:[`
+`,(0,i.jsxs)(e.li,{children:[(0,i.jsx)(e.strong,{children:"ABILITY Series"}),":",`
+`,(0,i.jsxs)(e.ul,{children:[`
+`,(0,i.jsxs)(e.li,{children:[(0,i.jsx)(e.code,{children:"ABILITY: Gravity & Time"}),": Sci-fi themed focus timer utilizing Wakelock and native alarm precision."]}),`
+`,(0,i.jsxs)(e.li,{children:[(0,i.jsx)(e.code,{children:"ABILITY: DaoXin"}),": Eastern cultivation habit tracker powered by React, Jotai, and pure vanilla CSS."]}),`
+`]}),`
+`]}),`
+`,(0,i.jsxs)(e.li,{children:[(0,i.jsx)(e.strong,{children:"Standalone Utilities"}),":",`
+`,(0,i.jsxs)(e.ul,{children:[`
+`,(0,i.jsxs)(e.li,{children:[(0,i.jsx)(e.code,{children:"MemoFlow"}),": Volatile, offline-first PWA planner."]}),`
+`,(0,i.jsxs)(e.li,{children:[(0,i.jsx)(e.code,{children:"SeedVault"}),": Military-grade local zero-knowledge vault utilizing Argon2id and AES-256-GCM."]}),`
+`]}),`
+`]}),`
+`]}),`
+`,(0,i.jsx)(e.hr,{}),`
+`,(0,i.jsx)(e.h2,{children:"Frontend Architecture Highlights"}),`
+`,(0,i.jsxs)(e.h3,{children:["1. Subpath-Based Static Routing i18n (",(0,i.jsx)(e.code,{children:"/[lang]/..."}),")"]}),`
+`,(0,i.jsxs)(e.ul,{children:[`
+`,(0,i.jsxs)(e.li,{children:["Employs Next.js 16 App Router ",(0,i.jsx)(e.code,{children:"generateStaticParams()"})," to pre-render all 34 localized routes statically at build time."]}),`
+`,(0,i.jsxs)(e.li,{children:["Edge middleware dynamically detects user language preferences via ",(0,i.jsx)(e.code,{children:"Accept-Language"})," headers and routes to localized canonical subpaths."]}),`
+`]}),`
+`,(0,i.jsx)(e.h3,{children:"2. Zero-Overhead Styling"}),`
+`,(0,i.jsxs)(e.ul,{children:[`
+`,(0,i.jsxs)(e.li,{children:["Harmonies between Tailwind CSS 4 and scoped ",(0,i.jsx)(e.code,{children:"*.module.css"})," modules prevent global cascade contamination while delivering 60fps rendering speeds."]}),`
+`,(0,i.jsxs)(e.li,{children:["Designed with high-density mobile breakpoints (",(0,i.jsx)(e.code,{children:"420px"}),") ensuring engineering blueprints scale cleanly down to mobile screens."]}),`
+`]}),`
+`,(0,i.jsx)(e.h3,{children:"3. Motion & Accessibility"}),`
+`,(0,i.jsxs)(e.ul,{children:[`
+`,(0,i.jsxs)(e.li,{children:["Respects ",(0,i.jsx)(e.code,{children:"prefers-reduced-motion"})," to bypass terminal boot animations for users preferring reduced sensory input."]}),`
+`,(0,i.jsxs)(e.li,{children:["Lightweight ",(0,i.jsx)(e.code,{children:"IntersectionObserver"})," reveal primitives providing smooth, performance-neutral page transitions."]}),`
+`]}),`
+`,(0,i.jsx)(e.hr,{}),`
+`,(0,i.jsx)(e.h2,{children:"Links"}),`
+`,(0,i.jsxs)(e.ul,{children:[`
+`,(0,i.jsxs)(e.li,{children:[(0,i.jsx)(e.strong,{children:"Official Platform"}),": ",(0,i.jsx)(e.a,{href:"https://ryuislabs.com",children:"https://ryuislabs.com"})]}),`
+`,(0,i.jsxs)(e.li,{children:[(0,i.jsx)(e.strong,{children:"Repository"}),": ",(0,i.jsx)(e.a,{href:"https://github.com/yoonjonglyu/ryuislabs",children:"https://github.com/yoonjonglyu/ryuislabs"})]}),`
+`]})]})}function h(n={}){let{wrapper:e}=n.components||{};return e?(0,i.jsx)(e,{...n,children:(0,i.jsx)(d,{...n})}):d(n)}return S(w);})();
+;return Component;4:T1f3c,var Component=(()=>{var u=Object.create;var l=Object.defineProperty;var g=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var m=Object.getPrototypeOf,y=Object.prototype.hasOwnProperty;var f=(n,e)=>()=>{try{return e||n((e={exports:{}}).exports,e),e.exports}catch(r){throw e=0,r}},b=(n,e)=>{for(var r in e)l(n,r,{get:e[r],enumerable:!0})},c=(n,e,r,o)=>{if(e&&typeof e=="object"||typeof e=="function")for(let t of p(e))!y.call(n,t)&&t!==r&&l(n,t,{get:()=>e[t],enumerable:!(o=g(e,t))||o.enumerable});return n};var v=(n,e,r)=>(r=n!=null?u(m(n)):{},c(e||!n||!n.__esModule?l(r,"default",{value:n,enumerable:!0}):r,n)),S=n=>c(l({},"__esModule",{value:!0}),n);var a=f((L,s)=>{s.exports=_jsx_runtime});var w={};b(w,{default:()=>h,frontmatter:()=>A});var i=v(a()),A={title:"RyuisLabs",description:"Official engineering web platform showcasing privacy-preserving STATUS engine based on on-device AI vision & zero-knowledge proofs and deep-tech indie products",period:"2026 \u2013 Present",stack:["Next.js 16","React 19","TypeScript","Tailwind CSS 4","CSS Modules"],role:"Solo Founder & Engineer",repository:"https://github.com/yoonjonglyu/ryuislabs",homepage:"https://ryuislabs.com",tags:["Deep-Tech","AI-Vision","Studio-Platform","Next.js 16","Multi-locale","Blueprint-Design"],order:7};function d(n){let e={a:"a",blockquote:"blockquote",br:"br",code:"code",em:"em",h1:"h1",h2:"h2",h3:"h3",hr:"hr",li:"li",p:"p",strong:"strong",ul:"ul",...n.components};return(0,i.jsxs)(i.Fragment,{children:[(0,i.jsx)(e.h1,{children:"\u{1F310} RyuisLabs: Deep-Tech Indie Studio Web Platform"}),`
+`,(0,i.jsxs)(e.blockquote,{children:[`
+`,(0,i.jsxs)(e.p,{children:[(0,i.jsx)(e.em,{children:'"Behind every achievement lies an unrelenting, deliberate process."'}),(0,i.jsx)(e.br,{}),`
+`,(0,i.jsx)(e.em,{children:'"We do not rely on chance. Business success and system operations are the deliberate results of engineered causality."'})]}),`
+`]}),`
+`,(0,i.jsxs)(e.p,{children:[(0,i.jsx)(e.strong,{children:"RyuisLabs"})," is the official engineering web platform dedicated to articulating the technical architecture, business tiers, and product portfolio of RyuisLabs\u2014including the flagship ",(0,i.jsx)(e.strong,{children:(0,i.jsx)(e.code,{children:"RYUis : STATUS"})})," on-device AI vision verification engine, the ABILITY productivity series, MemoFlow, and SeedVault."]}),`
+`,(0,i.jsx)(e.p,{children:"Engineered to discard the transient feel of generic developer portfolios, the platform evokes the gravitas and procedural legitimacy of architectural blueprints."}),`
+`,(0,i.jsx)(e.hr,{}),`
+`,(0,i.jsx)(e.h2,{children:"Brand Identity & Aesthetic Philosophy"}),`
+`,(0,i.jsxs)(e.p,{children:["As an indie deep-tech studio, RyuisLabs pioneers ",(0,i.jsx)(e.strong,{children:'"technologies that substantiate human focus and physical mastery into verifiable data."'})]}),`
+`,(0,i.jsxs)(e.ul,{children:[`
+`,(0,i.jsxs)(e.li,{children:[(0,i.jsx)(e.strong,{children:"The Blueprint Aesthetics"}),": Deep dark base (",(0,i.jsx)(e.code,{children:"bg-zinc-950"}),") paired with subtle engineering grid lines, creating a determined, high-precision visual atmosphere."]}),`
+`,(0,i.jsxs)(e.li,{children:[(0,i.jsx)(e.strong,{children:"Procedural Legitimacy"}),": Avoiding emotional hyperbole, the platform maintains a rigorous, structured engineering tone centered around causality and system architecture."]}),`
+`,(0,i.jsxs)(e.li,{children:[(0,i.jsx)(e.strong,{children:"Global Reach by Design"}),": Built from day one with a 4-language (KO, EN, JA, ZH-TW) subpath SSG architecture to facilitate international enterprise and consumer relationships."]}),`
+`]}),`
+`,(0,i.jsx)(e.hr,{}),`
+`,(0,i.jsx)(e.h2,{children:"Core Flagship & Product Ecosystem"}),`
+`,(0,i.jsxs)(e.h3,{children:["1. Flagship Engine: ",(0,i.jsx)(e.code,{children:"RYUis : STATUS"})]}),`
+`,(0,i.jsx)(e.p,{children:"A privacy-preserving status interface that verifies focus and physical exercise through on-device AI vision:"}),`
+`,(0,i.jsxs)(e.ul,{children:[`
+`,(0,i.jsxs)(e.li,{children:[(0,i.jsx)(e.strong,{children:"MODULE_01 / FOCUS_VISION"}),": Eye-tracking pipeline determining Pure Focus Time without video retention."]}),`
+`,(0,i.jsxs)(e.li,{children:[(0,i.jsx)(e.strong,{children:"MODULE_02 / PHYSICAL_VISION"}),": Pose estimation tracking joint flexion angles and repetition fidelity."]}),`
+`,(0,i.jsxs)(e.li,{children:[(0,i.jsx)(e.strong,{children:"MODULE_03 / ZERO_KNOWLEDGE_LOG"}),": Raw video streams are purged immediately post-inference; only cryptographic statistical vectors are retained."]}),`
+`,(0,i.jsxs)(e.li,{children:[(0,i.jsx)(e.strong,{children:"Commercial Tiers"}),": B2C (Personal training logs), B2B2C (Third-party verification reports for tutors/coaches), B2B (Licensing verification SDK/APIs for study spaces and gym facilities)."]}),`
+`]}),`
+`,(0,i.jsx)(e.h3,{children:"2. Product Showcase"}),`
+`,(0,i.jsxs)(e.ul,{children:[`
+`,(0,i.jsxs)(e.li,{children:[(0,i.jsx)(e.strong,{children:"ABILITY Series"}),":",`
+`,(0,i.jsxs)(e.ul,{children:[`
+`,(0,i.jsxs)(e.li,{children:[(0,i.jsx)(e.code,{children:"ABILITY: Gravity & Time"}),": Sci-fi themed focus timer utilizing Wakelock and native alarm precision."]}),`
+`,(0,i.jsxs)(e.li,{children:[(0,i.jsx)(e.code,{children:"ABILITY: DaoXin"}),": Eastern cultivation habit tracker powered by React, Jotai, and pure vanilla CSS."]}),`
+`]}),`
+`]}),`
+`,(0,i.jsxs)(e.li,{children:[(0,i.jsx)(e.strong,{children:"Standalone Utilities"}),":",`
+`,(0,i.jsxs)(e.ul,{children:[`
+`,(0,i.jsxs)(e.li,{children:[(0,i.jsx)(e.code,{children:"MemoFlow"}),": Volatile, offline-first PWA planner."]}),`
+`,(0,i.jsxs)(e.li,{children:[(0,i.jsx)(e.code,{children:"SeedVault"}),": Military-grade local zero-knowledge vault utilizing Argon2id and AES-256-GCM."]}),`
+`]}),`
+`]}),`
+`]}),`
+`,(0,i.jsx)(e.hr,{}),`
+`,(0,i.jsx)(e.h2,{children:"Frontend Architecture Highlights"}),`
+`,(0,i.jsxs)(e.h3,{children:["1. Subpath-Based Static Routing i18n (",(0,i.jsx)(e.code,{children:"/[lang]/..."}),")"]}),`
+`,(0,i.jsxs)(e.ul,{children:[`
+`,(0,i.jsxs)(e.li,{children:["Employs Next.js 16 App Router ",(0,i.jsx)(e.code,{children:"generateStaticParams()"})," to pre-render all 34 localized routes statically at build time."]}),`
+`,(0,i.jsxs)(e.li,{children:["Edge middleware dynamically detects user language preferences via ",(0,i.jsx)(e.code,{children:"Accept-Language"})," headers and routes to localized canonical subpaths."]}),`
+`]}),`
+`,(0,i.jsx)(e.h3,{children:"2. Zero-Overhead Styling"}),`
+`,(0,i.jsxs)(e.ul,{children:[`
+`,(0,i.jsxs)(e.li,{children:["Harmonies between Tailwind CSS 4 and scoped ",(0,i.jsx)(e.code,{children:"*.module.css"})," modules prevent global cascade contamination while delivering 60fps rendering speeds."]}),`
+`,(0,i.jsxs)(e.li,{children:["Designed with high-density mobile breakpoints (",(0,i.jsx)(e.code,{children:"420px"}),") ensuring engineering blueprints scale cleanly down to mobile screens."]}),`
+`]}),`
+`,(0,i.jsx)(e.h3,{children:"3. Motion & Accessibility"}),`
+`,(0,i.jsxs)(e.ul,{children:[`
+`,(0,i.jsxs)(e.li,{children:["Respects ",(0,i.jsx)(e.code,{children:"prefers-reduced-motion"})," to bypass terminal boot animations for users preferring reduced sensory input."]}),`
+`,(0,i.jsxs)(e.li,{children:["Lightweight ",(0,i.jsx)(e.code,{children:"IntersectionObserver"})," reveal primitives providing smooth, performance-neutral page transitions."]}),`
+`]}),`
+`,(0,i.jsx)(e.hr,{}),`
+`,(0,i.jsx)(e.h2,{children:"Links"}),`
+`,(0,i.jsxs)(e.ul,{children:[`
+`,(0,i.jsxs)(e.li,{children:[(0,i.jsx)(e.strong,{children:"Official Platform"}),": ",(0,i.jsx)(e.a,{href:"https://ryuislabs.com",children:"https://ryuislabs.com"})]}),`
+`,(0,i.jsxs)(e.li,{children:[(0,i.jsx)(e.strong,{children:"Repository"}),": ",(0,i.jsx)(e.a,{href:"https://github.com/yoonjonglyu/ryuislabs",children:"https://github.com/yoonjonglyu/ryuislabs"})]}),`
+`]})]})}function h(n={}){let{wrapper:e}=n.components||{};return e?(0,i.jsx)(e,{...n,children:(0,i.jsx)(d,{...n})}):d(n)}return S(w);})();
+;return Component;5:T24c4,var Component=(()=>{var a=Object.create;var c=Object.defineProperty;var g=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var p=Object.getPrototypeOf,S=Object.prototype.hasOwnProperty;var b=(i,n)=>()=>{try{return n||i((n={exports:{}}).exports,n),n.exports}catch(r){throw n=0,r}},y=(i,n)=>{for(var r in n)c(i,r,{get:n[r],enumerable:!0})},o=(i,n,r,h)=>{if(n&&typeof n=="object"||typeof n=="function")for(let l of m(n))!S.call(i,l)&&l!==r&&c(i,l,{get:()=>n[l],enumerable:!(h=g(n,l))||h.enumerable});return i};var I=(i,n,r)=>(r=i!=null?a(p(i)):{},o(n||!i||!i.__esModule?c(r,"default",{value:i,enumerable:!0}):r,i)),A=i=>o(c({},"__esModule",{value:!0}),i);var d=b((x,t)=>{t.exports=_jsx_runtime});var L={};y(L,{default:()=>u,frontmatter:()=>T});var e=I(d()),T={title:"RyuisLabs (\u30EA\u30E5\u30A4\u30BA\u30E9\u30DC)",description:"\u30AA\u30F3\u30C7\u30D0\u30A4\u30B9AI\u30D3\u30B8\u30E7\u30F3\u3068\u30BC\u30ED\u77E5\u8B58\u8A3C\u660E\u306B\u57FA\u3065\u304F\u30D7\u30E9\u30A4\u30D0\u30B7\u30FC\u4FDD\u8B77\u578B\u30B9\u30C6\u30FC\u30BF\u30B9\u30A8\u30F3\u30B8\u30F3\uFF08STATUS\uFF09\u304A\u3088\u3073\u30C7\u30A3\u30FC\u30D7\u30C6\u30C3\u30AF\u88FD\u54C1\u7FA4\u3092\u7D71\u62EC\u3059\u308B\u516C\u5F0F\u30A8\u30F3\u30B8\u30CB\u30A2\u30EA\u30F3\u30B0Web\u30D7\u30E9\u30C3\u30C8\u30D5\u30A9\u30FC\u30E0",period:"2026 \u2013 \u73FE\u5728",stack:["Next.js 16","React 19","TypeScript","Tailwind CSS 4","CSS Modules"],role:"\u500B\u4EBA\u30D5\u30A1\u30A6\u30F3\u30C0\u30FC\uFF06\u30A8\u30F3\u30B8\u30CB\u30A2",repository:"https://github.com/yoonjonglyu/ryuislabs",homepage:"https://ryuislabs.com",tags:["Deep-Tech","AI-Vision","Studio-Platform","Next.js 16","Multi-locale","Blueprint-Design"],order:7};function s(i){let n={a:"a",blockquote:"blockquote",br:"br",code:"code",em:"em",h1:"h1",h2:"h2",h3:"h3",hr:"hr",li:"li",p:"p",strong:"strong",ul:"ul",...i.components};return(0,e.jsxs)(e.Fragment,{children:[(0,e.jsx)(n.h1,{children:"\u{1F310} RyuisLabs: \u30C7\u30A3\u30FC\u30D7\u30C6\u30C3\u30AF\u30FB\u30A4\u30F3\u30C7\u30A3\u30FC\u30B9\u30BF\u30B8\u30AA Web\u30D7\u30E9\u30C3\u30C8\u30D5\u30A9\u30FC\u30E0"}),`
+`,(0,e.jsxs)(n.blockquote,{children:[`
+`,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.em,{children:"\u300C\u3059\u3079\u3066\u306E\u6210\u679C\u306E\u88CF\u306B\u306F\u3001\u71BE\u70C8\u306A\u30D7\u30ED\u30BB\u30B9\u304C\u5B58\u5728\u3057\u307E\u3059\u3002\u300D"}),(0,e.jsx)(n.br,{}),`
+`,(0,e.jsx)(n.em,{children:"\u300C\u5076\u7136\u306B\u306F\u983C\u308A\u307E\u305B\u3093\u3002\u30D3\u30B8\u30CD\u30B9\u306E\u6210\u529F\u3082\u3001\u30B7\u30B9\u30C6\u30E0\u306E\u99C6\u52D5\u3082\u3001\u3059\u3079\u3066\u306F\u8A2D\u8A08\u3055\u308C\u305F\u56E0\u679C\u306E\u7D50\u679C\u3067\u3059\u3002\u300D"})]}),`
+`]}),`
+`,(0,e.jsxs)(n.p,{children:["**RyuisLabs\uFF08\u30EA\u30E5\u30A4\u30BA\u30E9\u30DC\uFF09",(0,e.jsx)(n.strong,{children:"\u306F\u3001\u30AA\u30F3\u30C7\u30D0\u30A4\u30B9AI\u30D3\u30B8\u30E7\u30F3\u3068\u30BC\u30ED\u77E5\u8B58\uFF08Zero-Knowledge\uFF09\u539F\u5247\u306B\u57FA\u3065\u304F\u30D7\u30E9\u30A4\u30D0\u30B7\u30FC\u4FDD\u8B77\u578B\u30B9\u30C6\u30FC\u30BF\u30B9\u691C\u8A3C\u30A8\u30F3\u30B8\u30F3"}),(0,e.jsx)(n.code,{children:"RYUis : STATUS"}),"**\u3092\u306F\u3058\u3081\u3001\u72EC\u81EA\u30D7\u30ED\u30C0\u30AF\u30C8\u7FA4\uFF08ABILITY\u30B7\u30EA\u30FC\u30BA\u3001MemoFlow\u3001SeedVault\u306A\u3069\uFF09\u306E\u30D3\u30B8\u30CD\u30B9\u3068\u6280\u8853\u4ED5\u69D8\u3092\u4F53\u7CFB\u7684\u306B\u7D39\u4ECB\u3059\u308B\u516C\u5F0F\u30A8\u30F3\u30B8\u30CB\u30A2\u30EA\u30F3\u30B0Web\u30D7\u30E9\u30C3\u30C8\u30D5\u30A9\u30FC\u30E0\u3067\u3059\u3002"]}),`
+`,(0,e.jsx)(n.p,{children:"\u500B\u4EBA\u306E\u7C21\u6613\u306A\u30DD\u30FC\u30C8\u30D5\u30A9\u30EA\u30AA\u611F\u3092\u6392\u9664\u3057\u3001\u30B7\u30B9\u30C6\u30E0\u306E\u9752\u5199\u771F\uFF08Blueprint\uFF09\u3092\u773A\u3081\u308B\u3088\u3046\u306A\u91CD\u539A\u306A\u4FE1\u983C\u611F\u3068\u624B\u7D9A\u304D\u7684\u6B63\u5F53\u6027\u3092\u63D0\u793A\u3059\u308B\u3088\u3046\u306B\u8A2D\u8A08\u3055\u308C\u3066\u3044\u307E\u3059\u3002"}),`
+`,(0,e.jsx)(n.hr,{}),`
+`,(0,e.jsx)(n.h2,{children:"\u30D6\u30E9\u30F3\u30C9\u30A2\u30A4\u30C7\u30F3\u30C6\u30A3\u30C6\u30A3\u3068\u8A2D\u8A08\u7F8E\u5B66"}),`
+`,(0,e.jsx)(n.p,{children:"\u30A4\u30F3\u30C7\u30A3\u30FC\u30C7\u30A3\u30FC\u30D7\u30C6\u30C3\u30AF\u30B9\u30BF\u30B8\u30AA\u3068\u3057\u3066\u3001RyuisLabs\u306F\u5358\u306A\u308B\u30A2\u30D7\u30EA\u958B\u767A\u3092\u8D85\u3048\u3001**\u300C\u4EBA\u9593\u306E\u935B\u932C\u3068\u96C6\u4E2D\u3092\u5BA2\u89B3\u7684\u306A\u30C7\u30FC\u30BF\u3068\u3057\u3066\u7ACB\u8A3C\u3059\u308B\u6280\u8853\u300D**\u3092\u63A2\u6C42\u3057\u3066\u3044\u307E\u3059\u3002"}),`
+`,(0,e.jsxs)(n.ul,{children:[`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"The Blueprint Aesthetics"}),": \u30C7\u30A3\u30FC\u30D7\u30C0\u30FC\u30AF\uFF08",(0,e.jsx)(n.code,{children:"bg-zinc-950"}),"\uFF09\u3068\u88FD\u56F3\u30B0\u30EA\u30C3\u30C9\u30E9\u30A4\u30F3\u3092\u878D\u5408\u3057\u3001\u5DE5\u5B66\u7684\u306A\u7CBE\u5BC6\u3055\u3092\u8996\u899A\u5316\u3002"]}),`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"\u624B\u7D9A\u304D\u7684\u6B63\u5F53\u6027"}),": \u8A87\u5F35\u3055\u308C\u305F\u8868\u73FE\u3092\u6392\u3057\u3001\u30B7\u30B9\u30C6\u30E0\u69CB\u9020\u3068\u56E0\u679C\u95A2\u4FC2\u306B\u57FA\u3065\u304F\u53B3\u683C\u306A\u6280\u8853\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\u306E\u30C8\u30FC\u30F3\uFF06\u30DE\u30CA\u30FC\u3092\u7DAD\u6301\u3002"]}),`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"\u30B0\u30ED\u30FC\u30D0\u30EB\u5C55\u958B"}),": \u56FD\u5185\u5916\u306E\u30D1\u30FC\u30C8\u30CA\u30FC\u30B7\u30C3\u30D7\u3092\u898B\u636E\u3048\u3001\u521D\u671F\u304B\u30894\u8A00\u8A9E\uFF08\u97D3\u56FD\u8A9E\u3001\u82F1\u8A9E\u3001\u65E5\u672C\u8A9E\u3001\u7E41\u4F53\u5B57\u4E2D\u56FD\u8A9E\uFF09\u306E\u30B5\u30D6\u30D1\u30B9SSG\u30A2\u30FC\u30AD\u30C6\u30AF\u30C1\u30E3\u3092\u69CB\u7BC9\u3002"]}),`
+`]}),`
+`,(0,e.jsx)(n.hr,{}),`
+`,(0,e.jsx)(n.h2,{children:"\u4E3B\u8981\u30B7\u30B9\u30C6\u30E0\u3068\u30D7\u30ED\u30C0\u30AF\u30C8\u30E9\u30A4\u30F3\u30CA\u30C3\u30D7"}),`
+`,(0,e.jsxs)(n.h3,{children:["1. \u30D5\u30E9\u30C3\u30B0\u30B7\u30C3\u30D7\u30B7\u30B9\u30C6\u30E0: ",(0,e.jsx)(n.code,{children:"RYUis : STATUS"})]}),`
+`,(0,e.jsx)(n.p,{children:"\u30AA\u30F3\u30C7\u30D0\u30A4\u30B9AI\u30D3\u30B8\u30E7\u30F3\u3092\u901A\u3058\u3066\u8996\u7DDA\u3068\u95A2\u7BC0\u52D5\u4F5C\u3092\u691C\u51FA\u3057\u3001\u96C6\u4E2D\u306E\u6DF1\u3055\u3068\u904B\u52D5\u3092\u5BA2\u89B3\u7684\u306B\u8A3C\u660E\u3059\u308B\u30D7\u30E9\u30A4\u30D0\u30B7\u30FC\u4FDD\u8B77\u578B\u30B9\u30C6\u30FC\u30BF\u30B9\u753B\u9762\uFF1A"}),`
+`,(0,e.jsxs)(n.ul,{children:[`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"MODULE_01 / FOCUS_VISION"}),": \u8996\u7DDA\u8FFD\u8DE1\u306B\u57FA\u3065\u304F\u7D14\u7C8B\u96C6\u4E2D\u6642\u9593\uFF08Pure Focus Time\uFF09\u306E\u7B97\u51FA\u3002"]}),`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"MODULE_02 / PHYSICAL_VISION"}),": Pose Estimation\u306B\u57FA\u3065\u304F\u95A2\u7BC0\u89D2\u5EA6\u306E\u7CBE\u5BC6\u6E2C\u5B9A\u3068\u53CD\u5FA9\u56DE\u6570\u306E\u691C\u8A3C\u3002"]}),`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"MODULE_03 / ZERO_KNOWLEDGE_LOG"}),": \u5143\u6620\u50CF\u306F\u30AA\u30F3\u30C7\u30D0\u30A4\u30B9\u63A8\u8AD6\u76F4\u5F8C\u306B\u7834\u68C4\u3001\u6697\u53F7\u5316\u3055\u308C\u305F\u7D71\u8A08\u30D9\u30AF\u30C8\u30EB\u306E\u307F\u3092\u4FDD\u5B58\u3002"]}),`
+`]}),`
+`,(0,e.jsx)(n.h3,{children:"2. \u30D7\u30ED\u30C0\u30AF\u30C8\u30B7\u30E7\u30FC\u30B1\u30FC\u30B9"}),`
+`,(0,e.jsxs)(n.ul,{children:[`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"ABILITY Series"}),":",`
+`,(0,e.jsxs)(n.ul,{children:[`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.code,{children:"ABILITY: Gravity & Time"}),": SF\u91CD\u529B\u30C6\u30FC\u30DE\u306E\u6CA1\u5165\u578B\u30BF\u30A4\u30DE\u30FC"]}),`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.code,{children:"ABILITY: DaoXin"}),": \u6771\u6D0B\u4FEE\u7DF4\u54F2\u5B66\u306B\u57FA\u3065\u304F\u30A2\u30C8\u30DF\u30C3\u30AF\u7FD2\u6163\u30C8\u30E9\u30C3\u30AB\u30FC"]}),`
+`]}),`
+`]}),`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"Standalone Utilities"}),":",`
+`,(0,e.jsxs)(n.ul,{children:[`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.code,{children:"MemoFlow"}),": \u601D\u8003\u3092\u5373\u5EA7\u306B\u6574\u7406\u3059\u308B\u30AA\u30D5\u30E9\u30A4\u30F3\u30D5\u30A1\u30FC\u30B9\u30C8PWA\u30D7\u30E9\u30F3\u30CA\u30FC"]}),`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.code,{children:"SeedVault"}),": Argon2id + AES-256-GCM\u306B\u57FA\u3065\u304F\u30ED\u30FC\u30AB\u30EB\u30BC\u30ED\u77E5\u8B58\u6697\u53F7\u5316\u91D1\u5EAB"]}),`
+`]}),`
+`]}),`
+`]}),`
+`,(0,e.jsx)(n.hr,{}),`
+`,(0,e.jsx)(n.h2,{children:"\u30EA\u30F3\u30AF"}),`
+`,(0,e.jsxs)(n.ul,{children:[`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"\u516C\u5F0F\u30D7\u30E9\u30C3\u30C8\u30D5\u30A9\u30FC\u30E0"}),": ",(0,e.jsx)(n.a,{href:"https://ryuislabs.com",children:"https://ryuislabs.com"})]}),`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"\u30EA\u30DD\u30B8\u30C8\u30EA"}),": ",(0,e.jsx)(n.a,{href:"https://github.com/yoonjonglyu/ryuislabs",children:"https://github.com/yoonjonglyu/ryuislabs"})]}),`
+`]})]})}function u(i={}){let{wrapper:n}=i.components||{};return n?(0,e.jsx)(n,{...i,children:(0,e.jsx)(s,{...i})}):s(i)}return A(L);})();
+;return Component;6:T2f18,var Component=(()=>{var a=Object.create;var c=Object.defineProperty;var S=Object.getOwnPropertyDescriptor;var g=Object.getOwnPropertyNames;var p=Object.getPrototypeOf,m=Object.prototype.hasOwnProperty;var y=(i,n)=>()=>{try{return n||i((n={exports:{}}).exports,n),n.exports}catch(l){throw n=0,l}},b=(i,n)=>{for(var l in n)c(i,l,{get:n[l],enumerable:!0})},d=(i,n,l,h)=>{if(n&&typeof n=="object"||typeof n=="function")for(let r of g(n))!m.call(i,r)&&r!==l&&c(i,r,{get:()=>n[r],enumerable:!(h=S(n,r))||h.enumerable});return i};var T=(i,n,l)=>(l=i!=null?a(p(i)):{},d(n||!i||!i.__esModule?c(l,"default",{value:i,enumerable:!0}):l,i)),A=i=>d(c({},"__esModule",{value:!0}),i);var t=y((x,o)=>{o.exports=_jsx_runtime});var L={};b(L,{default:()=>u,frontmatter:()=>I});var e=T(t()),I={title:"RyuisLabs (\uB958\uC774\uC988\uB7A9\uC2A4)",description:"\uC628\uB514\uBC14\uC774\uC2A4 AI \uBE44\uC804\uACFC \uC81C\uB85C \uC9C0\uC2DD \uC99D\uBA85 \uAE30\uBC18\uC758 \uD504\uB77C\uC774\uBC84\uC2DC \uBCF4\uC874\uD615 \uC0C1\uD0DC\uCC3D(STATUS) \uBC0F \uB525\uD14C\uD06C \uC81C\uD488\uAD70\uC744 \uCD1D\uAD04\uD558\uB294 \uACF5\uC2DD \uC5D4\uC9C0\uB2C8\uC5B4\uB9C1 \uC6F9 \uD50C\uB7AB\uD3FC",period:"2026 \u2013 \uD604\uC7AC",stack:["Next.js 16","React 19","TypeScript","Tailwind CSS 4","CSS Modules"],role:"1\uC778 \uCC3D\uB9BD\uC790 & \uC5D4\uC9C0\uB2C8\uC5B4",repository:"https://github.com/yoonjonglyu/ryuislabs",homepage:"https://ryuislabs.com",tags:["Deep-Tech","AI-Vision","Studio-Platform","Next.js 16","Multi-locale","Blueprint-Design"],order:7};function s(i){let n={a:"a",blockquote:"blockquote",br:"br",code:"code",em:"em",h1:"h1",h2:"h2",h3:"h3",hr:"hr",li:"li",p:"p",strong:"strong",ul:"ul",...i.components};return(0,e.jsxs)(e.Fragment,{children:[(0,e.jsx)(n.h1,{children:"\u{1F310} RyuisLabs: \uB525\uD14C\uD06C \uC778\uB514 \uC2A4\uD29C\uB514\uC624 \uC6F9 \uD50C\uB7AB\uD3FC"}),`
+`,(0,e.jsxs)(n.blockquote,{children:[`
+`,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.em,{children:'"\uBAA8\uB4E0 \uC131\uCDE8\uC758 \uC774\uBA74\uC5D0\uB294, \uCE58\uC5F4\uD55C \uACFC\uC815\uC774 \uC874\uC7AC\uD569\uB2C8\uB2E4."'}),(0,e.jsx)(n.br,{}),`
+`,(0,e.jsx)(n.em,{children:'"\uC6B0\uC5F0\uC5D0 \uAE30\uB300\uC9C0 \uC54A\uC2B5\uB2C8\uB2E4. \uBE44\uC988\uB2C8\uC2A4\uC758 \uC131\uACF5\uB3C4, \uC2DC\uC2A4\uD15C\uC758 \uAD6C\uB3D9\uB3C4 \uBAA8\uB450 \uC124\uACC4\uB41C \uC778\uACFC\uC758 \uACB0\uACFC\uC785\uB2C8\uB2E4."'})]}),`
+`]}),`
+`,(0,e.jsxs)(n.p,{children:["**RyuisLabs(\uB958\uC774\uC988\uB7A9\uC2A4)**\uB294 \uC628\uB514\uBC14\uC774\uC2A4 AI \uBE44\uC804\uACFC \uC81C\uB85C \uC9C0\uC2DD(Zero-Knowledge) \uC6D0\uCE59 \uAE30\uBC18\uC758 \uD504\uB77C\uC774\uBC84\uC2DC \uBCF4\uC874\uD615 \uC0C1\uD0DC \uAC80\uC99D \uC5D4\uC9C4\uC778 **",(0,e.jsx)(n.code,{children:"RYUis : STATUS"}),"**\uB97C \uBE44\uB86F\uD558\uC5EC, \uB3C5\uCC3D\uC801\uC778 \uC81C\uD488\uAD70(ABILITY \uC2DC\uB9AC\uC988, MemoFlow, SeedVault \uB4F1)\uC758 \uBE44\uC988\uB2C8\uC2A4\uC640 \uAE30\uC220 \uBA85\uC138\uB97C \uCCB4\uACC4\uC801\uC73C\uB85C \uC18C\uAC1C\uD558\uB294 \uACF5\uC2DD \uC5D4\uC9C0\uB2C8\uC5B4\uB9C1 \uC6F9 \uD50C\uB7AB\uD3FC\uC785\uB2C8\uB2E4."]}),`
+`,(0,e.jsx)(n.p,{children:"\uAC1C\uC778 \uD3EC\uD2B8\uD3F4\uB9AC\uC624\uC758 \uAC00\uBCBC\uC6B4 \uC778\uC0C1\uC744 \uBC30\uC81C\uD558\uACE0, \uC2DC\uC2A4\uD15C \uCCAD\uC0AC\uC9C4(Blueprint)\uC744 \uB9C8\uC8FC\uD558\uB294 \uB4EF\uD55C \uBB35\uC9C1\uD55C \uC2E0\uB8B0\uAC10\uACFC \uC808\uCC28\uC801 \uC815\uB2F9\uC131\uC744 \uC804\uB2EC\uD558\uB3C4\uB85D \uC124\uACC4\uB418\uC5C8\uC2B5\uB2C8\uB2E4."}),`
+`,(0,e.jsx)(n.hr,{}),`
+`,(0,e.jsx)(n.h2,{children:"\uD504\uB85C\uC81D\uD2B8 \uBC30\uACBD \uBC0F \uBE0C\uB79C\uB4DC \uC815\uCCB4\uC131"}),`
+`,(0,e.jsx)(n.p,{children:'\uAE30\uC220 \uC778\uB514 \uC2A4\uD29C\uB514\uC624\uB85C\uC11C RyuisLabs\uB294 \uB2E8\uC21C\uD55C \uC571 \uAC1C\uBC1C\uC744 \uB118\uC5B4 **"\uC778\uAC04\uC758 \uC219\uB828\uACFC \uBAB0\uC785\uC744 \uAC1D\uAD00\uC801\uC778 \uB370\uC774\uD130\uB85C \uC785\uC99D\uD558\uB294 \uAE30\uC220"**\uC744 \uC5F0\uAD6C\uD569\uB2C8\uB2E4.'}),`
+`,(0,e.jsxs)(n.ul,{children:[`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"The Blueprint Aesthetics"}),": \uB525 \uB2E4\uD06C(",(0,e.jsx)(n.code,{children:"bg-zinc-950"}),")\uC640 \uC5D4\uC9C0\uB2C8\uC5B4\uB9C1 \uB3C4\uBA74 \uADF8\uB9AC\uB4DC \uB77C\uC778\uC744 \uACB0\uD569\uD558\uC5EC \uAE30\uC220\uC801 \uC815\uBC00\uD568\uC744 \uC2DC\uAC01\uD654"]}),`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"\uC808\uCC28\uC801 \uC815\uB2F9\uC131"}),": \uAC10\uC131\uC801 \uACFC\uC7A5\uC774\uB098 \uD64D\uBCF4\uC131 \uBBF8\uC0AC\uB97C \uBC30\uC81C\uD558\uACE0, \uC2DC\uC2A4\uD15C \uAD6C\uC870\uC640 \uC778\uACFC\uAD00\uACC4\uC5D0 \uAE30\uBC18\uD55C \uBA85\uD655\uD55C \uAE30\uC220 \uBB38\uC11C \uD1A4\uC564\uB9E4\uB108 \uC720\uC9C0"]}),`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"\uAE00\uB85C\uBC8C \uC2A4\uCF00\uC77C"}),": \uAD6D\uB0B4\uBFD0 \uC544\uB2C8\uB77C \uC601\uBBF8\uAD8C, \uC77C\uBCF8, \uC911\uD654\uAD8C \uD30C\uD2B8\uB108\uC2ED\uC744 \uC704\uD574 \uAE30\uD68D \uB2E8\uACC4\uBD80\uD130 4\uAC1C \uAD6D\uC5B4(\uD55C\uAD6D\uC5B4, \uC601\uC5B4, \uC77C\uBCF8\uC5B4, \uBC88\uCCB4 \uC911\uAD6D\uC5B4) \uC11C\uBE0C\uD328\uC2A4 SSG \uC544\uD0A4\uD14D\uCC98 \uAD6C\uCD95"]}),`
+`]}),`
+`,(0,e.jsx)(n.hr,{}),`
+`,(0,e.jsx)(n.h2,{children:"\uD575\uC2EC \uBE44\uC988\uB2C8\uC2A4 \uBAA8\uB378 \uBC0F \uC2DC\uC2A4\uD15C \uB77C\uC778\uC5C5"}),`
+`,(0,e.jsxs)(n.h3,{children:["1. \uD50C\uB798\uADF8\uC2ED \uC2DC\uC2A4\uD15C: ",(0,e.jsx)(n.code,{children:"RYUis : STATUS"})]}),`
+`,(0,e.jsx)(n.p,{children:"\uC628\uB514\uBC14\uC774\uC2A4 AI \uBE44\uC804\uC744 \uD1B5\uD574 \uC2DC\uC120\uACFC \uAD00\uC808 \uB3D9\uC791\uC744 \uAC10\uC9C0\uD558\uC5EC \uC0AC\uC6A9\uC790\uC758 \uBAB0\uC785\uACFC \uC2E0\uCCB4 \uD6C8\uB828\uC744 \uAC1D\uAD00\uC801\uC73C\uB85C \uC785\uC99D\uD558\uB294 \uD504\uB77C\uC774\uBC84\uC2DC \uBCF4\uC874\uD615 \uC0C1\uD0DC\uCC3D:"}),`
+`,(0,e.jsxs)(n.ul,{children:[`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"MODULE_01 / FOCUS_VISION"}),": \uC2DC\uC120 \uCD94\uC801(Eye Tracking) \uAE30\uBC18 \uC21C\uC218 \uBAB0\uC785 \uC2DC\uAC04(Pure Focus Time) \uC0B0\uCD9C"]}),`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"MODULE_02 / PHYSICAL_VISION"}),": Pose Estimation \uAE30\uBC18 \uAD00\uC808 \uAC01\uB3C4 \uC815\uBC00 \uCE74\uC6B4\uD305 \uBC0F \uD6C8\uB828 \uAC80\uC99D"]}),`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"MODULE_03 / ZERO_KNOWLEDGE_LOG"}),": \uC6D0\uBCF8 \uCE74\uBA54\uB77C \uC601\uC0C1\uC740 \uC628\uB514\uBC14\uC774\uC2A4 \uC5F0\uC0B0 \uC989\uC2DC \uD30C\uAE30, \uC554\uD638\uD654\uB41C \uD1B5\uACC4 \uBCA1\uD130 \uB370\uC774\uD130\uB9CC \uBCF4\uC874"]}),`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"\uBE44\uC988\uB2C8\uC2A4 \uD2F0\uC5B4"}),": B2C(\uAC1C\uC778 \uBAB0\uC785/\uD6C8\uB828 \uAC80\uC99D), B2B2C(\uD559\uBD80\uBAA8/\uCF54\uCE58 \uAC80\uC99D \uB9AC\uD3EC\uD2B8), B2B(\uC2A4\uD130\uB514\uCE74\uD398/\uD53C\uD2B8\uB2C8\uC2A4 \uC13C\uD130\uC6A9 SDK \uB77C\uC774\uC120\uC2A4)"]}),`
+`]}),`
+`,(0,e.jsx)(n.h3,{children:"2. \uD504\uB85C\uB355\uD2B8 \uC1FC\uCF00\uC774\uC2A4 \uCE74\uD0C8\uB85C\uADF8"}),`
+`,(0,e.jsxs)(n.ul,{children:[`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"ABILITY Series"}),":",`
+`,(0,e.jsxs)(n.ul,{children:[`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.code,{children:"ABILITY: Gravity & Time"}),": SF \uC911\uB825 \uD14C\uB9C8\uC758 \uBAB0\uC785\uD615 \uD0C0\uC774\uBA38 (Wakelock, \uB124\uC774\uD2F0\uBE0C \uC54C\uB78C)"]}),`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.code,{children:"ABILITY: DaoXin (\uB3C4\uC2EC)"}),": \uB3D9\uC591 \uC218\uC591 \uCCA0\uD559 \uAE30\uBC18\uC758 \uC6D0\uC790\uC801 \uC77C\uC0C1 \uB8E8\uD2F4 \uD2B8\uB798\uCEE4 (React, Jotai, \uC21C\uC218 CSS)"]}),`
+`]}),`
+`]}),`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"Standalone Utilities"}),":",`
+`,(0,e.jsxs)(n.ul,{children:[`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.code,{children:"MemoFlow"}),": \uC989\uAC01\uC801\uC778 \uC0DD\uAC01 \uC815\uB9AC\uB97C \uC704\uD55C \uC624\uD504\uB77C\uC778 \uC6B0\uC120 PWA \uD50C\uB798\uB108"]}),`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.code,{children:"SeedVault"}),": Argon2id + AES-256-GCM \uAE30\uBC18 \uB85C\uCEEC \uC81C\uB85C \uC9C0\uC2DD \uC554\uD638\uD654 \uAE08\uACE0"]}),`
+`]}),`
+`]}),`
+`]}),`
+`,(0,e.jsx)(n.hr,{}),`
+`,(0,e.jsx)(n.h2,{children:"\uD504\uB860\uD2B8\uC5D4\uB4DC \uC544\uD0A4\uD14D\uCC98 \uBC0F \uAD6C\uD604 \uD2B9\uC9D5"}),`
+`,(0,e.jsxs)(n.h3,{children:["1. URL \uC11C\uBE0C\uD328\uC2A4 \uAE30\uBC18 \uC815\uC801 \uB77C\uC6B0\uD305 i18n (",(0,e.jsx)(n.code,{children:"/[lang]/..."}),")"]}),`
+`,(0,e.jsxs)(n.ul,{children:[`
+`,(0,e.jsxs)(n.li,{children:["Next.js 16 App Router\uC758 ",(0,e.jsx)(n.code,{children:"generateStaticParams()"}),"\uB97C \uD1B5\uD574 4\uAC1C \uAD6D\uC5B4(KO, EN, JA, ZH-TW)\uC758 \uBAA8\uB4E0 \uB77C\uC6B0\uD2B8\uB97C \uBE4C\uB4DC \uC2DC\uC810\uC5D0 100% \uC815\uC801 \uC0AC\uC804 \uB80C\uB354\uB9C1(SSG)"]}),`
+`,(0,e.jsxs)(n.li,{children:["\uBBF8\uB4E4\uC6E8\uC5B4\uB97C \uD1B5\uD574 ",(0,e.jsx)(n.code,{children:"Accept-Language"})," \uD5E4\uB354 \uAE30\uBC18 \uC5B8\uC5B4 \uC790\uB3D9 \uAC10\uC9C0 \uBC0F \uC11C\uBE0C\uD328\uC2A4 \uB9AC\uB2E4\uC774\uB809\uD2B8 \uC9C0\uC6D0"]}),`
+`]}),`
+`,(0,e.jsx)(n.h3,{children:"2. \uC81C\uB85C \uB7F0\uD0C0\uC784 \uC624\uBC84\uD5E4\uB4DC \uC2A4\uD0C0\uC77C\uB9C1"}),`
+`,(0,e.jsxs)(n.ul,{children:[`
+`,(0,e.jsxs)(n.li,{children:["Tailwind CSS 4\uC640 \uC804\uC6A9 CSS Modules(",(0,e.jsx)(n.code,{children:"*.module.css"}),")\uB97C \uC870\uD654\uB86D\uAC8C \uC0AC\uC6A9\uD558\uC5EC \uC804\uC5ED \uC2A4\uD0C0\uC77C \uC624\uC5FC\uC744 \uBC29\uC9C0\uD558\uACE0 \uADF9\uC0C1\uC758 \uB80C\uB354\uB9C1 \uC131\uB2A5 \uD655\uBCF4"]}),`
+`,(0,e.jsxs)(n.li,{children:["\uBAA8\uBC14\uC77C \uBDF0\uD3EC\uD2B8(",(0,e.jsx)(n.code,{children:"420px"}),") \uC555\uCD95 \uBE0C\uB808\uC774\uD06C\uD3EC\uC778\uD2B8\uB97C \uC815\uBC00\uD558\uAC8C \uC124\uACC4\uD558\uC5EC \uBAA8\uBC14\uC77C \uD658\uACBD\uC5D0\uC11C\uB3C4 \uB3C4\uBA74 \uB808\uC774\uC544\uC6C3\uC758 \uC644\uC131\uB3C4 \uC720\uC9C0"]}),`
+`]}),`
+`,(0,e.jsx)(n.h3,{children:"3. \uACE0\uB3C4\uD654\uB41C \uC811\uADFC\uC131 & \uBAA8\uC158 \uC81C\uC5B4"}),`
+`,(0,e.jsxs)(n.ul,{children:[`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.code,{children:"prefers-reduced-motion"})," \uBBF8\uB514\uC5B4 \uCFFC\uB9AC\uB97C \uAC10\uC9C0\uD558\uC5EC \uBAA8\uC158 \uAC10\uC18C \uC635\uC158 \uD65C\uC131\uD654 \uC2DC \uD130\uBBF8\uB110 \uBD80\uD305 \uD0C0\uC774\uD551 \uD6A8\uACFC\uB97C \uC2A4\uD0B5\uD558\uACE0 \uC989\uAC01 \uCF58\uD150\uCE20 \uD45C\uC2DC"]}),`
+`,(0,e.jsxs)(n.li,{children:["\uACBD\uB7C9\uD654\uB41C ",(0,e.jsx)(n.code,{children:"IntersectionObserver"})," \uAE30\uBC18 Reveal \uCEF4\uD3EC\uB10C\uD2B8\uB85C \uBD80\uB4DC\uB7EC\uC6B4 \uC2A4\uD06C\uB864 \uD398\uC774\uB4DC\uC778 \uC5F0\uCD9C"]}),`
+`]}),`
+`,(0,e.jsx)(n.hr,{}),`
+`,(0,e.jsx)(n.h2,{children:"\uAE30\uC220 \uC2A4\uD0DD \uC694\uC57D"}),`
+`,(0,e.jsxs)(n.ul,{children:[`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"Core"}),": Next.js 16.2 (App Router), React 19, TypeScript"]}),`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"Styling"}),": Tailwind CSS 4, CSS Modules, Geist Sans & Mono"]}),`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"Deployment"}),": \uC644\uC804 \uC815\uC801 \uC0AC\uC774\uD2B8 \uC0DD\uC131(SSG) \uBC0F \uAE00\uB85C\uBC8C CDN \uBC30\uD3EC"]}),`
+`]}),`
+`,(0,e.jsx)(n.hr,{}),`
+`,(0,e.jsx)(n.h2,{children:"\uB9C1\uD06C"}),`
+`,(0,e.jsxs)(n.ul,{children:[`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"\uACF5\uC2DD \uC0AC\uC774\uD2B8"}),": ",(0,e.jsx)(n.a,{href:"https://ryuislabs.com",children:"https://ryuislabs.com"})]}),`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"\uC800\uC7A5\uC18C"}),": ",(0,e.jsx)(n.a,{href:"https://github.com/yoonjonglyu/ryuislabs",children:"https://github.com/yoonjonglyu/ryuislabs"})]}),`
+`]})]})}function u(i={}){let{wrapper:n}=i.components||{};return n?(0,e.jsx)(n,{...i,children:(0,e.jsx)(s,{...i})}):s(i)}return A(L);})();
+;return Component;7:T1fc8,var Component=(()=>{var a=Object.create;var c=Object.defineProperty;var g=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var p=Object.getPrototypeOf,b=Object.prototype.hasOwnProperty;var y=(i,n)=>()=>{try{return n||i((n={exports:{}}).exports,n),n.exports}catch(r){throw n=0,r}},S=(i,n)=>{for(var r in n)c(i,r,{get:n[r],enumerable:!0})},o=(i,n,r,h)=>{if(n&&typeof n=="object"||typeof n=="function")for(let l of m(n))!b.call(i,l)&&l!==r&&c(i,l,{get:()=>n[l],enumerable:!(h=g(n,l))||h.enumerable});return i};var I=(i,n,r)=>(r=i!=null?a(p(i)):{},o(n||!i||!i.__esModule?c(r,"default",{value:i,enumerable:!0}):r,i)),A=i=>o(c({},"__esModule",{value:!0}),i);var d=y((x,t)=>{t.exports=_jsx_runtime});var T={};S(T,{default:()=>u,frontmatter:()=>L});var e=I(d()),L={title:"RyuisLabs",description:"\u5960\u57FA\u65BC\u7AEF\u5074 AI \u8996\u89BA\u8207\u96F6\u77E5\u8B58\u8B49\u660E\u4E4B\u96B1\u79C1\u4FDD\u8B77\u578B\u72C0\u614B\u5F15\u64CE\uFF08STATUS\uFF09\u53CA\u6DF1\u79D1\u6280\u7368\u7ACB\u7522\u54C1\u7FA4\u5B98\u65B9\u5DE5\u7A0B\u7DB2\u9801\u5E73\u53F0",period:"2026 \u2013 \u81F3\u4ECA",stack:["Next.js 16","React 19","TypeScript","Tailwind CSS 4","CSS Modules"],role:"\u7368\u7ACB\u5275\u8FA6\u4EBA\u66A8\u5DE5\u7A0B\u5E2B",repository:"https://github.com/yoonjonglyu/ryuislabs",homepage:"https://ryuislabs.com",tags:["Deep-Tech","AI-Vision","Studio-Platform","Next.js 16","Multi-locale","Blueprint-Design"],order:7};function s(i){let n={a:"a",blockquote:"blockquote",br:"br",code:"code",em:"em",h1:"h1",h2:"h2",h3:"h3",hr:"hr",li:"li",p:"p",strong:"strong",ul:"ul",...i.components};return(0,e.jsxs)(e.Fragment,{children:[(0,e.jsx)(n.h1,{children:"\u{1F310} RyuisLabs: \u6DF1\u79D1\u6280\u7368\u7ACB\u5DE5\u4F5C\u5BA4\u5B98\u65B9\u5E73\u53F0"}),`
+`,(0,e.jsxs)(n.blockquote,{children:[`
+`,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.em,{children:"\u300C\u6240\u6709\u6210\u5C31\u7684\u80CC\u5F8C\uFF0C\u7686\u5B58\u5728\u8457\u4E0D\u5BB9\u59A5\u5354\u7684\u56B4\u5BC6\u9032\u7A0B\u3002\u300D"}),(0,e.jsx)(n.br,{}),`
+`,(0,e.jsx)(n.em,{children:"\u300C\u6211\u5011\u4E0D\u5BC4\u8A17\u65BC\u5076\u7136\u3002\u5546\u696D\u7684\u6210\u529F\u8207\u7CFB\u7D71\u7684\u904B\u8F49\uFF0C\u7686\u70BA\u7CBE\u6E96\u8A2D\u8A08\u7684\u56E0\u679C\u6240\u81F4\u3002\u300D"})]}),`
+`]}),`
+`,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.strong,{children:"RyuisLabs"})," \u662F\u4E00\u5EA7\u5B98\u65B9\u5DE5\u7A0B\u7DB2\u9801\u5E73\u53F0\uFF0C\u5C08\u6CE8\u65BC\u7CFB\u7D71\u5316\u5C55\u793A RyuisLabs \u65D7\u4E0B\u65D7\u8266\u7D1A\u7AEF\u5074 AI \u8996\u89BA\u72C0\u614B\u9A57\u8B49\u5F15\u64CE ",(0,e.jsx)(n.strong,{children:(0,e.jsx)(n.code,{children:"RYUis : STATUS"})}),"\uFF0C\u4EE5\u53CA\u6DB5\u84CB ABILITY \u7CFB\u5217\u3001MemoFlow \u8207 SeedVault \u7B49\u539F\u5275\u8EDF\u9AD4\u751F\u614B\u4E4B\u5546\u696D\u5B9A\u4F4D\u8207\u6280\u8853\u898F\u683C\u3002"]}),`
+`,(0,e.jsx)(n.p,{children:"\u5168\u7AD9\u6368\u68C4\u500B\u4EBA\u4F5C\u54C1\u96C6\u7684\u8F15\u6D6E\u611F\uFF0C\u71DF\u9020\u5982\u5DE5\u7A0B\u85CD\u5716\uFF08Blueprint\uFF09\u822C\u539A\u5BE6\u6C89\u7A69\u7684\u5C08\u696D\u4FE1\u4EFB\u611F\u8207\u7A0B\u5E8F\u6B63\u7576\u6027\u3002"}),`
+`,(0,e.jsx)(n.hr,{}),`
+`,(0,e.jsx)(n.h2,{children:"\u54C1\u724C\u8B58\u5225\u8207\u8A2D\u8A08\u7F8E\u5B78"}),`
+`,(0,e.jsx)(n.p,{children:"\u4F5C\u70BA\u7368\u7ACB\u6DF1\u79D1\u6280\u5DE5\u4F5C\u5BA4\uFF0CRyuisLabs \u4E0D\u50C5\u5C08\u6CE8\u65BC\u61C9\u7528\u7A0B\u5F0F\u958B\u767C\uFF0C\u66F4\u81F4\u529B\u65BC\u63A2\u7D22**\u300C\u5C07\u4EBA\u985E\u7684\u6DF1\u5EA6\u5C08\u6CE8\u8207\u9AD4\u80FD\u7CBE\u9032\u8F49\u8B6F\u70BA\u5BA2\u89C0\u53EF\u9A57\u8B49\u6578\u64DA\u7684\u5C16\u7AEF\u6280\u8853\u300D**\u3002"}),`
+`,(0,e.jsxs)(n.ul,{children:[`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"\u85CD\u5716\u5DE5\u7A0B\u7F8E\u5B78 (The Blueprint Aesthetics)"}),"\uFF1A\u6975\u81F4\u6DF1\u9083\u7684\u6697\u9ED1\u57FA\u8ABF\uFF08",(0,e.jsx)(n.code,{children:"bg-zinc-950"}),"\uFF09\u878D\u5408\u7CBE\u6E96\u7684\u7DB2\u683C\u683C\u7DDA\uFF0C\u5177\u8C61\u5316\u51B7\u5CFB\u56B4\u8B39\u7684\u5DE5\u7A0B\u5DE5\u85DD\u3002"]}),`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"\u7A0B\u5E8F\u6B63\u7576\u6027"}),"\uFF1A\u5C4F\u9664\u60C5\u7DD2\u5316\u6D6E\u8A87\u5BA3\u50B3\uFF0C\u7DAD\u6301\u4EE5\u7CFB\u7D71\u67B6\u69CB\u8207\u56E0\u679C\u908F\u8F2F\u70BA\u6838\u5FC3\u7684\u5BA2\u89C0\u5DE5\u7A0B\u6587\u737B\u8A9E\u8ABF\u3002"]}),`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"\u751F\u800C\u5168\u7403\u5316"}),"\uFF1A\u81EA\u8A2D\u8A08\u4F0A\u59CB\u5373\u5EFA\u7F6E 4 \u7A2E\u8A9E\u8A00\uFF08\u7E41\u4E2D\u3001\u97D3\u3001\u82F1\u3001\u65E5\uFF09\u4E4B\u5B50\u8DEF\u5F91 SSG \u67B6\u69CB\uFF0C\u7121\u7E2B\u5C0D\u63A5\u8DE8\u570B\u4F01\u696D\u5408\u4F5C\u8207\u6D88\u8CBB\u7D1A\u751F\u614B\u3002"]}),`
+`]}),`
+`,(0,e.jsx)(n.hr,{}),`
+`,(0,e.jsx)(n.h2,{children:"\u65D7\u8266\u5F15\u64CE\u8207\u7522\u54C1\u77E9\u9663"}),`
+`,(0,e.jsxs)(n.h3,{children:["1. \u65D7\u8266\u7CFB\u7D71: ",(0,e.jsx)(n.code,{children:"RYUis : STATUS"})]}),`
+`,(0,e.jsx)(n.p,{children:"\u900F\u904E\u7AEF\u5074 AI \u8996\u89BA\u5373\u6642\u611F\u77E5\u8996\u7DDA\u6CE8\u8996\u9EDE\u8207\u4EBA\u9AD4\u95DC\u7BC0\u904B\u52D5\uFF0C\u5BA2\u89C0\u5BE6\u8B49\u4F7F\u7528\u8005\u4E4B\u6DF1\u5EA6\u5C08\u6CE8\u8207\u9AD4\u80FD\u935B\u934A\u7684\u96B1\u79C1\u4FDD\u8B77\u578B\u72C0\u614B\u4ECB\u9762\uFF1A"}),`
+`,(0,e.jsxs)(n.ul,{children:[`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"MODULE_01 / FOCUS_VISION"}),"\uFF1A\u773C\u52D5\u8FFD\u8E64\u904B\u7B97\uFF0C\u5373\u6642\u7522\u51FA\u7D14\u7CB9\u5C08\u6CE8\u6642\u9577\uFF08Pure Focus Time\uFF09\u3002"]}),`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"MODULE_02 / PHYSICAL_VISION"}),"\uFF1A\u57FA\u65BC\u4EBA\u9AD4\u59FF\u614B\u4F30\u8A08\uFF08Pose Estimation\uFF09\u4E4B\u95DC\u7BC0\u6D3B\u52D5\u89D2\u5EA6\u7CBE\u6E96\u6E2C\u91CF\u8207\u53CD\u8986\u6B21\u6578\u9A57\u8B49\u3002"]}),`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"MODULE_03 / ZERO_KNOWLEDGE_LOG"}),"\uFF1A\u539F\u59CB\u5F71\u50CF\u65BC\u88DD\u7F6E\u7AEF\u63A8\u8AD6\u5B8C\u7562\u5F8C\u5373\u523B\u92B7\u6BC0\uFF0C\u50C5\u7559\u5B58\u7D93\u904E\u52A0\u5BC6\u7684\u7D71\u8A08\u5411\u91CF\u6578\u64DA\u3002"]}),`
+`]}),`
+`,(0,e.jsx)(n.h3,{children:"2. \u539F\u5275\u8EDF\u9AD4\u5C55\u793A\u76EE\u9304"}),`
+`,(0,e.jsxs)(n.ul,{children:[`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"ABILITY \u7CFB\u5217"}),"\uFF1A",`
+`,(0,e.jsxs)(n.ul,{children:[`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.code,{children:"ABILITY: Gravity & Time"}),"\uFF1A\u79D1\u5E7B\u91CD\u529B\u5834\u57DF\u6C89\u6D78\u5F0F\u8A08\u6642\u5668"]}),`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.code,{children:"ABILITY: DaoXin (\u9053\u5FC3)"}),"\uFF1A\u7D50\u5408\u6771\u65B9\u4FEE\u4ED9\u54F2\u5B78\u4E4B\u539F\u5B50\u5316\u751F\u6D3B\u7FD2\u6163\u8FFD\u8E64\u5668"]}),`
+`]}),`
+`]}),`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"\u7368\u7ACB\u5BE6\u7528\u5DE5\u5177"}),"\uFF1A",`
+`,(0,e.jsxs)(n.ul,{children:[`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.code,{children:"MemoFlow"}),"\uFF1A\u5C08\u70BA\u5FEB\u901F\u6574\u7406\u601D\u7DD2\u6253\u9020\u7684\u96E2\u7DDA\u512A\u5148 PWA \u96A8\u624B\u8A18\u4E8B\u6392\u7A0B\u5668"]}),`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.code,{children:"SeedVault"}),"\uFF1A\u4EE5 Argon2id \u8207 AES-256-GCM \u6253\u9020\u7684\u8ECD\u4E8B\u7D1A\u672C\u6A5F\u96F6\u77E5\u8B58\u52A0\u5BC6\u4FDD\u96AA\u5EAB"]}),`
+`]}),`
+`]}),`
+`]}),`
+`,(0,e.jsx)(n.hr,{}),`
+`,(0,e.jsx)(n.h2,{children:"\u9023\u7D50"}),`
+`,(0,e.jsxs)(n.ul,{children:[`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"\u5B98\u65B9\u5E73\u53F0"}),"\uFF1A",(0,e.jsx)(n.a,{href:"https://ryuislabs.com",children:"https://ryuislabs.com"})]}),`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"\u539F\u59CB\u78BC\u5132\u5B58\u5EAB"}),"\uFF1A",(0,e.jsx)(n.a,{href:"https://github.com/yoonjonglyu/ryuislabs",children:"https://github.com/yoonjonglyu/ryuislabs"})]}),`
+`]})]})}function u(i={}){let{wrapper:n}=i.components||{};return n?(0,e.jsx)(n,{...i,children:(0,e.jsx)(s,{...i})}):s(i)}return A(T);})();
+;return Component;0:{"buildId":"NZXsK4IJh_bZ_0RaCAUxF","rsc":["$","$1","c",{"children":[[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"RyuisLabs\",\"description\":\"Official engineering web platform showcasing privacy-preserving STATUS engine based on on-device AI vision & zero-knowledge proofs and deep-tech indie products\",\"applicationCategory\":\"DeveloperApplication\",\"operatingSystem\":\"All\",\"author\":{\"@type\":\"Person\",\"name\":\"YOON JONG RYU\",\"url\":\"https://yoonjonglyu.github.io\"},\"url\":\"https://yoonjonglyu.github.io/archive/project/ryuislabs\",\"sameAs\":[\"https://github.com/yoonjonglyu/ryuislabs\",\"https://ryuislabs.com\"],\"keywords\":\"Deep-Tech, AI-Vision, Studio-Platform, Next.js 16, Multi-locale, Blueprint-Design\"}"}}],["$","$L2",null,{"title":"RyuisLabs","content":"$3","repository":"https://github.com/yoonjonglyu/ryuislabs","homepage":"https://ryuislabs.com","translations":{"en":{"title":"RyuisLabs","content":"$4"},"ja":{"title":"RyuisLabs (リュイズラボ)","content":"$5"},"ko":{"title":"RyuisLabs (류이즈랩스)","content":"$6"},"zh-TW":{"title":"RyuisLabs","content":"$7"}}}]],null,"$L8"]}],"loading":null,"isPartial":false}
+8:["$","$L9",null,{"children":["$","$a",null,{"name":"Next.MetadataOutlet","children":"$@b"}]}]
+b:null

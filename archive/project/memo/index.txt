@@ -1,19 +1,25 @@
 1:"$Sreact.fragment"
-2:I[9424,["276","static/chunks/276-741fa01ecfa1601f.js","500","static/chunks/500-ede29cb3bc8a7d4a.js","892","static/chunks/892-c91f5471b8ea1539.js","177","static/chunks/app/layout-89238b7b16a36265.js"],"default"]
-3:I[2064,["276","static/chunks/276-741fa01ecfa1601f.js","500","static/chunks/500-ede29cb3bc8a7d4a.js","892","static/chunks/892-c91f5471b8ea1539.js","177","static/chunks/app/layout-89238b7b16a36265.js"],"default"]
-4:I[7346,["276","static/chunks/276-741fa01ecfa1601f.js","500","static/chunks/500-ede29cb3bc8a7d4a.js","892","static/chunks/892-c91f5471b8ea1539.js","177","static/chunks/app/layout-89238b7b16a36265.js"],"default"]
-5:I[8327,["276","static/chunks/276-741fa01ecfa1601f.js","500","static/chunks/500-ede29cb3bc8a7d4a.js","892","static/chunks/892-c91f5471b8ea1539.js","177","static/chunks/app/layout-89238b7b16a36265.js"],"default"]
-6:I[7121,[],""]
-7:I[4581,[],""]
-9:I[484,[],"OutletBoundary"]
-a:"$Sreact.suspense"
-c:I[484,[],"ViewportBoundary"]
-e:I[484,[],"MetadataBoundary"]
-10:I[7123,[],""]
+9:I[7123,[],""]
 :HL["/_next/static/css/e9c7a5e7c904de76.css","style"]
-0:{"P":null,"b":"wp50v4c_4rSs_oyialzGG","c":["","archive","project","memo",""],"q":"","i":false,"f":[[["",{"children":["archive",{"children":["project",{"children":[["slug","memo","d"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/e9c7a5e7c904de76.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","style":{"backgroundColor":"#0b0e14"},"children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":""}],["$","meta",null,{"name":"google-site-verification","content":"qdEnPRuxwkkMBg_va4KDeC4Hb2g5XeMuQETPiTQWZ9U"}],["$","meta",null,{"name":"naver-site-verification","content":"fb761146a5d49fa296db396340c978aac6259845"}]]}],["$","body",null,{"suppressHydrationWarning":true,"style":{"backgroundColor":"#0b0e14","margin":0,"position":"relative","minHeight":"100vh"},"children":[["$","div",null,{"style":{"position":"fixed","top":0,"left":0,"width":"100%","height":"100%","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center","zIndex":-1,"color":"#ffffff","textAlign":"center","pointerEvents":"none"},"children":[["$","p",null,{"style":{"fontSize":"1.2rem","fontWeight":500,"marginBottom":"8px"},"children":"Loading resources..."}],["$","p",null,{"style":{"fontSize":"0.9rem","opacity":0.6},"children":"If the screen stays blank, please try refreshing."}]]}],["$","$L2",null,{"children":["$","$L3",null,{"children":["$","$L4",null,{"children":["$","$L5",null,{"children":["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]}]}]]}]]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L8",null,["$","$L9",null,{"children":["$","$a",null,{"name":"Next.MetadataOutlet","children":"$@b"}]}]]}],{},null,false,false]},null,false,false]},null,false,false]},null,false,false]},null,false,false],["$","$1","h",{"children":[null,["$","$Lc",null,{"children":"$@d"}],["$","div",null,{"hidden":true,"children":["$","$Le",null,{"children":["$","$a",null,{"name":"Next.Metadata","children":"$@f"}]}]}],null]}],false]],"m":"$undefined","G":["$10",[]],"S":true}
-11:I[1767,["276","static/chunks/276-741fa01ecfa1601f.js","500","static/chunks/500-ede29cb3bc8a7d4a.js","787","static/chunks/app/archive/project/%5Bslug%5D/page-f27796723378d5f6.js"],"default"]
-12:T46d9,var Component=(()=>{var p=Object.create;var t=Object.defineProperty;var g=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var u=Object.getPrototypeOf,b=Object.prototype.hasOwnProperty;var y=(i,e)=>()=>{try{return e||i((e={exports:{}}).exports,e),e.exports}catch(r){throw e=0,r}},f=(i,e)=>{for(var r in e)t(i,r,{get:e[r],enumerable:!0})},a=(i,e,r,l)=>{if(e&&typeof e=="object"||typeof e=="function")for(let o of m(e))!b.call(i,o)&&o!==r&&t(i,o,{get:()=>e[o],enumerable:!(l=g(e,o))||l.enumerable});return i};var v=(i,e,r)=>(r=i!=null?p(u(i)):{},a(e||!i||!i.__esModule?t(r,"default",{value:i,enumerable:!0}):r,i)),w=i=>a(t({},"__esModule",{value:!0}),i);var d=y((x,c)=>{c.exports=_jsx_runtime});var k={};f(k,{default:()=>h,frontmatter:()=>A});var n=v(d()),A={title:"MemoFlow",description:"An offline-first, volatile planner PWA designed for lightweight personal note-taking",period:"2023.01 \u2013 2025.01 (v2 Renewal)",stack:["TypeScript","React","Tailwind CSS","PWA","Capacitor"],role:"Frontend Developer",repository:"https://github.com/yoonjonglyu/memo",homepage:"https://yoonjonglyu.github.io/memo/",tags:["Productivity","Offline-First","PWA","Personal-Tool"],order:2};function s(i){let e={a:"a",blockquote:"blockquote",br:"br",code:"code",em:"em",h1:"h1",h2:"h2",h3:"h3",hr:"hr",li:"li",p:"p",pre:"pre",strong:"strong",ul:"ul",...i.components};return(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(e.h1,{children:"\u{1F4DD} MemoFlow"}),`
+2:T5c5,{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Who is ISA (Yoonjong Ryu)?","acceptedAnswer":{"@type":"Answer","text":"ISA (Yoonjong Ryu / 류윤종) is a Frontend & Mobile Security Engineer specializing in Component-Driven Development (CDD), scalable UI architecture, Progressive Web Apps (PWA), and on-device zero-knowledge cryptography."}},{"@type":"Question","name":"What is SeedVault and how does its security work?","acceptedAnswer":{"@type":"Answer","text":"SeedVault is an on-device zero-knowledge security vault mobile app published on Google Play (com.ryuislabs.seedvault). It encrypts mnemonic seed phrases and private keys using memory-hard Argon2id key derivation and AES-256-GCM envelope encryption without requiring remote servers or internet permissions."}},{"@type":"Question","name":"What is RyuisLabs?","acceptedAnswer":{"@type":"Answer","text":"RyuisLabs is an engineering studio platform founded by ISA that develops deep-tech products including on-device AI vision tracking (RYUis : STATUS) and privacy-preserving productivity suites."}},{"@type":"Question","name":"What core technologies are used in ISA Archive?","acceptedAnswer":{"@type":"Answer","text":"ISA Archive is built with Next.js 16 (App Router), React 19, TypeScript, Contentlayer2, Serwist (Service Worker PWA), and styled-components with full static export and multilingual support across Korean, English, Japanese, and Traditional Chinese."}}]}0:{"P":null,"b":"NZXsK4IJh_bZ_0RaCAUxF","c":["","archive","project","memo",""],"q":"","i":false,"f":[[["",{"children":["archive",{"children":["project",{"children":[["slug","memo","d"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/e9c7a5e7c904de76.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","style":{"backgroundColor":"#0b0e14"},"children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":""}],["$","meta",null,{"name":"google-site-verification","content":"qdEnPRuxwkkMBg_va4KDeC4Hb2g5XeMuQETPiTQWZ9U"}],["$","meta",null,{"name":"naver-site-verification","content":"fb761146a5d49fa296db396340c978aac6259845"}],["$","meta",null,{"name":"application-name","content":"ISA Archive"}],["$","meta",null,{"name":"apple-mobile-web-app-capable","content":"yes"}],["$","meta",null,{"name":"apple-mobile-web-app-status-bar-style","content":"black-translucent"}],["$","meta",null,{"name":"apple-mobile-web-app-title","content":"ISA Archive"}],["$","meta",null,{"name":"mobile-web-app-capable","content":"yes"}],["$","meta",null,{"name":"theme-color","content":"#0b0e14"}],["$","meta",null,{"name":"format-detection","content":"telephone=no"}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Person\",\"name\":\"YOON JONG RYU\",\"alternateName\":[\"ISA\",\"류윤종\"],\"url\":\"https://yoonjonglyu.github.io\",\"jobTitle\":\"Frontend & Mobile Security Engineer\",\"sameAs\":[\"https://github.com/yoonjonglyu\",\"https://play.google.com/store/apps/details?id=com.ryuislabs.seedvault\",\"https://ryuislabs.com\"],\"knowsAbout\":[\"UI Architecture\",\"TypeScript\",\"React\",\"Next.js\",\"Component Driven Development\",\"Mobile Security\",\"Zero-Knowledge Cryptography\",\"Argon2id\",\"AES-256-GCM\"]}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"WebSite\",\"name\":\"ISA Archive\",\"url\":\"https://yoonjonglyu.github.io\",\"description\":\"Frontend & Mobile Security Engineer ISA의 공식 아카이브. UI 아키텍처, 컴포넌트 시스템, 온디바이스 암호화 보안 기술 및 출시 프로덕트 기록.\",\"inLanguage\":[\"en\",\"ko\",\"ja\",\"zh-TW\"],\"author\":{\"@type\":\"Person\",\"name\":\"YOON JONG RYU\"},\"speakable\":{\"@type\":\"SpeakableSpecification\",\"cssSelector\":[\"h1\",\"p\"]}}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}]]}],"$L3"]}]]}],{"children":["$L4",{"children":["$L5",{"children":["$L6",{"children":["$L7",{},null,false,false]},null,false,false]},null,false,false]},null,false,false]},null,false,false],"$L8",false]],"m":"$undefined","G":["$9",[]],"S":true}
+a:I[6756,["344","static/chunks/344-b62c34f39c43f863.js","500","static/chunks/500-ede29cb3bc8a7d4a.js","177","static/chunks/app/layout-37c2bd2af5130f53.js"],"default"]
+b:I[9424,["344","static/chunks/344-b62c34f39c43f863.js","500","static/chunks/500-ede29cb3bc8a7d4a.js","177","static/chunks/app/layout-37c2bd2af5130f53.js"],"default"]
+c:I[2064,["344","static/chunks/344-b62c34f39c43f863.js","500","static/chunks/500-ede29cb3bc8a7d4a.js","177","static/chunks/app/layout-37c2bd2af5130f53.js"],"default"]
+d:I[9354,["344","static/chunks/344-b62c34f39c43f863.js","500","static/chunks/500-ede29cb3bc8a7d4a.js","177","static/chunks/app/layout-37c2bd2af5130f53.js"],"default"]
+e:I[7121,[],""]
+f:I[4581,[],""]
+11:I[484,[],"OutletBoundary"]
+12:"$Sreact.suspense"
+14:I[484,[],"ViewportBoundary"]
+16:I[484,[],"MetadataBoundary"]
+3:["$","body",null,{"suppressHydrationWarning":true,"style":{"backgroundColor":"#0b0e14","margin":0,"position":"relative","minHeight":"100vh"},"children":[["$","div",null,{"aria-hidden":"true","style":{"position":"fixed","top":0,"left":0,"width":"100%","height":"100%","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center","zIndex":-1,"color":"#ffffff","textAlign":"center","pointerEvents":"none"},"children":[["$","p",null,{"style":{"fontSize":"1.2rem","fontWeight":500,"marginBottom":"8px"},"children":"Loading resources..."}],["$","p",null,{"style":{"fontSize":"0.9rem","opacity":0.6},"children":"If the screen stays blank, please try refreshing."}]]}],["$","$La",null,{}],["$","$Lb",null,{"children":["$","$Lc",null,{"children":["$","$Ld",null,{"children":["$","$Le",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lf",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]}]]}]
+4:["$","$1","c",{"children":[null,["$","$Le",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lf",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+5:["$","$1","c",{"children":[null,["$","$Le",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lf",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+6:["$","$1","c",{"children":[null,["$","$Le",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lf",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+7:["$","$1","c",{"children":["$L10",null,["$","$L11",null,{"children":["$","$12",null,{"name":"Next.MetadataOutlet","children":"$@13"}]}]]}]
+8:["$","$1","h",{"children":[null,["$","$L14",null,{"children":"$@15"}],["$","div",null,{"hidden":true,"children":["$","$L16",null,{"children":["$","$12",null,{"name":"Next.Metadata","children":"$@17"}]}]}],null]}]
+18:I[1767,["344","static/chunks/344-b62c34f39c43f863.js","500","static/chunks/500-ede29cb3bc8a7d4a.js","787","static/chunks/app/archive/project/%5Bslug%5D/page-c02f2fe915b201a6.js"],"default"]
+19:T46d9,var Component=(()=>{var p=Object.create;var t=Object.defineProperty;var g=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var u=Object.getPrototypeOf,b=Object.prototype.hasOwnProperty;var y=(i,e)=>()=>{try{return e||i((e={exports:{}}).exports,e),e.exports}catch(r){throw e=0,r}},f=(i,e)=>{for(var r in e)t(i,r,{get:e[r],enumerable:!0})},a=(i,e,r,l)=>{if(e&&typeof e=="object"||typeof e=="function")for(let o of m(e))!b.call(i,o)&&o!==r&&t(i,o,{get:()=>e[o],enumerable:!(l=g(e,o))||l.enumerable});return i};var v=(i,e,r)=>(r=i!=null?p(u(i)):{},a(e||!i||!i.__esModule?t(r,"default",{value:i,enumerable:!0}):r,i)),w=i=>a(t({},"__esModule",{value:!0}),i);var d=y((x,c)=>{c.exports=_jsx_runtime});var k={};f(k,{default:()=>h,frontmatter:()=>A});var n=v(d()),A={title:"MemoFlow",description:"An offline-first, volatile planner PWA designed for lightweight personal note-taking",period:"2023.01 \u2013 2025.01 (v2 Renewal)",stack:["TypeScript","React","Tailwind CSS","PWA","Capacitor"],role:"Frontend Developer",repository:"https://github.com/yoonjonglyu/memo",homepage:"https://yoonjonglyu.github.io/memo/",tags:["Productivity","Offline-First","PWA","Personal-Tool"],order:3};function s(i){let e={a:"a",blockquote:"blockquote",br:"br",code:"code",em:"em",h1:"h1",h2:"h2",h3:"h3",hr:"hr",li:"li",p:"p",pre:"pre",strong:"strong",ul:"ul",...i.components};return(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(e.h1,{children:"\u{1F4DD} MemoFlow"}),`
 `,(0,n.jsx)(e.p,{children:(0,n.jsx)(e.strong,{children:"Offline-first Volatile Planner"})}),`
 `,(0,n.jsxs)(e.p,{children:["MemoFlow is a personal productivity tool designed around a simple assumption:",(0,n.jsx)(e.br,{}),`
 `,(0,n.jsx)(e.strong,{children:"notes are meant to be written quickly and deleted without hesitation."})]}),`
@@ -219,8 +225,332 @@ android/            # Capacitor-based Android native project
 `,(0,n.jsx)(e.p,{children:"This project was developed for a personal portfolio and as a productivity tool. We welcome code reviews, feature suggestions, and bug reports through Issues!"}),`
 `,(0,n.jsxs)(e.p,{children:["Author: ISA (",(0,n.jsx)(e.a,{href:"https://github.com/yoonjonglyu",children:"@yoonjonglyu"}),")"]}),`
 `,(0,n.jsx)(e.p,{children:"License: MIT Licensed. Copyright \xA9 2026 ISA."})]})}function h(i={}){let{wrapper:e}=i.components||{};return e?(0,n.jsx)(e,{...i,children:(0,n.jsx)(s,{...i})}):s(i)}return w(k);})();
-;return Component;8:["$","$L11",null,{"title":"MemoFlow","content":"$12","repository":"https://github.com/yoonjonglyu/memo","homepage":"https://yoonjonglyu.github.io/memo/"}]
-d:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
-13:I[6869,[],"IconMark"]
-f:[["$","title","0",{"children":"MemoFlow | ISA - Archive"}],["$","meta","1",{"name":"description","content":"An offline-first, volatile planner PWA designed for lightweight personal note-taking"}],["$","link","2",{"rel":"author","href":"https://github.com/yoonjonglyu"}],["$","meta","3",{"name":"author","content":"YOON JONG RYU"}],["$","link","4",{"rel":"manifest","href":"/manifest.webmanifest","crossOrigin":"$undefined"}],["$","meta","5",{"name":"keywords","content":"Productivity,Offline-First,PWA,Personal-Tool"}],["$","meta","6",{"name":"robots","content":"index, follow"}],["$","meta","7",{"property":"og:title","content":"MemoFlow | ISA - Archive"}],["$","meta","8",{"property":"og:description","content":"An offline-first, volatile planner PWA designed for lightweight personal note-taking"}],["$","meta","9",{"property":"og:url","content":"https://yoonjonglyu.github.io/archive/project/memo/"}],["$","meta","10",{"property":"og:site_name","content":"ISA - Archive"}],["$","meta","11",{"property":"og:image","content":"https://yoonjonglyu.github.io/archive/project/memo/opengraph-image"}],["$","meta","12",{"property":"og:type","content":"article"}],["$","meta","13",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","14",{"name":"twitter:title","content":"MemoFlow | ISA - Archive"}],["$","meta","15",{"name":"twitter:description","content":"An offline-first, volatile planner PWA designed for lightweight personal note-taking"}],["$","meta","16",{"name":"twitter:image","content":"https://yoonjonglyu.github.io/archive/project/memo/opengraph-image"}],["$","link","17",{"rel":"icon","href":"/favicon.ico?0442523079e4433b","type":"image/x-icon","sizes":"16x16"}],["$","link","18",{"rel":"icon","href":"/_next/static/media/favicon-16x16.20819376.png","sizes":"16x16","type":"image/png"}],["$","link","19",{"rel":"icon","href":"/_next/static/media/favicon-32x32.ea868b1f.png","sizes":"32x32","type":"image/png"}],["$","link","20",{"rel":"apple-touch-icon","href":"/_next/static/media/apple-touch-icon.b2dfcbf7.png","sizes":"180x180"}],["$","$L13","21",{}]]
-b:null
+;return Component;1a:T46d9,var Component=(()=>{var p=Object.create;var t=Object.defineProperty;var g=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var u=Object.getPrototypeOf,b=Object.prototype.hasOwnProperty;var y=(i,e)=>()=>{try{return e||i((e={exports:{}}).exports,e),e.exports}catch(r){throw e=0,r}},f=(i,e)=>{for(var r in e)t(i,r,{get:e[r],enumerable:!0})},a=(i,e,r,l)=>{if(e&&typeof e=="object"||typeof e=="function")for(let o of m(e))!b.call(i,o)&&o!==r&&t(i,o,{get:()=>e[o],enumerable:!(l=g(e,o))||l.enumerable});return i};var v=(i,e,r)=>(r=i!=null?p(u(i)):{},a(e||!i||!i.__esModule?t(r,"default",{value:i,enumerable:!0}):r,i)),w=i=>a(t({},"__esModule",{value:!0}),i);var d=y((x,c)=>{c.exports=_jsx_runtime});var k={};f(k,{default:()=>h,frontmatter:()=>A});var n=v(d()),A={title:"MemoFlow",description:"An offline-first, volatile planner PWA designed for lightweight personal note-taking",period:"2023.01 \u2013 2025.01 (v2 Renewal)",stack:["TypeScript","React","Tailwind CSS","PWA","Capacitor"],role:"Frontend Developer",repository:"https://github.com/yoonjonglyu/memo",homepage:"https://yoonjonglyu.github.io/memo/",tags:["Productivity","Offline-First","PWA","Personal-Tool"],order:3};function s(i){let e={a:"a",blockquote:"blockquote",br:"br",code:"code",em:"em",h1:"h1",h2:"h2",h3:"h3",hr:"hr",li:"li",p:"p",pre:"pre",strong:"strong",ul:"ul",...i.components};return(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(e.h1,{children:"\u{1F4DD} MemoFlow"}),`
+`,(0,n.jsx)(e.p,{children:(0,n.jsx)(e.strong,{children:"Offline-first Volatile Planner"})}),`
+`,(0,n.jsxs)(e.p,{children:["MemoFlow is a personal productivity tool designed around a simple assumption:",(0,n.jsx)(e.br,{}),`
+`,(0,n.jsx)(e.strong,{children:"notes are meant to be written quickly and deleted without hesitation."})]}),`
+`,(0,n.jsxs)(e.p,{children:["Rather than positioning notes as long-term assets, MemoFlow defines writing as",(0,n.jsx)(e.br,{}),`
+`,(0,n.jsx)(e.strong,{children:"a temporary aid for organizing thoughts in the present moment."})]}),`
+`,(0,n.jsx)(e.p,{children:"The product intentionally avoids being:"}),`
+`,(0,n.jsxs)(e.ul,{children:[`
+`,(0,n.jsx)(e.li,{children:"as heavy as Notion,"}),`
+`,(0,n.jsx)(e.li,{children:"as structurally deep as Obsidian,"}),`
+`,(0,n.jsx)(e.li,{children:"while aiming to be as immediate and frictionless as a sticky note."}),`
+`]}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h2,{children:"Project Background \u2014 The Need for \u201CLightness\u201D"}),`
+`,(0,n.jsx)(e.p,{children:"This project originated from two core frustrations experienced while using Notion."}),`
+`,(0,n.jsx)(e.h3,{children:"Data Ownership"}),`
+`,(0,n.jsxs)(e.p,{children:["Personal notes were always stored on external servers.",(0,n.jsx)(e.br,{}),`
+`,"Even private, short-lived thoughts depended on third-party infrastructure,",(0,n.jsx)(e.br,{}),`
+`,"which felt excessive and unnecessary for such a minimal use case."]}),`
+`,(0,n.jsx)(e.h3,{children:"Structural Overhead"}),`
+`,(0,n.jsxs)(e.p,{children:[`Even trivial notes\u2014on the scale of a sticky memo\u2014required:
+pages, links, hierarchy, and deliberate structural decisions.`,(0,n.jsx)(e.br,{}),`
+`,"The cognitive cost of \u201Chow to write\u201D outweighed the act of writing itself."]}),`
+`,(0,n.jsxs)(e.p,{children:["What I needed was not a comprehensive knowledge management system,",(0,n.jsx)(e.br,{}),`
+`,"but the ",(0,n.jsx)(e.strong,{children:"smallest possible memo tool"}),"\u2014accessible anywhere via a browser,",(0,n.jsx)(e.br,{}),`
+`,"and disposable by design."]}),`
+`,(0,n.jsxs)(e.p,{children:["As analog tools were inconvenient to manage and digital tools overly complex,",(0,n.jsx)(e.br,{}),`
+`,"the conclusion was clear: ",(0,n.jsx)(e.strong,{children:"build a minimal tool tailored to this exact gap."})]}),`
+`,(0,n.jsxs)(e.p,{children:["From this point, ",(0,n.jsx)(e.strong,{children:"Offline-first"})," naturally became the core design principle."]}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h2,{children:"Problems Addressed"}),`
+`,(0,n.jsx)(e.h3,{children:"Reducing Writing Fatigue Caused by Feature Overload"}),`
+`,(0,n.jsxs)(e.p,{children:["\u2192 ",(0,n.jsx)(e.strong,{children:"Memo / Todo / Note / Draft"})]}),`
+`,(0,n.jsxs)(e.p,{children:["Instead of a single generic note type, content was intentionally divided by intent.",(0,n.jsx)(e.br,{}),`
+`,"This eliminated the need to decide ",(0,n.jsx)(e.em,{children:"how"})," to write before writing,",(0,n.jsx)(e.br,{}),`
+`,"resulting in a structure that guides usage implicitly."]}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h3,{children:"Zero-Learning-Curve UX"}),`
+`,(0,n.jsxs)(e.p,{children:["\u2192 ",(0,n.jsx)(e.strong,{children:"Floating Action Entry + Type Selection"})]}),`
+`,(0,n.jsxs)(e.p,{children:["The app is usable immediately after launch.",(0,n.jsx)(e.br,{}),`
+`,"A minimal onboarding tutorial is available, but writing can begin without reading instructions.",(0,n.jsx)(e.br,{}),`
+`,"The interaction model prioritizes muscle memory over explanation."]}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h3,{children:"Eliminating Network Dependency"}),`
+`,(0,n.jsxs)(e.p,{children:["\u2192 ",(0,n.jsx)(e.strong,{children:"Local-first Data Model + PWA Caching"})]}),`
+`,(0,n.jsxs)(e.p,{children:["All core functionality works regardless of network state.",(0,n.jsx)(e.br,{}),`
+`,"Offline and online experiences are intentionally identical,",(0,n.jsx)(e.br,{}),`
+`,"removing uncertainty from the user\u2019s mental model."]}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h3,{children:"Scalable Hybrid App Architecture"}),`
+`,(0,n.jsxs)(e.p,{children:["\u2192 ",(0,n.jsx)(e.strong,{children:"Single Web Codebase + Capacitor"})]}),`
+`,(0,n.jsxs)(e.p,{children:["The application maintains a unified web-centric architecture,",(0,n.jsx)(e.br,{}),`
+`,"while remaining deployable as an Android app via Capacitor.",(0,n.jsx)(e.br,{}),`
+`,"This ensured platform expansion without fragmenting UI logic or state models."]}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h2,{children:"Technical Decision Rationale"}),`
+`,(0,n.jsxs)(e.ul,{children:[`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:"TypeScript"}),(0,n.jsx)(e.br,{}),`
+`,"Used to explicitly define memo data models and state boundaries,",(0,n.jsx)(e.br,{}),`
+`,"ensuring long-term maintainability as features scale."]}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:"Storybook"}),(0,n.jsx)(e.br,{}),`
+`,"Adopted as a UI architecture tool rather than a showcase.",(0,n.jsx)(e.br,{}),`
+`,"Enabled isolated component verification, documentation,",(0,n.jsx)(e.br,{}),`
+`,"and fast feedback without page-level dependencies."]}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:"React"}),(0,n.jsx)(e.br,{}),`
+`,"Chosen for its suitability in modeling memo-type-specific UIs",(0,n.jsx)(e.br,{}),`
+`,"and managing predictable state flows through composable components."]}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:"Tailwind CSS"}),(0,n.jsx)(e.br,{}),`
+`,"Selected to minimize runtime CSS overhead",(0,n.jsx)(e.br,{}),`
+`,"and to enable rapid UI iteration with a utility-first approach."]}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:"PWA (Progressive Web App)"}),(0,n.jsx)(e.br,{}),`
+`,"Implemented to deliver near-native usability on the web.",(0,n.jsx)(e.br,{}),`
+`,"Service Worker\u2013based caching guarantees operability in offline environments."]}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:"Capacitor"}),(0,n.jsx)(e.br,{}),`
+`,"Preferred over React Native Expo due to architectural simplicity",(0,n.jsx)(e.br,{}),`
+`,"and its alignment with a web-first application philosophy."]}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:"LocalStorage API"}),(0,n.jsx)(e.br,{}),`
+`,"Used as the primary data store to provide instant responsiveness",(0,n.jsx)(e.br,{}),`
+`,"without introducing server-side complexity."]}),`
+`]}),`
+`]}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h2,{children:"Outcome"}),`
+`,(0,n.jsxs)(e.p,{children:["MemoFlow is designed to move away from the mindset that",(0,n.jsx)(e.br,{}),`
+`,(0,n.jsx)(e.strong,{children:"\u201Ceverything must be preserved.\u201D"})]}),`
+`,(0,n.jsxs)(e.p,{children:["Instead, it focuses on keeping only what is necessary ",(0,n.jsx)(e.em,{children:"right now"}),(0,n.jsx)(e.br,{}),`
+`,"and letting the rest disappear naturally."]}),`
+`,(0,n.jsxs)(e.p,{children:["The v2 renewal emphasized ",(0,n.jsx)(e.strong,{children:"removal and alignment over feature expansion"}),"."]}),`
+`,(0,n.jsx)(e.p,{children:"Balancing two goals\u2014"}),`
+`,(0,n.jsxs)(e.ul,{children:[`
+`,(0,n.jsx)(e.li,{children:"a structure that can be clearly explained as a portfolio project, and"}),`
+`,(0,n.jsx)(e.li,{children:"a tool that remains genuinely usable every day\u2014"}),`
+`]}),`
+`,(0,n.jsx)(e.p,{children:"was the central architectural challenge of this project."}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h1,{children:"\u{1F4DD} MemoFlow: Simple Memo & Volatile Planner"}),`
+`,(0,n.jsx)("p",{align:"center",children:(0,n.jsxs)(e.p,{children:[(0,n.jsx)("a",{href:"https://github.com/yoonjonglyu/memo/blob/main/README.md",children:(0,n.jsx)("strong",{children:"English"})}),` |
+`,(0,n.jsx)("a",{href:"https://github.com/yoonjonglyu/memo/blob/main/packages/demo/README.md",children:"\uD55C\uAD6D\uC5B4"})]})}),`
+`,(0,n.jsxs)(e.blockquote,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:'"Fast to Record, Light to Manage"'}),`
+A `,(0,n.jsx)(e.strong,{children:"volatile planner"})," designed for instant memos and short-term scheduling without complex features.",(0,n.jsx)(e.br,{}),`
+`,"Experience seamless continuity across Android, Windows, and Web using Google Drive synchronization."]}),`
+`]}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h2,{children:"\u{1F539} Service Concept"}),`
+`,(0,n.jsx)(e.p,{children:"MemoFlow aims for 'lightness,' distinguishing itself from heavy calendars or bloated note-taking apps."}),`
+`,(0,n.jsxs)(e.ul,{children:[`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"Short-term Focus"}),": Perfect for managing volatile schedules that you record and delete quickly."]}),`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"Tetris Design"}),": A minimalist UI concept that reduces visual fatigue with a clean, block-style interface."]}),`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"Offline First"}),": Record instantly without a network connection using ",(0,n.jsx)(e.code,{children:"@capacitor/filesystem"})," and ",(0,n.jsx)(e.code,{children:"localStorage"}),", and sync when online."]}),`
+`]}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h2,{children:"\u{1F680} Key Features"}),`
+`,(0,n.jsx)(e.h3,{children:"1. Multi-Platform Support"}),`
+`,(0,n.jsxs)(e.ul,{children:[`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"Mobile"}),": Native experience on Android (powered by Capacitor 8)."]}),`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"Desktop"}),": Standalone software for Windows (powered by Electron 23) and PWA support."]}),`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"Web"}),": Immediate access and usage through any modern web browser."]}),`
+`]}),`
+`,(0,n.jsx)(e.h3,{children:"2. Smart Sync & Backup"}),`
+`,(0,n.jsxs)(e.ul,{children:[`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"Google Drive Sync"}),": Secure data synchronization and continuity using your personal Google Drive\u2014no separate server required."]}),`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"Flexible Export/Import"}),": Export data in JSON, Markdown, or HTML formats, and restore via JSON import."]}),`
+`]}),`
+`,(0,n.jsx)(e.h3,{children:"3. Modern UI/UX & Quality"}),`
+`,(0,n.jsxs)(e.ul,{children:[`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"Tailwind CSS 4.0"}),': High-performance styling with the latest engine and a minimalist "Tetris-inspired" design.']}),`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"Storybook 8"}),": UI reliability ensured through component documentation and Interaction Testing (Play functions)."]}),`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"MSW"}),": Robust verification of network scenarios using Mock Service Worker for API mocking."]}),`
+`]}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h2,{children:"\u{1F6E0} Tech Stack"}),`
+`,(0,n.jsxs)(e.p,{children:[`| Category         | Tech Stack                                             |
+| :--------------- | :----------------------------------------------------- |
+| `,(0,n.jsx)(e.strong,{children:"Core"}),"         | ",(0,n.jsx)(e.code,{children:"React 18"}),", ",(0,n.jsx)(e.code,{children:"Recoil"})," (State Management), ",(0,n.jsx)(e.code,{children:"Babel"}),`       |
+| `,(0,n.jsx)(e.strong,{children:"Styling"}),"      | ",(0,n.jsx)(e.code,{children:"Tailwind CSS 4"}),", ",(0,n.jsx)(e.code,{children:"Styled-components"}),", ",(0,n.jsx)(e.code,{children:"FontAwesome 6"}),` |
+| `,(0,n.jsx)(e.strong,{children:"Build & Tool"})," | ",(0,n.jsx)(e.code,{children:"Webpack 5"}),`                                            |
+| `,(0,n.jsx)(e.strong,{children:"Platform"}),"     | ",(0,n.jsx)(e.code,{children:"Capacitor 8"})," (Android), ",(0,n.jsx)(e.code,{children:"Electron 23"}),` (Desktop)       |
+| `,(0,n.jsx)(e.strong,{children:"Testing"}),"      | ",(0,n.jsx)(e.code,{children:"Storybook 8"}),", ",(0,n.jsx)(e.code,{children:"MSW"}),", ",(0,n.jsx)(e.code,{children:"React Testing Library"}),"          |"]}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h2,{children:"\u{1F4C8} Version Log (via Storybook)"}),`
+`,(0,n.jsx)(e.p,{children:"Explore the evolution of our components through the following Chromatic links:"}),`
+`,(0,n.jsxs)(e.ul,{children:[`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.a,{href:"https://64105a493828b256671845d2-ijtzcntnsm.chromatic.com/?path=/story/%EB%A9%94%EB%AA%A8-ui-atoms-floatbtn--basic",children:(0,n.jsx)(e.strong,{children:"Initial Version"})})," : UI Atom-level design."]}),`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.a,{href:"https://64105a493828b256671845d2-pphrrzkvqx.chromatic.com/?path=/docs/%EB%A9%94%EB%AA%A8-page-index--docs",children:(0,n.jsx)(e.strong,{children:"v1.0.1"})})," : Implementation of page-level documentation."]}),`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.a,{href:"https://64105a493828b256671845d2-kcsdeyunzi.chromatic.com/?path=/story/%EB%A9%94%EB%AA%A8-page-index--basic",children:(0,n.jsx)(e.strong,{children:"v2.0.0"})})," : Full interaction testing applied."]}),`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.a,{href:"https://64105a493828b256671845d2-wlfyjvsxmm.chromatic.com/?path=/story/%EB%A9%94%EB%AA%A8-page-index--basic",children:(0,n.jsx)(e.strong,{children:"v2.0.2"})})," : Onboard Tutorial + App edge + App Back Exit UX"]}),`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.a,{href:"https://64105a493828b256671845d2-upakptadnq.chromatic.com/?path=/story/%EB%A9%94%EB%AA%A8-page-index--basic",children:(0,n.jsx)(e.strong,{children:"v2.0.6"})})," : Sort Memo + Google Drive Sync"]}),`
+`]}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h2,{children:"\u{1F4E6} Installation & Setup"}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-bash",children:`# 1. Clone the repository
+git clone [https://github.com/yoonjonglyu/memo.git](https://github.com/yoonjonglyu/memo.git)
+
+# 2. Install dependencies
+yarn install
+
+# 3. Configure environment variables (Create .env file)
+# GOOGLE_CID=your_google_client_id
+# GOOGLE_DEV_KEY=your_google_developer_key
+
+# 4. Run scripts
+yarn dev      # Launch Web development server
+yarn dev:pc   # Launch Electron desktop app
+yarn storybook # Launch UI component test environment
+yarn build    # Production build (outputs to dist folder)
+`})}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h2,{children:"\u{1F4C1} Project Structure"}),`
+`,(0,n.jsx)(e.pre,{children:(0,n.jsx)(e.code,{className:"language-txt",children:`src/
+\u251C\u2500\u2500 components/     # Common UI & Atom components
+\u251C\u2500\u2500 features/       # Main domain components (Memo, Setting)
+\u251C\u2500\u2500 hooks/          # Core domain logic & custom hooks
+\u251C\u2500\u2500 mocks/          # MSW handlers & mock data
+\u251C\u2500\u2500 providers/      # Modal & Context configurations
+\u251C\u2500\u2500 store/          # Recoil-based state models
+\u251C\u2500\u2500 services/       # heavy domain logic Services
+\u251C\u2500\u2500 index.css       # Tailwind 4 global styles
+electron/           # Electron main/preload process settings
+android/            # Capacitor-based Android native project
+`})}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h2,{children:"\u{1F680} Recommended For..."}),`
+`,(0,n.jsx)(e.p,{children:`\u2714 Users who prefer writing quick notes and deleting them immediately.
+\u2714 Managing short-term schedules and goals.
+\u2714 Those looking for a lightweight memo tool instead of a complex calendar app.`}),`
+`,(0,n.jsxs)(e.p,{children:["\u{1F4CC} ",(0,n.jsxs)(e.strong,{children:["Go to MemoFlow(Web) \u2192 ",(0,n.jsx)(e.a,{href:"https://yoonjonglyu.github.io/memo/",children:"\u{1F517}Project Link"})]}),`
+\u{1F4CC} `,(0,n.jsxs)(e.strong,{children:["Go to MemoFlow(Android) \u2192 ",(0,n.jsx)(e.a,{href:"https://play.google.com/store/apps/details?id=com.yoonjongryu.memo",children:"\u{1F517}AppStore Link"})]})]}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.h2,{children:"\u{1F91D} Contributing"}),`
+`,(0,n.jsx)(e.p,{children:"This project was developed for a personal portfolio and as a productivity tool. We welcome code reviews, feature suggestions, and bug reports through Issues!"}),`
+`,(0,n.jsxs)(e.p,{children:["Author: ISA (",(0,n.jsx)(e.a,{href:"https://github.com/yoonjonglyu",children:"@yoonjonglyu"}),")"]}),`
+`,(0,n.jsx)(e.p,{children:"License: MIT Licensed. Copyright \xA9 2026 ISA."})]})}function h(i={}){let{wrapper:e}=i.components||{};return e?(0,n.jsx)(e,{...i,children:(0,n.jsx)(s,{...i})}):s(i)}return w(k);})();
+;return Component;1b:T1af8,var Component=(()=>{var a=Object.create;var l=Object.defineProperty;var g=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var u=Object.getPrototypeOf,y=Object.prototype.hasOwnProperty;var j=(e,n)=>()=>{try{return n||e((n={exports:{}}).exports,n),n.exports}catch(r){throw n=0,r}},f=(e,n)=>{for(var r in n)l(e,r,{get:n[r],enumerable:!0})},h=(e,n,r,t)=>{if(n&&typeof n=="object"||typeof n=="function")for(let i of p(n))!y.call(e,i)&&i!==r&&l(e,i,{get:()=>n[i],enumerable:!(t=g(n,i))||t.enumerable});return e};var b=(e,n,r)=>(r=e!=null?a(u(e)):{},h(n||!e||!e.__esModule?l(r,"default",{value:e,enumerable:!0}):r,e)),x=e=>h(l({},"__esModule",{value:!0}),e);var d=j((P,c)=>{c.exports=_jsx_runtime});var _={};f(_,{default:()=>m,frontmatter:()=>M});var o=b(d()),M={title:"MemoFlow",description:"\u8EFD\u91CF\u306A\u500B\u4EBA\u306E\u30E1\u30E2\u53D6\u308A\u306E\u305F\u3081\u306B\u8A2D\u8A08\u3055\u308C\u305F\u30AA\u30D5\u30E9\u30A4\u30F3\u30D5\u30A1\u30FC\u30B9\u30C8\u306E\u63EE\u767A\u6027\u30D7\u30E9\u30F3\u30CA\u30FCPWA",period:"2023.01 \u2013 2025.01 (v2 \u30EA\u30CB\u30E5\u30FC\u30A2\u30EB)",stack:["TypeScript","React","Tailwind CSS","PWA","Capacitor"],role:"\u30D5\u30ED\u30F3\u30C8\u30A8\u30F3\u30C9\u958B\u767A\u8005",repository:"https://github.com/yoonjonglyu/memo",homepage:"https://yoonjonglyu.github.io/memo/",tags:["Productivity","Offline-First","PWA","Personal-Tool"],order:3};function s(e){let n={a:"a",h1:"h1",h2:"h2",hr:"hr",li:"li",ol:"ol",p:"p",strong:"strong",ul:"ul",...e.components};return(0,o.jsxs)(o.Fragment,{children:[(0,o.jsx)(n.h1,{children:"\u{1F4DD} MemoFlow"}),`
+`,(0,o.jsx)(n.p,{children:(0,o.jsx)(n.strong,{children:"\u30AA\u30D5\u30E9\u30A4\u30F3\u30D5\u30A1\u30FC\u30B9\u30C8\u306E\u63EE\u767A\u6027\u30D7\u30E9\u30F3\u30CA\u30FC"})}),`
+`,(0,o.jsx)(n.p,{children:"MemoFlow\u306F\u3001**\u300C\u30E1\u30E2\u3068\u306F\u7D20\u65E9\u304F\u66F8\u304D\u3001\u8E8A\u8E87\u306A\u304F\u6D88\u3059\u305F\u3081\u306E\u3082\u306E\u3067\u3042\u308B\u300D**\u3068\u3044\u3046\u524D\u63D0\u306B\u57FA\u3065\u3044\u3066\u8A2D\u8A08\u3055\u308C\u305F\u500B\u4EBA\u5411\u3051\u751F\u7523\u6027\u30C4\u30FC\u30EB\u3067\u3059\u3002"}),`
+`,(0,o.jsx)(n.p,{children:"\u30E1\u30E2\u3092\u9577\u671F\u7684\u306A\u8CC7\u7523\u3068\u3057\u3066\u4F4D\u7F6E\u3065\u3051\u308B\u306E\u3067\u306F\u306A\u304F\u3001**\u300C\u4ECA\u3053\u306E\u77AC\u9593\u306E\u601D\u8003\u3092\u6574\u7406\u3059\u308B\u305F\u3081\u306E\u77ED\u671F\u7684\u306A\u88DC\u52A9\u30C4\u30FC\u30EB\u300D**\u3068\u5B9A\u7FA9\u3057\u3066\u3044\u307E\u3059\u3002"}),`
+`,(0,o.jsxs)(n.ul,{children:[`
+`,(0,o.jsx)(n.li,{children:"Notion\u307B\u3069\u91CD\u304F\u306A\u304F\u3001"}),`
+`,(0,o.jsx)(n.li,{children:"Obsidian\u307B\u3069\u69CB\u9020\u304C\u6DF1\u304F\u306A\u304F\u3001"}),`
+`,(0,o.jsx)(n.li,{children:"\u4ED8\u7B8B\u306E\u3088\u3046\u306B\u5373\u5EA7\u306B\u624B\u8EFD\u306B\u4F7F\u3048\u308B\u30C4\u30FC\u30EB\u3092\u76EE\u6307\u3057\u307E\u3057\u305F\u3002"}),`
+`]}),`
+`,(0,o.jsx)(n.hr,{}),`
+`,(0,o.jsx)(n.h2,{children:"\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\u306E\u80CC\u666F \u2014 \u300C\u8EFD\u3055\u300D\u306E\u63A2\u6C42"}),`
+`,(0,o.jsx)(n.p,{children:"Notion\u3092\u4F7F\u7528\u3059\u308B\u4E2D\u3067\u611F\u3058\u305F2\u3064\u306E\u6839\u672C\u7684\u306A\u4E0D\u6E80\u304B\u3089\u59CB\u307E\u308A\u307E\u3057\u305F\uFF1A"}),`
+`,(0,o.jsxs)(n.ol,{children:[`
+`,(0,o.jsxs)(n.li,{children:[(0,o.jsx)(n.strong,{children:"\u30C7\u30FC\u30BF\u6240\u6709\u6A29"}),": \u77ED\u671F\u7684\u306A\u601D\u8003\u306E\u65AD\u7247\u3067\u3042\u3063\u3066\u3082\u5E38\u306B\u5916\u90E8\u30B5\u30FC\u30D0\u30FC\u306B\u4F9D\u5B58\u3057\u3066\u3057\u307E\u3046\u554F\u984C\u3002"]}),`
+`,(0,o.jsxs)(n.li,{children:[(0,o.jsx)(n.strong,{children:"\u69CB\u9020\u7684\u30AA\u30FC\u30D0\u30FC\u30D8\u30C3\u30C9"}),": \u4ED8\u7B8B\u30EC\u30D9\u30EB\u306E\u4E9B\u7D30\u306A\u30E1\u30E2\u3067\u3042\u3063\u3066\u3082\u30DA\u30FC\u30B8\u3001\u30EA\u30F3\u30AF\u3001\u968E\u5C64\u306E\u6C7A\u5B9A\u3092\u8FEB\u3089\u308C\u3001\u300C\u66F8\u304F\u884C\u70BA\u300D\u3088\u308A\u3082\u300C\u3069\u3046\u6574\u7406\u3059\u308B\u304B\u300D\u306E\u8A8D\u77E5\u30B3\u30B9\u30C8\u304C\u4E0A\u56DE\u3063\u3066\u3057\u307E\u3046\u554F\u984C\u3002"]}),`
+`]}),`
+`,(0,o.jsx)(n.p,{children:"\u5FC5\u8981\u306A\u306E\u306F\u7DB2\u7F85\u7684\u306A\u30CA\u30EC\u30C3\u30B8\u30D9\u30FC\u30B9\u3067\u306F\u306A\u304F\u3001\u30D6\u30E9\u30A6\u30B6\u3084\u30B9\u30DE\u30DB\u304B\u3089\u5373\u5EA7\u306B\u30A2\u30AF\u30BB\u30B9\u3067\u304D\u3001\u4F7F\u3044\u6368\u3066\u3092\u524D\u63D0\u3068\u3057\u305F**\u300C\u6700\u5C0F\u306E\u30E1\u30E2\u30C4\u30FC\u30EB\u300D**\u3067\u3057\u305F\u3002"}),`
+`,(0,o.jsx)(n.hr,{}),`
+`,(0,o.jsx)(n.h2,{children:"\u89E3\u6C7A\u3057\u305F\u8AB2\u984C"}),`
+`,(0,o.jsxs)(n.ul,{children:[`
+`,(0,o.jsxs)(n.li,{children:[(0,o.jsx)(n.strong,{children:"\u6A5F\u80FD\u904E\u591A\u306B\u3088\u308B\u57F7\u7B46\u75B2\u52B4\u306E\u8EFD\u6E1B"}),": Memo / Todo / Note / Draft \u306E4\u5206\u985E\u306B\u3088\u308A\u3001\u66F8\u304D\u59CB\u3081\u308B\u524D\u306E\u8FF7\u3044\u3092\u6392\u9664\u3002"]}),`
+`,(0,o.jsxs)(n.li,{children:[(0,o.jsx)(n.strong,{children:"\u5B66\u7FD2\u30B3\u30B9\u30C8\u30BC\u30ED\u306EUX"}),": \u30D5\u30ED\u30FC\u30C6\u30A3\u30F3\u30B0\u30DC\u30BF\u30F3\u304B\u3089\u5373\u5EA7\u306B\u5165\u529B\u958B\u59CB\u3002\u8AAC\u660E\u4E0D\u8981\u306E\u76F4\u611F\u64CD\u4F5C\u3092\u5B9F\u73FE\u3002"]}),`
+`,(0,o.jsxs)(n.li,{children:[(0,o.jsx)(n.strong,{children:"\u30CD\u30C3\u30C8\u30EF\u30FC\u30AF\u4F9D\u5B58\u306E\u6392\u9664"}),": LocalStorage\u3068Service Worker\u30AD\u30E3\u30C3\u30B7\u30E5\u306B\u3088\u308A\u3001\u30AA\u30D5\u30E9\u30A4\u30F3\u3067\u3082\u30AA\u30F3\u30E9\u30A4\u30F3\u3068\u5B8C\u5168\u306B\u540C\u4E00\u306E\u4F7F\u3044\u52DD\u624B\u3092\u4FDD\u8A3C\u3002"]}),`
+`,(0,o.jsxs)(n.li,{children:[(0,o.jsx)(n.strong,{children:"\u30DE\u30EB\u30C1\u30D7\u30E9\u30C3\u30C8\u30D5\u30A9\u30FC\u30E0\u5C55\u958B"}),": \u5358\u4E00\u306EWeb\u30B3\u30FC\u30C9\u30D9\u30FC\u30B9\u304B\u3089Capacitor\u3092\u7528\u3044\u3066Android\u30A2\u30D7\u30EA\u3068\u3057\u3066\u3082\u914D\u4FE1\u3002"]}),`
+`]}),`
+`,(0,o.jsx)(n.hr,{}),`
+`,(0,o.jsx)(n.h2,{children:"\u30EA\u30F3\u30AF"}),`
+`,(0,o.jsxs)(n.ul,{children:[`
+`,(0,o.jsxs)(n.li,{children:["Web: ",(0,o.jsx)(n.a,{href:"https://yoonjonglyu.github.io/memo/",children:"https://yoonjonglyu.github.io/memo/"})]}),`
+`,(0,o.jsxs)(n.li,{children:["Google Play Store: ",(0,o.jsx)(n.a,{href:"https://play.google.com/store/apps/details?id=com.yoonjongryu.memo",children:"https://play.google.com/store/apps/details?id=com.yoonjongryu.memo"})]}),`
+`,(0,o.jsxs)(n.li,{children:["GitHub: ",(0,o.jsx)(n.a,{href:"https://github.com/yoonjonglyu/memo",children:"https://github.com/yoonjonglyu/memo"})]}),`
+`]})]})}function m(e={}){let{wrapper:n}=e.components||{};return n?(0,o.jsx)(n,{...e,children:(0,o.jsx)(s,{...e})}):s(e)}return x(_);})();
+;return Component;1c:T29cd,var Component=(()=>{var g=Object.create;var l=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var u=Object.getPrototypeOf,y=Object.prototype.hasOwnProperty;var b=(e,n)=>()=>{try{return n||e((n={exports:{}}).exports,n),n.exports}catch(o){throw n=0,o}},f=(e,n)=>{for(var o in n)l(e,o,{get:n[o],enumerable:!0})},t=(e,n,o,h)=>{if(n&&typeof n=="object"||typeof n=="function")for(let i of m(n))!y.call(e,i)&&i!==o&&l(e,i,{get:()=>n[i],enumerable:!(h=p(n,i))||h.enumerable});return e};var j=(e,n,o)=>(o=e!=null?g(u(e)):{},t(n||!e||!e.__esModule?l(o,"default",{value:e,enumerable:!0}):o,e)),S=e=>t(l({},"__esModule",{value:!0}),e);var d=b((F,c)=>{c.exports=_jsx_runtime});var w={};f(w,{default:()=>a,frontmatter:()=>x});var r=j(d()),x={title:"MemoFlow",description:"\uAC00\uBCBC\uC6B4 \uAC1C\uC778 \uBA54\uBAA8\uC640 \uB2E8\uAE30 \uC77C\uC815 \uAD00\uB9AC\uB97C \uC704\uD574 \uC124\uACC4\uB41C \uC624\uD504\uB77C\uC778 \uC6B0\uC120(Offline-First) \uD718\uBC1C\uC131 \uD50C\uB798\uB108 PWA",period:"2023.01 \u2013 2025.01 (v2 Renewal)",stack:["TypeScript","React","Tailwind CSS","PWA","Capacitor"],role:"1\uC778 \uAC1C\uBC1C",repository:"https://github.com/yoonjonglyu/memo",homepage:"https://yoonjonglyu.github.io/memo/",tags:["Productivity","Offline-First","PWA","Personal-Tool"],order:3};function s(e){let n={a:"a",br:"br",h1:"h1",h2:"h2",h3:"h3",hr:"hr",li:"li",p:"p",strong:"strong",ul:"ul",...e.components};return(0,r.jsxs)(r.Fragment,{children:[(0,r.jsx)(n.h1,{children:"\u{1F4DD} MemoFlow"}),`
+`,(0,r.jsx)(n.p,{children:(0,r.jsx)(n.strong,{children:"\uC624\uD504\uB77C\uC778 \uD37C\uC2A4\uD2B8 \uAE30\uBC18 \uD718\uBC1C\uC131 \uD50C\uB798\uB108"})}),`
+`,(0,r.jsx)(n.p,{children:"MemoFlow\uB294 **\u201C\uBA54\uBAA8\uB780 \uBE60\uB974\uAC8C \uAE30\uB85D\uD558\uACE0 \uC8FC\uC800 \uC5C6\uC774 \uC9C0\uC6B0\uAE30 \uC704\uD55C \uAC83\uC774\uB2E4\u201D**\uB77C\uB294 \uC9C1\uAD00\uC801\uC778 \uC804\uC81C \uC544\uB798 \uC124\uACC4\uB41C \uAC1C\uC778 \uC0DD\uC0B0\uC131 \uB3C4\uAD6C\uC785\uB2C8\uB2E4."}),`
+`,(0,r.jsx)(n.p,{children:"\uAE30\uB85D\uC744 \uC601\uAD6C\uD788 \uBCF4\uAD00\uD574\uC57C \uD560 \uC790\uC0B0\uC73C\uB85C \uB2E4\uB8E8\uAE30\uBCF4\uB2E4, **\u201C\uC9C0\uAE08 \uC774 \uC21C\uAC04\uC758 \uC0DD\uAC01\uC744 \uC815\uB3C8\uD558\uAE30 \uC704\uD55C \uB2E8\uAE30\uC801\uC778 \uBCF4\uC870 \uB3C4\uAD6C\u201D**\uB85C \uC815\uC758\uD588\uC2B5\uB2C8\uB2E4."}),`
+`,(0,r.jsxs)(n.ul,{children:[`
+`,(0,r.jsx)(n.li,{children:"\uB178\uC158\uCC98\uB7FC \uBB34\uAC81\uC9C0 \uC54A\uACE0,"}),`
+`,(0,r.jsx)(n.li,{children:"\uC635\uC2DC\uB514\uC548\uCC98\uB7FC \uAD6C\uC870\uAC00 \uAE4A\uC9C0 \uC54A\uC73C\uBA70,"}),`
+`,(0,r.jsx)(n.li,{children:"\uD3EC\uC2A4\uD2B8\uC787\uCC98\uB7FC \uBD80\uB2F4 \uC5C6\uC774 \uC989\uC2DC \uB5BC\uC5B4 \uC4F8 \uC218 \uC788\uB294 \uB3C4\uAD6C\uB97C \uC9C0\uD5A5\uD569\uB2C8\uB2E4."}),`
+`]}),`
+`,(0,r.jsx)(n.hr,{}),`
+`,(0,r.jsx)(n.h2,{children:"\uD504\uB85C\uC81D\uD2B8 \uBC30\uACBD \u2014 \u201C\uAC00\uBCBC\uC6C0\u201D\uC5D0 \uB300\uD55C \uAC08\uC99D"}),`
+`,(0,r.jsx)(n.p,{children:"\uB178\uC158(Notion)\uC744 \uC0AC\uC6A9\uD558\uBA70 \uB290\uAF08\uB358 \uB450 \uAC00\uC9C0 \uBCF8\uC9C8\uC801\uC778 \uBD88\uD3B8\uD568\uC5D0\uC11C \uC2DC\uC791\uB418\uC5C8\uC2B5\uB2C8\uB2E4:"}),`
+`,(0,r.jsx)(n.h3,{children:"1. \uB370\uC774\uD130 \uC8FC\uAD8C\uC5D0 \uB300\uD55C \uC758\uBB38"}),`
+`,(0,r.jsx)(n.p,{children:"\uC544\uBB34\uB9AC \uC0AC\uC18C\uD55C \uC0DD\uAC01\uC758 \uD30C\uD3B8\uC774\uB77C\uB3C4 \uD56D\uC0C1 \uC678\uBD80 \uC11C\uBC84\uC5D0 \uC800\uC7A5\uB418\uB294 \uAD6C\uC870\uC5D0 \uB300\uD55C \uAC70\uBD80\uAC10. \uC9C0\uADF9\uD788 \uAC1C\uC778\uC801\uC778 \uBA54\uBAA8\uC870\uCC28 \uC81C3\uC790\uC758 \uC778\uD504\uB77C\uC5D0 \uC758\uC874\uD574\uC57C \uD558\uB294 \uAD6C\uC870\uAC00 \uBD88\uD544\uC694\uD558\uAC8C \uB290\uAEF4\uC84C\uC2B5\uB2C8\uB2E4."}),`
+`,(0,r.jsx)(n.h3,{children:"2. \uACFC\uB3C4\uD55C \uAD6C\uC870\uC801 \uC624\uBC84\uD5E4\uB4DC"}),`
+`,(0,r.jsx)(n.p,{children:"\uD3EC\uC2A4\uD2B8\uC787 \uD55C \uC7A5 \uC218\uC900\uC758 \uBA54\uBAA8\uC870\uCC28 \uD398\uC774\uC9C0 \uC0DD\uC131, \uB9C1\uD06C \uC5F0\uACB0, \uACC4\uCE35 \uAD6C\uC870 \uC124\uC815\uC744 \uC694\uAD6C\uD558\uB294 UX\uC758 \uD53C\uB85C\uAC10. \u201C\uC5B4\uB5BB\uAC8C \uBD84\uB958\uD560 \uAC83\uC778\uAC00\u201D\uC5D0 \uB4DC\uB294 \uC778\uC9C0 \uBE44\uC6A9\uC774 \uAE30\uB85D\uD558\uB294 \uD589\uC704 \uC790\uCCB4\uB97C \uC555\uB3C4\uD588\uC2B5\uB2C8\uB2E4."}),`
+`,(0,r.jsx)(n.p,{children:"\uD544\uC694\uD588\uB358 \uAC83\uC740 \uAC70\uCC3D\uD55C \uC9C0\uC2DD \uAD00\uB9AC \uC2DC\uC2A4\uD15C\uC774 \uC544\uB2C8\uB77C, \uBE0C\uB77C\uC6B0\uC800\uB098 \uC2A4\uB9C8\uD2B8\uD3F0\uC5D0\uC11C \uC989\uC2DC \uC5F4\uC5B4 \uBC14\uB85C \uC4F0\uACE0 \uBC84\uB9B4 \uC218 \uC788\uB294 **\u201C\uAC00\uC7A5 \uC791\uC740 \uBA54\uBAA8 \uB3C4\uAD6C\u201D**\uC600\uC2B5\uB2C8\uB2E4."}),`
+`,(0,r.jsx)(n.hr,{}),`
+`,(0,r.jsx)(n.h2,{children:"\uD574\uACB0\uD55C \uBB38\uC81C"}),`
+`,(0,r.jsx)(n.h3,{children:"\uAE30\uB2A5 \uACFC\uBD80\uD558\uB85C \uC778\uD55C \uC791\uC131 \uD53C\uB85C\uB3C4 \uD574\uC18C"}),`
+`,(0,r.jsxs)(n.p,{children:["\u2192 ",(0,r.jsx)(n.strong,{children:"Memo / Todo / Note / Draft\uC758 \uBA85\uD655\uD55C \uC758\uB3C4 \uBD84\uB9AC"}),(0,r.jsx)(n.br,{}),`
+`,"\uB2E8\uC77C \uBA54\uBAA8 \uD615\uD0DC \uB300\uC2E0 \uBAA9\uC801\uBCC4\uB85C \uC720\uD615\uC744 \uBD84\uB9AC\uD558\uC5EC, \uAE00\uC744 \uC4F0\uAE30 \uC804\uC5D0 \uAD6C\uC870\uB97C \uACE0\uBBFC\uD560 \uD544\uC694 \uC5C6\uC774 \uC989\uAC01 \uC791\uC131\uC744 \uC2DC\uC791\uD560 \uC218 \uC788\uB3C4\uB85D \uC720\uB3C4\uD588\uC2B5\uB2C8\uB2E4."]}),`
+`,(0,r.jsx)(n.h3,{children:"\uD559\uC2B5 \uBE44\uC6A9 \uC81C\uB85C UX"}),`
+`,(0,r.jsxs)(n.p,{children:["\u2192 ",(0,r.jsx)(n.strong,{children:"\uD50C\uB85C\uD305 \uC561\uC158 \uBC84\uD2BC + \uC989\uAC01\uC801\uC778 \uC791\uC131 \uC778\uD130\uB799\uC158"}),(0,r.jsx)(n.br,{}),`
+`,"\uC124\uBA85\uC11C\uB97C \uC77D\uC9C0 \uC54A\uC544\uB3C4 \uCCAB \uC2E4\uD589 \uC9C1\uD6C4 \uBC14\uB85C \uD0C0\uC774\uD551\uD560 \uC218 \uC788\uB294 \uC9C1\uAD00\uC801\uC778 \uC870\uC791\uAC10\uC744 \uC644\uC131\uD588\uC2B5\uB2C8\uB2E4."]}),`
+`,(0,r.jsx)(n.h3,{children:"\uB124\uD2B8\uC6CC\uD06C \uC758\uC874\uC131 \uC6D0\uCC9C \uCC28\uB2E8"}),`
+`,(0,r.jsxs)(n.p,{children:["\u2192 ",(0,r.jsx)(n.strong,{children:"LocalStorage + Service Worker \uCE90\uC2F1"}),(0,r.jsx)(n.br,{}),`
+`,"\uB124\uD2B8\uC6CC\uD06C \uC5F0\uACB0 \uC720\uBB34\uC640 \uC0C1\uAD00\uC5C6\uC774 \uB3D9\uC77C\uD558\uAC8C \uB3D9\uC791\uD558\uBA70, \uC624\uD504\uB77C\uC778\uACFC \uC628\uB77C\uC778 \uC0C1\uD0DC\uC758 \uC0AC\uC6A9\uC790 \uACBD\uD5D8 \uCC28\uC774\uB97C \uC644\uC804\uD788 \uC5C6\uC574\uC2B5\uB2C8\uB2E4."]}),`
+`,(0,r.jsx)(n.h3,{children:"\uB2E8\uC77C \uCF54\uB4DC\uBCA0\uC774\uC2A4 \uAE30\uBC18 \uBA40\uD2F0\uD50C\uB7AB\uD3FC \uD655\uC7A5"}),`
+`,(0,r.jsxs)(n.p,{children:["\u2192 ",(0,r.jsx)(n.strong,{children:"\uC6F9 \uD45C\uC900 \uC544\uD0A4\uD14D\uCC98 + Capacitor"}),(0,r.jsx)(n.br,{}),`
+`,"\uC6F9 \uAE30\uBC18 \uB2E8\uC77C \uCF54\uB4DC\uBCA0\uC774\uC2A4\uB97C \uC720\uC9C0\uD558\uBA74\uC11C Capacitor\uB97C \uD65C\uC6A9\uD574 Android \uB124\uC774\uD2F0\uBE0C \uC571\uC73C\uB85C \uC6D0\uD65C\uD558\uAC8C \uD328\uD0A4\uC9D5 \uBC0F \uBC30\uD3EC\uD588\uC2B5\uB2C8\uB2E4."]}),`
+`,(0,r.jsx)(n.hr,{}),`
+`,(0,r.jsx)(n.h2,{children:"\uAE30\uC220\uC801 \uC120\uD0DD \uADFC\uAC70"}),`
+`,(0,r.jsxs)(n.ul,{children:[`
+`,(0,r.jsxs)(n.li,{children:[(0,r.jsx)(n.strong,{children:"TypeScript"}),": \uBA54\uBAA8 \uB370\uC774\uD130 \uBAA8\uB378\uACFC \uC0C1\uD0DC \uACBD\uACC4\uB97C \uBA85\uD655\uD788 \uADDC\uC815\uD558\uC5EC \uC7A5\uAE30\uC801 \uC720\uC9C0\uBCF4\uC218\uC131 \uD655\uBCF4"]}),`
+`,(0,r.jsxs)(n.li,{children:[(0,r.jsx)(n.strong,{children:"Storybook"}),": \uBE44\uC988\uB2C8\uC2A4 \uB85C\uC9C1\uACFC \uACB0\uD569\uB418\uC9C0 \uC54A\uC740 \uC0C1\uD0DC\uC5D0\uC11C UI\uB97C \uB3C5\uB9BD\uC801\uC73C\uB85C \uAC80\uC99D\uD558\uACE0 \uBB38\uC11C\uD654"]}),`
+`,(0,r.jsxs)(n.li,{children:[(0,r.jsx)(n.strong,{children:"React"}),": \uCEF4\uD3EC\uB10C\uD2B8 \uC870\uD569\uC744 \uD1B5\uD574 \uBA54\uBAA8 \uC720\uD615\uBCC4 UI\uB97C \uC608\uCE21 \uAC00\uB2A5\uD558\uAC8C \uAD6C\uC131"]}),`
+`,(0,r.jsxs)(n.li,{children:[(0,r.jsx)(n.strong,{children:"Tailwind CSS"}),": \uB7F0\uD0C0\uC784 \uC2A4\uD0C0\uC77C \uC624\uBC84\uD5E4\uB4DC\uB97C \uBC30\uC81C\uD558\uACE0 \uC720\uD2F8\uB9AC\uD2F0 \uC6B0\uC120 \uBC29\uC2DD\uC73C\uB85C \uBE60\uB978 UI \uC774\uD130\uB808\uC774\uC158 \uB2EC\uC131"]}),`
+`,(0,r.jsxs)(n.li,{children:[(0,r.jsx)(n.strong,{children:"PWA"}),": \uC6F9 \uD45C\uC900 \uAE30\uC220\uC744 \uD1B5\uD574 \uBCC4\uB3C4 \uC124\uCE58 \uC5C6\uC774\uB3C4 \uB124\uC774\uD2F0\uBE0C \uC571\uC5D0 \uC900\uD558\uB294 \uC811\uADFC\uC131\uACFC \uC624\uD504\uB77C\uC778 \uAD6C\uB3D9\uB825 \uC81C\uACF5"]}),`
+`,(0,r.jsxs)(n.li,{children:[(0,r.jsx)(n.strong,{children:"Capacitor"}),": \uAC00\uBCBC\uC6B4 \uD558\uC774\uBE0C\uB9AC\uB4DC \uBE0C\uB9BF\uC9C0\uB85C \uC6F9 \uCF54\uB4DC\uB97C Android \uC2A4\uD1A0\uC5B4 \uC0DD\uD0DC\uACC4\uB85C \uC9C1\uACB0"]}),`
+`,(0,r.jsxs)(n.li,{children:[(0,r.jsx)(n.strong,{children:"LocalStorage"}),": \uC11C\uBC84\uB9AC\uC2A4 \uD658\uACBD\uC5D0\uC11C \uC9C0\uC5F0 \uC5C6\uB294 \uC989\uAC01\uC801 \uBC18\uC751\uC131 \uD655\uBCF4"]}),`
+`]}),`
+`,(0,r.jsx)(n.hr,{}),`
+`,(0,r.jsx)(n.h2,{children:"\uACB0\uACFC \uBC0F \uC758\uC758"}),`
+`,(0,r.jsxs)(n.p,{children:["MemoFlow\uB294 ",(0,r.jsx)(n.strong,{children:"\u201C\uBAA8\uB4E0 \uAC83\uC744 \uC601\uAD6C\uD788 \uBCF4\uC874\uD574\uC57C \uD55C\uB2E4\u201D\uB294 \uAC15\uBC15\uC5D0\uC11C \uBC97\uC5B4\uB098\uACE0\uC790 \uD55C \uC2DC\uB3C4"}),"\uC785\uB2C8\uB2E4.",(0,r.jsx)(n.br,{}),`
+`,"\uC9C0\uAE08 \uB2F9\uC7A5 \uD544\uC694\uD55C \uAC83\uB9CC \uB0A8\uAE30\uACE0 \uB098\uBA38\uC9C0\uB294 \uC790\uC5F0\uC2A4\uB7FD\uAC8C \uBE44\uC6CC\uB0B4\uB294 \uB3C4\uAD6C\uB85C\uC11C \uC790\uB9AC \uC7A1\uC558\uC2B5\uB2C8\uB2E4."]}),`
+`,(0,r.jsx)(n.hr,{}),`
+`,(0,r.jsx)(n.h2,{children:"\uB9C1\uD06C"}),`
+`,(0,r.jsxs)(n.ul,{children:[`
+`,(0,r.jsxs)(n.li,{children:[(0,r.jsx)(n.strong,{children:"\uC6F9 \uC571"}),": ",(0,r.jsx)(n.a,{href:"https://yoonjonglyu.github.io/memo/",children:"https://yoonjonglyu.github.io/memo/"})]}),`
+`,(0,r.jsxs)(n.li,{children:[(0,r.jsx)(n.strong,{children:"Google Play Store"}),": ",(0,r.jsx)(n.a,{href:"https://play.google.com/store/apps/details?id=com.yoonjongryu.memo",children:"https://play.google.com/store/apps/details?id=com.yoonjongryu.memo"})]}),`
+`,(0,r.jsxs)(n.li,{children:[(0,r.jsx)(n.strong,{children:"GitHub"}),": ",(0,r.jsx)(n.a,{href:"https://github.com/yoonjonglyu/memo",children:"https://github.com/yoonjonglyu/memo"})]}),`
+`]})]})}function a(e={}){let{wrapper:n}=e.components||{};return n?(0,r.jsx)(n,{...e,children:(0,r.jsx)(s,{...e})}):s(e)}return S(w);})();
+;return Component;1d:T172a,var Component=(()=>{var a=Object.create;var l=Object.defineProperty;var g=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var u=Object.getPrototypeOf,y=Object.prototype.hasOwnProperty;var b=(e,n)=>()=>{try{return n||e((n={exports:{}}).exports,n),n.exports}catch(r){throw n=0,r}},j=(e,n)=>{for(var r in n)l(e,r,{get:n[r],enumerable:!0})},h=(e,n,r,t)=>{if(n&&typeof n=="object"||typeof n=="function")for(let i of p(n))!y.call(e,i)&&i!==r&&l(e,i,{get:()=>n[i],enumerable:!(t=g(n,i))||t.enumerable});return e};var f=(e,n,r)=>(r=e!=null?a(u(e)):{},h(n||!e||!e.__esModule?l(r,"default",{value:e,enumerable:!0}):r,e)),x=e=>h(l({},"__esModule",{value:!0}),e);var d=b((P,c)=>{c.exports=_jsx_runtime});var _={};j(_,{default:()=>m,frontmatter:()=>M});var o=f(d()),M={title:"MemoFlow",description:"\u5C08\u70BA\u8F15\u91CF\u500B\u4EBA\u5373\u6642\u8A18\u4E8B\u8A2D\u8A08\u7684\u96E2\u7DDA\u512A\u5148\u3001\u5373\u5BEB\u5373\u901D\u578B\u6392\u7A0B PWA",period:"2023.01 \u2013 2025.01 (v2 \u6539\u7248)",stack:["TypeScript","React","Tailwind CSS","PWA","Capacitor"],role:"\u524D\u7AEF\u5DE5\u7A0B\u5E2B",repository:"https://github.com/yoonjonglyu/memo",homepage:"https://yoonjonglyu.github.io/memo/",tags:["Productivity","Offline-First","PWA","Personal-Tool"],order:3};function s(e){let n={a:"a",br:"br",h1:"h1",h2:"h2",hr:"hr",li:"li",ol:"ol",p:"p",strong:"strong",ul:"ul",...e.components};return(0,o.jsxs)(o.Fragment,{children:[(0,o.jsx)(n.h1,{children:"\u{1F4DD} MemoFlow"}),`
+`,(0,o.jsx)(n.p,{children:(0,o.jsx)(n.strong,{children:"\u96E2\u7DDA\u512A\u5148\u3001\u5373\u5BEB\u5373\u901D\u578B\u6392\u7A0B\u5DE5\u5177"})}),`
+`,(0,o.jsxs)(n.p,{children:["MemoFlow \u662F\u4E00\u6B3E\u57FA\u65BC\u76F4\u89BA\u5047\u8A2D\u6253\u9020\u7684\u500B\u4EBA\u6548\u7387\u5DE5\u5177\uFF1A",(0,o.jsx)(n.br,{}),`
+`,(0,o.jsx)(n.strong,{children:"\u300C\u7B46\u8A18\u672C\u8A72\u662F\u96A8\u624B\u5FEB\u901F\u5BEB\u4E0B\u3001\u7121\u9700\u7336\u8C6B\u96A8\u6642\u80FD\u522A\u9664\u7684\u8F14\u52A9\u3002\u300D"})]}),`
+`,(0,o.jsx)(n.p,{children:"\u4E0D\u5C07\u7B46\u8A18\u5B9A\u4F4D\u70BA\u9700\u6C38\u4E45\u5178\u85CF\u7684\u9F90\u5927\u8CC7\u7522\uFF0C\u800C\u662F\u5B9A\u7FA9\u70BA**\u300C\u6574\u7406\u7576\u4E0B\u5FC3\u667A\u601D\u7DD2\u7684\u66AB\u5B58\u5DE5\u5177\u300D**\u3002"}),`
+`,(0,o.jsxs)(n.ul,{children:[`
+`,(0,o.jsx)(n.li,{children:"\u4E0D\u50CF Notion \u90A3\u822C\u6C89\u91CD\uFF0C"}),`
+`,(0,o.jsx)(n.li,{children:"\u4E0D\u50CF Obsidian \u90A3\u822C\u5C64\u5C64\u5DE2\u72C0\u7D50\u69CB\uFF0C"}),`
+`,(0,o.jsx)(n.li,{children:"\u8FFD\u6C42\u5982\u4FBF\u5229\u8CBC\u822C\u96A8\u624B\u6495\u53D6\u7684\u6975\u81F4\u8F15\u5DE7\u3002"}),`
+`]}),`
+`,(0,o.jsx)(n.hr,{}),`
+`,(0,o.jsx)(n.h2,{children:"\u5C08\u6848\u7DE3\u8D77 \u2014 \u5C0D\u300C\u8F15\u76C8\u611F\u300D\u7684\u8FFD\u6C42"}),`
+`,(0,o.jsx)(n.p,{children:"\u6E90\u65BC\u5728 Notion \u4E2D\u8A18\u9304\u7463\u788E\u4E8B\u9805\u6642\u7684\u5169\u5927\u75DB\u9EDE\uFF1A"}),`
+`,(0,o.jsxs)(n.ol,{children:[`
+`,(0,o.jsxs)(n.li,{children:[(0,o.jsx)(n.strong,{children:"\u6578\u64DA\u6240\u6709\u6B0A"}),"\uFF1A\u5373\u4F7F\u662F\u77ED\u66AB\u7684\u79C1\u5BC6\u60F3\u6CD5\u4E5F\u88AB\u8FEB\u4EF0\u8CF4\u5916\u90E8\u4F3A\u670D\u5668\u3002"]}),`
+`,(0,o.jsxs)(n.li,{children:[(0,o.jsx)(n.strong,{children:"\u7D50\u69CB\u5316\u8CA0\u64D4"}),"\uFF1A\u5373\u4FBF\u662F\u4E00\u5169\u884C\u5373\u6642\u5099\u5FD8\uFF0C\u4E5F\u5F97\u6C7A\u5B9A\u9801\u9762\u3001\u9023\u7D50\u3001\u5C64\u7D1A\u5206\u985E\uFF0C\u4F7F\u300C\u601D\u8003\u5982\u4F55\u7D00\u9304\u300D\u7684\u8A8D\u77E5\u6210\u672C\u8D85\u8D8A\u4E86\u7D00\u9304\u884C\u70BA\u672C\u8EAB\u3002"]}),`
+`]}),`
+`,(0,o.jsx)(n.p,{children:"\u6211\u6240\u9700\u8981\u7684\u4E0D\u662F\u9F90\u5927\u7684\u77E5\u8B58\u7BA1\u7406\u5EAB\uFF0C\u800C\u662F\u53EF\u5728\u4EFB\u4F55\u700F\u89BD\u5668\u6216\u88DD\u7F6E\u77AC\u9593\u958B\u555F\u3001\u5C08\u70BA\u5373\u7528\u5373\u62CB\u8A2D\u8A08\u7684**\u300C\u6700\u5C0F\u5316\u8A18\u4E8B\u5DE5\u5177\u300D**\u3002"}),`
+`,(0,o.jsx)(n.hr,{}),`
+`,(0,o.jsx)(n.h2,{children:"\u89E3\u6C7A\u7684\u75DB\u9EDE"}),`
+`,(0,o.jsxs)(n.ul,{children:[`
+`,(0,o.jsxs)(n.li,{children:[(0,o.jsx)(n.strong,{children:"\u964D\u4F4E\u904E\u5EA6\u529F\u80FD\u5C0E\u81F4\u7684\u66F8\u5BEB\u75B2\u52DE"}),"\uFF1A\u900F\u904E Memo / Todo / Note / Draft \u56DB\u5927\u5206\u985E\uFF0C\u514D\u53BB\u5BEB\u4F5C\u524D\u7684\u683C\u5F0F\u7336\u8C6B\u3002"]}),`
+`,(0,o.jsxs)(n.li,{children:[(0,o.jsx)(n.strong,{children:"\u96F6\u5B78\u7FD2\u9580\u6ABB UX"}),"\uFF1A\u61F8\u6D6E\u6309\u9215\u76F4\u63A5\u9032\u5165\u8F38\u5165\uFF0C\u76F4\u89BA\u808C\u8089\u8A18\u61B6\u5C0E\u5411\u3002"]}),`
+`,(0,o.jsxs)(n.li,{children:[(0,o.jsx)(n.strong,{children:"\u5FB9\u5E95\u64FA\u812B\u7DB2\u8DEF\u4F9D\u8CF4"}),"\uFF1A\u85C9\u7531 LocalStorage \u8207 Service Worker \u5FEB\u53D6\uFF0C\u96E2\u7DDA\u8207\u5728\u7DDA\u9AD4\u9A57\u5B8C\u5168\u4E00\u81F4\u3002"]}),`
+`,(0,o.jsxs)(n.li,{children:[(0,o.jsx)(n.strong,{children:"\u8DE8\u5E73\u53F0\u591A\u7AEF\u9069\u914D"}),"\uFF1A\u4EE5\u55AE\u4E00 Web \u7A0B\u5F0F\u78BC\u70BA\u57FA\u5E95\uFF0C\u900F\u904E Capacitor \u7121\u7E2B\u767C\u4F48\u70BA Android \u539F\u751F\u61C9\u7528\u3002"]}),`
+`]}),`
+`,(0,o.jsx)(n.hr,{}),`
+`,(0,o.jsx)(n.h2,{children:"\u9023\u7D50"}),`
+`,(0,o.jsxs)(n.ul,{children:[`
+`,(0,o.jsxs)(n.li,{children:["Web: ",(0,o.jsx)(n.a,{href:"https://yoonjonglyu.github.io/memo/",children:"https://yoonjonglyu.github.io/memo/"})]}),`
+`,(0,o.jsxs)(n.li,{children:["Google Play Store: ",(0,o.jsx)(n.a,{href:"https://play.google.com/store/apps/details?id=com.yoonjongryu.memo",children:"https://play.google.com/store/apps/details?id=com.yoonjongryu.memo"})]}),`
+`,(0,o.jsxs)(n.li,{children:["GitHub: ",(0,o.jsx)(n.a,{href:"https://github.com/yoonjonglyu/memo",children:"https://github.com/yoonjonglyu/memo"})]}),`
+`]})]})}function m(e={}){let{wrapper:n}=e.components||{};return n?(0,o.jsx)(n,{...e,children:(0,o.jsx)(s,{...e})}):s(e)}return x(_);})();
+;return Component;10:[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"MemoFlow\",\"description\":\"An offline-first, volatile planner PWA designed for lightweight personal note-taking\",\"applicationCategory\":\"DeveloperApplication\",\"operatingSystem\":\"All\",\"author\":{\"@type\":\"Person\",\"name\":\"YOON JONG RYU\",\"url\":\"https://yoonjonglyu.github.io\"},\"url\":\"https://yoonjonglyu.github.io/archive/project/memo\",\"sameAs\":[\"https://github.com/yoonjonglyu/memo\",\"https://yoonjonglyu.github.io/memo/\"],\"keywords\":\"Productivity, Offline-First, PWA, Personal-Tool\"}"}}],["$","$L18",null,{"title":"MemoFlow","content":"$19","repository":"https://github.com/yoonjonglyu/memo","homepage":"https://yoonjonglyu.github.io/memo/","translations":{"en":{"title":"MemoFlow","content":"$1a"},"ja":{"title":"MemoFlow","content":"$1b"},"ko":{"title":"MemoFlow","content":"$1c"},"zh-TW":{"title":"MemoFlow","content":"$1d"}}}]]
+15:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1e:I[6869,[],"IconMark"]
+17:[["$","title","0",{"children":"MemoFlow | ISA Archive"}],["$","meta","1",{"name":"description","content":"An offline-first, volatile planner PWA designed for lightweight personal note-taking"}],["$","link","2",{"rel":"author","href":"https://github.com/yoonjonglyu"}],["$","meta","3",{"name":"author","content":"YOON JONG RYU"}],["$","link","4",{"rel":"manifest","href":"/manifest.webmanifest","crossOrigin":"$undefined"}],["$","meta","5",{"name":"keywords","content":"Productivity,Offline-First,PWA,Personal-Tool"}],["$","meta","6",{"name":"creator","content":"YOON JONG RYU"}],["$","meta","7",{"name":"publisher","content":"YOON JONG RYU"}],["$","meta","8",{"name":"robots","content":"index, follow"}],["$","meta","9",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","meta","10",{"name":"category","content":"technology"}],["$","link","11",{"rel":"canonical","href":"https://yoonjonglyu.github.io/archive/project/memo/"}],["$","link","12",{"rel":"alternate","hrefLang":"en-US","href":"https://yoonjonglyu.github.io/archive/project/memo/"}],["$","link","13",{"rel":"alternate","hrefLang":"ko-KR","href":"https://yoonjonglyu.github.io/archive/project/memo/"}],["$","link","14",{"rel":"alternate","hrefLang":"ja-JP","href":"https://yoonjonglyu.github.io/archive/project/memo/"}],["$","link","15",{"rel":"alternate","hrefLang":"zh-TW","href":"https://yoonjonglyu.github.io/archive/project/memo/"}],["$","link","16",{"rel":"alternate","hrefLang":"x-default","href":"https://yoonjonglyu.github.io/archive/project/memo/"}],["$","meta","17",{"property":"og:title","content":"MemoFlow | ISA Archive"}],["$","meta","18",{"property":"og:description","content":"An offline-first, volatile planner PWA designed for lightweight personal note-taking"}],["$","meta","19",{"property":"og:url","content":"https://yoonjonglyu.github.io/archive/project/memo/"}],["$","meta","20",{"property":"og:site_name","content":"ISA Archive"}],["$","meta","21",{"property":"og:locale","content":"en_US"}],["$","meta","22",{"property":"og:image","content":"https://yoonjonglyu.github.io/archive/project/memo/opengraph-image"}],["$","meta","23",{"property":"og:image:width","content":"1200"}],["$","meta","24",{"property":"og:image:height","content":"630"}],["$","meta","25",{"property":"og:image:alt","content":"MemoFlow | ISA Archive"}],["$","meta","26",{"property":"og:locale:alternate","content":"ko_KR"}],["$","meta","27",{"property":"og:locale:alternate","content":"ja_JP"}],["$","meta","28",{"property":"og:locale:alternate","content":"zh_TW"}],["$","meta","29",{"property":"og:type","content":"article"}],["$","meta","30",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","31",{"name":"twitter:site","content":"@yoonjonglyu"}],["$","meta","32",{"name":"twitter:creator","content":"@yoonjonglyu"}],["$","meta","33",{"name":"twitter:title","content":"MemoFlow | ISA Archive"}],["$","meta","34",{"name":"twitter:description","content":"An offline-first, volatile planner PWA designed for lightweight personal note-taking"}],["$","meta","35",{"name":"twitter:image","content":"https://yoonjonglyu.github.io/archive/project/memo/opengraph-image"}],["$","link","36",{"rel":"icon","href":"/favicon.ico?0442523079e4433b","type":"image/x-icon","sizes":"16x16"}],["$","link","37",{"rel":"icon","href":"/_next/static/media/favicon-16x16.20819376.png","sizes":"16x16","type":"image/png"}],["$","link","38",{"rel":"icon","href":"/_next/static/media/favicon-32x32.ea868b1f.png","sizes":"32x32","type":"image/png"}],["$","link","39",{"rel":"apple-touch-icon","href":"/_next/static/media/apple-touch-icon.b2dfcbf7.png","sizes":"180x180"}],["$","$L1e","40",{}]]
+13:null
