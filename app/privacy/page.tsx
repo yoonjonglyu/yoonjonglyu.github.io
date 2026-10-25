@@ -1,146 +1,332 @@
+import React from 'react';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy',
+  title: 'Privacy Policy | RyuisLabs',
+  description:
+    'Global Master Privacy Policy for applications, web services, and software tools developed and operated by RyuisLabs.',
 };
 
 export default function PrivacyPolicyPage() {
+  const styles: { [key: string]: React.CSSProperties } = {
+    container: {
+      fontFamily:
+        '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
+      lineHeight: '1.65',
+      maxWidth: '800px',
+      margin: '0 auto',
+      padding: '40px 20px',
+      backgroundColor: '#f9f9f9',
+      color: '#333333',
+    },
+    title: {
+      color: '#222222',
+      fontSize: '2rem',
+      borderBottom: '2px solid #333333',
+      paddingBottom: '12px',
+      marginBottom: '8px',
+    },
+    lastUpdated: {
+      color: '#666666',
+      fontStyle: 'italic',
+      marginBottom: '24px',
+      fontSize: '0.9rem',
+    },
+    heading: {
+      color: '#222222',
+      fontSize: '1.35rem',
+      marginTop: '32px',
+      marginBottom: '12px',
+    },
+    text: {
+      marginBottom: '14px',
+      textAlign: 'justify',
+    },
+    list: {
+      marginBottom: '16px',
+      paddingLeft: '20px',
+    },
+    listItem: {
+      marginBottom: '8px',
+    },
+    divider: {
+      border: '0',
+      borderTop: '1px solid #dddddd',
+      margin: '28px 0',
+    },
+    contactBox: {
+      backgroundColor: '#ffffff',
+      padding: '20px 24px',
+      borderRadius: '8px',
+      marginTop: '24px',
+      border: '1px solid #e0e0e0',
+    },
+    link: {
+      color: '#0055cc',
+      textDecoration: 'underline',
+    },
+    footer: {
+      color: '#777777',
+      fontSize: '0.85rem',
+      marginTop: '24px',
+    },
+  };
+
   return (
-    <div
-      style={{
-        fontFamily: 'Arial, sans-serif',
-        lineHeight: '1.6',
-        margin: '0',
-        padding: '20px',
-        backgroundColor: '#f9f9f9',
-        color: '#333',
-      }}>
-      <h1 style={{ color: '#444' }}>개인정보 처리방침</h1>
-      <p>
-        본 개인정보 처리방침은 귀하가 제공하는 개인정보가 어떻게 수집, 사용,
-        공유 및 보호되는지에 대해 설명합니다. 당사는 관련 법령 및 규정을
-        준수하여 개인정보를 안전하게 처리하기 위해 최선을 다하고 있습니다.
+    <div style={styles.container}>
+      <h1 style={styles.title}>Global Privacy Policy</h1>
+      <p style={styles.lastUpdated}>
+        Last Updated: October 26, 2026 | Effective Date: October 26, 2026 (Previous: January 29,
+        2025)
       </p>
 
-      <hr
-        style={{ border: '0', borderTop: '1px solid #ccc', margin: '20px 0' }}
-      />
+      <p style={styles.text}>
+        This Global Privacy Policy explains how <strong>RyuisLabs</strong> (&quot;we,&quot;
+        &quot;our,&quot; or &quot;us&quot;) collects, uses, protects, and handles your information
+        across our mobile applications, web services, and software tools (collectively, the
+        &quot;Services&quot;) available worldwide. We are committed to privacy-first engineering and
+        full compliance with international data protection laws, including the GDPR (EEA/UK),
+        CCPA/CPRA (USA), COPPA, and PIPA (South Korea).
+      </p>
 
+      <hr style={styles.divider} />
+
+      {/* 1. Core Privacy Philosophy & Data Collection */}
       <section>
-        <h2 style={{ color: '#444' }}>1. 개인정보의 수집 및 이용 목적</h2>
-        <p>
-          당사는 다음과 같은 목적을 위해 Google API를 통해 개인정보를 수집하고
-          이용합니다:
+        <h2 style={styles.heading}>1. Information Collection and Purpose of Use</h2>
+        <p style={styles.text}>
+          Many of our Services are engineered on a <strong>Local-First</strong> or{' '}
+          <strong>Zero-Knowledge</strong> architecture, meaning your personal content resides
+          primarily on your own device. Depending on the specific Service and features you choose to
+          use, we process data strictly for the following purposes:
         </p>
-        <ul>
-          <li>서비스 제공: 귀하가 요청한 서비스 및 기능을 제공하기 위해.</li>
-          <li>사용자 인증: Google 계정 로그인을 통한 사용자 식별 및 인증.</li>
-          <li>사용자 경험 개선: 맞춤형 서비스 제공 및 기능 최적화.</li>
-          <li>법적 의무 준수: 관련 법령 및 규정을 준수하기 위해.</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2 style={{ color: '#444' }}>2. 수집하는 개인정보 항목</h2>
-        <p>Google API를 통해 다음과 같은 개인정보가 수집될 수 있습니다:</p>
-        <ul>
-          <li>Google 계정 정보: 이름, 이메일 주소, 프로필 사진 등.</li>
-          <li>
-            Google API를 통해 제공되는 기타 데이터: 귀하의 동의를 기반으로
-            수집되는 데이터(예: Google Drive 파일, 캘린더 이벤트 등).
+        <ul style={styles.list}>
+          <li style={styles.listItem}>
+            <strong>Local Application Data:</strong> Content you create (such as notes, logs,
+            settings, or encrypted vaults) is stored locally on your device to provide core
+            functionality offline.
+          </li>
+          <li style={styles.listItem}>
+            <strong>User Authentication &amp; Cloud Sync (Optional):</strong> When you explicitly
+            choose to sign in via Google OAuth or enable cloud synchronization, we process your
+            basic account identifiers (such as email address, profile name, or authentication token)
+            and application data folders solely to authenticate your session and synchronize your
+            data across devices.
+          </li>
+          <li style={styles.listItem}>
+            <strong>On-Device Sensor &amp; Camera Processing (Where Applicable):</strong> Certain
+            Services may request camera or sensor permissions (e.g., for QR code scanning or
+            on-device vision verification). All sensory feeds are processed strictly in real time
+            within your device&apos;s volatile memory (RAM) and are never recorded, saved to external
+            servers, or shared.
+          </li>
+          <li style={styles.listItem}>
+            <strong>Service Improvement &amp; Legal Compliance:</strong> To maintain system
+            stability, respond to customer support inquiries, and comply with applicable legal
+            obligations.
           </li>
         </ul>
       </section>
 
+      {/* 2. Google API Services & Limited Use */}
       <section>
-        <h2 style={{ color: '#444' }}>3. 개인정보의 보유 및 이용 기간</h2>
-        <p>수집된 개인정보는 다음 기준에 따라 보유 및 이용됩니다:</p>
-        <ul>
-          <li>서비스 제공 목적 달성 시까지.</li>
-          <li>관련 법령에서 정한 기간 동안 보유.</li>
-          <li>사용자의 요청이 있을 경우 즉시 삭제.</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2 style={{ color: '#444' }}>4. 개인정보의 제3자 제공 및 위탁</h2>
-        <p>
-          당사는 귀하의 개인정보를 원칙적으로 제3자에게 제공하지 않습니다. 다만,
-          아래의 경우에 한하여 제공될 수 있습니다:
+        <h2 style={styles.heading}>2. Google API Services &amp; Limited Use Disclosure</h2>
+        <p style={styles.text}>
+          When you choose to connect our Services with your Google Account, we may request access to
+          specific Google API scopes based on your explicit consent:
         </p>
-        <ul>
-          <li>법령에 의거한 요청이 있는 경우.</li>
-          <li>사용자 동의가 있는 경우.</li>
-          <li>
-            Google API 서비스 제공을 위해 필요한 경우(예: Google과의 데이터
-            처리).
+        <ul style={styles.list}>
+          <li style={styles.listItem}>
+            <strong>Google Account Profile:</strong> Basic profile information (email address,
+            display name, profile picture) used strictly for user authentication.
+          </li>
+          <li style={styles.listItem}>
+            <strong>Google Drive / Calendar API Data (Optional):</strong> Access is restricted to
+            isolated application data folders (<code>appDataFolder</code>) or specific resources you
+            explicitly authorize to back up, synchronize, or manage your workflow. We do not access,
+            view, or modify your unrelated personal files.
+          </li>
+          <li style={styles.listItem}>
+            <strong>Google API Limited Use Compliance:</strong> RyuisLabs&apos; use and transfer to
+            any other app of information received from Google APIs will adhere to the{' '}
+            <a
+              href="https://developers.google.com/terms/api-services-user-data-policy"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={styles.link}
+            >
+              Google API Services User Data Policy
+            </a>
+            , including the Limited Use requirements. We never use Google user data for serving
+            advertisements or training external AI models.
           </li>
         </ul>
       </section>
 
+      {/* 3. Third-Party Services, Ads & Payments */}
       <section>
-        <h2 style={{ color: '#444' }}>5. 개인정보 보호를 위한 조치</h2>
-        <p>
-          당사는 귀하의 개인정보를 안전하게 보호하기 위해 다음과 같은 조치를
-          취합니다:
+        <h2 style={styles.heading}>
+          3. Third-Party Services, Advertising &amp; International Transfers
+        </h2>
+        <p style={styles.text}>
+          We do not sell, rent, or trade your personal data to third parties. However, certain
+          Services may integrate trusted third-party infrastructure providers (such as{' '}
+          <strong>Google LLC</strong>), which may process technical data on global servers (including
+          in the United States):
         </p>
-        <ul>
-          <li>
-            데이터 암호화: Google API를 통해 수집된 데이터는 암호화되어 저장 및
-            전송됩니다.
+        <ul style={styles.list}>
+          <li style={styles.listItem}>
+            <strong>Advertising (Free-Tier Apps with Google AdMob):</strong> In Services supported
+            by advertisements, Google AdMob may collect your device&apos;s Advertising ID
+            (AAID/IDFA), coarse IP address, device specifications, and ad interaction logs to serve
+            and measure ads. You can opt out of personalized advertising at any time via your device
+            settings (<em>Android: Settings &gt; Privacy &gt; Ads</em> /{' '}
+            <em>iOS: Settings &gt; Privacy &amp; Security &gt; Tracking</em>).
           </li>
-          <li>접근 권한 제한: 개인정보 접근 권한을 최소한으로 제한합니다.</li>
-          <li>
-            정기 보안 점검: 시스템 및 네트워크의 보안 상태를 정기적으로
-            점검합니다.
+          <li style={styles.listItem}>
+            <strong>Payments (Paid Apps &amp; In-App Purchases):</strong> All financial transactions
+            are processed directly by official marketplace billing systems (such as Google Play
+            Billing). We never collect, access, or store your credit card numbers or banking
+            details.
+          </li>
+          <li style={styles.listItem}>
+            <strong>Legal Requirements:</strong> We may disclose information only if required to do
+            so by law or valid legal process.
           </li>
         </ul>
       </section>
 
+      {/* 4. Data Retention and Deletion */}
       <section>
-        <h2 style={{ color: '#444' }}>6. 사용자의 권리</h2>
-        <p>귀하는 다음과 같은 권리를 행사할 수 있습니다:</p>
-        <ul>
-          <li>개인정보 열람 요청.</li>
-          <li>개인정보 수정 및 삭제 요청.</li>
-          <li>개인정보 처리 정지 요청.</li>
+        <h2 style={styles.heading}>4. Data Retention and Deletion</h2>
+        <p style={styles.text}>
+          We retain data only for as long as necessary to fulfill the purposes outlined in this
+          Policy:
+        </p>
+        <ul style={styles.list}>
+          <li style={styles.listItem}>
+            <strong>Local Device Data:</strong> Retained on your device until you clear the
+            app&apos;s storage, reset the in-app data, or uninstall the application.
+          </li>
+          <li style={styles.listItem}>
+            <strong>Cloud Sync &amp; Authenticated Data:</strong> Retained in your linked cloud
+            storage until you delete the data within the Service or revoke access via your{' '}
+            <a
+              href="https://myaccount.google.com/permissions"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={styles.link}
+            >
+              Google Account Permissions
+            </a>
+            . Upon explicit deletion request, any server-side session data is erased immediately.
+          </li>
+          <li style={styles.listItem}>
+            <strong>Customer Support Records:</strong> Email inquiries are retained only as long as
+            necessary to resolve your request (up to 1 year) and permanently deleted thereafter.
+          </li>
         </ul>
-        <p>권리 행사를 원하실 경우, 당사에 문의하시면 신속히 처리하겠습니다.</p>
       </section>
 
+      {/* 5. Security Measures */}
       <section>
-        <h2 style={{ color: '#444' }}>7. 문의처</h2>
-        <p>
-          개인정보 처리방침에 대한 질문 또는 문의가 있으시면 아래로 연락해
-          주시기 바랍니다:
+        <h2 style={styles.heading}>5. Data Security Measures</h2>
+        <p style={styles.text}>
+          We implement industry-standard technical and organizational safeguards to protect your
+          information:
         </p>
-        <div style={{ marginTop: '10px' }}>
-          <p>
-            이메일:{' '}
-            <a href='mailto:yunjonglyu@gmail.com'>yunjonglyu@gmail.com</a>
+        <ul style={styles.list}>
+          <li style={styles.listItem}>
+            <strong>Encryption in Transit and at Rest:</strong> All network communications (including
+            Google API transmissions) utilize HTTPS/TLS encryption. Sensitive local vaults employ
+            authenticated cryptographic standards (such as AES-256-GCM).
+          </li>
+          <li style={styles.listItem}>
+            <strong>Least-Privilege Access:</strong> Our applications request only the minimum
+            device permissions and API scopes necessary to deliver the features you explicitly
+            invoke.
+          </li>
+        </ul>
+      </section>
+
+      {/* 6. Global Privacy Rights */}
+      <section>
+        <h2 style={styles.heading}>
+          6. Your Global Privacy Rights (GDPR, CCPA/CPRA, PIPA &amp; International Laws)
+        </h2>
+        <p style={styles.text}>
+          Regardless of your location worldwide, you have the right to:
+        </p>
+        <ul style={styles.list}>
+          <li style={styles.listItem}>
+            <strong>Access, Rectify, Export, or Erase Data:</strong> Request access to, correction
+            of, portability of, or deletion of your personal data.
+          </li>
+          <li style={styles.listItem}>
+            <strong>Restrict Processing &amp; Withdraw Consent:</strong> Revoke API permissions,
+            disable cloud synchronization, or reset advertising identifiers at any time via your
+            device or account settings.
+          </li>
+          <li style={styles.listItem}>
+            <strong>CCPA/CPRA Non-Discrimination:</strong> California residents have the right to
+            know what personal data is collected, opt out of third-party ad sharing, and not be
+            discriminated against for exercising their privacy rights.
+          </li>
+        </ul>
+      </section>
+
+      {/* 7. Children's Privacy */}
+      <section>
+        <h2 style={styles.heading}>7. Children&apos;s Privacy (COPPA Compliance)</h2>
+        <p style={styles.text}>
+          We do not knowingly collect, solicit, or store personal information from children under
+          the age of 13 (or under the applicable age of digital consent in your jurisdiction, such
+          as 14 or 16). If we become aware that personal data from a child has been inadvertently
+          submitted to us without parental consent, we will delete it immediately.
+        </p>
+      </section>
+
+      {/* 8. Changes to This Policy */}
+      <section>
+        <h2 style={styles.heading}>8. Changes to This Privacy Policy</h2>
+        <p style={styles.text}>
+          We may update this Privacy Policy periodically to reflect changes in our Services or global
+          legal requirements. Any material changes will be posted on this page with an updated
+          Effective Date at least 7 days prior to taking effect.
+        </p>
+      </section>
+
+      {/* 9. Contact Us */}
+      <section>
+        <h2 style={styles.heading}>9. Contact Us</h2>
+        <p style={styles.text}>
+          If you have any questions, concerns, or requests regarding this Privacy Policy or how your
+          data is handled, please contact the developer directly:
+        </p>
+        <div style={styles.contactBox}>
+          <p style={{ margin: '6px 0' }}>
+            <strong>Developer / Studio:</strong> RyuisLabs
           </p>
-          {/*           <p>전화번호: 000-0000-0000</p>
-          <p>주소: [주소를 여기에 기입하세요]</p> */}
+          <p style={{ margin: '6px 0' }}>
+            <strong>Owner &amp; Data Protection Contact:</strong> Yoonjong Ryu
+          </p>
+          <p style={{ margin: '6px 0' }}>
+            <strong>Email:</strong>{' '}
+            <a href="mailto:content@ryuislabs.com" style={styles.link}>
+              content@ryuislabs.com
+            </a>
+          </p>
         </div>
       </section>
 
-      <section>
-        <h2 style={{ color: '#444' }}>8. 변경 사항 안내</h2>
-        <p>
-          본 개인정보 처리방침은 변경될 수 있으며, 변경 시 사전에 공지하여
-          드립니다. 변경된 내용은 공지일로부터 효력이 발생합니다.
-        </p>
-      </section>
+      <hr style={styles.divider} />
 
-      <hr
-        style={{ border: '0', borderTop: '1px solid #ccc', margin: '20px 0' }}
-      />
-
-      <footer>
-        <p>
-          <strong>부칙:</strong> 본 개인정보 처리방침은 2025년 1월 29일부터
-          시행됩니다.
+      <footer style={styles.footer}>
+        <p style={{ margin: '4px 0' }}>
+          <strong>Addendum:</strong> This Global Privacy Policy is effective as of October 26, 2026
+          (Originally effective: January 29, 2025).
         </p>
+        <p style={{ margin: '4px 0' }}>© 2026 RyuisLabs. All rights reserved.</p>
       </footer>
     </div>
   );
